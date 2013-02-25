@@ -1,0 +1,3596 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wom\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-01-02 12:51+0100\n"
+"PO-Revision-Date: 2013-01-11 15:48-0000\n"
+"Last-Translator: Mário Figueira <mario.figueira@gtinformatica.eu>\n"
+"Language-Team: \n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: /home/pmcosta/public_html/wom_public\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: strings_to_translate.php:3
+#: strings_to_translate.php:7
+#: strings_to_translate.php:14
+#: strings_to_translate.php:17
+#: strings_to_translate.php:18
+#: strings_to_translate.php:22
+msgid "Formato inválido, tem de ter 10 digitos"
+msgstr "Μη έγκυρη μορφή, πρέπει να έχεις 10 ψηφία"
+
+#: strings_to_translate.php:4
+msgid "Formato inválido, tem de ter entre 4 a 13 digitos"
+msgstr "Μη έγκυρη μορφή, πρέπει να είναι μεταξύ 4 και 13 ψηφίων"
+
+#: strings_to_translate.php:5
+msgid "Formato inválido, tem de ter entre 8 a 9 digitos"
+msgstr "Μη έγκυρη μορφή, πρέπει να είναι μεταξύ 8 και 9 ψηφίων"
+
+#: strings_to_translate.php:6
+msgid "Formato inválido, tem de ter 11 digitos"
+msgstr "Μη έγκυρη μορφή, πρέπει να έχεις 11 ψηφία"
+
+#: strings_to_translate.php:8
+#: strings_to_translate.php:11
+#: strings_to_translate.php:13
+#: strings_to_translate.php:15
+#: strings_to_translate.php:20
+msgid "Formato inválido, tem de ter 9 digitos"
+msgstr "Μη έγκυρη μορφή, πρέπει να έχεις 9 ψηφία"
+
+#: strings_to_translate.php:9
+msgid "Formato inválido, tem de ter entre 4 a 12 digitos"
+msgstr "Μη έγκυρη μορφή, πρέπει να είναι μεταξύ 4 και 12 ψηφίων"
+
+#: strings_to_translate.php:10
+#: strings_to_translate.php:19
+msgid "Formato inválido, tem de ter 8 digitos"
+msgstr "Μη έγκυρη μορφή, πρέπει να έχεις 8 ψηφία"
+
+#: strings_to_translate.php:12
+msgid "Formato inválido, tem de ter entre 5 a 12 digitos"
+msgstr "Μη έγκυρη μορφή, πρέπει να είναι μεταξύ 5 και 12 ψηφίων"
+
+#: strings_to_translate.php:16
+msgid "Formato inválido, tem de ter entre 8 a 11 digitos"
+msgstr "Μη έγκυρη μορφή, πρέπει να είναι μεταξύ 8 και 11 ψηφίων"
+
+#: strings_to_translate.php:21
+msgid "Formato inválido, tem de ter entre 7 a 9 digitos"
+msgstr "Μη έγκυρη μορφή, πρέπει να είναι μεταξύ 7 και 9 ψηφίων"
+
+#: strings_to_translate.php:26
+msgid "Trabalho por conta de outrém a tempo inteiro"
+msgstr "Πλήρης απασχόληση"
+
+#: strings_to_translate.php:27
+msgid "Tenho o meu próprio negócio"
+msgstr "Ελεύθερος επαγγελματίας"
+
+#: strings_to_translate.php:28
+msgid "Trabalho por conta de outrém a tempo parcial"
+msgstr "Μερική απασχόληση"
+
+#: strings_to_translate.php:29
+msgid "Trabalho em casa"
+msgstr "Οικιακά"
+
+#: strings_to_translate.php:30
+msgid "Sou estudante a tempo inteiro"
+msgstr "Φοιτητής/ Μαθητής πλήρους απασχόλησης"
+
+#: strings_to_translate.php:31
+msgid "Sou estudante em tempo parcial"
+msgstr "Φοιτητής/ Μαθητής μερικής απασχόλησης"
+
+#: strings_to_translate.php:32
+msgid "Estou desempregado"
+msgstr "Δεν εργάζομαι"
+
+#: strings_to_translate.php:33
+msgid "Outro"
+msgstr ""
+
+#: strings_to_translate.php:37
+msgid "Não é um formato válido. ex: Annnn(AAA)"
+msgstr "Μη έγκυρη μορφή."
+
+#: strings_to_translate.php:38
+#: strings_to_translate.php:39
+#: strings_to_translate.php:41
+#: strings_to_translate.php:52
+msgid "Não é um formato válido. ex: nnnn"
+msgstr "Μη έγκυρη μορφή."
+
+#: strings_to_translate.php:40
+#, fuzzy
+msgid "Não é um formato válido. ex: nnnnn-nnn"
+msgstr "Μη έγκυρη μορφή."
+
+#: strings_to_translate.php:42
+#: strings_to_translate.php:43
+#: strings_to_translate.php:44
+#: strings_to_translate.php:46
+#: strings_to_translate.php:49
+#: strings_to_translate.php:50
+msgid "Não é um formato válido. ex: nnnnn"
+msgstr "Μη έγκυρη μορφή."
+
+#: strings_to_translate.php:45
+msgid "Não é um formato válido. ex: FInnnnn"
+msgstr "Μη έγκυρη μορφή."
+
+#: strings_to_translate.php:47
+msgid "Não é um formato válido. ex: AA(AA) nAA"
+msgstr "Μη έγκυρη μορφή."
+
+#: strings_to_translate.php:48
+msgid "Não é um formato válido. ex: nnn nn"
+msgstr "Μη έγκυρη μορφή."
+
+#: strings_to_translate.php:51
+msgid "Não é um formato válido. ex: nnnn AA"
+msgstr "Μη έγκυρη μορφή."
+
+#: strings_to_translate.php:53
+msgid "Não é um formato válido. ex: nnnn(-nnn)"
+msgstr "Μη έγκυρη μορφή."
+
+#: strings_to_translate.php:54
+msgid "Não é um formato válido. ex: SEnnn nn"
+msgstr "Μη έγκυρη μορφή."
+
+#: strings_to_translate.php:55
+msgid "Não é um formato válido. ex: nnnnn-nnnn"
+msgstr "Μη έγκυρη μορφή."
+
+#: strings_to_translate.php:59
+msgid "Sozinho (eu sei o que quero e o que é bom para mim)"
+msgstr "Μόνος (ξέρω τι θέλω και τι μου πηγαίνει)"
+
+#: strings_to_translate.php:60
+msgid "Com amigos (eles são sempre honestos comigo!)"
+msgstr "Με φίλους (θα μου πουν την αλήθεια!)"
+
+#: strings_to_translate.php:61
+msgid "Online (rápido e eficiente)"
+msgstr "Online (γρήγορο και άνετο)"
+
+#: strings_to_translate.php:62
+msgid "É outra pessoa que normalmente compras as coisas para mim (eu não tenho tempo nem interesse)"
+msgstr "Κάποιος άλλος αγοράζει πράγματα για μένα συνήθως (δεν έχω το χρόνο ούτε το ενδιαφέρον)"
+
+#: strings_to_translate.php:63
+msgid "Nenhuma das respostas anteriores"
+msgstr "Κανένα από τα παραπάνω"
+
+#: strings_to_translate.php:67
+msgid "Banca/Finanças/Seguros"
+msgstr "Τραπεζικά/ Χρηματοοικονομικά/ Ασφάλειες"
+
+#: strings_to_translate.php:68
+msgid "Antiguidades"
+msgstr "Αντίκες"
+
+#: strings_to_translate.php:69
+msgid "Arte/Exposições/Museus"
+msgstr "Τέχνη/ Εκθέσεις/ Μουσεία"
+
+#: strings_to_translate.php:70
+msgid "Conferências"
+msgstr "Συνέδρια"
+
+#: strings_to_translate.php:71
+msgid "Cozinhar"
+msgstr "Μαγειρική"
+
+#: strings_to_translate.php:72
+msgid "Gastronomia"
+msgstr "Γαστρονομία"
+
+#: strings_to_translate.php:73
+msgid "Animação online/3D"
+msgstr "3D / Online Animation"
+
+#: strings_to_translate.php:74
+msgid "Decoração"
+msgstr "Διακόσμηση"
+
+#: strings_to_translate.php:75
+msgid "Bricolage"
+msgstr "Μαστορέματα"
+
+#: strings_to_translate.php:76
+msgid "Design"
+msgstr "Design"
+
+#: strings_to_translate.php:77
+msgid "Desenho/Artes plásticas"
+msgstr "Design/ Εικαστικά"
+
+#: strings_to_translate.php:78
+msgid "Pesca"
+msgstr "Ψάρεμα"
+
+#: strings_to_translate.php:79
+msgid "Caça"
+msgstr "Κυνήγι"
+
+#: strings_to_translate.php:80
+msgid "Jogo/Poker/Casino"
+msgstr "Παιχνίδια/ Πόκερ/ Καζίνο"
+
+#: strings_to_translate.php:81
+msgid "Artesanato"
+msgstr "Χειροτεχνίες"
+
+#: strings_to_translate.php:82
+msgid "Internet"
+msgstr "Internet"
+
+#: strings_to_translate.php:83
+msgid "Bebidas"
+msgstr "Ποτά"
+
+#: strings_to_translate.php:84
+msgid "Tocar música"
+msgstr "Μουσική"
+
+#: strings_to_translate.php:85
+msgid "Vinhos"
+msgstr "Κρασί"
+
+#: strings_to_translate.php:86
+msgid "Fotografia"
+msgstr "Φωτογραφία"
+
+#: strings_to_translate.php:87
+msgid "Vídeo"
+msgstr "Video"
+
+#: strings_to_translate.php:88
+msgid "Teatro"
+msgstr "Θέατρο"
+
+#: strings_to_translate.php:89
+msgid "Cinema"
+msgstr "Σινεμά"
+
+#: strings_to_translate.php:90
+msgid "Vídeojogos"
+msgstr "Videogames"
+
+#: strings_to_translate.php:91
+msgid "Computadores"
+msgstr "Υπολογιστές"
+
+#: strings_to_translate.php:92
+msgid "Ler revistas"
+msgstr "Περιοδικά"
+
+#: strings_to_translate.php:93
+msgid "Fazer compras"
+msgstr "Shopping"
+
+#: strings_to_translate.php:94
+msgid "Jogar na bolsa"
+msgstr "Επενδύσεις"
+
+#: strings_to_translate.php:95
+msgid "Viajar"
+msgstr "Ταξίδια"
+
+#: strings_to_translate.php:96
+msgid "Escrever"
+msgstr "Γράψιμο"
+
+#: strings_to_translate.php:97
+msgid "Automóveis "
+msgstr "Αυτοκίνητα"
+
+#: strings_to_translate.php:98
+msgid "Motociclismo"
+msgstr "Μηχανές"
+
+#: strings_to_translate.php:99
+msgid "Vida saudável/Nutrição"
+msgstr "Υγιεινή Ζωή/ Διατροφή"
+
+#: strings_to_translate.php:100
+msgid "Campismo"
+msgstr "Camping"
+
+#: strings_to_translate.php:101
+msgid "Ópera"
+msgstr "Όπερα"
+
+#: strings_to_translate.php:102
+msgid "Cosmética/Beleza"
+msgstr "Καλλυντικά/ Ομορφιά"
+
+#: strings_to_translate.php:103
+msgid "Férias/Viagens"
+msgstr "Διακοπές/ Ταξίδια"
+
+#: strings_to_translate.php:104
+msgid "Jardinagem"
+msgstr "Κηπουρική"
+
+#: strings_to_translate.php:105
+msgid "Limpeza"
+msgstr "Καθαριότητα"
+
+#: strings_to_translate.php:106
+msgid "Literatura/Livros"
+msgstr "Λογοτεχνία/ Βιβλία"
+
+#: strings_to_translate.php:107
+msgid "Moda/Roupa/Acessórios"
+msgstr "Μόδα/ Ρούχα/ Αξεσουάρ"
+
+#: strings_to_translate.php:108
+msgid "Montanhismo"
+msgstr "Ορειβασία"
+
+#: strings_to_translate.php:109
+msgid "Música/Concertos"
+msgstr "Μουσική/ Συναυλίες"
+
+#: strings_to_translate.php:110
+msgid "Negócios"
+msgstr "Επιχειρηματικά θέματα"
+
+#: strings_to_translate.php:114
+msgid "Eu adoro ter e experimentar produtos novos, e estou sempre à procura deles."
+msgstr "Μου αρέσει να έχω νέα προϊόντα και να μπορώ να τα δοκιμάζω. Πάντα τα ψάχνω."
+
+#: strings_to_translate.php:115
+msgid "Eu compro produtos novos, se vir neles conveniência"
+msgstr "Αγοράζω νέα προϊόντα αν δω ότι είναι πραγματικά χρήσιμα."
+
+#: strings_to_translate.php:116
+msgid "Se os meus amigos me recomendarem um produto novo, normalmente compro."
+msgstr "Αν οι φίλοι μου προτείνουν ένα νέο προϊόν, συνήθως το αγοράζω."
+
+#: strings_to_translate.php:117
+msgid "Apenas compro e experimento produtos novos de vez em quando."
+msgstr "Προσπαθώ να αγοράζω νέα προϊόντα καμιά φορά"
+
+#: strings_to_translate.php:121
+msgid "Ator"
+msgstr "Ηθοποιός "
+
+#: strings_to_translate.php:122
+msgid "Administrativo"
+msgstr "Διοικητικός υπάλληλος"
+
+#: strings_to_translate.php:123
+msgid "Advogado"
+msgstr "Δικηγόρος"
+
+#: strings_to_translate.php:124
+msgid "Agente de Segurança"
+msgstr "Σώματα Ασφαλείας"
+
+#: strings_to_translate.php:125
+msgid "Agricultor"
+msgstr "Αγρότης"
+
+#: strings_to_translate.php:126
+msgid "Analista"
+msgstr "Αναλυτής"
+
+#: strings_to_translate.php:127
+msgid "Antropólogo"
+msgstr "Ανθρωπολόγος"
+
+#: strings_to_translate.php:128
+msgid "Arqueólogo"
+msgstr "Αρχαιολόγος"
+
+#: strings_to_translate.php:129
+msgid "Arquiteto"
+msgstr "Αρχιτέκτων"
+
+#: strings_to_translate.php:130
+msgid "Artista"
+msgstr "Εικαστικός"
+
+#: strings_to_translate.php:131
+msgid "Auditor"
+msgstr "Ελεγκτής"
+
+#: strings_to_translate.php:132
+msgid "Bancário"
+msgstr "Τραπεζικός"
+
+#: strings_to_translate.php:133
+msgid "Barbeiro"
+msgstr "Κουρέας"
+
+#: strings_to_translate.php:134
+msgid "Biólogo"
+msgstr "Βιολόγος"
+
+#: strings_to_translate.php:135
+msgid "Bombeiro"
+msgstr "Πυροσβέστης"
+
+#: strings_to_translate.php:136
+msgid "Cabeleireiro"
+msgstr "Κομμωτής/Κομμώτρια"
+
+#: strings_to_translate.php:137
+msgid "Canalizador"
+msgstr "Υδραυλικός"
+
+#: strings_to_translate.php:138
+msgid "Carpinteiro"
+msgstr "Μαραγκός"
+
+#: strings_to_translate.php:139
+msgid "Cientista"
+msgstr "Επιστήμων"
+
+#: strings_to_translate.php:140
+msgid "Comerciante"
+msgstr "Έμπορος"
+
+#: strings_to_translate.php:141
+msgid "Comunicação"
+msgstr "Επαγγελματίας στην Επικοινωνία"
+
+#: strings_to_translate.php:142
+msgid "Construtor Civil"
+msgstr "Οικοδόμος"
+
+#: strings_to_translate.php:143
+msgid "Consultor"
+msgstr "Σύμβουλος"
+
+#: strings_to_translate.php:144
+msgid "Contabilista"
+msgstr "Λογιστής"
+
+#: strings_to_translate.php:145
+msgid "Cozinheiro"
+msgstr "Μάγειρας"
+
+#: strings_to_translate.php:146
+msgid "Dançarino"
+msgstr "Χορευτής/Χορεύτρια"
+
+#: strings_to_translate.php:147
+msgid "Decorador"
+msgstr "Διακοσμητής"
+
+#: strings_to_translate.php:148
+msgid "Dentista"
+msgstr "Οδοντίατρος"
+
+#: strings_to_translate.php:149
+msgid "Designer Gráfico"
+msgstr "Γραφίστας"
+
+#: strings_to_translate.php:150
+msgid "Designer de Moda"
+msgstr "Σχεδιαστής Μόδας"
+
+#: strings_to_translate.php:151
+msgid "Desportista"
+msgstr "Αθλητής"
+
+#: strings_to_translate.php:152
+msgid "Dietista"
+msgstr "Διαιτολόγος"
+
+#: strings_to_translate.php:153
+msgid "Doméstico"
+msgstr "Οικιακά"
+
+#: strings_to_translate.php:154
+msgid "Economista"
+msgstr "Οικονομολόγος"
+
+#: strings_to_translate.php:155
+msgid "Educador de Infância"
+msgstr "Νηπιαγωγός"
+
+#: strings_to_translate.php:156
+msgid "Eletricista"
+msgstr "Ηλεκτρολόγος"
+
+#: strings_to_translate.php:157
+msgid "Empregado de Bar"
+msgstr "Μπάρμαν"
+
+#: strings_to_translate.php:158
+msgid "Empregado de Loja"
+msgstr "Υπάλληλος καταστήματος"
+
+#: strings_to_translate.php:159
+msgid "Empregado de Mesa"
+msgstr "Σερβιτόρος"
+
+#: strings_to_translate.php:160
+msgid "Enfermeiro"
+msgstr "Νοσοκόμος/Νοσοκόμα"
+
+#: strings_to_translate.php:161
+msgid "Engenheiro"
+msgstr "Μηχανικός"
+
+#: strings_to_translate.php:162
+msgid "Escritor"
+msgstr "Συγγραφέας"
+
+#: strings_to_translate.php:163
+msgid "Escultor"
+msgstr "Γλύπτης"
+
+#: strings_to_translate.php:164
+msgid "Estudante"
+msgstr "Φοιτητής/Μαθητής"
+
+#: strings_to_translate.php:165
+msgid "Farmacêutico"
+msgstr "Φαρμακοποιός"
+
+#: strings_to_translate.php:166
+msgid "Físico"
+msgstr "Φυσικός"
+
+#: strings_to_translate.php:167
+msgid "Fisioterapeuta"
+msgstr "Φυσικοθεραπευτής"
+
+#: strings_to_translate.php:168
+msgid "Fotógrafo"
+msgstr "Φωτογράφος"
+
+#: strings_to_translate.php:169
+msgid "Funcionário Público"
+msgstr "Κυβερνητικός υπάλληλος"
+
+#: strings_to_translate.php:170
+msgid "Geólogo"
+msgstr "Γεωλόγος"
+
+#: strings_to_translate.php:171
+msgid "Gestor"
+msgstr "Διευθυντικό στέλεχος"
+
+#: strings_to_translate.php:172
+msgid "Governanta"
+msgstr "Οικονόμος"
+
+#: strings_to_translate.php:173
+msgid "Historiador"
+msgstr "Ιστορικός "
+
+#: strings_to_translate.php:174
+msgid "Informático"
+msgstr "Τεχνικός Η/Υ"
+
+#: strings_to_translate.php:175
+msgid "Jardineiro"
+msgstr "Κηπουρός"
+
+#: strings_to_translate.php:176
+msgid "Jornalista"
+msgstr "Δημοσιογράφος"
+
+#: strings_to_translate.php:177
+msgid "Juiz"
+msgstr "Δικαστής"
+
+#: strings_to_translate.php:178
+msgid "Marinheiro"
+msgstr "Ναύτης"
+
+#: strings_to_translate.php:179
+msgid "Marketeer"
+msgstr "Μarketeer"
+
+#: strings_to_translate.php:180
+msgid "Massagista"
+msgstr "Μασέρ"
+
+#: strings_to_translate.php:181
+msgid "Matemático"
+msgstr "Μαθηματικός"
+
+#: strings_to_translate.php:182
+msgid "Mecânico"
+msgstr "Μηχανικός"
+
+#: strings_to_translate.php:183
+msgid "Médico"
+msgstr "Γιατρός"
+
+#: strings_to_translate.php:184
+msgid "Militar"
+msgstr "Στρατιωτικός"
+
+#: strings_to_translate.php:185
+msgid "Mineiro"
+msgstr "Εξορύκτης"
+
+#: strings_to_translate.php:186
+msgid "Modelo"
+msgstr "Μοντέλο"
+
+#: strings_to_translate.php:187
+msgid "Motorista"
+msgstr "Οδηγός"
+
+#: strings_to_translate.php:188
+msgid "Músico"
+msgstr "Μουσικός"
+
+#: strings_to_translate.php:189
+msgid "Nutricionista"
+msgstr "Διατροφολόγος"
+
+#: strings_to_translate.php:190
+msgid "Operário"
+msgstr "Εργάτης"
+
+#: strings_to_translate.php:191
+msgid "Ótico"
+msgstr "Οφθαλμίατρος"
+
+#: strings_to_translate.php:192
+msgid "Paisagista"
+msgstr "Τοπογράφος"
+
+#: strings_to_translate.php:193
+msgid "Pasteleiro"
+msgstr "Ζαχαροπλάστης"
+
+#: strings_to_translate.php:194
+msgid "Pescador"
+msgstr "Ψαράς"
+
+#: strings_to_translate.php:195
+msgid "Pintor"
+msgstr "Ζωγράφος"
+
+#: strings_to_translate.php:196
+msgid "Polícia"
+msgstr "Αστυνομικός"
+
+#: strings_to_translate.php:197
+msgid "Professor"
+msgstr "Δάσκαλος/Δασκάλα"
+
+#: strings_to_translate.php:198
+msgid "Professor de Fitness"
+msgstr "Γυμναστής"
+
+#: strings_to_translate.php:199
+msgid "Programador"
+msgstr "Προγραμματιστής"
+
+#: strings_to_translate.php:200
+msgid "Psicólogo"
+msgstr "Ψυχολόγος"
+
+#: strings_to_translate.php:201
+msgid "Publicitário"
+msgstr "Διαφημιστής"
+
+#: strings_to_translate.php:202
+msgid "Químico"
+msgstr "Χημικός"
+
+#: strings_to_translate.php:203
+msgid "Rececionista"
+msgstr "Ρεσεψιονίστ"
+
+#: strings_to_translate.php:204
+msgid "Soldador"
+msgstr "Συγκολλητής"
+
+#: strings_to_translate.php:205
+msgid "Talhante"
+msgstr "Κρεοπώλης"
+
+#: strings_to_translate.php:206
+msgid "Taxista"
+msgstr "Οδηγός Ταξί"
+
+#: strings_to_translate.php:207
+msgid "Técnico de Saúde"
+msgstr "Επαγγελματίας Υγείας και Πρόνοιας"
+
+#: strings_to_translate.php:208
+msgid "Trabalhador da Construção Civil"
+msgstr "Εργάτης κατασκευαστικής εταιρείας"
+
+#: strings_to_translate.php:209
+msgid "Trabalho Social"
+msgstr "Κοινωνικός Λειτουργός"
+
+#: strings_to_translate.php:210
+msgid "Turismo"
+msgstr "Τουριστικά Επαγγέλματα"
+
+#: strings_to_translate.php:211
+msgid "Urbanista"
+msgstr "Πολεοδόμος"
+
+#: strings_to_translate.php:212
+msgid "Vendedor"
+msgstr "Πωλητής"
+
+#: strings_to_translate.php:213
+msgid "Veterinário"
+msgstr "Κτηνίατρος"
+
+#: strings_to_translate.php:214
+msgid "Vigilante"
+msgstr "Επιτηρητής"
+
+#: strings_to_translate.php:218
+msgid "Normalmente faço as coisas sozinho. Assim posso fazer o que quero."
+msgstr "Συνήθως κάνω πράγματα μόνος μου. Έτσι μπορώ να κάνω ό,τι θέλω."
+
+#: strings_to_translate.php:219
+msgid "Se os meus amigos tomarem as decisões, normalmente eu participo sempre"
+msgstr "Αν οι φίλοι μου πάρουν τις αποφάσεις, σχεδόν πάντα συμμετέχω."
+
+#: strings_to_translate.php:220
+msgid "Quase sempre decidimos em conjunto o que fazer."
+msgstr "Σχεδόν πάντα αποφασίζουμε μαζί τι θα κάνουμε. "
+
+#: strings_to_translate.php:221
+msgid "Eu sugiro frequentemente o que devemos fazer e convenço os meus amigos."
+msgstr "Συχνά προτείνω τι να κάνουμε και καταφέρνω να πείσω τους φίλους μου."
+
+#: strings_to_translate.php:222
+msgid "Eu planeio na maior parte das vezes o que fazemos."
+msgstr "Τις περισσότερες φορές εγώ προγραμματίζω το τι θα κάνουμε."
+
+#: strings_to_translate.php:226
+msgid "Facebook"
+msgstr "Facebook"
+
+#: strings_to_translate.php:227
+msgid "Twitter"
+msgstr "Twitter"
+
+#: strings_to_translate.php:228
+msgid "Google +"
+msgstr "Google +"
+
+#: strings_to_translate.php:229
+msgid "Myspace"
+msgstr "Myspace"
+
+#: strings_to_translate.php:230
+msgid "Orkut"
+msgstr "Orkut"
+
+#: strings_to_translate.php:231
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: strings_to_translate.php:232
+msgid "Hi5"
+msgstr "Hi5"
+
+#: strings_to_translate.php:233
+msgid "Flickr"
+msgstr "Flickr"
+
+#: strings_to_translate.php:234
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: strings_to_translate.php:235
+msgid "Netlog"
+msgstr "Netlog"
+
+#: strings_to_translate.php:236
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: strings_to_translate.php:237
+msgid "Bebo"
+msgstr "Bebo"
+
+#: strings_to_translate.php:238
+msgid "Istagr.am"
+msgstr "Istagr.am"
+
+#: strings_to_translate.php:242
+#: strings_to_translate.php:243
+#: strings_to_translate.php:244
+#: strings_to_translate.php:245
+#: strings_to_translate.php:256
+#: strings_to_translate.php:259
+#: views/survey/show.fo.form.inner.page.matrix.php:4
+msgid "Com que frequência usas as seguintes tecnologias?"
+msgstr "Πόσο συχνά χρησιμοποιείς τις παρακάτω τεχνολογίες;"
+
+#: strings_to_translate.php:246
+msgid "Os Embaixadores recebem todo o material necessário para o desenvolvimento do projecto, por exemplo: embalagens de produto, telemóveis, livros, consolas de jogos, música. Recebem ainda material informativo e uma descrição detalhada do projecto. Para te podermos contactar e enviar todo o material referente a um projecto necessitamos que nos dês as seguintes informações:"
+msgstr ""
+
+#: strings_to_translate.php:247
+#: strings_to_translate.php:249
+#: strings_to_translate.php:254
+#: strings_to_translate.php:257
+msgid "TRADUZIR:Os Embaixadores recebem todo o material necessário para o desenvolvimento do projecto, por exemplo: embalagens de produto, telemóveis, livros, consolas de jogos, música. Recebem ainda material informativo e uma descrição detalhada do projecto. Para te podermos contactar e enviar todo o material referente a um projecto necessitamos que nos dês as seguintes informações:"
+msgstr ""
+
+#: strings_to_translate.php:248
+msgid "Οι Ambassadors λαμβάνουν όλα τα απαραίτητα υλικά για την υλοποίηση της καμπάνιας, όπως: συσκευασίες προϊόντων, κινητά τηλέφωνα, βιβλία, κονσόλες gaming, μουσική. Επίσης, λαμβάνουν ενημερωτικό υλικό και λεπτομερή περιγραφή της καμπάνιας. Για να μπορούμε να επικοινωνήσουμε μαζί σου και να σου στείλουμε όλο το υλικό σχετικά με μια καμπάνια, θα πρέπει να μας δώσεις τα παρακάτω στοιχεία: "
+msgstr ""
+
+#: strings_to_translate.php:250
+msgid "Η εναλλακτική διεύθυνση πρέπει να είναι συμπληρωμένη αν θέλεις τα υλικά να στέλνονται σε άλλη διεύθυνση από αυτή της οικίας σου. "
+msgstr ""
+
+#: strings_to_translate.php:251
+#: strings_to_translate.php:252
+#: strings_to_translate.php:255
+#: strings_to_translate.php:258
+msgid "TRADUZIR:A morada alternativa deve ser preenchida sempre que pretendas que os envios de correspondência sejam feitos para outra morada, que não a da tua residência. Caso seja a mesma assinala na opção no fundo da página"
+msgstr ""
+
+#: strings_to_translate.php:253
+msgid "A morada alternativa deve ser preenchida sempre que pretendas que os envios de correspondência sejam feitos para outra morada, que não a da tua residência. Caso seja a mesma assinala na opção no fundo da página"
+msgstr ""
+
+#: strings_to_translate.php:263
+msgid "flags"
+msgstr "flags N/A"
+
+#: strings_to_translate.php:264
+msgid "Condições de utilização"
+msgstr "Όροι Χρήσης"
+
+#: strings_to_translate.php:265
+msgid "Entrada"
+msgstr ""
+
+#: strings_to_translate.php:266
+msgid "Wom no Mundo"
+msgstr "Tο WOM στον κόσμο"
+
+#: strings_to_translate.php:267
+msgid "Para empresas"
+msgstr "Για τις εταιρείες"
+
+#: strings_to_translate.php:268
+msgid "Para embaixadores"
+msgstr "Για τους ambassadors"
+
+#: strings_to_translate.php:269
+msgid "Contacta-nos"
+msgstr "Επικοινωνία"
+
+#: strings_to_translate.php:270
+msgid "Política de privacidade"
+msgstr "Πολιτική Προστασίας Προσωπικών Δεδομένων"
+
+#: strings_to_translate.php:271
+#: views/components/login/login_form.php:6
+msgid "Registo"
+msgstr "Εγγραφή"
+
+#: strings_to_translate.php:272
+msgid "Recuperar Pass"
+msgstr ""
+
+#: strings_to_translate.php:273
+#: views/survey/list.fo.php:94
+#: views/survey/list.fo.php:116
+msgid "Questionários"
+msgstr "Ερωτηματολόγια"
+
+#: strings_to_translate.php:274
+msgid "Questionario Mostra"
+msgstr ""
+
+#: strings_to_translate.php:275
+#: views/default/logged_in_homepage.php:173
+msgid "O meu perfil"
+msgstr "Το προφίλ μου"
+
+#: strings_to_translate.php:276
+msgid "Confirmação"
+msgstr "επικύρωση"
+
+#: strings_to_translate.php:277
+#: views/campaign/list.fo.php:254
+#: views/campaign/list.fo.php:255
+#: views/campaign/list.fo.php:256
+#: views/default/logged_in_homepage.php:60
+msgid "Campanhas"
+msgstr "Καμπάνιες"
+
+#: strings_to_translate.php:278
+#: views/default/logged_in_homepage.php:182
+msgid "Informação"
+msgstr "Πληροφορίες"
+
+#: strings_to_translate.php:279
+msgid "site_entrance"
+msgstr ""
+
+#: strings_to_translate.php:280
+msgid "Nova Password"
+msgstr "Νέο συνθηματικό"
+
+#: strings_to_translate.php:281
+msgid "Confirmação Password"
+msgstr "Επιβεβαίωση συνθηματικού"
+
+#: strings_to_translate.php:282
+msgid "fake_page"
+msgstr ""
+
+#: strings_to_translate.php:286
+msgid "Feminino"
+msgstr "Γυναίκα"
+
+#: strings_to_translate.php:287
+msgid "Masculino"
+msgstr "Άντρας"
+
+#: strings_to_translate.php:291
+msgid "Solteiro"
+msgstr "Άγαμος/η"
+
+#: strings_to_translate.php:292
+msgid "Casado"
+msgstr "Έγγαμος/η"
+
+#: strings_to_translate.php:293
+msgid "Divorciado"
+msgstr "Διαζευγμένος/η"
+
+#: strings_to_translate.php:294
+msgid "Viuvo"
+msgstr "Χήρος/Χήρα"
+
+#: strings_to_translate.php:298
+msgid "Primária"
+msgstr "Πρωτοβάθμια "
+
+#: strings_to_translate.php:299
+msgid "Preparatória"
+msgstr "Δευτεροβάθμια"
+
+#: strings_to_translate.php:300
+msgid "Secundário"
+msgstr "Τριτοβάθμια"
+
+#: strings_to_translate.php:301
+msgid "Licenciatura"
+msgstr "Πτυχίο"
+
+#: strings_to_translate.php:302
+msgid "Mestrado"
+msgstr "Master"
+
+#: strings_to_translate.php:303
+msgid "Doutoramento"
+msgstr "Διδακτορικό"
+
+#: strings_to_translate.php:307
+msgid "Sim"
+msgstr "ναι"
+
+#: strings_to_translate.php:308
+msgid "Não"
+msgstr "όχι"
+
+#: to/views/tellafriend.vto.php:35
+msgid "Enviar"
+msgstr "Αποστολή"
+
+#: views/header.php:85
+msgid "Enviar a amigo"
+msgstr "Στείλτο σε ένα φίλο"
+
+#: views/footer.php:57
+msgid "&copy; 2008 - 2012 Todos os direitos reservados. Embaixadores.com &reg; é uma marca registada da WOM - Marketing Agency, Lda."
+msgstr "Copyright: © 2012. Με επιφύλαξη κάθε νόμιμου δικαιώματος. Το Ambassadors.com είναι σήμα κατατεθέν της WOM - Marketing Agency, Ltd."
+
+#: views/html_head_metas_facebook.php:12
+#: views/tellafriend/social_networks.php:14
+msgid "Estamos à procura de 20.000 experimentadores de produtos no Brasil."
+msgstr "Αναζητούμε 5.000 από εσάς για δοκιμές προϊόντων στην Ελλάδα."
+
+#: views/html_head_metas_facebook.php:13
+msgid "Queres ajudar a renovar tendências? Como embaixador podes transformar-te num autêntico trend setter. Vais poder experimentar produtos das tuas marcas ou produtos preferidos e dar-lhes feedback sobre os mesmos. É tudo muito simples, sem custos e com muita diversão. "
+msgstr "Θέλεις να βοηθήσεις στην ανανέωση των τάσεων; Σαν ambassador, θα μπορείς εσύ να διαμορφώνεις τις τάσεις. Θα μπορείς να δοκιμάζεις τα προϊόντα των αγαπημένων σου brands και να λες τη γνώμη σου για αυτά. Είναι πολύ απλό, χωρίς κόστος και πολύ διασκεδαστικό. "
+
+#: views/profile_form/show.fo.form.php:152
+#, php-format
+msgid "Parte %d"
+msgstr "Μέρος %d"
+
+#: views/profile/show.fo.php:72
+msgid "Completa o teu perfil e ganha 150 pontos incluindo 40 pontos de Bónus."
+msgstr "Συμπλήρωσε το προφίλ σου και κέρδισε 160 πόντους, αλλά και 40 μπόνους πόντους."
+
+#: views/profile/show.fo.php:73
+#: views/profile/show.fo.php:93
+#: views/dashboard/header.php:63
+#: views/default/logged_in_homepage.php:160
+msgid "Perfil"
+msgstr "Προφίλ"
+
+#: views/profile/show.fo.php:74
+msgid "Completa o teu perfil"
+msgstr "Συμπλήρωσε το προφίλ σου"
+
+#: views/profile/show.fo.php:91
+#: views/profile/show.fo.php:142
+#: views/profile/show.fo.php:209
+msgid "Pontos"
+msgstr "Πόντοι"
+
+#: views/profile/show.fo.php:92
+msgid "Nível"
+msgstr "Επίπεδο"
+
+#: views/profile/show.fo.php:99
+#, php-format
+msgid "pontos ganhos"
+msgstr "πόντοι που κέρδισες"
+
+#: views/profile/show.fo.php:101
+#, php-format
+msgid "%d amigos teus inscreveram-se em embaixadores.com utilizando o teu código de convite"
+msgstr "%d από τους φίλους σου έγιναν μέλη στο Ambassadors.com χρησιμοποιώντας τον κωδικό πρόσκλησης"
+
+#: views/profile/show.fo.php:141
+msgid "Categorias"
+msgstr "Κατηγορίες"
+
+#: views/profile/show.fo.php:147
+msgid "Ganhos"
+msgstr "Έχεις κερδίσει"
+
+#: views/profile/show.fo.php:148
+msgid "Disponíveis"
+msgstr "Διαθέσιμοι"
+
+#: views/profile/show.fo.php:149
+msgid "Percentagem preenchida"
+msgstr "Ποσοστό συμπλήρωσης"
+
+#: views/profile/show.fo.php:193
+msgid "Liga o teu perfil ás redes sociais e expande a tua influência online!"
+msgstr "Συνέδεσε το προφίλ σου με κοινωνικά δίκτυα και επέκτεινε την επιρροή σου στο διαδίκτυο! "
+
+#: views/profile/show.fo.php:255
+msgid "pts."
+msgstr "πόντοι"
+
+#: views/profile/show.fo.php:369
+msgid "Editar"
+msgstr "Επεξεργασία"
+
+#: views/flags/default.php:7
+msgid "Ambassadors.com"
+msgstr "Ambassadors.com"
+
+#: views/flags/default.php:9
+msgid "word-of-mouth marketing"
+msgstr ""
+
+#: views/campaignGallery/show.fo.temporary.1004.php:8
+#: views/campaignGallery/show.fo.temporary.1015.php:8
+#: views/campaignGallery/show.fo.temporary.1012.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1013.php:8
+#: views/campaignGallery/show.fo.temporary.1011.php:8
+#: views/campaignGallery/show.fo.temporary.1007.php:8
+#: views/campaignGallery/show.fo.temporary.1007.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1016.php:8
+#: views/campaignGallery/show.fo.temporary.1016.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1005.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1006.en_GB.php:8
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:57
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:97
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:137
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:177
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:217
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:257
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:297
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:337
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:377
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:417
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:457
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:497
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:537
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:577
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:617
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:657
+#: views/campaignGallery/show.fo.temporary.1213.es_ES.php:8
+#: views/campaignGallery/show.fo.temporary.1005.php:8
+#: views/campaignGallery/show.fo.temporary.1009.php:8
+#: views/campaignGallery/show.fo.temporary.1004.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1003.php:8
+#: views/campaignGallery/show.fo.temporary.1001.php:8
+#: views/campaignGallery/show.fo.temporary.1015.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1003.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1010.php:8
+#: views/campaignGallery/show.fo.temporary.1014.php:8
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:57
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:97
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:137
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:177
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:217
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:257
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:297
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:337
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:377
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:417
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:457
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:497
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:537
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:577
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:617
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:657
+#: views/campaignGallery/show.fo.temporary.1008.php:8
+#: views/campaignGallery/show.fo.temporary.1002.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1002.php:8
+#: views/campaignGallery/show.fo.temporary.1014.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1215.es_ES.php:8
+#: views/campaignGallery/show.fo.temporary.1013.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1001.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1009.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1010.en_GB.php:8
+#: views/campaignGallery/list.fo.temporary.100.php:57
+#: views/campaignGallery/list.fo.temporary.100.php:97
+#: views/campaignGallery/list.fo.temporary.100.php:137
+#: views/campaignGallery/list.fo.temporary.100.php:177
+#: views/campaignGallery/list.fo.temporary.100.php:217
+#: views/campaignGallery/list.fo.temporary.100.php:257
+#: views/campaignGallery/list.fo.temporary.100.php:297
+#: views/campaignGallery/list.fo.temporary.100.php:337
+#: views/campaignGallery/list.fo.temporary.100.php:377
+#: views/campaignGallery/list.fo.temporary.100.php:417
+#: views/campaignGallery/list.fo.temporary.100.php:457
+#: views/campaignGallery/list.fo.temporary.100.php:497
+#: views/campaignGallery/list.fo.temporary.100.php:537
+#: views/campaignGallery/list.fo.temporary.100.php:577
+#: views/campaignGallery/list.fo.temporary.100.php:617
+#: views/campaignGallery/list.fo.temporary.100.php:657
+#: views/campaignGallery/show.fo.temporary.1212.es_ES.php:8
+#: views/campaignGallery/show.fo.temporary.1012.php:8
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:57
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:97
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:137
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:177
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:217
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:257
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:297
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:337
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:377
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:417
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:457
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:497
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:537
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:577
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:617
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:657
+#: views/campaignGallery/show.fo.temporary.1011.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1006.php:8
+#: views/campaignGallery/show.fo.temporary.1008.en_GB.php:8
+#: views/campaignGallery/show.fo.temporary.1214.es_ES.php:8
+#: views/campaignGallery/show.fo.temporary.1211.es_ES.php:8
+msgid "Por:"
+msgstr "Από:"
+
+#: views/campaignGallery/show.fo.temporary.1004.php:18
+#: views/campaignGallery/show.fo.temporary.1015.php:18
+#: views/campaignGallery/show.fo.temporary.1012.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1013.php:18
+#: views/campaignGallery/show.fo.temporary.1011.php:18
+#: views/campaignGallery/show.fo.temporary.1007.php:18
+#: views/campaignGallery/show.fo.temporary.1007.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1016.php:18
+#: views/campaignGallery/show.fo.temporary.1016.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1005.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1006.en_GB.php:18
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:65
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:105
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:145
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:185
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:225
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:265
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:305
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:345
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:385
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:425
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:465
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:505
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:545
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:585
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:625
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:665
+#: views/campaignGallery/show.fo.temporary.1213.es_ES.php:18
+#: views/campaignGallery/show.fo.temporary.1005.php:18
+#: views/campaignGallery/show.fo.temporary.1009.php:18
+#: views/campaignGallery/show.fo.temporary.1004.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1003.php:18
+#: views/campaignGallery/show.fo.temporary.1001.php:18
+#: views/campaignGallery/show.fo.temporary.1015.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1003.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1010.php:18
+#: views/campaignGallery/show.fo.temporary.1014.php:18
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:65
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:105
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:145
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:185
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:225
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:265
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:305
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:345
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:385
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:425
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:465
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:505
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:545
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:585
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:625
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:665
+#: views/campaignGallery/show.fo.temporary.1008.php:18
+#: views/campaignGallery/show.fo.temporary.1002.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1002.php:18
+#: views/campaignGallery/show.fo.temporary.1014.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1215.es_ES.php:18
+#: views/campaignGallery/show.fo.temporary.1013.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1001.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1009.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1010.en_GB.php:18
+#: views/campaignGallery/list.fo.temporary.100.php:65
+#: views/campaignGallery/list.fo.temporary.100.php:105
+#: views/campaignGallery/list.fo.temporary.100.php:145
+#: views/campaignGallery/list.fo.temporary.100.php:185
+#: views/campaignGallery/list.fo.temporary.100.php:225
+#: views/campaignGallery/list.fo.temporary.100.php:265
+#: views/campaignGallery/list.fo.temporary.100.php:305
+#: views/campaignGallery/list.fo.temporary.100.php:345
+#: views/campaignGallery/list.fo.temporary.100.php:385
+#: views/campaignGallery/list.fo.temporary.100.php:425
+#: views/campaignGallery/list.fo.temporary.100.php:465
+#: views/campaignGallery/list.fo.temporary.100.php:505
+#: views/campaignGallery/list.fo.temporary.100.php:545
+#: views/campaignGallery/list.fo.temporary.100.php:585
+#: views/campaignGallery/list.fo.temporary.100.php:625
+#: views/campaignGallery/list.fo.temporary.100.php:665
+#: views/campaignGallery/show.fo.temporary.1212.es_ES.php:18
+#: views/campaignGallery/show.fo.temporary.1012.php:18
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:65
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:105
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:145
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:185
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:225
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:265
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:305
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:345
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:385
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:425
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:465
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:505
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:545
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:585
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:625
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:665
+#: views/campaignGallery/show.fo.temporary.1011.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1006.php:18
+#: views/campaignGallery/show.fo.temporary.1008.en_GB.php:18
+#: views/campaignGallery/show.fo.temporary.1214.es_ES.php:18
+#: views/campaignGallery/show.fo.temporary.1211.es_ES.php:18
+msgid "Gosto!"
+msgstr "Like"
+
+#: views/campaignGallery/show.fo.temporary.1004.php:25
+#: views/campaignGallery/show.fo.temporary.1015.php:25
+#: views/campaignGallery/show.fo.temporary.1012.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1013.php:25
+#: views/campaignGallery/show.fo.temporary.1011.php:25
+#: views/campaignGallery/show.fo.temporary.1007.php:25
+#: views/campaignGallery/show.fo.temporary.1007.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1016.php:25
+#: views/campaignGallery/show.fo.temporary.1016.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1005.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1006.en_GB.php:25
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:72
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:112
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:152
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:192
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:232
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:272
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:312
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:352
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:392
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:432
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:472
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:512
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:552
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:592
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:632
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:672
+#: views/campaignGallery/show.fo.temporary.1213.es_ES.php:25
+#: views/campaignGallery/show.fo.temporary.1005.php:25
+#: views/campaignGallery/show.fo.temporary.1009.php:25
+#: views/campaignGallery/show.fo.temporary.1004.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1003.php:25
+#: views/campaignGallery/show.fo.temporary.1001.php:25
+#: views/campaignGallery/show.fo.temporary.1015.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1003.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1010.php:25
+#: views/campaignGallery/show.fo.temporary.1014.php:25
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:72
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:112
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:152
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:192
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:232
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:272
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:312
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:352
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:392
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:432
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:472
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:512
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:552
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:592
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:632
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:672
+#: views/campaignGallery/show.fo.temporary.1008.php:25
+#: views/campaignGallery/show.fo.temporary.1002.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1002.php:25
+#: views/campaignGallery/show.fo.temporary.1014.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1215.es_ES.php:25
+#: views/campaignGallery/show.fo.temporary.1013.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1001.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1009.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1010.en_GB.php:25
+#: views/campaignGallery/list.fo.temporary.100.php:72
+#: views/campaignGallery/list.fo.temporary.100.php:112
+#: views/campaignGallery/list.fo.temporary.100.php:152
+#: views/campaignGallery/list.fo.temporary.100.php:192
+#: views/campaignGallery/list.fo.temporary.100.php:232
+#: views/campaignGallery/list.fo.temporary.100.php:272
+#: views/campaignGallery/list.fo.temporary.100.php:312
+#: views/campaignGallery/list.fo.temporary.100.php:352
+#: views/campaignGallery/list.fo.temporary.100.php:392
+#: views/campaignGallery/list.fo.temporary.100.php:432
+#: views/campaignGallery/list.fo.temporary.100.php:472
+#: views/campaignGallery/list.fo.temporary.100.php:512
+#: views/campaignGallery/list.fo.temporary.100.php:552
+#: views/campaignGallery/list.fo.temporary.100.php:592
+#: views/campaignGallery/list.fo.temporary.100.php:632
+#: views/campaignGallery/list.fo.temporary.100.php:672
+#: views/campaignGallery/show.fo.temporary.1212.es_ES.php:25
+#: views/campaignGallery/show.fo.temporary.1012.php:25
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:72
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:112
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:152
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:192
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:232
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:272
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:312
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:352
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:392
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:432
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:472
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:512
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:552
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:592
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:632
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:672
+#: views/campaignGallery/show.fo.temporary.1011.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1006.php:25
+#: views/campaignGallery/show.fo.temporary.1008.en_GB.php:25
+#: views/campaignGallery/show.fo.temporary.1214.es_ES.php:25
+#: views/campaignGallery/show.fo.temporary.1211.es_ES.php:25
+msgid "Já votaste!"
+msgstr "ψήφισες ήδη"
+
+#: views/campaignGallery/show.fo.temporary.1004.php:29
+#: views/campaignGallery/show.fo.temporary.1015.php:29
+#: views/campaignGallery/show.fo.temporary.1012.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1013.php:29
+#: views/campaignGallery/show.fo.temporary.1011.php:29
+#: views/campaignGallery/show.fo.temporary.1007.php:29
+#: views/campaignGallery/show.fo.temporary.1007.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1016.php:29
+#: views/campaignGallery/show.fo.temporary.1016.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1005.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1006.en_GB.php:29
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:57
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:97
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:137
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:177
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:217
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:257
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:297
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:337
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:377
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:417
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:457
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:497
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:537
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:577
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:617
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:657
+#: views/campaignGallery/show.fo.temporary.1213.es_ES.php:29
+#: views/campaignGallery/show.fo.temporary.1005.php:29
+#: views/campaignGallery/show.fo.temporary.1009.php:29
+#: views/campaignGallery/show.fo.temporary.1004.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1003.php:29
+#: views/campaignGallery/show.fo.temporary.1001.php:29
+#: views/campaignGallery/show.fo.temporary.1015.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1003.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1010.php:29
+#: views/campaignGallery/show.fo.temporary.1014.php:29
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:57
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:97
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:137
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:177
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:217
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:257
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:297
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:337
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:377
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:417
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:457
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:497
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:537
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:577
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:617
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:657
+#: views/campaignGallery/show.fo.temporary.1008.php:29
+#: views/campaignGallery/show.fo.temporary.1002.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1002.php:29
+#: views/campaignGallery/show.fo.temporary.1014.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1215.es_ES.php:29
+#: views/campaignGallery/show.fo.temporary.1013.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1001.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1009.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1010.en_GB.php:29
+#: views/campaignGallery/list.fo.temporary.100.php:57
+#: views/campaignGallery/list.fo.temporary.100.php:97
+#: views/campaignGallery/list.fo.temporary.100.php:137
+#: views/campaignGallery/list.fo.temporary.100.php:177
+#: views/campaignGallery/list.fo.temporary.100.php:217
+#: views/campaignGallery/list.fo.temporary.100.php:257
+#: views/campaignGallery/list.fo.temporary.100.php:297
+#: views/campaignGallery/list.fo.temporary.100.php:337
+#: views/campaignGallery/list.fo.temporary.100.php:377
+#: views/campaignGallery/list.fo.temporary.100.php:417
+#: views/campaignGallery/list.fo.temporary.100.php:457
+#: views/campaignGallery/list.fo.temporary.100.php:497
+#: views/campaignGallery/list.fo.temporary.100.php:537
+#: views/campaignGallery/list.fo.temporary.100.php:577
+#: views/campaignGallery/list.fo.temporary.100.php:617
+#: views/campaignGallery/list.fo.temporary.100.php:657
+#: views/campaignGallery/show.fo.temporary.1212.es_ES.php:29
+#: views/campaignGallery/show.fo.temporary.1012.php:29
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:57
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:97
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:137
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:177
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:217
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:257
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:297
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:337
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:377
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:417
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:457
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:497
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:537
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:577
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:617
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:657
+#: views/campaignGallery/show.fo.temporary.1011.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1006.php:29
+#: views/campaignGallery/show.fo.temporary.1008.en_GB.php:29
+#: views/campaignGallery/show.fo.temporary.1214.es_ES.php:29
+#: views/campaignGallery/show.fo.temporary.1211.es_ES.php:29
+msgid "Votos:"
+msgstr "Ψήφοι:"
+
+#: views/campaignGallery/show.fo.temporary.1004.php:39
+#: views/campaignGallery/show.fo.temporary.1015.php:39
+#: views/campaignGallery/show.fo.temporary.1012.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1013.php:39
+#: views/campaignGallery/show.fo.temporary.1011.php:39
+#: views/campaignGallery/show.fo.temporary.1007.php:39
+#: views/campaignGallery/show.fo.temporary.1007.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1016.php:39
+#: views/campaignGallery/show.fo.temporary.1016.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1005.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1006.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1213.es_ES.php:39
+#: views/campaignGallery/show.fo.temporary.1005.php:39
+#: views/campaignGallery/show.fo.temporary.1009.php:39
+#: views/campaignGallery/show.fo.temporary.1004.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1003.php:39
+#: views/campaignGallery/show.fo.temporary.1001.php:39
+#: views/campaignGallery/show.fo.temporary.1015.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1003.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1010.php:39
+#: views/campaignGallery/show.fo.temporary.1014.php:39
+#: views/campaignGallery/show.fo.temporary.1008.php:39
+#: views/campaignGallery/show.fo.temporary.1002.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1002.php:39
+#: views/campaignGallery/show.fo.temporary.1014.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1215.es_ES.php:39
+#: views/campaignGallery/show.fo.temporary.1013.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1001.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1009.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1010.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1212.es_ES.php:39
+#: views/campaignGallery/show.fo.temporary.1012.php:39
+#: views/campaignGallery/show.fo.temporary.1011.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1006.php:39
+#: views/campaignGallery/show.fo.temporary.1008.en_GB.php:39
+#: views/campaignGallery/show.fo.temporary.1214.es_ES.php:39
+#: views/campaignGallery/show.fo.temporary.1211.es_ES.php:39
+msgid "Enviar a amigos"
+msgstr "Στείλτο σε φίλους"
+
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:10
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:10
+#: views/campaignGallery/list.fo.temporary.100.php:10
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:10
+msgid "fotos:"
+msgstr "φωτογραφίες:"
+
+#: views/campaignGallery/list.fo.temporary.366.en_GB.php:14
+#: views/campaignGallery/list.fo.temporary.121.es_ES.php:14
+#: views/campaignGallery/list.fo.temporary.100.php:14
+#: views/campaignGallery/list.fo.temporary.100.en_GB.php:14
+msgid "Submeter fotos"
+msgstr "Υποβολή φωτογραφιών"
+
+#: views/questions/multiple_choice_multiple_response_checkbox.php:57
+#: views/questions/multiple_choice_single_response_radiobutton.php:45
+msgid "outra"
+msgstr "Άλλο"
+
+#: views/questions/question.php:102
+msgid "Esta pergunta é obrigatória."
+msgstr "Η ερώτηση είναι απαραίτητη."
+
+#: views/questions/free_response_UPLOAD.php:95
+#: views/components/fileUpload.php:19
+msgid "A enviar... Por favor aguarde."
+msgstr "Μεταφόρτωση... Παρακαλώ περιμένετε."
+
+#: views/questions/profile_interests.php:39
+msgid "profile::interests::activity - Activity"
+msgstr "Δραστηριότητα"
+
+#: views/questions/profile_interests.php:40
+msgid "profile::interests::activity - What do you think you are"
+msgstr "Τι επίπεδο είσαι;"
+
+#: views/questions/profile_interests.php:41
+msgid "profile::interests::activity - Frequency"
+msgstr "Συχνότητα"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Jan"
+msgstr "Ιαν"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Fev"
+msgstr "Φεβ"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Mar"
+msgstr "Μαρ"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Abr"
+msgstr "Απρ"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Mai"
+msgstr "Μαι"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Jun"
+msgstr "Ιουν"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Jul"
+msgstr "Ιουλ"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Ago"
+msgstr "Αυγ"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Set"
+msgstr "Σεπ"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Out"
+msgstr "Οκτ"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Nov"
+msgstr "Νοε"
+
+#: views/questions/free_response_DATE.php:23
+msgid "Dez"
+msgstr "Δεκ"
+
+#: views/questions/free_response_DATE.php:24
+msgid "Janeiro"
+msgstr "Ιανουάριος"
+
+#: views/questions/free_response_DATE.php:24
+msgid "Fevereiro"
+msgstr "Φεβρουάριος"
+
+#: views/questions/free_response_DATE.php:24
+msgid "Março"
+msgstr "Μάρτιος"
+
+#: views/questions/free_response_DATE.php:24
+msgid "Abril"
+msgstr "Απρίλιος"
+
+#: views/questions/free_response_DATE.php:24
+msgid "Maio"
+msgstr "Μάιος "
+
+#: views/questions/free_response_DATE.php:24
+msgid "Junho"
+msgstr "Ιούνιος"
+
+#: views/questions/free_response_DATE.php:24
+msgid "Julho"
+msgstr "Ιούλιος"
+
+#: views/questions/free_response_DATE.php:24
+msgid "Agosto"
+msgstr "Αύγουστος"
+
+#: views/questions/free_response_DATE.php:24
+msgid "Setembro"
+msgstr "Σεπτέμβριος"
+
+#: views/questions/free_response_DATE.php:24
+msgid "Outubro"
+msgstr "Οκτώβριος"
+
+#: views/questions/free_response_DATE.php:24
+msgid "Novembro"
+msgstr "Νοέμβριος"
+
+#: views/questions/free_response_DATE.php:24
+msgid "Dezembro"
+msgstr "Δεκέμβριος"
+
+#: views/questions/free_response_DATE.php:25
+msgid "Dom"
+msgstr "Κυρ"
+
+#: views/questions/free_response_DATE.php:25
+msgid "Seg"
+msgstr "Δευ"
+
+#: views/questions/free_response_DATE.php:25
+msgid "Ter"
+msgstr "Τρι"
+
+#: views/questions/free_response_DATE.php:25
+msgid "Qua"
+msgstr "Τετ"
+
+#: views/questions/free_response_DATE.php:25
+msgid "Qui"
+msgstr "Πεμ"
+
+#: views/questions/free_response_DATE.php:25
+msgid "Sex"
+msgstr "Παρ"
+
+#: views/questions/free_response_DATE.php:25
+msgid "Sab"
+msgstr "Σαβ"
+
+#: views/questions/free_response_DATE.php:26
+msgid "Domingo"
+msgstr "Κυριακή "
+
+#: views/questions/free_response_DATE.php:26
+msgid "Segunda"
+msgstr "Δευτέρα"
+
+#: views/questions/free_response_DATE.php:26
+msgid "Terça"
+msgstr "Τρίτη "
+
+#: views/questions/free_response_DATE.php:26
+msgid "Quarta"
+msgstr "Τετάρτη"
+
+#: views/questions/free_response_DATE.php:26
+msgid "Quinta"
+msgstr "Πέμπτη"
+
+#: views/questions/free_response_DATE.php:26
+msgid "Sexta"
+msgstr "Παρασκευή "
+
+#: views/questions/free_response_DATE.php:26
+msgid "Sábado"
+msgstr "Σάββατο"
+
+#: views/questions/free_response_DATE.php:27
+msgid "Hoje"
+msgstr "Σήμερα"
+
+#: views/questions/free_response_DATE.php:28
+msgid "X"
+msgstr "X"
+
+#: views/questions/free_response_DATE.php:29
+#: views/recover_password/request_recover_password.php:56
+#: views/tellafriend/pagination.php:17
+#: views/registration/update_mail.php:79
+msgid "Seguinte"
+msgstr "Επόμενο"
+
+#: views/questions/free_response_DATE.php:30
+msgid "Anterior"
+msgstr "Προηγούμενο"
+
+#: views/questions/profile_social_networks.php:103
+msgid "Qual o url da conta"
+msgstr "Ποιο είναι το url του λογαριασμού σου;"
+
+#: views/questions/profile_social_networks.php:118
+msgid "profile:social_networks:contacts_quantity:question - Número de contatos"
+msgstr "Αριθμός επαφών"
+
+#: views/questions/profile_social_networks.php:183
+msgid "profile:social_networks:time_spent:question - Com que regularidade utilizas?"
+msgstr "Πόσο συχνά το χρησιμοποιείς;"
+
+#: views/questions/profile_social_networks.php:246
+msgid "profile:social_networks:behaviour:question - Qual o teu comportamentos (escolhe o que mais se adequa ao teu estilo)"
+msgstr "Ποια είναι η συνήθης συμπεριφορά σου;"
+
+#: views/components/slider.php:73
+msgid "Mais informações"
+msgstr "Περισσότερες πληροφορίες"
+
+#: views/components/landing_top.php:65
+#: views/components/share_button.php:3
+#: views/tellafriend/social_networks.php:17
+msgid "Partilha com os teus amigos:"
+msgstr "Μοιράσου το με τους φίλους σου:"
+
+#: views/components/teaserRegisterForm.php:34
+#: views/components/teaserRegisterForm.php:35
+#: views/components/teaserRegisterForm.php:36
+#: views/registration/show.php:79
+#: views/registration/default.form.php:225
+#: views/registration/update_mail.php:33
+#: views/unregistration/form.php:159
+#: views/unregistration/form.php:167
+msgid "Email"
+msgstr "Email"
+
+#: views/components/teaserRegisterForm.php:43
+#: views/zOffline/special_login.php:78
+msgid "Submeter"
+msgstr "Υποβολή  "
+
+#: views/components/login/user_info.php:4
+msgid "Bem-vindo(a)"
+msgstr "Καλώς ήρθες"
+
+#: views/components/login/user_info.php:10
+msgid "Logout"
+msgstr "Αποσύνδεση"
+
+#: views/components/login/login_form.php:10
+#: views/survey/list.fo.survey.summary.php:59
+#: views/survey/list.fo.survey.detailed.php:59
+#: views/campaign/list.fo.campaign.summary.php:21
+#: views/campaign/list.fo.campaign.detailed.php:19
+msgid "Entrar"
+msgstr "Είσοδος"
+
+#: views/components/login/login_form.php:15
+msgid "Username ou email"
+msgstr "Όνομα χρήστη ή email"
+
+#: views/components/login/login_form.php:18
+#: views/registration/show.php:92
+#: views/registration/default.form.php:245
+msgid "Password"
+msgstr "Κωδικός πρόσβασης"
+
+#: views/components/login/login_form.php:21
+msgid "login::remember_me"
+msgstr ""
+
+#: views/components/login/login_form.php:23
+msgid "label::sign_in Sign in"
+msgstr "είσοδος"
+
+#: views/components/login/login_form.php:25
+msgid "login::recover_password"
+msgstr "Ανάκτηση κωδικού πρόσβασης"
+
+#: views/recover_password/request_recover_password.php:28
+msgid "request_password_recover_email::text"
+msgstr "διεύθυνση email"
+
+#: views/recover_password/request_recover_password.php:32
+msgid "request_password_recover_email_field::Email:"
+msgstr "Email"
+
+#: views/recover_password/recover_password.php:16
+#: controllers/recover_password.controller.php:75
+msgid "recover_password::recover_password::sub_title Escreve em baixo a tua nova password"
+msgstr "Νέος κωδικός πρόσβασης"
+
+#: views/recover_password/recover_password.php:19
+msgid "recover_password::recover_password::text Depois de confirmares a mudança receberás por email a confirmação."
+msgstr "Μετά την επιβεβαίωση της αλλαγής θα λάβεις email επιβεβαίωσης"
+
+#: views/recover_password/recover_password.php:29
+msgid "label::Password; Password"
+msgstr ""
+
+#: views/recover_password/recover_password.php:48
+msgid "label:confirm_password Confirmar password"
+msgstr "Επιβεβαίωση συνθηματικού"
+
+#: views/recover_password/recover_password.php:67
+msgid "label::Ok Ok"
+msgstr "Αποθήκευση"
+
+#: views/recover_password/recover_password_submit.php:18
+#: views/ambassadors/pre_register_show_ok.php:7
+msgid "Parabéns!"
+msgstr "Συγχαρητήρια!"
+
+#: views/recover_password/recover_password_submit.php:19
+msgid "O teu email já seguiu para ti."
+msgstr "Σου έχουμε ήδη στείλει email."
+
+#: views/recover_password/recover_password_submit.php:22
+#: controllers/registration.controller.php:449
+msgid "registration::register::submit::confirmation_mail_sended - Verifica o teu email e clica no link enviado."
+msgstr "Τσέκαρε το email σου και πάτα το link που σου στείλαμε"
+
+#: views/landing_page_video/show_video.php:15
+msgid "Loading the player. Please wait ..."
+msgstr "Loading the player. Please wait ..."
+
+#: views/tellafriend/email_content.php:33
+msgid "Título:"
+msgstr "Θέμα: "
+
+#: views/tellafriend/email_content.php:37
+msgid "Mensagem:"
+msgstr "Μήνυμα:"
+
+#: views/tellafriend/send_email.php:17
+msgid "Obrigado por partilhar com os teus amigos!"
+msgstr "Ευχαριστούμε που το μοιράστηκες με τους φίλους σου! "
+
+#: views/tellafriend/email_show.php:34
+#: views/welcomeEmail/default.php:103
+#: views/ambassadors/pre_register_mail.php:58
+#, php-format
+msgid "A equipa de %s"
+msgstr "Η Ελληνική ομάδα του %s"
+
+#: views/tellafriend/email_show.php:36
+#: views/ambassadors/pre_register_mail.php:61
+msgid "A equipa"
+msgstr "Η Ελληνική ομάδα του WOM"
+
+#: views/tellafriend/email_show.php:42
+#: views/welcomeEmail/default.php:90
+#: views/ambassadors/pre_register_mail.php:70
+#: controllers/registration.controller.php:1294
+#: controllers/registration.controller.php:1331
+msgid "Estás apenas a um passo de completar o processo de registo."
+msgstr "Είσαι μόλις ένα βήμα πριν την ολοκλήρωση της διαδικασίας εγγραφής."
+
+#: views/tellafriend/email_show.php:44
+#: views/ambassadors/pre_register_mail.php:72
+#: controllers/registration.controller.php:1295
+#: controllers/registration.controller.php:1332
+msgid "Para terminar clica no link seguinte para confirmares a criação da tua conta:"
+msgstr "Κάνε κλικ στο παρακάτω link για να επιβεβαιώσεις τη δημιουργία του λογαριασμού σου: "
+
+#: views/tellafriend/email_show.php:46
+#: views/ambassadors/pre_register_mail.php:74
+#: controllers/registration.controller.php:1296
+#: controllers/registration.controller.php:1333
+msgid "Link de activação"
+msgstr "Activation Link"
+
+#: views/tellafriend/email_show.php:47
+#: views/ambassadors/pre_register_mail.php:75
+#: controllers/registration.controller.php:1297
+#: controllers/registration.controller.php:1334
+msgid "Aproveita e activa este e-mail como &ldquo;Safe/Not junk&rdquo; para que possas continuar a receber e-mails nossos e a participar nas campanhas e estudos que temos para ti."
+msgstr "Θυμήσου να χαρακτηρίσεις αυτό το email ως &ldquo;Ασφαλές/Μη Ανεπιθύμητο&ldquo; και να το προσθέσεις στη λίστα επαφών σου, έτσι ώστε να μπορείς να λαμβάνεις email από εμάς και να συμμετέχεις στις καμπάνιες και έρευνες που θα έχουμε ετοιμάσει για σένα. "
+
+#: views/tellafriend/email_show.php:49
+#: views/welcomeEmail/default.php:102
+#: views/ambassadors/pre_register_mail.php:77
+#: controllers/registration.controller.php:1298
+#: controllers/registration.controller.php:1335
+msgid "Obrigado"
+msgstr "Ευχαριστούμε"
+
+#: views/tellafriend/email_show.php:57
+#: views/ambassadors/pre_register_mail.php:84
+msgid "Por favor não respondas para este endereço de e-mail. Este é um endereço gerado automaticamente. Se tiveres alguma questão sobre a tua conta, ou acontecer algum erro, por favor envia um e-mail para:"
+msgstr "Παρακαλούμε μην απαντήσεις σε αυτό το email. Είναι μια διεύθυνση που δημιουργήθηκε αυτόματα. Αν έχεις κάποια ερώτηση σχετικά με το λογαριασμό σου ή θέλεις να αναφέρεις κάποιο σφάλμα, παρακαλούμε στείλε μας email στη διεύθυνση:"
+
+#: views/tellafriend/email_show.php:123
+#: views/welcomeEmail/default.php:71
+#: views/registration/pre_register_mail_render.php:63
+#: views/ambassadors/pre_register_mail.php:152
+msgid "Para ver este email num browser"
+msgstr "Για να δεις αυτό το email σε WEB browser"
+
+#: views/tellafriend/email_show.php:124
+#: views/welcomeEmail/default.php:71
+#: views/registration/pre_register_mail_render.php:64
+#: views/ambassadors/pre_register_mail.php:152
+msgid "clica aqui"
+msgstr "Κάνε κλικ εδώ"
+
+#: views/tellafriend/email_set_recipients.php:29
+msgid "Clica aqui"
+msgstr "Κάνε κλικ εδώ"
+
+#: views/tellafriend/email_set_recipients.php:29
+msgid "para usares o teu editor de email ou (2) preenche os campos."
+msgstr "για να χρησιμοποιήσεις το email σου ή (2) συμπλήρωσε τα κενά πεδία "
+
+#: views/welcomeEmail/default.php:84
+#: views/ambassadors/pre_register_mail.php:169
+#: controllers/registration.controller.php:1293
+#: controllers/registration.controller.php:1330
+msgid "Olá"
+msgstr "Γεια σου."
+
+#: views/welcomeEmail/default.php:89
+msgid "Obrigado pelo tempo que dispensaste para aderir à comunidade"
+msgstr "Ευχαριστούμε για το χρόνο που αφιέρωσες για την εγγραφή σου στην κοινότητα"
+
+#: views/welcomeEmail/default.php:91
+msgid "Para terminar clica no link seguinte para confirmares a criação  da tua conta:"
+msgstr "Για την ολοκλήρωση, κάνε κλικ στο επόμενο link έτσι ώστε να επιβεβαιώσεις τη δημιουργία του λογαριασμού σου:"
+
+#: views/welcomeEmail/default.php:94
+msgid "Aproveita e activa este  e-mail como &ldquo;Safe/Not junk&rdquo; para que possas continuar a receber e-mails nossos  e a participar nas Campanhas e WOMCasts que temos para ti."
+msgstr "Για να μπορείς να λαμβάνεις τα emails μας, που σου επιτρέπουν να παίρνεις μέρος σε Καμπάνιες και WOMCast που θα έχουμε ετοιμάσει για σένα, μπορείς να διαμορφώσεις αυτό το mail ως &ldquo;Safe/Not junk&rdquo;"
+
+#: views/welcomeEmail/default.php:114
+msgid "Por favor não respondas para  este endereço de e-mail. Este é um endereço gerado automaticamente. Se tiveres  alguma questão sobre a tua conta, ou acontecer algum erro, por favor envia um  e-mail para:"
+msgstr "Παρακαλούμε μην απαντήσεις σε αυτή τη διεύθυνση email. Είναι μια διεύθυνση που χρησιμοποιείται μόνο για την αποστολή emails. Αν έχεις κάποια ερώτηση ή θέλεις να αναφέρεις κάποιο σφάλμα, παρακαλούμε στείλε μας email στη διεύθυνση:  "
+
+#: views/welcomeEmail/default.php:114
+#, php-format
+msgid "Recomendamos que incluas o e-mail %s &nbsp;no teu livro de endereços (address  book)."
+msgstr "Σου προτείνουμε να συμπεριλάβεις αυτή τη διεύθυνση email  %s στη λίστα επαφών σου. "
+
+#: views/welcomeEmail/default.php:114
+#, php-format
+msgid "Deste modo, evitarás que as mensagens que te enviamos desde %s&nbsp;sejam movidas por erro para a pasta de  correio não desejado do teu e-mail."
+msgstr "Έτσι, τα μηνύματα που θα σου στέλνουμε από το %s&nbsp; δεν θα πηγαίνουν κατά λάθος στο φάκελο με τα SPAM. "
+
+#: views/welcomeEmail/default.php:114
+msgid "Desta forma nunca perderás uma das nossas  campanhas ou WOMCasts."
+msgstr "Για να μην χάσεις ποτέ καμία από τις Καμπάνιες ή τα WOMCasts μας. "
+
+#: views/registration/pre_activate.php:10
+#: views/ambassadors/pre_activate.php:10
+msgid "Parabéns."
+msgstr "Συγχαρητήρια."
+
+#: views/registration/pre_activate.php:20
+#: views/ambassadors/pre_activate.php:20
+msgid "O teu registo foi um sucesso."
+msgstr "Η εγγραφή σου ήταν επιτυχής."
+
+#: views/registration/pre_activate.php:24
+#: views/ambassadors/pre_activate.php:24
+msgid "Dentro de alguns dias receberás novidades no teu email. Entretanto recomenda já o nosso site a todos os teus amigos. Podes ganhar pontos adicionais por cada um que se inscreva através da tua recomendação. Mais pontos são mais possibilidades de receberes convites para as campanhas que são do teu interesse. Não percas tempo!"
+msgstr "Σε λίγες μέρες θα λάβεις ενημερώσεις στο email σου. Στο μεταξύ, μπορείς να συστήσεις το site μας σε όλους σου τους φίλους. Μπορείς να κερδίσεις επιπλέον πόντους για κάθε φίλο που θα εγγραφεί μέσω της σύστασής σου. Όσους περισσότερους πόντους έχεις, τόσο πιο πολλές ευκαιρίες θα έχεις να λάβεις πρόσκληση για καμπάνιες που σε ενδιαφέρουν. Μη χάνεις χρόνο! "
+
+#: views/registration/show.php:8
+#: views/registration/default.form.php:39
+#: views/unregistration/form.php:106
+msgid "Embaixadores"
+msgstr "Ambassadors"
+
+#: views/registration/show.php:25
+msgid "Back to My profile"
+msgstr "Πίσω στο προφίλ μου"
+
+#: views/registration/show.php:55
+#: views/registration/default.form.php:206
+#: views/unregistration/form.php:119
+#: views/unregistration/form.php:121
+#: views/unregistration/form.php:127
+msgid "Nome próprio"
+msgstr "Όνομα "
+
+#: views/registration/show.php:66
+#: views/registration/default.form.php:215
+#: views/unregistration/form.php:137
+#: views/unregistration/form.php:139
+#: views/unregistration/form.php:145
+#: views/unregistration/form.php:161
+msgid "Apelido"
+msgstr "Επώνυμο"
+
+#: views/registration/show.php:84
+msgid "registration::show::change_email_link_label - Click here to change your email"
+msgstr "κάνε κλικ εδώ για να αλλάξεις τη διεύθυνση email σου"
+
+#: views/registration/show.php:95
+msgid "registration::show::change_password_link_label - Click here to change your password"
+msgstr "κάνε κλικ εδώ για να αλλάξεις τον κωδικό πρόσβασης"
+
+#: views/registration/show.php:104
+msgid "registration::show::update::button::text"
+msgstr "Αποθήκευση"
+
+#: views/registration/default.form.php:233
+msgid "Confirmar email"
+msgstr "Επιβεβαίωση Email"
+
+#: views/registration/default.form.php:253
+msgid "Confirmar password"
+msgstr "Επιβεβαίωση συνθηματικού"
+
+#: views/registration/default.form.php:265
+msgid "Código de convite"
+msgstr "Κωδικός πρόσκλησης"
+
+#: views/registration/default.form.php:267
+msgid "Se recebeste um código de convite de um amigo, insere-o aqui. Vais ganhar pontos adicionais se o fizeres. Se não tiveres um código de convite deixa o campo vazio e continua."
+msgstr "Εάν έλαβες κωδικό πρόσκλησης από φίλο, μπορείς να τον εισάγεις εδώ. Έτσι θα κερδίσεις έξτρα πόντους. Εάν δεν έχεις κωδικό πρόσκλησης, μπορείς να αφήσεις κενό το πεδίο και να προχωρήσεις."
+
+#: views/registration/default.form.php:281
+#: views/registration/default.form.php:287
+#: views/registration/default.form.php:288
+#: views/unregistration/form.php:181
+#: views/unregistration/form.php:183
+#: views/unregistration/form.php:189
+msgid "Verificação de SPAM"
+msgstr "Έλεγχος SPAM:"
+
+#: views/registration/default.form.php:314
+#: views/unregistration/form.php:211
+#: views/unregistration/form.php:215
+msgid "Insira código"
+msgstr "Εισαγωγή κωδικού:"
+
+#: views/registration/default.form.php:317
+msgid "Insere aqui o texto que vês ao lado"
+msgstr "Εισάγετε εδώ το κείμενο"
+
+#: views/registration/default.form.php:342
+msgid "Li e aceito a política de"
+msgstr "Έχω διαβάσει και αποδέχομαι"
+
+#: views/registration/default.form.php:349
+msgid "Privacidade"
+msgstr "Πολιτική Προστασίας Προσωπικών Δεδομένων"
+
+#: views/registration/default.form.php:350
+msgid "Termos e Condições de Utilização"
+msgstr "Όροι και Προϋποθέσεις Χρήσης"
+
+#: views/registration/default.form.php:351
+msgid "Respeitamos a tua privacidade. Nunca te enviaremos spam ou partilharemos a tua informação pessoal com ninguém sem o teu consentimento."
+msgstr "Σεβόμαστε τα προσωπικά σου δεδομένα. Δεν θα σου στείλουμε ποτέ spam, ούτε θα μοιραστούμε τα προσωπικά σου δεδομένα με άλλους χωρίς τη συγκατάθεσή σου."
+
+#: views/registration/default.form.php:356
+msgid "Registar"
+msgstr "Εγγραφή"
+
+#: views/registration/error.php:24
+#: views/error/default.php:66
+msgid "Ocorreu um erro inesperado, se o erro persistir contacte o administrador do site."
+msgstr "Προέκυψε απρόβλεπτο σφάλμα, αν το σφάλμα επιμείνει, επικοινωνείστε με τον διαχειριστή του δικτυακού τόπου."
+
+#: views/registration/update_mail.php:28
+msgid "registration::update_email::explanation_text Please fill the form. an email will be sent to your current address for you to update your email you must click the link on the mail"
+msgstr "Μπορείς να εισάγεις εδώ τη νέα διεύθυνση email σου"
+
+#: views/registration/update_mail.php:42
+msgid "Email confirmation"
+msgstr "Επιβεβαίωση Email"
+
+#: views/change_password/request_change_password.php:32
+msgid "change_password::form::title - Mudança de password"
+msgstr "Επεξεργασία κωδικού πρόσβασης"
+
+#: views/change_password/request_change_password.php:33
+msgid "change_password::form::message1 - Escreve em baixo a tua nova password"
+msgstr "Νέος κωδικός πρόσβασης"
+
+#: views/change_password/request_change_password.php:34
+msgid "change_password::form::message2 - Depois de confirmares a mudança receberás por email a confirmação."
+msgstr "Μετά την επιβεβαίωση της αλλαγής θα λάβεις email επιβεβαίωσης"
+
+#: views/change_password/request_change_password.php:35
+msgid "change_password::form::submit_button_text - ok."
+msgstr "Αποθήκευση"
+
+#: views/change_password/request_change_password.php:37
+msgid "new password"
+msgstr "Νέο συνθηματικό"
+
+#: views/change_password/request_change_password.php:38
+msgid "password confirmation"
+msgstr "Επιβεβαίωση συνθηματικού "
+
+#: views/ambassadors/pre_register_mail.php:43
+#: controllers/registration.controller.php:1361
+#, php-format
+msgid "Obrigado pelo tempo que dispensaste para aderir à comunidade %s."
+msgstr "Ευχαριστούμε για το χρόνο που αφιέρωσες για να γίνεις μέλος στην κοινότητά μας %s."
+
+#: views/ambassadors/pre_register_mail.php:46
+#: controllers/registration.controller.php:1363
+msgid "Obrigado pelo tempo que dispensaste para aderir à comunidade."
+msgstr "Ευχαριστούμε για το χρόνο που αφιέρωσες για να γίνεις μέλος στην κοινότητά μας."
+
+#: views/ambassadors/confirm_pre_registration.php:8
+#: controllers/registration.controller.php:115
+#: controllers/registration.controller.php:116
+#: controllers/registration.controller.php:137
+#: controllers/registration.controller.php:138
+#: controllers/registration.controller.php:200
+#: controllers/registration.controller.php:215
+#: controllers/registration.controller.php:446
+#: controllers/registration.controller.php:513
+#: controllers/registration.controller.php:575
+#: controllers/registration.controller.php:622
+#: controllers/recover_password.controller.php:110
+msgid "Parabéns"
+msgstr "Συγχαρητήρια"
+
+#: views/ambassadors/confirm_pre_registration.php:13
+#: controllers/registration.controller.php:201
+#: controllers/registration.controller.php:216
+msgid "Pré-registo bem sucedido"
+msgstr "Η προεγγραφή σου ήταν επιτυχής."
+
+#: views/ambassadors/pre_register_show_ok.php:8
+msgid "O teu registo está quase concluído."
+msgstr "Η εγγραφή σου έχει σχεδόν ολοκληρωθεί."
+
+#: views/ambassadors/pre_register_show_ok.php:11
+msgid "Verifica agora o teu email e clica no link que te enviámos para validar a tua conta"
+msgstr "Δες το mail σου τώρα και κάνε κλικ στο link που σου στείλαμε για να επικυρώσεις το λογαριασμό σου."
+
+#: views/survey/show.fo.form.inner.page.matrix.php:5
+msgid "Nunca"
+msgstr "Ποτέ"
+
+#: views/survey/show.fo.form.inner.page.matrix.php:6
+msgid "Diaramente"
+msgstr "Καθημερινά"
+
+#: views/survey/list.fo.survey.summary.php:49
+msgid "Clique para deixar de receber questionários desta categoria"
+msgstr "Κάνε κλικ εδώ για να σταματήσεις να λαμβάνεις ερωτηματολόγια για αυτή την κατηγορία."
+
+#: views/survey/list.fo.survey.summary.php:51
+#: views/survey/list.fo.survey.detailed.php:48
+msgid "De"
+msgstr "Από"
+
+#: views/survey/list.fo.survey.summary.php:51
+#: views/survey/show.fo.form.php:104
+#: views/survey/list.fo.survey.detailed.php:48
+#: views/campaign/list.fo.campaign.summary.php:58
+#: views/campaign/list.fo.campaign.detailed.php:57
+msgid "até"
+msgstr "σε"
+
+#: views/survey/list.fo.survey.summary.php:66
+#: views/survey/show.fo.form.php:100
+#: views/survey/list.fo.survey.detailed.php:66
+#: views/campaign/list.fo.campaign.summary.php:74
+#: views/campaign/list.fo.campaign.detailed.php:73
+#, php-format
+msgid "Vale %s pontos"
+msgstr "Αξίζει %s πόντους"
+
+#: views/survey/list.fo.survey.summary.php:79
+#: views/survey/list.fo.survey.detailed.php:79
+msgid "Ainda não preencheste Relatório WOM"
+msgstr "Δεν έχεις συμπληρώσει την αναφορά WOM"
+
+#: views/survey/list.fo.survey.summary.php:80
+#: views/survey/list.fo.survey.detailed.php:80
+msgid "You did not fullfill this questionnaire."
+msgstr ""
+
+#: views/survey/show.fo.form.inner.php:333
+msgid "Página sem questões"
+msgstr "Σελίδα χωρίς ερωτήσεις"
+
+#: views/survey/show.fo.form.inner.php:342
+msgid "salvar"
+msgstr "αποθήκευση"
+
+#: views/survey/show.fo.form.inner.php:374
+msgid "A gravação dos teus dados no formulário é feita automaticamente."
+msgstr "Τα στοιχεία σου αποθηκεύονται αυτόματα"
+
+#: views/survey/show.fo.form.inner.php:393
+msgid "página anterior"
+msgstr "προηγούμενη σελίδα"
+
+#: views/survey/show.fo.form.inner.php:399
+msgid "próxima página"
+msgstr "επόμενη σελίδα"
+
+#: views/survey/show.fo.form.inner.php:419
+#, php-format
+msgid "%d de %d"
+msgstr "%d Από %d"
+
+#: views/survey/show.fo.form.php:81
+#, fuzzy
+msgid "Voltar"
+msgstr "Στρατιωτικός"
+
+#: views/survey/show.fo.form.php:127
+msgid "Por favor, responde a todas as questões do questionário."
+msgstr "Παρακαλούμε απάντησε σε όλες τις ερωτήσεις του ερωτηματολογίου"
+
+#: views/survey/show.fo.form.php:131
+#: views/survey/show.fo.form.php:160
+msgid "Questionário completo. Obrigado por responderes."
+msgstr "Το ερωτηματολόγιο συμπληρώθηκε. Ευχαριστούμε για τις απαντήσεις σου."
+
+#: views/survey/show.fo.form.php:140
+#: views/survey/show.fo.form.php:176
+msgid "Progresso:"
+msgstr "Πρόοδος:"
+
+#: views/survey/show.fo.form.php:162
+#, php-format
+msgid "Acabaste de ganhar %d pontos!"
+msgstr "Μόλις κέρδισες %d πόντους!"
+
+#: views/survey/list.fo.php:96
+msgid " por responder"
+msgstr "Δεν έχει απαντηθεί"
+
+#: views/survey/list.fo.php:118
+msgid " respondidos"
+msgstr "Έχει απαντηθεί"
+
+#: views/womworld/default.php:53
+msgid "Comunidades no mundo:"
+msgstr "Το WOM στον Κόσμο: "
+
+#: views/womworld/default.php:62
+msgid "País:"
+msgstr "Χώρα"
+
+#: views/womworld/default.php:63
+msgid "Embaixadores:"
+msgstr "Ambassadors:"
+
+#: views/womworld/default.php:83
+#: views/womworld/default.php:91
+msgid "brevemente"
+msgstr "έρχεται σύντομα"
+
+#: views/womworld/default.php:99
+msgid "aberto"
+msgstr "Ανοιχτό"
+
+#: views/campaign/list.fo.next.php:30
+#: views/campaign/list.fo.current.php:30
+#: views/campaign/list.fo.past.php:30
+msgid "Não existem campanhas."
+msgstr "Δεν υπάρχουν διαθέσιμες καμπάνιες"
+
+#: views/campaign/campaign.header.php:83
+#, php-format
+msgid "De %s até %s."
+msgstr "από %s στο %s"
+
+#: views/campaign/campaign.header.php:94
+msgid "O meu desempenho"
+msgstr "Οι επιδόσεις μου"
+
+#: views/campaign/campaign.header.php:95
+#: views/dashboard/header.php:67
+msgid "Galeria"
+msgstr "Συλλογή φωτογραφιών"
+
+#: views/campaign/campaign.header.php:96
+msgid "Blog"
+msgstr "Blog"
+
+#: views/campaign/campaign.header.php:97
+msgid "Informações"
+msgstr "Πληροφορίες "
+
+#: views/campaign/campaign.header.php:99
+msgid "Voltar listagem"
+msgstr ""
+
+#: views/campaign/campaign.header.php:157
+msgid "Minhas ações"
+msgstr "Οι δράσεις μου"
+
+#: views/campaign/campaign.header.php:160
+msgid "Material recebido"
+msgstr ""
+
+#: views/campaign/campaign.header.php:162
+msgid "Envia a tua opinião"
+msgstr "Eπάγγελμα"
+
+#: views/campaign/campaign.header.php:163
+msgid "Visitar site"
+msgstr ""
+
+#: views/campaign/campaign.header.php:165
+#, fuzzy
+msgid "Questionário inicial"
+msgstr "Τελικό ερωτηματολόγιο"
+
+#: views/campaign/campaign.header.php:167
+msgid "Relatório WOM"
+msgstr "Αναφορά WOM"
+
+#: views/campaign/campaign.header.php:169
+msgid "Questionário final"
+msgstr "Τελικό ερωτηματολόγιο"
+
+#: views/campaign/campaign.header.php:170
+msgid "Enviar questionário a amigos"
+msgstr "Ερωτηματολόγιο για φίλους"
+
+#: views/campaign/campaign.header.php:173
+msgid "Questionário A"
+msgstr "Ερωτηματολόγια A"
+
+#: views/campaign/campaign.header.php:178
+msgid "Fala connosco (dúvidas)"
+msgstr "Μίλησέ μας (ερωτήσεις)"
+
+#: views/campaign/campaign.header.php:180
+msgid "CALENDÁRIO:"
+msgstr "ΗΜΕΡΟΛΟΓΙΟ: "
+
+#: views/campaign/campaign.header.php:181
+msgid "STATUS:"
+msgstr "ΣΤΑΤΟΥΣ: "
+
+#: views/campaign/show.fo.body.php:11
+msgid "The Experience"
+msgstr ""
+
+#: views/campaign/show.fo.body.php:13
+msgid "The ambassadors have received:"
+msgstr ""
+
+#: views/campaign/show.fo.body.php:15
+msgid "The Most Fun Photo"
+msgstr ""
+
+#: views/campaign/list.fo.campaign.summary.php:19
+msgid "Campanha de experimentação"
+msgstr "Δοκιμαστικές καμπάνιες"
+
+#: views/campaign/list.fo.php:188
+msgid "Ver apenas campanhas em que participo ou participei"
+msgstr "Εμφάνισε μόνο τις καμπάνιες στις οποίες συμμετέχω ή έχω συμμετάσχει"
+
+#: views/campaign/list.fo.php:254
+msgid " em curso"
+msgstr "τρέχουσες"
+
+#: views/campaign/list.fo.php:255
+msgid "Próximas"
+msgstr "Επόμενες"
+
+#: views/campaign/list.fo.php:256
+msgid "Terminadas"
+msgstr "που έχουν ολοκληρωθεί"
+
+#: views/campaign/list.fo.php:271
+msgid "Mostrar vista reduzida"
+msgstr "Εμφάνιση περιορισμένης προβολής"
+
+#: views/campaign/list.fo.php:272
+msgid "Mostrar vista estendida"
+msgstr "Εμφάνιση εκτεταμένης προβολής"
+
+#: views/campaign/list.fo.php:273
+msgid "Ordenar por data"
+msgstr "Ταξινόμηση κατά ημερομηνία"
+
+#: views/campaign/list.fo.php:274
+msgid "Ordenar alfabeticamente"
+msgstr "Ταξινόμηση με αλφαβητική σειρά"
+
+#: views/campaign/list.fo.php:275
+msgid "Mostrar campanhas de experimentação"
+msgstr "Εμφάνιση δοκιμαστικών καμπανιών"
+
+#: views/campaign/list.fo.php:276
+msgid "Mostrar campanhas online (Womcasts)"
+msgstr "Εμφάνιση online καμπανιών (WOMCasts)"
+
+#: views/zOffline/show_offline_message.php:38
+#: views/zOffline/default.php:38
+#: views/zOffline/special_login.php:51
+msgid "Este site encontra-se temporariamente indisponível para manutenção."
+msgstr "This site is temporarily unavailable due to maintenance."
+
+#: views/zOffline/show_offline_message.php:39
+#: views/zOffline/default.php:39
+#: views/zOffline/special_login.php:52
+msgid "Lamentamos qualquer inconveniente."
+msgstr "We sorry for any inconvenience caused."
+
+#: views/zOffline/show_offline_message.php:40
+#: views/zOffline/default.php:40
+#: views/zOffline/special_login.php:53
+msgid "Por favor volte mais tarde."
+msgstr "Please come back later."
+
+#: views/zOffline/special_login.php:59
+msgid "Login:"
+msgstr "Είσοδος:"
+
+#: views/zOffline/special_login.php:67
+msgid "Password:"
+msgstr "Συνθηματικό:"
+
+#: views/error/default.php:24
+msgid "Tem de fazer Login"
+msgstr "Πρέπει να κάνεις login"
+
+#: views/error/default.php:28
+msgid "Ups...algo correu mal!"
+msgstr "Oυπς... Κάτι πήγε στραβά! "
+
+#: views/error/default.php:50
+msgid "Não está Login"
+msgstr "Δεν έχεις κάνει login"
+
+#: views/error/default.php:52
+msgid "404"
+msgstr "404"
+
+#: views/dashboard/header.php:64
+#, fuzzy
+msgid "Avaliação"
+msgstr "Localization"
+
+#: views/dashboard/header.php:65
+msgid "Buzz"
+msgstr "Buzz"
+
+#: views/dashboard/header.php:66
+#, fuzzy
+msgid "Histórias"
+msgstr "Ιστορικός "
+
+#: views/default/logged_in_homepage.php:63
+msgid "Tens notificações novas! Clica aqui."
+msgstr "Έχεις νέα μηνύματα. Κάνε κλικ εδώ."
+
+#: views/default/logged_in_homepage.php:82
+msgid "default::logged_in_homepage::campaign_section_title The first campaigns are about to begin. Stay tuned to your email."
+msgstr "Οι πρώτες καμπάνιες ξεκινούν σύντομα. Μείνε συντονισμένος/η στο email σου! "
+
+#: views/default/logged_in_homepage.php:86
+msgid "default::logged_in_homepage::campaign_section_line_1 Meanwhile:"
+msgstr "Στο μεταξύ: "
+
+#: views/default/logged_in_homepage.php:88
+msgid "default::logged_in_homepage::campaign_section_line_2 - Keep your profile complete and  updated. With that you have more opportunities to be selected for campaigns that interest you;"
+msgstr "- Κράτα το προφίλ σου συμπληρωμένο και ενημερωμένο. Έτσι θα έχεις περισσότερες πιθανότητες να σε επιλέξουμε για τις καμπάνιες που θα σε ενδιαφέρουν "
+
+#: views/default/logged_in_homepage.php:91
+msgid "default::logged_in_homepage::campaign_section_line_3 - Learn more about how to be an ambassador, with our training program;"
+msgstr "- Μάθε περισσότερα για το πώς να είσαι ambassador, με το εκπαιδευτικό μας πρόγραμμα"
+
+#: views/default/logged_in_homepage.php:94
+msgid "default::logged_in_homepage::campaign_section_line_4 - Start now spreading the word and recommending our community to your friends. You get points for each one that registers."
+msgstr "- Άρχισε τώρα να μοιράζεσαι τα νέα και να συστήνεις την κοινότητά μας στους φίλους σου. Για κάθε έναν που γράφεται θα σου προσφέρουμε πόντους."
+
+#: views/default/logged_in_homepage.php:97
+msgid "default::logged_in_homepage::campaign_section_line_5 Good Luck!"
+msgstr "Καλή τύχη! "
+
+#: views/default/logged_in_homepage.php:162
+msgid "Completa o teu perfil."
+msgstr "Συμπλήρωσε το προφίλ σου"
+
+#: views/default/logged_in_homepage.php:177
+#: views/default/logged_in_homepage.php:186
+msgid "Ver"
+msgstr "Εμφάνιση"
+
+#: views/default/logged_in_homepage.php:191
+msgid "Pontos totais"
+msgstr "Σύνολο πόντων"
+
+#: views/default/logged_in_homepage.php:192
+msgid "Nível "
+msgstr "Επίπεδο"
+
+#: views/default/logged_in_homepage.php:193
+msgid "Código:"
+msgstr "Κωδικός:"
+
+#: views/default/default.php:20
+msgid "Como funciona"
+msgstr "Πώς λειτουργεί"
+
+#: controllers/dashboard.controller.php:19
+msgid "Dados Demográficos"
+msgstr ""
+
+#: controllers/dashboard.controller.php:22
+msgid "Género"
+msgstr "Φύλο"
+
+#: controllers/dashboard.controller.php:25
+#, fuzzy
+msgid "Idade"
+msgstr "Πόλη (οικίας)"
+
+#: controllers/dashboard.controller.php:29
+#, fuzzy
+msgid "Escolaridade"
+msgstr "Εθνικότητα"
+
+#: controllers/change_password.controller.php:33
+msgid "change_password::change_password::ok::title - OK"
+msgstr "Συγχαρητήρια"
+
+#: controllers/change_password.controller.php:33
+msgid "change_password::change_password::ok::message - Password sucessfully changed."
+msgstr "Ο κωδικός πρόσβασης άλλαξε με επιτυχία"
+
+#: controllers/change_password.controller.php:36
+#: controllers/change_password.controller.php:39
+msgid "change_password::change_password::failure::title - OOPS"
+msgstr "Oops!"
+
+#: controllers/change_password.controller.php:36
+#: controllers/change_password.controller.php:39
+msgid "change_password::change_password::failure::message - something went wrong."
+msgstr "Σφάλμα στην αλλαγή του κωδικού πρόσβασης"
+
+#: controllers/registration.controller.php:22
+#: controllers/registration.controller.php:65
+#: controllers/registration.controller.php:80
+#: controllers/registration.controller.php:95
+#: controllers/registration.controller.php:162
+#: controllers/registration.controller.php:169
+#: controllers/registration.controller.php:176
+#: controllers/registration.controller.php:232
+#: controllers/registration.controller.php:239
+#: controllers/registration.controller.php:246
+#: controllers/registration.controller.php:340
+#: controllers/registration.controller.php:347
+#: controllers/registration.controller.php:467
+#: controllers/registration.controller.php:474
+#: controllers/registration.controller.php:533
+#: controllers/registration.controller.php:540
+#: controllers/registration.controller.php:680
+#: controllers/registration.controller.php:687
+#: controllers/registration.controller.php:694
+#: controllers/ambassadors.controller.php:273
+msgid "Lamentamos mas ocorreu um erro ao efectuar o seu pré-registo. Foi-nos impossível guardá-lo."
+msgstr ""
+
+#: controllers/registration.controller.php:57
+msgid "TODO"
+msgstr ""
+
+#: controllers/registration.controller.php:117
+#: controllers/registration.controller.php:139
+msgid "registration::activate_registration::success_essage_1 - Your registration has been successfully submitted"
+msgstr "Η εγγραφή σου ήταν επιτυχής."
+
+#: controllers/registration.controller.php:118
+#: controllers/registration.controller.php:140
+msgid "registration::activate_registration::success_essage_2 - Thanks for joining our community. You can now login and you will be able to:"
+msgstr "Ευχαριστούμε που γράφτηκες στην κοινότητά μας. Τώρα μπορείς να κάνεις log in και να: "
+
+#: controllers/registration.controller.php:119
+#: controllers/registration.controller.php:141
+msgid "registration::activate_registration::success_essage_3 - Complete your profile and keep it updated so we get to know you better and we can adjust our campaigns to your interests and needs;"
+msgstr "- Συμπληρώσεις το προφίλ σου. Φρόντισε να το κρατάς ενημερωμένο για να μπορούμε να σε γνωρίσουμε καλύτερα και να προσαρμόσουμε τις καμπάνιες μας στα ενδιαφέροντα και τις ανάγκες σου"
+
+#: controllers/registration.controller.php:120
+#: controllers/registration.controller.php:142
+msgid "registration::activate_registration::success_essage_4 - Register on campaigns available that are of interest to you;"
+msgstr "- Δηλώσεις συμμετοχή στις διαθέσιμες καμπάνιες που σε ενδιαφέρουν"
+
+#: controllers/registration.controller.php:121
+#: controllers/registration.controller.php:143
+msgid "registration::activate_registration::success_essage_5 - Learn more about how to be an ambassador, with our training program;"
+msgstr "- Μάθεις περισσότερα για το πώς να είσαι ambassador, με το εκπαιδευτικό μας πρόγραμμα"
+
+#: controllers/registration.controller.php:122
+#: controllers/registration.controller.php:144
+msgid "registration::activate_registration::success_essage_6 - Start getting the word out about our community and recommend it to your friends. You'll get points for each one that register. With more points you also have more opportunities we select you for the campaigns that interest you."
+msgstr "- Ξεκινήσεις να μοιράζεσαι τα νέα για την κοινότητά μας και να τη συστήνεις στους φίλους σου. Για κάθε έναν που γράφεται θα κερδίζεις πόντους. Με περισσότερους πόντους θα έχεις περισσότερες ευκαιρίες να σε επιλέξουμε για τις καμπάνιες που σε ενδιαφέρουν. "
+
+#: controllers/registration.controller.php:123
+#: controllers/registration.controller.php:145
+msgid "registration::activate_registration::success_essage_7 - Good Luck!"
+msgstr "Καλή τύχη!"
+
+#: controllers/registration.controller.php:148
+#: controllers/registration.controller.php:149
+#: controllers/registration.controller.php:219
+#: controllers/registration.controller.php:571
+#: controllers/registration.controller.php:584
+#: controllers/registration.controller.php:589
+#: controllers/registration.controller.php:631
+#: controllers/registration.controller.php:640
+#: controllers/registration.controller.php:1271
+#: controllers/recover_password.controller.php:119
+#: controllers/recover_password.controller.php:125
+#: controllers/recover_password.controller.php:131
+#: controllers/recover_password.controller.php:137
+#: controllers/recover_password.controller.php:142
+msgid "Oops!"
+msgstr "Oops!"
+
+#: controllers/registration.controller.php:150
+msgid "registration::activate_registration::failure - Your registration was not updated"
+msgstr "Oops!"
+
+#: controllers/registration.controller.php:220
+msgid "registration::activate_pre_registration::failure - Your registration was not updated"
+msgstr "Oops!"
+
+#: controllers/registration.controller.php:259
+msgid "registration::edit::registration_information::title - Registration"
+msgstr "Επεξεργασία εγγραφής"
+
+#: controllers/registration.controller.php:260
+msgid "registration::edit::profile::sub_title - This is where you edit your registration information"
+msgstr "Εδώ μπορείς να επεξεργαστείς τα στοιχεία της εγγραφής σου"
+
+#: controllers/registration.controller.php:262
+msgid "registration::edit::profile::html_desc - You can directly edit your first, and last name. And you can use the links provided to change you login or you password."
+msgstr "Μπορείς να αλλάξεις απευθείας το όνομα και το επώνυμό σου και μπορείς να χρησιμοποιήσεις τα links για να αλλάξεις τα στοιχεία λογαριασμού και τον κωδικό πρόσβασης"
+
+#: controllers/registration.controller.php:448
+msgid "registration::register::submit::submit_succeded - Registo bem sucedido"
+msgstr "Η εγγραφή σου ήταν επιτυχής"
+
+#: controllers/registration.controller.php:515
+msgid "Alteração de registo bem sucedida"
+msgstr "Τα στοιχεία εγγραφής σου ανανεώθηκαν με επιτυχία"
+
+#: controllers/registration.controller.php:558
+msgid "registration::update_mail_submit::introdunction - Click this link to update your email."
+msgstr " "
+
+#: controllers/registration.controller.php:559
+msgid "registration::update_mail_submit::thanks_note - Thank You"
+msgstr " "
+
+#: controllers/registration.controller.php:567
+msgid "registration::update_mail_submit::mail_subject Mail update requested "
+msgstr "Επεξεργασία εγγραφής"
+
+#: controllers/registration.controller.php:572
+msgid "registration::update_mail_submit::send_mail_failure - Something went wrong while sending you a confirmation email."
+msgstr "Oops!"
+
+#: controllers/registration.controller.php:576
+msgid "registration::update_mail_submit::send_mail_sucess - Success."
+msgstr "Τσέκαρε το email σου και πάτα το link που σου στείλαμε"
+
+#: controllers/registration.controller.php:585
+#: controllers/registration.controller.php:590
+msgid "registration::update_mail_submit::generic_failure - Something went wrong."
+msgstr "Oops!"
+
+#: controllers/registration.controller.php:624
+msgid "registration::update_mail_confirm::update_succeded - Your registration was updated"
+msgstr "Τα στοιχεία εγγραφής σου ανανεώθηκαν με επιτυχία"
+
+#: controllers/registration.controller.php:633
+#: controllers/registration.controller.php:642
+#: controllers/registration.controller.php:649
+msgid "registration::update_mail_confirm::update_failed - Your registration was not updated"
+msgstr "Oops!"
+
+#: controllers/registration.controller.php:734
+#: controllers/registration.controller.php:762
+msgid "Email inválido."
+msgstr ""
+
+#: controllers/registration.controller.php:738
+#: controllers/registration.controller.php:750
+msgid "Campo de preenchimento obrigatorio."
+msgstr ""
+
+#: controllers/registration.controller.php:746
+msgid "os mails devem ser iguais."
+msgstr ""
+
+#: controllers/registration.controller.php:776
+msgid "Ambassador code is required"
+msgstr ""
+
+#: controllers/registration.controller.php:784
+#: controllers/registration.controller.php:790
+#: controllers/registration.controller.php:824
+#: controllers/registration.controller.php:880
+#: controllers/registration.controller.php:957
+#: controllers/registration.controller.php:998
+#: controllers/registration.controller.php:1044
+#: controllers/registration.controller.php:1065
+#: controllers/registration.controller.php:1072
+msgid "Tem de introduzir um email válido."
+msgstr "Η διεύθυνση email είναι λανθασμένη."
+
+#: controllers/registration.controller.php:809
+msgid "Invalide code"
+msgstr ""
+
+#: controllers/registration.controller.php:830
+#: controllers/ambassadors.controller.php:234
+msgid "O endereço fornecido já existe."
+msgstr "Η παρεχόμενη διεύθυνση email υπάρχει ήδη"
+
+#: controllers/registration.controller.php:844
+#: controllers/registration.controller.php:849
+#: controllers/registration.controller.php:868
+msgid "A introdução do nome é obrigatória."
+msgstr "Η ερώτηση είναι απαραίτητη."
+
+#: controllers/registration.controller.php:863
+msgid "Existem erros de preenchimento que devem ser corrigidos para poder continuar."
+msgstr "Υπάρχουν σφάλματα που πρέπει να διορθωθούν. Χρειάζεται συμπλήρωση για τη συνέχεια."
+
+#: controllers/registration.controller.php:874
+msgid "A introdução do apelido é obrigatória."
+msgstr "Η ερώτηση είναι απαραίτητη."
+
+#: controllers/registration.controller.php:886
+msgid "A password tem de ter no mínimo 6 caracteres"
+msgstr "Το συνθηματικό πρέπει να έχει τουλάχιστον 6 χαρακτήρες"
+
+#: controllers/registration.controller.php:893
+msgid "Erro na confirmação de email."
+msgstr "Σφάλμα στην επικύρωση του email."
+
+#: controllers/registration.controller.php:894
+msgid "Este email está incorreto."
+msgstr "Η διεύθυνση email είναι λάθος."
+
+#: controllers/registration.controller.php:899
+msgid "Erro na confirmação da password."
+msgstr "Σφάλμα στην επικύρωση του συνθηματικού."
+
+#: controllers/registration.controller.php:905
+msgid "Necessita aceitar os termos"
+msgstr "Χρεάζεται αποδοχή των όρων."
+
+#: controllers/registration.controller.php:920
+msgid "Este email já existe no sistema."
+msgstr "Η διεύθυνση email υπάρχει ήδη στο σύστημα."
+
+#: controllers/registration.controller.php:933
+msgid "Código errado."
+msgstr "Μη έγκυρος κωδικός."
+
+#: controllers/registration.controller.php:974
+#: controllers/registration.controller.php:1016
+#: controllers/ambassadors.controller.php:107
+msgid "Bem-vindo"
+msgstr "Καλώς ήρθες"
+
+#: controllers/content.controller.php:394
+msgid "Community"
+msgstr "κοινότητα"
+
+#: controllers/content.controller.php:432
+msgid "Sobre nós"
+msgstr "Σχετικά"
+
+#: controllers/content.controller.php:463
+#: controllers/content.controller.php:486
+#: controllers/content.controller.php:526
+msgid "Suporte"
+msgstr "Υποστήριξη"
+
+#: controllers/content.controller.php:546
+msgid "Junta-te a nós"
+msgstr "Γίνε μέλος τώρα"
+
+#: controllers/recover_password.controller.php:35
+msgid "recover_password::notification_mail::subject - Password recovery"
+msgstr "Επεξεργασία εγγραφής"
+
+#: controllers/recover_password.controller.php:36
+msgid "recover_password::notification_mail::body::header - Click the link to change your password"
+msgstr " "
+
+#: controllers/recover_password.controller.php:37
+msgid "recover_password::notification_mail::body::footer - See you"
+msgstr " "
+
+#: controllers/recover_password.controller.php:44
+msgid "recover_password_submit:success_title Success"
+msgstr "Συγχαρητήρια"
+
+#: controllers/recover_password.controller.php:45
+msgid "recover_password_submit:success_message Check your email and follow the instructions"
+msgstr "Τσέκαρε το email σου και πάτα το link που σου στείλαμε"
+
+#: controllers/recover_password.controller.php:58
+msgid "recover_password_submit:failure_notification_title"
+msgstr "Oops!"
+
+#: controllers/recover_password.controller.php:73
+msgid "recover_password::recover_password::title Recuperação de password"
+msgstr "Συγχαρητήρια! "
+
+#: controllers/recover_password.controller.php:111
+msgid "update_password::success_tex - Your password was updated."
+msgstr "Ο κωδικός πρόσβασης άλλαξε με επιτυχία"
+
+#: controllers/recover_password.controller.php:118
+#: controllers/recover_password.controller.php:130
+#: controllers/recover_password.controller.php:136
+#: controllers/recover_password.controller.php:141
+msgid "update_password::failed_text - operation failed."
+msgstr "Σφάλμα στην αλλαγή του κωδικού πρόσβασης"
+
+#: controllers/recover_password.controller.php:124
+msgid "update_password::failed_text - invalid operation"
+msgstr "Σφάλμα στην αλλαγή του κωδικού πρόσβασης"
+
+#: controllers/tellafriend.controller.php:118
+msgid "Por favor insere o email com que te registaste na nossa comunidade."
+msgstr "Γράψε το email με το οποίο γράφτηκες στην κοινότητά μας."
+
+#: controllers/tellafriend.controller.php:119
+msgid "Ao fazê-lo poderás ganhar pontos para a tua conta, por cada amigo teu que se registe."
+msgstr "Έτσι μπορείς να κερδίσεις πόντους στο λογαριασμό σου για κάθε φίλο σου που θα γράφεται. "
+
+#: controllers/tellafriend.controller.php:120
+msgid "Quanto mais pontos tiveres mais probabilidades tens de ser seleccionado para as campanhas que realmente te interessam."
+msgstr "Όσους περισσότερους πόντους έχεις, τόσες περισσότερες ευκαιρίες θα έχεις να σε επιλέξουμε για τις καμπάνιες που πραγματικά σε ενδιαφέρουν. "
+
+#: controllers/tellafriend.controller.php:121
+msgid "Atenção: para ganhares os pontos terás que ter a tua conta registada."
+msgstr "Προσοχή: πρέπει να είσαι εγγεγραμμένο μέλος για να κερδίσεις πόντους. "
+
+#: controllers/tellafriend.controller.php:169
+msgid "Configura a tua mensagem"
+msgstr "Γράψε το μήνυμά σου:"
+
+#: controllers/tellafriend.controller.php:177
+msgid "Tens de preencher pelo menos um endereço de email."
+msgstr "Πρέπει να συμπληρώσεις τουλάχιστον μία διεύθυνση email."
+
+#: controllers/tellafriend.controller.php:226
+#, php-format
+msgid "Foi enviado um email para %s"
+msgstr "Στείλαμε ένα email στον/στην %s"
+
+#: controllers/tellafriend.controller.php:302
+msgid "Junta-te já"
+msgstr "Γίνε μέλος τώρα"
+
+#: controllers/tellafriend.controller.php:307
+#: controllers/tellafriend.controller.php:333
+msgid "Olá,"
+msgstr "Γεια σου, "
+
+#: controllers/tellafriend.controller.php:310
+#: controllers/tellafriend.controller.php:334
+msgid "Vê já este site que te vai interessar."
+msgstr "Αυτό το site μπορεί να σε ενδιαφέρει. "
+
+#: controllers/tellafriend.controller.php:311
+#: controllers/tellafriend.controller.php:335
+msgid "É uma comunidade onde podes experimentar produtos e serviços das tuas marcas preferidas gratuitamente."
+msgstr "Είναι μια κοινότητα όπου μπορείς να δοκιμάζεις δωρεάν προϊόντα και υπηρεσίες από τα αγαπημένα σου brands."
+
+#: controllers/tellafriend.controller.php:312
+#: controllers/tellafriend.controller.php:336
+msgid "Eu já sou membro."
+msgstr "Εγώ είμαι ήδη μέλος. "
+
+#: controllers/tellafriend.controller.php:323
+#: controllers/tellafriend.controller.php:338
+#, php-format
+msgid "Regista-te usando este link - %s - e ambos ganharemos pontos para a nossa conta."
+msgstr "Μπορείς να κάνεις εγγραφή πατώντας το παρακάτω link:  %s"
+
+#: controllers/tellafriend.controller.php:326
+#: controllers/tellafriend.controller.php:340
+msgid "Quanto mais pontos tivermos mais probabilidades temos de ser seleccionados para as campanhas."
+msgstr "Όσο περισσότερους πόντους έχουμε, τόσες περισσότερες ευκαιρίες θα έχουμε να μας επιλέξουν για τις καμπάνιες."
+
+#: controllers/tellafriend.controller.php:328
+#: controllers/tellafriend.controller.php:341
+msgid "Até já,"
+msgstr " "
+
+#: controllers/tellafriend.controller.php:353
+#: controllers/tellafriend.controller.php:380
+msgid "Enviar email"
+msgstr "Αποστολή email"
+
+#: controllers/tellafriend.controller.php:359
+#: controllers/tellafriend.controller.php:386
+msgid "Redes sociais"
+msgstr "Πλατφόρμες κοινωνικής δικτύωσης"
+
+#: controllers/ambassadors.controller.php:160
+#: controllers/ambassadors.controller.php:206
+msgid "É necessário um endereço de e-mail válido."
+msgstr "Χρειάζεται έγκυρη διεύθυνση email. "
+
+#: controllers/ambassadors.controller.php:287
+msgid "Lamentamos mas ocorreu um erro ao efectuar o pré-registo. Foi-nos impossível guardar o endereço de mail fornecido."
+msgstr "Λυπούμαστε, αλλά λόγω απρόβλεπτης εξέλιξης δεν ήταν δυνατή η εκτέλεση της προεγγραφής σας. "
+
+#: controllers/ambassadors.controller.php:326
+msgid "Lamentamos mas ocorreu um erro ao enviar o mail para o endereço fornecido."
+msgstr "Λυπούμαστε, αλλά λόγω απρόβλεπτης εξέλιξης δεν ήταν δυνατή η αποστολή του email επιβεβαίωσης."
+
+#: controllers/ambassadors.controller.php:338
+msgid ""
+"<p>5 - Parabéns. O teu registo foi efectuado.</p>\n"
+"\t\t\t\t\t\t<p class=\"texto5\">Dentro de alguns dias receberás novidades no teu email. Entretanto recomenda já o nosso site a todos os teus amigos. Podes ganhar pontos adicionais por cada um que se inscreva através da tua recomendação. Mais pontos são mais possibilidades de receberes convites para as campanhas que são do teu interesse. Não percas tempo!</p>"
+msgstr ""
+
+#: controllers/ambassadors.controller.php:349
+msgid "Lamentamos imenso mas uma situação imprevista inviabilizou a acção de pre-registo."
+msgstr "Λυπούμαστε, αλλά λόγω απρόβλεπτης εξέλιξης δεν ήταν δυνατή η επιτυχής εκπλήρωση του αιτήματος. "
+
+#: controllers/ambassadors.controller.php:372
+#: controllers/ambassadors.controller.php:382
+msgid "Ups! Algo correu mal!"
+msgstr "Oυπς... Κάτι πήγε στραβά! "
+
+#: controllers/ambassadors.controller.php:456
+msgid "Não foi possível confirmar o registo."
+msgstr "Αποτυχία επιβεβαίωσης."
+
+#: controllers/ambassadors.controller.php:465
+msgid "O registo já se encontra confirmado."
+msgstr "Η εγγραφή σου έχει ήδη επιβεβαιωθεί. "
+
+#: controllers/ambassadors.controller.php:514
+msgid "<p>Parabéns.</p>O teu registo foi um sucesso. Dentro de alguns dias receberás novidades no teu email. Entretanto recomenda já o nosso site a todos os teus amigos. Podes ganhar pontos adicionais por cada um que se inscreva através da tua recomendação. Mais pontos são mais possibilidades de receberes convites para as campanhas que são do teu interesse. Não percas tempo!"
+msgstr ""
+
+#: controllers/ambassadors.controller.php:517
+msgid "Ocorreu um erro ao efectuar o teu registo."
+msgstr ""
+
+#: controllers/profile.controller.php:40
+msgid "Registo inicial"
+msgstr "Αρχική εγγραφή"
+
+#: controllers/profile.controller.php:77
+msgid "Bónus"
+msgstr "Μπόνους"
+
+#: controllers/profile.controller.php:83
+msgid "profile::bonus_item::help_text - Bonus help text"
+msgstr "Συμπληρώστε το προφίλ σας και να πάρετε 40 πόντους μπόνους"
+
+#: controllers/profile.controller.php:160
+msgid "Profile::points details::profile"
+msgstr "Προφίλ"
+
+#: controllers/profile.controller.php:163
+msgid "Profile::points details::these_points_are_permanent - These points are permanent."
+msgstr "Τα σημεία αυτά είναι μόνιμα"
+
+#: controllers/profile.controller.php:166
+#, fuzzy, php-format
+msgid "Profile::points details::me_as_invitee_points - You earned %d points as invitee."
+msgstr "Συμμετοχή σε καμπάνιες"
+
+#: controllers/profile.controller.php:172
+msgid "Profile::points details::friend that registered"
+msgstr "Φίλοι που έκαναν εγγραφή με τον κωδικό πρόσκλησής σου."
+
+#: controllers/profile.controller.php:175
+#, php-format
+msgid "Profile::points details::Friend had registered - %d friends had registered with your code"
+msgstr "%d φίλοι έχουν κάνει εγγραφή με τον κωδικό πρόσκλησής σου."
+
+#: controllers/profile.controller.php:184
+msgid "Profile::points details::enrolled campaigns - Campaigns you had participated"
+msgstr "Συμμετοχή σε καμπάνιες"
+
+#: controllers/default.controller.php:370
+msgid "Lamentamos imenso o sucedido mas uma situação imprevista inviabilizou a satisfação do pedido com sucesso"
+msgstr "Λυπούμαστε, αλλά λόγω απρόβλεπτης εξέλιξης δεν ήταν δυνατή η επιτυχής εκπλήρωση του αιτήματος. "
+
+#: controllers/default.controller.php:436
+#: controllers/default.controller.php:441
+msgid "login_box::message - Login session expired."
+msgstr "Login session expired."
+
+#: controllers/default.controller.php:446
+msgid "login_box::message - Inválid login credentials."
+msgstr "Μη έγκυρες πληροφορίες"
+
+#: controllers/default.controller.php:451
+#: controllers/default.controller.php:456
+#: controllers/default.controller.php:461
+msgid "login_box::message - Unexpected error. Please try later!"
+msgstr "Unexpected error. Please try later!"
+
+#: controllers/survey.controller.php:163
+msgid "Achas que és um principiante"
+msgstr "Αρχάριος"
+
+#: controllers/survey.controller.php:164
+msgid "Um bom conselheiro"
+msgstr "Καλός σύμβουλος"
+
+#: controllers/survey.controller.php:165
+msgid "Um ótimo conselheiro"
+msgstr "Πολύ καλός σύμβουλος"
+
+#: controllers/survey.controller.php:166
+msgid "Um especialista"
+msgstr "Ειδικός"
+
+#: controllers/survey.controller.php:171
+msgid "Diariamente"
+msgstr "Καθημερινά"
+
+#: controllers/survey.controller.php:172
+msgid "3 Vezes por semana"
+msgstr "3 φορές την εβδομάδα"
+
+#: controllers/survey.controller.php:173
+msgid "2 Vezes por semana"
+msgstr "2 φορές την εβδομάδα"
+
+#: controllers/survey.controller.php:174
+msgid "1 Vez por semana"
+msgstr "1 φορά την εβδομάδα"
+
+#: controllers/survey.controller.php:175
+msgid "2 Vezes por mês"
+msgstr "2 φορές το μήνα"
+
+#: controllers/survey.controller.php:176
+msgid "1 Vez por mês"
+msgstr "1 φορά το μήνα"
+
+#: controllers/survey.controller.php:177
+msgid "4 Vezes por ano"
+msgstr "4 φορές το χρόνο"
+
+#: controllers/survey.controller.php:178
+msgid "2 Vezes por ano"
+msgstr "2 φορές το χρόνο"
+
+#: controllers/survey.controller.php:179
+msgid "1 Vez por ano"
+msgstr "Μία φορά το χρόνο"
+
+#: controllers/survey.controller.php:180
+msgid "Não pratico"
+msgstr "Δεν ασχολούμαι"
+
+#: controllers/survey.controller.php:187
+msgid "profile::social_network::time_spent - All day long"
+msgstr "Όλη μέρα"
+
+#: controllers/survey.controller.php:188
+msgid "profile::social_network::time_spent - Once a day"
+msgstr "Μία φορά την ημέρα"
+
+#: controllers/survey.controller.php:189
+msgid "profile::social_network::time_spent - 3 times a week"
+msgstr "3 φορές την εβδομάδα"
+
+#: controllers/survey.controller.php:190
+msgid "profile::social_network::time_spent - Twice a week"
+msgstr "2 φορές την εβδομάδα"
+
+#: controllers/survey.controller.php:191
+msgid "profile::social_network::time_spent - Once a week"
+msgstr "Μία φορά την εβδομάδα"
+
+#: controllers/survey.controller.php:192
+msgid "profile::social_network::time_spent - Twice a month"
+msgstr "2 φορές το μήνα"
+
+#: controllers/survey.controller.php:193
+msgid "profile::social_network::time_spent - Once a month"
+msgstr "Μία φορά το μήνα"
+
+#: controllers/survey.controller.php:194
+msgid "profile::social_network::time_spent - 4 times a year"
+msgstr "4 φορές το χρόνο"
+
+#: controllers/survey.controller.php:195
+msgid "profile::social_network::time_spent - Twice a year"
+msgstr "2 φορές το χρόνο"
+
+#: controllers/survey.controller.php:196
+msgid "profile::social_network::time_spent - Once a year"
+msgstr "Μία φορά το χρόνο"
+
+#: controllers/survey.controller.php:201
+msgid "profile::social_network::behaviour - I follow other people posts"
+msgstr "Ακολουθώ τις αναρτήσεις άλλων"
+
+#: controllers/survey.controller.php:202
+msgid "profile::social_network::behaviour - I write posts on a regular basis"
+msgstr "Γράφω αναρτήσεις τακτικά"
+
+#: controllers/survey.controller.php:203
+msgid "profile::social_network::behaviour - I comment the posts that other people publish"
+msgstr "Αφήνω σχόλια σε αναρτήσεις άλλων"
+
+#: controllers/survey.controller.php:208
+msgid "profile::social_network::contacts_quantity - Less than 100"
+msgstr "λιγότερες από 100"
+
+#: controllers/survey.controller.php:209
+msgid "profile::social_network::contacts_quantity - Between 100 and 200"
+msgstr "Μεταξύ 100 και 200"
+
+#: controllers/survey.controller.php:210
+msgid "profile::social_network::contacts_quantity - Between 200 and 300"
+msgstr "Μεταξύ 200 και 300"
+
+#: controllers/survey.controller.php:211
+msgid "profile::social_network::contacts_quantity - Between 300 and 400"
+msgstr "Μεταξύ 300 και 400"
+
+#: controllers/survey.controller.php:212
+msgid "profile::social_network::contacts_quantity - Between 400 and 500"
+msgstr "Μεταξύ 400 και 500"
+
+#: controllers/survey.controller.php:213
+msgid "profile::social_network::contacts_quantity - Between 500 and 1.000"
+msgstr "Μεταξύ 500 και 1.000"
+
+#: controllers/survey.controller.php:214
+msgid "profile::social_network::contacts_quantity - Between 1.000 and 1.500"
+msgstr "Μεταξύ 1.000 και 1.500"
+
+#: controllers/survey.controller.php:215
+msgid "profile::social_network::contacts_quantity - Between 1.500 and 2.000"
+msgstr "Μεταξύ 1.500 και 2.000"
+
+#: controllers/survey.controller.php:216
+msgid "profile::social_network::contacts_quantity - Between 2.000 and 3.000"
+msgstr "Μεταξύ 2.000 και 3.000"
+
+#: controllers/survey.controller.php:217
+msgid "profile::social_network::contacts_quantity - Between 3.000 and 4.000"
+msgstr "Μεταξύ 3.000 και 4.000"
+
+#: controllers/survey.controller.php:218
+msgid "profile::social_network::contacts_quantity - Between 4.000 and 5.000"
+msgstr "Μεταξύ 4.000 και 5.000"
+
+#: controllers/survey.controller.php:219
+msgid "profile::social_network::contacts_quantity - Between 5.000 and 10.000"
+msgstr "Μεταξύ 5.000 και 10.000"
+
+#: controllers/survey.controller.php:220
+msgid "profile::social_network::contacts_quantity - More than 10.000"
+msgstr "περισσότερες από 10.000"
+
+#: controllers/survey.controller.php:1713
+msgid "Success."
+msgstr ""
+
+#: controllers/survey.controller.php:1737
+#, php-format
+msgid "survey::question::file_upload::invalid_file_size - Invalid file size %d should be smaller than than 120000 bytes (12 Kb). Please resize it or use another."
+msgstr "Μη έγκυρο μέγεθος αρχείου, το %d θα πρέπει να είναι μικρότερο από 120000 bytes (120 Kb). Μπορείς να αλλάξεις το μέγεθος ή να χρησιμοποιήσεις άλλο αρχείο."
+
+#: controllers/survey.controller.php:1752
+#, php-format
+msgid "survey::question::file_upload::invalid_file_type - Invalid file type %d. Please use another."
+msgstr "Invalid file type %d. Please use another."
+
+#: controllers/survey.controller.php:1765
+msgid "survey::question::file_upload::unspecified_error_default_error_msg - An error occurred while processing your upload. Try again."
+msgstr " An error occurred while processing your upload. Try again."
+
+#: model/survey_questions.model.php:12
+msgid "label::select_option"
+msgstr "(Διάλεξε από τη λίστα)"
+
+#~ msgid "(seleccione uma opcao)"
+#~ msgstr "(Διάλεξε από τη λίστα)"
+
+#~ msgid "Localização"
+#~ msgstr "Localization"
+
+#~ msgid "Interesses"
+#~ msgstr "Interests"
+
+#~ msgid "A password não pode ser \"olamaria\""
+#~ msgstr "You cannot use \"olamaria\" as password."
+
+#~ msgid "Campanhas <br /> <span class=\"menuTabs1bAtivo\"> em curso</span>"
+#~ msgstr "Τρέχουσες <br /> <span class=\"menuTabs1bAtivo\"> καμπάνιες</span>"
+
+#~ msgid " campanhas"
+#~ msgstr "καμπάνιες"
+
+#~ msgid "Campanhas <br /> <span class=\"menuTabs1b\"> terminadas</span>"
+#~ msgstr ""
+#~ "Καμπάνιες <br /> <span class=\"menuTabs1bAtivo\"> που έχουν ολοκληρωθεί</"
+#~ "span>"
+
+#~ msgid "MSN"
+#~ msgstr "MSN"
+
+#~ msgid "label::password_recovery password_recovery"
+#~ msgstr "Ανάκτηση κωδικού πρόσβασης"
+
+#~ msgid "Clica na foto para actualizar"
+#~ msgstr "Κλικ στη φωτογραφία για αναβάθμιση"
+
+#~ msgid "Data de nascimento "
+#~ msgstr "Ημερομηνία γέννησης"
+
+#~ msgid "Nível de ensino concluído"
+#~ msgstr "Επίπεδο εκπαίδευσης"
+
+#~ msgid "Nacionalidade"
+#~ msgstr "Εθνικότητα"
+
+#~ msgid "Estado Civil"
+#~ msgstr "Οικογενειακή κατάσταση"
+
+#, fuzzy
+#~ msgid "Número de filhos"
+#~ msgstr "Αριθμός επαφών"
+
+#~ msgid "Número de telemóvel - Código do país"
+#~ msgstr "Κινητό τηλέφωνο - κωδικός χώρας"
+
+#~ msgid "Número de telemóvel "
+#~ msgstr "Κινητό τηλέφωνο - αριθμός"
+
+#~ msgid "Morada"
+#~ msgstr "Διεύθυνση (οικίας)"
+
+#~ msgid "Codigo Postal"
+#~ msgstr "ΤΚ (οικίας)"
+
+#~ msgid "Cidade"
+#~ msgstr "Πόλη (οικίας)"
+
+#~ msgid "Distrito/Estado"
+#~ msgstr "Νομός (οικίας)"
+
+#~ msgid "País"
+#~ msgstr "Χώρα (οικίας)"
+
+#~ msgid "Morada Alternativa"
+#~ msgstr "Διεύθυνση (εναλλακτική)"
+
+#~ msgid "Codigo Postal Alternativo"
+#~ msgstr "ΤΚ (εναλλακτική)"
+
+#~ msgid "Cidade Alternativa"
+#~ msgstr "Πόλη (εναλλακτική)"
+
+#~ msgid "Distrito/Estado Alternativo"
+#~ msgstr "Νομός (εναλλακτική)"
+
+#~ msgid ""
+#~ "Dentro destas atividades, quais é que tens interesse e com que frequência "
+#~ "praticas?"
+#~ msgstr "Ποια είναι τα ενδιαφέροντά σου και πόσο συχνά ασχολείσαι με αυτά; "
+
+#~ msgid "Em que redes sociais possuis contas"
+#~ msgstr "Σε πόσες πλατφόρμες κοινωνικής δικτύωσης έχεις λογαριασμό;"
+
+#, fuzzy
+#~ msgid "Qual o url do blog?"
+#~ msgstr "Ποιο είναι το url του λογαριασμού σου;"
+
+#~ msgid "Qual a tua situação laboral?"
+#~ msgstr "Ποια είναι η επαγγελματική σου κατάσταση; "
+
+#~ msgid "Qual a tua profissão?"
+#~ msgstr "Eπάγγελμα "
+
+#~ msgid "Morada (local de trabalho)"
+#~ msgstr "Διεύθυνση (εργασίας)"
+
+#~ msgid "Codigo Postal (local de trabalho)"
+#~ msgstr "ΤΚ (εργασίας)"
+
+#~ msgid "Cidade (local de trabalho)"
+#~ msgstr "Πόλη (εργασίας)"
+
+#, fuzzy
+#~ msgid "Distrito/Estado (local de trabalho)"
+#~ msgstr "Νομός (εργασίας)"
+
+#~ msgid "Como te sentes com produtos novos?"
+#~ msgstr "Πώς αισθάνεσαι για τα νέα προϊόντα;"
+
+#~ msgid "Eu prefiro fazer compras: "
+#~ msgstr "Προτιμώ να ψωνίζω: "
+
+#~ msgid "Telemóvel/Smartphone"
+#~ msgstr "Κινητό τηλέφωνο/ smartphone"
+
+#~ msgid "Computador"
+#~ msgstr "Υπολογιστής "
+
+#~ msgid "Jogos/consolas"
+#~ msgstr "Games/ κονσόλες gaming"
+
+#~ msgid "Leitor de mp3"
+#~ msgstr "MP3 player"
+
+#~ msgid "Blogs"
+#~ msgstr "Blogs"
+
+#~ msgid "Qual a dimensão da tua família próxima?"
+#~ msgstr "Ποιο είναι το μέγεθος της κοντινής σου οικογένειας; "
+
+#~ msgid ""
+#~ "Qual a dimensão do teu círculo de amigos (a quem te sentes confortável em "
+#~ "dizer segredos)?"
+#~ msgstr ""
+#~ "Πόσους κοντινούς φίλους έχεις (στους οποίους αισθάνεσαι άνετα να λες "
+#~ "μυστικά); "
+
+#~ msgid "Qual a dimensão do teu círculo de colegas de trabalho?"
+#~ msgstr "Πόσους συναδέλφους έχεις; "
+
+#~ msgid ""
+#~ "Qual a dimensão do teu círculo de conhecimentos (quando os vês na rua, "
+#~ "tens com eles um conversa longa)?"
+#~ msgstr ""
+#~ "Πόσους γνωστούς έχεις (που όταν τους βλέπεις στο δρόμο μιλάτε πολύ); "
+
+#~ msgid ""
+#~ "Se fores fazer alguma actividade com os teus amigos como é tomada a "
+#~ "decisão?"
+#~ msgstr ""
+#~ "Εσύ και οι φίλοι σου αποφασίζετε για μια δραστηριότητα. Πώς παίρνετε την "
+#~ "απόφαση; "
+
+#~ msgid "1. How many weight loss diets have you done in the last 12 months?"
+#~ msgstr "1. How many weight loss diets have you done in the last 12 months?"
+
+#~ msgid "2. What leads you to get involved in a weight loss diet program? "
+#~ msgstr "2. What leads you to get involved in a weight loss diet program? "
+
+#~ msgid "3. Who encourages you to do a weight loss diet?"
+#~ msgstr "3. Who encourages you to do a weight loss diet?"
+
+#~ msgid "4. How long do those weight loss diets take? "
+#~ msgstr "4. How long do those weight loss diets take? "
+
+#~ msgid "5. How much weight do you want to lose with a weight loss diet? "
+#~ msgstr "5. How much weight do you want to lose with a weight loss diet? "
+
+#~ msgid "6. At that time of the year do you usually take your diet?"
+#~ msgstr "6. At that time of the year do you usually take your diet?"
+
+#~ msgid "7. What do you usually do to lose weight? "
+#~ msgstr "7. What do you usually do to lose weight? "
+
+#~ msgid ""
+#~ "8. Are you satisfied with the results of the weight loss diets you've "
+#~ "done?"
+#~ msgstr ""
+#~ "8. Are you satisfied with the results of the weight loss diets you've "
+#~ "done?"
+
+#~ msgid "9. What usually fails in the weight loss diets you've done? "
+#~ msgstr "9. What usually fails in the weight loss diets you've done? "
+
+#~ msgid ""
+#~ "10. Which features are most valuable to you in a product that helps you "
+#~ "to lose weight?"
+#~ msgstr ""
+#~ "10. Which features are most valuable to you in a product that helps you "
+#~ "to lose weight?"
+
+#~ msgid "11. Which weight loss products do you know?"
+#~ msgstr "11. Which weight loss products do you know?"
+
+#~ msgid "12. Have you used any one of these products in the last 24 months? "
+#~ msgstr "12. Have you used any one of these products in the last 24 months? "
+
+#~ msgid "13. If you did not use any, are you planning to?"
+#~ msgstr "13. If you did not use any, are you planning to?"
+
+#~ msgid "13.1. If yes, which one?"
+#~ msgstr "13.1. If yes, which one?"
+
+#~ msgid "14. Do you know the XLS Medical TV campaign?"
+#~ msgstr "14. Do you know the XLS Medical TV campaign?"
+
+#~ msgid "16. Do you identify yourself with the image of the campaign?"
+#~ msgstr "16. Do you identify yourself with the image of the campaign?"
+
+#~ msgid "17. After watching the movie, would you buy the product?"
+#~ msgstr "17. After watching the movie, would you buy the product?"
+
+#~ msgid "18. Why?"
+#~ msgstr "18. Why?"
+
+#~ msgid "1. Do you see any of these signs of aging? "
+#~ msgstr "1. Do you see any of these signs of aging? "
+
+#~ msgid "2. Do you use anti-aging cosmetic products? "
+#~ msgstr "2. Do you use anti-aging cosmetic products? "
+
+#~ msgid "3. If so, where do you buy them? "
+#~ msgstr "3. If so, where do you buy them? "
+
+#~ msgid "4. If so, what brands did you use in the last 6 months? "
+#~ msgstr "4. If so, what brands did you use in the last 6 months? "
+
+#~ msgid "5. What feature do you value the most in an anti-aging product? "
+#~ msgstr "5. What feature do you value the most in an anti-aging product? "
+
+#~ msgid ""
+#~ "6. How much would you be willing to pay for a cosmetic anti-aging "
+#~ "product? "
+#~ msgstr ""
+#~ "6. How much would you be willing to pay for a cosmetic anti-aging "
+#~ "product? "
+
+#~ msgid "7. Would you like to try an innovative cosmetic anti-aging product? "
+#~ msgstr ""
+#~ "7. Would you like to try an innovative cosmetic anti-aging product? "
+
+#~ msgid "8. Why do you think you should be selected for this campaign? "
+#~ msgstr "8. Why do you think you should be selected for this campaign? "
+
+#~ msgid "Cell phone/Smartphone"
+#~ msgstr "Κινητό τηλέφωνο/ smartphone"
+
+#~ msgid "Computer"
+#~ msgstr "Ηλεκτρονικός Υπολογιστής"
+
+#~ msgid "Game consoles"
+#~ msgstr "Κονσόλες gaming"
+
+#~ msgid "Social networks"
+#~ msgstr "Κοινωνικά δίκτυα"
+
+#~ msgid ""
+#~ "Profile::points details::fullfilled questionnaires - Completed "
+#~ "questionnaires"
+#~ msgstr "Completed questionnaires"
+
+#~ msgid "registration::activate_registration::success - Registo bem sucedido"
+#~ msgstr ""
+#~ "Η εγγραφή σου ήταν επιτυχής.<br />Ευχαριστούμε που γράφτηκες στην "
+#~ "κοινότητά μας. Τώρα μπορείς να κάνεις log in και να: <br />- Συμπληρώσεις "
+#~ "το προφίλ σου. Φρόντισε να το κρατάς ενημερωμένο για να μπορούμε να σε "
+#~ "γνωρίσουμε καλύτερα και να προσαρμόσουμε τις καμπάνιες μας στα "
+#~ "ενδιαφέροντα και τις ανάγκες σου<br />- Δηλώσεις συμμετοχή στις "
+#~ "διαθέσιμες καμπάνιες που σε ενδιαφέρουν<br />- Μάθεις περισσότερα για το "
+#~ "πώς να είσαι ambassador, με το εκπαιδευτικό μας πρόγραμμα<br />- "
+#~ "Ξεκινήσεις να μοιράζεσαι τα νέα για την κοινότητά μας και να τη συστήνεις "
+#~ "στους φίλους σου. Για κάθε έναν που γράφεται θα κερδίζεις πόντους. Με "
+#~ "περισσότερους πόντους θα έχεις περισσότερες ευκαιρίες να σε επιλέξουμε "
+#~ "για τις καμπάνιες που σε ενδιαφέρουν. <br />Καλή τύχη! "
+
+#~ msgid "Ver como"
+#~ msgstr "Δες πώς"
+
+#~ msgid "Registo bem sucedido"
+#~ msgstr "Η εγγραφή σου ήταν επιτυχής"
+
+#, fuzzy
+#~ msgid "Verifica o teu email e clica no link enviado."
+#~ msgstr ""
+#~ "Δες το mail σου τώρα και κάνε κλικ στο link που σου στείλαμε για να "
+#~ "επικυρώσεις το λογαριασμό σου."
+
+#~ msgid "Inserir código"
+#~ msgstr "Εισάγετε κωδικό"
+
+#~ msgid "Login"
+#~ msgstr "Είσοδος"
+
+#~ msgid "Lembrar-me"
+#~ msgstr "Υπενθύμιση"
+
+#~ msgid "Esqueci-me da password"
+#~ msgstr "Ξέχασα το συνθηματικό"
+
+#~ msgid "Esqueci-me do Username"
+#~ msgstr "Ξέχασα το όνομα χρήστη"
+
+#~ msgid "...ou logar com:"
+#~ msgstr "... Ή είσοδος με: "
+
+#~ msgid "Iniciar sessão"
+#~ msgstr "Αρχή περιόδου"
+
+#~ msgid "Confirmar"
+#~ msgstr "Επιβεβαίωση"
+
+#~ msgid "com que regularidade utilizas?"
+#~ msgstr "Πόσο συχνά το χρησιμοποιείς;"
+
+#~ msgid "Inscrição de amigos teus com o teu código de convite"
+#~ msgstr "Εγγραφή φίλου που προσκάλεσες"
+
+#~ msgid "Questionários preenchidos"
+#~ msgstr "Συμπληρωμένα ερωτηματολόγια"
+
+#~ msgid "Campanhas em que participaste"
+#~ msgstr "Συμμετοχή σε καμπάνιες"
+
+#~ msgid "Inscrição de amigos após recomendação"
+#~ msgstr "Φίλοι που έκαναν εγγραφή μετά τη σύστασή σου"
+
+#~ msgid "Tens filhos?"
+#~ msgstr "Έχεις παιδιά; "
+
+#~ msgid "Aproveita e recomenda aos teus amigos:"
+#~ msgstr "Απόλαυσέ το και σύστησέ το και στους φίλους σου: "
+
+#~ msgid "página"
+#~ msgstr "σελίδα"

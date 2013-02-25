@@ -1,0 +1,183 @@
+#login #signin_menu {
+	display: none;
+	position:absolute;
+	width:210px;
+	z-index:500;
+	border:1px transparent;
+	text-align:left;
+	padding:12px;
+	background-color:#DDDDDD;
+	right: 0;
+	border-radius: 4px 0 4px 4px;
+	top: 38px;
+}
+
+#login{
+	width:160px;
+	float:right;
+	color:#FF0;
+	padding-top: 6px;
+	text-align: right;
+}
+
+.regist {
+	left: 188px;
+	position: relative;
+	top: 113px;
+}
+
+#login #login_error_message{
+	min-height: 11px;
+	width: 100%;
+}
+
+#login label{
+	color: #fff;
+	font-size: 11px;        
+}
+
+.regist #signin_form label{
+	color:#778899;
+}
+
+#login input {
+	font-size: 13px;
+	height: 20px;
+	padding: 5px;
+	border:1px solid #AACCEE;
+	width: 195px;
+	margin: 0 0 5px;
+}
+
+#login .error{
+	color:#FF0000;
+	float: left;
+	font-size: 11px;
+}
+
+#login #signin_submit{
+	background: url("<?php echo $submit_background_image_url ?>") repeat-x scroll 0 0 #3399DD;
+	border: 1px solid #3399DD;
+	color: #FFFFFF;font-size: 11px;
+	font-weight: bold;
+	margin: 5px 5px 0 0;
+	padding: 4px 10px 5px;
+	text-shadow: 0 -1px 0 #3399DD;
+	width: 45%;
+	height: 25px;
+}
+
+#login #signin_submit:hover{
+	cursor:pointer;
+	background: url("<?php echo $submit_hover_background_image_url; ?>") repeat-x scroll 0 0 #3399DD;
+}
+
+#login .signin{
+	border-radius: 4px 4px 4px 4px;
+}
+#login .top_nav{
+	background: #DDD;
+	background-image: url("<?php echo $login_top_nav_background_image_url ?>");
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	padding: 4px 20px 6px 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+#login .menu-open{
+	background-image: url("<?php echo $login_menu_open_background_image_url ?>");
+}
+
+#login #register_link{
+	float: right;
+	font-size: 11px;
+	/*left: 70px;*/
+	line-height: 23px;
+	padding: 10px 0 12px;
+	position: relative;
+	text-align: right;
+	/*top: 115px;*/
+	/*width: 160px;*/
+}
+
+#login #login_link a, #login #login_link a:visited,
+#login #register_link a, #login #register_link a:visited {
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+#login #register_link a:hover, #login #register_link a:active, #login #register_link a:visited:hover {
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-decoration: underline;
+}
+
+
+#login #login_link{
+	float: right;
+	font-size: 11px;
+	/*left: 180px;*/
+	line-height: 23px;
+	padding: 10px 0 12px;
+	position: relative;
+	text-align: right;
+	/*top: 70px;*/
+	/*width: 160px; */
+}
+
+#login .partilhar2{
+	height: 34px;
+	position: absolute;
+	right: 0;
+	top: 90px;
+	width: 125px;
+}
+
+#login .partilhar2 input {
+	background-color: transparent;
+	background-image: url("<?php echo $login_partilhar2_input_background_image_url ?>");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	color: #FFFFFF;
+	display: block;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	height: 34px;
+	padding: 0;
+	position: relative;
+	width: 123px;
+}
+#login .partilhar2 input:hover {
+	background-color: transparent;
+	background-image: url("<?php echo $login_partilhar2_input_over_background_image_url ?>");
+	background-position: 0 -34px;
+	background-repeat: no-repeat;
+	border: 0 none;
+	color: #FFFFFF;
+	display: block;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	height: 34px;
+	padding: 0;
+	width: 123px;
+}
+#login .partilhar2 input:active {
+	background-color: transparent;
+	background-image: url("<?php echo $login_partilhar2_input_active_background_image_url; ?>");
+	background-position: 0 -68px;
+	background-repeat: no-repeat;
+	border: 0 none;
+	color: #FFFFFF;
+	display: block;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	height: 34px;
+	padding: 0;
+	width: 123px;
+}

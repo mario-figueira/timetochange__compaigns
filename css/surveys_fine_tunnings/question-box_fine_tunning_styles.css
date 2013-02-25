@@ -1,0 +1,48 @@
+.in_fld_field50 .areaResposta input{width: 50px;}
+.in_fld_field50 .areaResposta .areaRespostaMulti{width: 75px;}
+
+.in_fld_field100 .areaResposta input{width: 100px;}
+.in_fld_field100 .areaResposta .areaRespostaMulti{width: 125px;}
+
+.in_fld_field150 .areaResposta input{width: 150px;}
+.in_fld_field150 .areaResposta .areaRespostaMulti{width: 175px;}
+
+.in_fld_field200 .areaResposta input{width: 200px;}
+.in_fld_field200 .areaResposta .areaRespostaMulti{width: 225px;}
+
+.in_fld_field250 .areaResposta input{width: 250px;}
+.in_fld_field250 .areaResposta .areaRespostaMulti{width: 275px;}
+
+.in_fld_field300 .areaResposta input{width: 300px;}
+.in_fld_field300 .areaResposta .areaRespostaMulti{width: 325px;}
+
+.in_fld_side-by-side .areaPergunta{
+	float: left;
+	margin-right: 10px;
+	margin-top: 30px;
+	position: relative;
+	width: auto;
+}
+
+.in_fld_side-by-side .areaResposta{
+	position:relative;
+	float:left;
+	width: auto;
+}
+
+.in_fld_side-by-side .zonaForm1c{
+	float:inherit;
+	margin-bottom: 10px;
+}
+
+.multiple_free_response{
+	width: 675px;
+}
+
+.in_fld_horizontal-fields .areaRespostaMulti{
+	float:left;
+}
+
+.areaResposta .error{
+	float:none;
+}

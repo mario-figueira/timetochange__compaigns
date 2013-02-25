@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="<?php echo $language['short']; ?>">
+<head>
+    <title><?php echo $active_site['domain'];?></title>
+    <meta name="description" content="landingPage" />
+    <meta name="keywords" content="landingPage" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+<?php require_once 'util/DBCHelper.php'; ?>
+    
+<?php DBCHelper2::assert_that()->the_variable($css)->is_an_array(); ?>            
+<?php foreach ($css as $cssName) { ?>
+	<link 
+		href="<?php echo $active_site['domain'] . '/' . $cssName ?>" 
+		rel="stylesheet"
+		type="text/css" />
+<?php } ?>
+	
+<?php DBCHelper2::assert_that()->the_variable($js)->is_an_array(); ?>            
+<?php foreach ($js as $jsName) { ?>
+	<script 
+		type="text/javascript" 
+		src="<?php echo $active_site['domain'] . '/' . $jsName ?>"
+	></script>
+<?php } ?>
+
+		    
+    <link href="<?php echo $active_site['domain'] ?>favicon.ico" rel="icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		    
+</head>
+<body class="tema1fundo">
+<div class="main">
+  <div class="protegerRodape">
+    <div class="header">
+      <div class="link_home"><a href="<?php echo $active_site['domain'].'/'.$country['name'];?>"><?php echo $active_site['name'];?></a> </div>
+      <nav class="link_menu_position">
+        <?php
+        $current_menu = $main_menu;
+        $include_1 = REALPATH.'views/components/html/ul_menu.php';
+        include $include_1;//REALPATH.'views/components/html/ul_menu.php';
+	  if(DEBUG){
+		  $include_2 = REALPATH.'views/components/login/login.php';
+		  include $include_2;
+	  }
+        ?>
+      </nav>
+      <div class="language1">
+          <img src="<?php echo $active_site['domain'] ?>/imgs/<?php echo $country['name'];?>.png" width="97" height="32" alt="<?php echo $country['name']?>">
+      </div>
+    </div>
+   <div class="center_main">
+        
+        
+
+
+

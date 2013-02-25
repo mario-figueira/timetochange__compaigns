@@ -1,0 +1,27 @@
+<?php
+
+$this->error_messages['pt_pt'] = array(
+	'required' => 'Campo de preenchimento obrigatório',
+	'email' => 'Por favor insira um email válido.',
+	'url' => 'Por favor insira um URL válido.',
+	'creditcard' => 'Por favor insira um número de cartão de crédito válido.',
+	'date' => 'Por favor insira uma data válida.(aaaa-mm-dd)',
+	'datetime' => 'Por favor insira uma data/hora válida.(aaaa-mm-ddThh:mm:ssZ)',
+	'datetime-local' => 'Por favor insira um padrão data/hora válido.(aaaa-mm-ddThh:mm:ss)',
+	'time' => 'Por favor insira uma hora válida.',
+	'alphabetic' => 'Por favor insira só letras.',
+	'alphanumeric' => 'Por favor insira letras, "underscores" e números.',
+	'color' => 'Por favor insira uma cor válida. (nome, hexadec ou rgb)',
+	'month' => 'Por favor insira o mês do ano válido. (e.g. 1974-03)',
+	'week' => 'Por favor insira a semana do ano válida. (e.g. 1974-W43)',
+	'number' => 'Por favor insira um número.(e.g. 12,-12.5,-1.3e-2)',
+	'integer' => 'Por favor insira um número inteiro.',
+	'zipcode' => 'Por favor insira um código postal válido.',
+	'enum' => 'Por favor escolha uma opção: [ {enum} ]',
+	'minlength' => 'Por favor insira pelo menos {length} caracteres.',
+	'maxlength' => 'Por favor insira no maximo {length} caracteres.',
+	'min' => 'Por favor insira um valor maior ou igual a {value}.',
+	'max' => 'Por favor insira um valor menor ou igual a {value}.',
+	'mustmatch' => 'Por favor insira o mesmo valor.',
+	'captcha' => 'A sua resposta não corresponde ao texto que consta na imagem. Por favor tente novamente.',
+);

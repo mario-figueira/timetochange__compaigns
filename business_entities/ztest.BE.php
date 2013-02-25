@@ -1,0 +1,35 @@
+<?php
+
+require_once __DIR__ ."/base.BE.php";
+
+class ztest__BE extends base__BE{	
+		
+	protected $name;	
+	
+	public $explicit_declared_field;
+	
+	protected function __construct($a_fields_array){
+		parent::__construct($a_fields_array);
+	}
+	
+	public static function create_from_record($a_business_entity_record){
+		$ret_val = null;
+		
+		$instance = new ztest__BE($a_business_entity_record);
+		
+		//$instance->fields = $a_business_entity_record;
+		
+		$ret_val = $instance;
+		
+		return $ret_val;
+	}
+	
+	protected function name__get(){
+		return $this->name;		
+	}
+
+	protected function name__set($a_value){
+		$this->name = $a_value;		
+	}
+
+}

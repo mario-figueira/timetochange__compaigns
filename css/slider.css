@@ -1,0 +1,124 @@
+/* 
+    Document   : slider.css
+    Created on : Aug 21, 2012, 5:12:01 PM
+    Author     : pmcosta
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.rslides-container {
+	position: relative;
+	height: auto;
+	margin-top: 20px;
+	/*background: rgba(0,0,255,.3);*/
+	clear: both;
+}
+
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 90%;
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #d5d3d2;
+}
+
+.rslides li {
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	/*width: 100%;*/
+	border: 0;
+}
+.rslides-container .prev {
+	position: absolute;
+	display: block;
+	top: 50%;
+	margin-top: -17px;
+	background: red;
+	height: 35px;
+	width: 24px;
+	left: 10px;
+	text-indent: -9999px;
+	background: url(../imgs/seta_esq.png) left top no-repeat;
+}
+.rslides-container .prev:hover { background: url(../imgs/seta_esq.png) left -35px no-repeat; }
+.rslides-container .prev:active { background: url(../imgs/seta_esq.png) left -71px no-repeat; }
+
+.rslides-container .next {
+	position: absolute;
+	display: block;
+	top: 50%;
+	margin-top: -17px;
+	background: red;
+	height: 35px;
+	width: 24px;
+	right: 10px;
+	text-indent: -9999px;
+	background: url(../imgs/seta_dir.png) left top no-repeat;
+}
+.rslides-container .next:hover { background: url(../imgs/seta_dir.png) left -35px no-repeat; }
+.rslides-container .next:active { background: url(../imgs/seta_dir.png) left -71px no-repeat; }
+
+.rslides_tabs {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 0;
+	text-align: center;
+	border-radius: 3px;
+	background: #d5d3d2;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.rslides_tabs li {
+	display: inline-block;
+	*display: block;
+	width: 16px;
+	height: 16px;
+	font-size: 12px;
+	background: url(../imgs/rslides_tabs_bg.png) center top no-repeat;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.rslides_tabs li.rslides_here {
+	background: url(../imgs/rslides_tabs_bg.png) center bottom no-repeat;
+}
+.rslides_tabs a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999px;
+}
+.rslides .rslide-left-img {
+	float: left;
+	width: 50%;
+}
+.rslides .rslide-left-img img {
+	max-width: 100%;
+}
+.rslides .slideshow2aDirGrande {
+	float: left;
+	margin-left: 3%;
+	width: 47%;
+	padding-top: 10px;
+}
+
+

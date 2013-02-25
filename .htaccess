@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule     (.*\.(png|gif|jpg|swf|css|js|woff|ttf|ico|less|pdf|mp4|flv|xml))$  -  [L]
+RewriteRule     ^timthumb.php(.*)$  -  [L]
+RewriteRule     ^channel.html(.*)$  -  [L]
+RewriteRule     dapphp-securimage-45c5afd(.*)$  -  [L]
+RewriteRule     ^index.php/(.*)$  -  [L]
+RewriteRule     ^(.*)$   index.php/$1  [NC,QSA,L]

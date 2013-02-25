@@ -1,0 +1,27 @@
+<?php
+
+$this->error_messages['en_gb'] = array(
+	'required' => 'This field is required.',
+	'email' => 'Please enter a valid email address.',
+	'url' => 'Please enter a valid URL.',
+	'creditcard' => 'Please enter a valid credit card number.',
+	'date' => 'Please enter a valid date.',
+	'datetime' => 'Please enter a valid DateTime.(yyyy-mm-ddThh:mm:ssZ)',
+	'datetime-local' => 'Please enter a valid local DateTime.(yyyy-mm-ddThh:mm:ss)',
+	'time' => 'Please enter a valid time.',
+	'alphabetic' => 'Please enter only letters.',
+	'alphanumeric' => 'Please enter only letters, underscores and numbers.',
+	'color' => 'Please enter a valid color. (named, hexadec or rgb)',
+	'month' => 'Please enter the month of a year. (e.g. 1974-03)',
+	'week' => 'Please enter the week of a year. (e.g. 1974-W43)',
+	'number' => 'Please enter a number.(e.g. 12,-12.5,-1.3e-2)',
+	'integer' => 'Please enter a number without decimals.',
+	'zipcode' => 'Please enter a valid Zipcode.',
+	'enum' => 'Please enter one of the following: [ {enum} ]',
+	'minlength' => 'Please enter at least {length} characters.',
+	'maxlength' => 'Please enter no more than {length} characters.',
+	'min' => 'Please enter a value greater than or equal to {value}.',
+	'max' => 'Please enter a value less than or equal to {value}.',
+	'mustmatch' => 'Please enter the same value again.',
+	'captcha' => 'Your response does not match the text in the image. Please try again.',
+);
