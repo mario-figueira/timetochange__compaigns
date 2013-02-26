@@ -8,13 +8,20 @@ class Template {
 
     function __construct($command) {
         require_once 'router/command.php';
-        if ($command instanceof Command) {
-            $this->_controller = $command->Name;
-            $this->_action = $command->Action;
-            $this->setParameters($command->Parameters);
-            $this->set('original_action', $command->Action);
-            $this->set('original_controller', $command->Name);
-        }
+	  
+		$this->_controller = $command->Name;
+		$this->_action = $command->Action;
+		$this->setParameters($command->Parameters);
+		$this->set('original_action', $command->Action);
+		$this->set('original_controller', $command->Name);
+		
+		require_once REALPATH ."enums/menu_items_enum.php";
+
+		$selected_menu_value_to_check = $this->variables['selected_menu'];
+		$selected_menu_is_set = isset($selected_menu_value_to_check);
+		$selected_menu = $selected_menu_is_set?$selected_menu_value_to_check:menus_items_enum::$C_DASHBOARD;
+		$this->set("selected_menu", $selected_menu);
+
     }
 
     /** Set Variables * */
@@ -73,95 +80,15 @@ class Template {
 
         $active_site = $this->variables['active_site'];
         $active_domain = $active_site['domain'];
-        $image_url = "{$active_domain}/imgs/{$a_image_filename}";
-
-        return $image_url;
-    }
-    
-    public function build_flag_site_img_url($a_image_filename) {
-
-        if (!isset($a_image_filename) or $a_image_filename == "") {
-            return "";
-        }
-
-        $active_site = $this->variables['active_site'];
-        $active_domain = $active_site['domain'];
-        $image_url = "{$active_domain}/imgs/site_flags/{$a_image_filename}";
-
-        return $image_url;
-    }
-    
-    private function build_img_url_when_name_already_has_img_on_the_path($a_image_filename) {
-	    
-	    //todo: temporary function to be dropped in the future. it now required to handle imgs from the content_img table
-
-        if (!isset($a_image_filename) or $a_image_filename == "") {
-            return "";
-        }
-
-        $active_site = $this->variables['active_site'];
-        $active_domain = $active_site['domain'];
-        $image_url = "{$active_domain}/{$a_image_filename}";
-
-        return $image_url;
-    }
-
-    private function build_uploaded_img_url($a_image_filename) {
-
-        if (!isset($a_image_filename) or $a_image_filename == "") {
-            return "";
-        }
-
-        $active_site = $this->variables['active_site'];
-        $active_domain = $active_site['domain'];
-        $image_url = "{$active_domain}/uploads/{$a_image_filename}";
-
-        return $image_url;
-    }
-
-    private function build_uploaded_img_physical_path($a_image_filename) {
-
-        if (!isset($a_image_filename) or $a_image_filename == "") {
-            return "";
-        }
-
-        $active_site = $this->variables['active_site'];
-        $active_domain = 
-        $image_url = REALPATH ."/uploads/{$a_image_filename}";
-
-        return $image_url;
-    }
-
-    private function build_img_url_OtherLocation($a_image_filename) {
-
-        if (!isset($a_image_filename) or $a_image_filename == "") {
-            return "";
-        }
-
-        $active_site = $this->variables['active_site'];
-        $active_domain = $active_site['domain'];
         $image_url = "{$active_domain}/img/{$a_image_filename}";
 
         return $image_url;
     }
+    
 
-    private function build_pdf_download_url($a_basepath_relative_physical_location, $a_pdf_filename) {
 
-        if (!isset($a_pdf_filename) or $a_pdf_filename == "") {
-            return "";
-        }
 
-        $active_site = $this->variables['active_site'];
-        $active_domain = $active_site['domain'];
-        $physical_location = $active_domain . $a_basepath_relative_physical_location;
-        //$pdf_download_url = "{$active_domain}/downloader/location/{$physical_location}/file/{$a_pdf_filename}/";
-        //$pdf_url= declare_url($pdf_url);
-
-        $pdf_download_url = "{$physical_location}{$a_pdf_filename}";
-
-        return $pdf_download_url;
-    }
-
+    
     private function build_current_site_base_url() {
         $active_site = $this->variables['active_site'];
         $active_domain = $active_site['domain'];
@@ -268,17 +195,14 @@ class Template {
             }
         }
 
-        $active_site = $this->variables['active_site'];
-        $active_domain = $active_site['domain'];
-        $community = $this->variables['community'];
-        $community_name = $community['name'];
 	  $action_is_set = isset($a_action);
 	  
+	  $selected_menu = $this->variables['selected_menu'];
 	  if($action_is_set){
-		$controller_action_url = "{$active_domain}/{$community_name}/{$a_controller_name}/{$a_action}/";
+		$controller_action_url = BASEPATH ."{$a_controller_name}/{$a_action}/selected_menu/{$selected_menu}/";
 	  }
 	  else{
-		$controller_action_url = "{$active_domain}/{$community_name}/{$a_controller_name}/default/";		  
+		$controller_action_url = BASEPATH ."{$a_controller_name}/default/selected_menu/{$selected_menu}/";		  
 	  }
         if (isset($a_parameters_string)) {
             $controller_action_url = "$controller_action_url{$a_parameters_string}/";
@@ -327,9 +251,6 @@ class Template {
         Logger::debug($this, 'RENDERING template' . $this);
         extract($this->variables);
         $template_variables = $this->variables;
-        //$language = $country['name'];
-        //$action = $this->_action;
-        //$controller = $this->_controller;
 
         $v_active_domain = $active_site['domain'];
 	  if(isset($country)&& isset($country['name'])&& !empty($country['name'])){
@@ -338,13 +259,17 @@ class Template {
 		  $country_name = '';
 	  }
         $v_country_prefix = $v_active_domain . '/' . $country_name;
+	  
 
-        if (file_exists(REALPATH . 'views/' . $this->_controller . '/' . $this->_action . '.php')) {
-            $include_path = (REALPATH . 'views/' . $this->_controller . '/' . $this->_action . '.php');
+        if (file_exists(REALPATH . 'views/' . $this->_controller . '/' . $this->_action . '.php')) {		  
+		$view_folder = REALPATH . 'views/' . $this->_controller; 
+            $view_file = $view_folder . '/' . $this->_action . '.php';		
         } else if (file_exists(REALPATH . 'views/' . $this->_controller . '/' . 'default.php')) {
-            $include_path = (REALPATH . 'views/' . $this->_controller . '/' . 'default.php');
+		$view_folder = REALPATH . 'views/' . $this->_controller; 
+            $view_file = $view_folder . '/' . 'default.php';
         } else if (file_exists(REALPATH . 'views/default/' . $this->_action . '.php')) {
-            $include_path = (REALPATH . 'views/default/' . $this->_action . '.php');
+		$view_folder = REALPATH . 'views/default'; 
+            $view_file = $view_folder .'/' . $this->_action . '.php';
         } else {
             if (DEBUG) {
                 $messages[] = "Template: Cannot find in the views folder a suitable view component for the controller [$this->_controller] and the action [$this->_action].";
@@ -353,11 +278,27 @@ class Template {
             } else {
                 $messages = array("Cannot find a suitable view component for the controller [$this->_controller] and the action [$this->_action].");
             }
-            $include_path = (REALPATH . 'views/error/default' . '.php');
+            $view_file = (REALPATH . 'views/error/default' . '.php');
         }
 
+	  
+	  
+	  $content_render_result = $this->render_to_string($view_file);
+	  
+	  $frame_file_to_check =  $view_folder .'/_frame.php';
+	  $frame_exists = file_exists($frame_file_to_check);
+	  if($frame_exists){
+		  $frame_render_result = $this->render_to_string($frame_file_to_check);
+	  }
+	  else{
+		  $frame_render_result = "{{content}}";
+	  }
+	  
+	  $output = str_replace("{{content}}", $content_render_result , $frame_render_result);
 
-        include $include_path;
+	  
+	  echo $output;
+	  
 	  
 	  if(DEVELOP_VIEW_INFO===TRUE){
 ?>
@@ -371,6 +312,21 @@ class Template {
 </div>
 <?php	  
 	  }
+    }
+    
+    private function render_to_string($a_file){
+	$ret_val = "";
+	
+      extract($this->variables);
+
+	ob_start();
+	include $a_file;
+	$rendering_result = ob_get_contents(); 
+	ob_end_clean();
+	
+	$ret_val = $rendering_result;
+	
+	return $ret_val;
     }
 
     private function render_default() {

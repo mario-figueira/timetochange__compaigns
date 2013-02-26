@@ -4,7 +4,7 @@
 ?>		
 <html>
 	<body>
-		<div>
+		<div id="container" class="container">
 		
 <?php
 	}

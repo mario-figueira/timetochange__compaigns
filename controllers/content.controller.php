@@ -38,44 +38,27 @@ class contentController {
 
 	protected function load_default_css() {
 
+		//$this->Command->Parameters['css'][] = "css/reset.css{$timestamp}";
+		//$this->Command->Parameters['css'][] = "js/jsjquery-ui-1.8.23.custom_allmodules/css/ui-lightness/jquery-ui-1.8.23.custom.css{$timestamp}";
+		//$this->Command->Parameters['css'][] = "js/tinybox2/style.css{$timestamp}";
+
 		$this->Command->Parameters['css'][] = "css/reset.css{$timestamp}";
-		$this->Command->Parameters['css'][] = "js/jsjquery-ui-1.8.23.custom_allmodules/css/ui-lightness/jquery-ui-1.8.23.custom.css{$timestamp}";
-		$this->Command->Parameters['css'][] = "js/tinybox2/style.css{$timestamp}";
-		$this->Command->Parameters['css'][] = "css/stylesheet.css{$timestamp}";
+		$this->Command->Parameters['css'][] = "css/global.css{$timestamp}";
 		
 	}
 
 	protected function load_default_js() {
-		if (!BACKOFFICE) {
-			$jsArray[] = "js/jquery-1.7.1.min.js";
-			$jsArray[] = 'js/tinybox2/tinybox.js';
-			$jsArray[] = 'js/jquery.form.js';
-			$jsArray[] = "js/jquery.validate.min.js";
-			$jsArray[] = "js/jsjquery-ui-1.8.23.custom_allmodules/js/jquery-ui-1.8.23.custom.min.js";
-			//$jsArray[] = "js/jquery.json-2.3.min.js";
-//            if (isset($this->Command->Parameters['country']['encoding'])) {
-//
-//			$jsArray[] = "js/jquery-validation-1.9.0/localization/messages_" . strtolower($this->Command->Parameters['country']['encoding']) . ".js";
-//			
-//
-//            }
+		//$jsArray[] = 'js/libs/jquery-1.7.1.min.js';
+		//$jsArray[] = 'js/libs/modernizr-2.5.3.min.js';
+		//$jsArray[] = 'js/tinybox2/tinybox.js';
+		//$jsArray[] = 'js/jquery.form.js';
+		//$jsArray[] = "js/jquery.validate.jform.js";
+		//$jsArray[] = "js/jsjquery-ui-1.8.23.custom_allmodules/js/jquery-ui-1.8.23.custom.min.js";
+		
+		$jsArray[] = 'js/jquery-1.9.0.js';
+		$jsArray[] = 'js/jquery-ui-1.10.0.custom.js';
+		$jsArray[] = 'js/global.js';
 
-			$active_language = $this->get_active_language_record();
-			$language_idiom_code = $active_language['short'];
-			$localizaed_jquery_validation_file = "js/jquery-validation-1.9.0/localization/messages_" . $language_idiom_code . ".js";
-			$jsArray[] = $localizaed_jquery_validation_file;
-
-			//$jsArray[] = "js/jquery.validate.jform.js";
-			$jsArray[] = "js/wom.js";
-			$jsArray[] = "js/less-1.3.0.min.js";
-		} else {
-			$jsArray[] = 'js/libs/jquery-1.7.1.min.js';
-			$jsArray[] = 'js/libs/modernizr-2.5.3.min.js';
-			$jsArray[] = 'js/tinybox2/tinybox.js';
-			$jsArray[] = 'js/jquery.form.js';
-			$jsArray[] = "js/jquery.validate.jform.js";
-			$jsArray[] = "js/jsjquery-ui-1.8.23.custom_allmodules/js/jquery-ui-1.8.23.custom.min.js";
-		}
 		$this->Command->Parameters['js'] = $jsArray;
 	}
 	
