@@ -1,7 +1,7 @@
 <?php
 
 define('ENVIRONMENT', 'LOCAL_DEVELOP'); //'LOCAL_DEVELOP', 'SHARED_DEVELOP', 'SHARED_DEVELOP_TEST', 'QUALIFICATION', 'CUSTOMER_ACCEPTANCE', 'CUSTOMER_SIMULATION','CUSTOMER_PRODUCTION' 
-define('ENVIRONMENT_OWNER', 'mfigueira'); 
+define('ENVIRONMENT_OWNER', 'aaguiar'); 
 
  
 //define('IS_OFFLINE', false);
@@ -19,8 +19,8 @@ define('DEBUG', true);
 define('DEBUG_PHP_ERROR_REPORTING', E_ALL ^ E_NOTICE ^ E_DEPRECATED);
 define('DEBUG_PHP_DISPLAY_ERRORS', 1);
 define('DEBUGLOG', false);
-define('DEBUGFILE', 'D:/AWork_PHP/___mvc_template/_src/logs/debug.log.txt');
-define('ERRORFILE', 'D:/AWork_PHP/___mvc_template/_src/logs/error.log.txt');
+define('DEBUGFILE', 'C:/xampp/htdocs/timetochange__campaigns/_src/logs/debug.log.txt');
+define('ERRORFILE', 'C:/xampp/htdocs/timetochange__campaigns/_src/logs/error.log.txt');
 
 
 //SMTP
