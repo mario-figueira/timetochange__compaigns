@@ -31,7 +31,7 @@ class contentController {
 		$active_site['id'] = 1;
 		$active_site['name'] = "default";
 		$active_site['fk_default_language_id'] = 1;
-		$active_site['domain'] = "http://mvc_template.com:8888";
+		$active_site['domain'] = BASEPATH;
 		
 		$this->Command->set_active_site($active_site);
 	}
