@@ -5,6 +5,7 @@ require_once REALPATH .'util/DBCHelper.php';
 class base__BE {	
 	
 	protected $_base_fields = array();
+	protected $_validations = array();
 	
 	protected function __construct($a_fields_array){
 		DBCHelper2::require_that()->the_param($a_fields_array)->is_an_array_with_at_least_one_element();
@@ -17,6 +18,45 @@ class base__BE {
 		$ret_val = null;
 		
 		$instance = new base__BE($a_business_entity_record);
+
+		foreach($a_business_entity_record as $field_name=>$field_value){
+			$instance->$field_name = $field_value;
+		}
+		
+		
+		//$instance->fields = $a_business_entity_record;
+		
+		$ret_val = $instance;
+		
+		return $ret_val;
+	}
+	
+	public static function create_from_POST_array($a_POST_array){
+		DBCHelper2::require_that()->the_param($a_POST_array)->is_an_array_with_at_least_one_element();
+		
+		$ret_val = null;
+		
+		
+		$keys_to_extract = array_filter(
+			array_keys($a_POST_array)
+			, function($a_element){
+				$prefix_found = strpos($a_element, "field__")!==false;
+				return $prefix_found;			
+			}
+		);
+		
+		$keys_to_extract = array_flip($keys_to_extract);
+		
+		$raw_data = array_intersect_key($a_POST_array, $keys_to_extract);
+		
+		$data = array();
+		foreach($raw_data as $key=>$value){
+			$new_key = substr($key, strlen("field__")); 
+			$data[$new_key] = $raw_data[$key];
+		}
+		
+		
+		$instance = new base__BE($data);
 
 		foreach($a_business_entity_record as $field_name=>$field_value){
 			$instance->$field_name = $field_value;
@@ -139,6 +179,45 @@ class base__BE {
 		
 		DBCHelper2::ensure_that()->the_return_value($ret_val)->is_an_array_with_at_least_one_element();
 		return $ret_val;
+	}
+	
+	protected function register_validation($a_field_name, $a_validation_callback, $a_is_invalid_message){
+		$this->_validations[$a_field_name][] = array("callback"=>$a_validation_callback, "is_invalid_message"=>$a_is_invalid_message);		
+	}
+	
+	public function is_valid(){
+		$ret_val = array();
+		foreach ($this->_validations as $field_name=>$field_validations){
+			
+			$field_value = $this->$field_name;
+			$evaluation_result = $this->value_is_valid_for_field($field_value, $field_name);			
+			
+			$ret_val[$field_name] = $evaluation_result;			
+			
+		}		
+	}
+	
+	protected function value_is_valid_for_field($a_value, $a_field_name){
+		$ret_val = null;
+		
+		$field_validations = $this->_validations[$a_field_name];
+		
+		$field_is_valid = true;
+		$invalid_messages = array();
+		foreach($field_validations as $validation_descriptor){
+			//$field_name = $field_validations[0];
+			$callback = $validation_descriptor['callback'];
+			$is_invalid_message = $validation_descriptor['is_invalid_message'];
+			$field_value = $a_value; 
+			$is_valid = call_user_func($callback, $field_value);
+			$field_is_valid &= $is_valid;
+			$invalid_messages[] = $is_invalid_message;				
+		}
+		$field_result = array("is_valid"=>$field_is_valid, "invalid_messages"=>$invalid_messages);
+		
+		$ret_val = $field_result;
+		
+		return $ret_val;		
 	}
 	
 }
