@@ -1,6 +1,6 @@
 <?php
-	require_once 'util/DBCHelper.php';
-	require_once 'util/TextUtil.php';
+	require_once REALPATH .'util/DBCHelper.php';
+	require_once REALPATH .'util/TextUtil.php';
 /*
  * Created on Feb 8, 2012
  */
