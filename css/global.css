@@ -118,85 +118,85 @@ a:hover {
 
 /* 6.2.1 nav */
 
-.icoLock { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -32px; }
-.icoDashboard { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -32px; }
-.icoGear { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -32px; }
-.icoShoebox { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -32px; }
-.icoWrench { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -32px; }
-.icoUser { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -32px; }
-.icoCirclex { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -32px; }
+.icoNavLock { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -32px; }
+.icoNavDashboard { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -32px; }
+.icoNavGear { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -32px; }
+.icoNavShoebox { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -32px; }
+.icoNavWrench { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -32px; }
+.icoNavUser { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -32px; }
+.icoNavCirclex { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -32px; }
 
-.icoLockHover { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -64px; }
-.icoDashboardHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -64px; }
-.icoGearHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -64px; }
-.icoShoeboxHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -64px; }
-.icoWrenchHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -64px; }
-.icoUserHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -64px; }
-.icoCirclexHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -64px; }
+.icoNavLockHover { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -64px; }
+.icoNavDashboardHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -64px; }
+.icoNavGearHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -64px; }
+.icoNavShoeboxHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -64px; }
+.icoNavWrenchHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -64px; }
+.icoNavUserHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -64px; }
+.icoNavCirclexHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -64px; }
 
 /* 6.2.2 subnav */
 
-.icoGroup { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -96px; }
-.icoGear2 { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -96px; }
-.icoPresentation { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -96px; }
-.icoShuffle { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -96px; }
-.icoStar { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -96px; }
-.icoSound { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -96px; }
-.icoList { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -96px; }
-.icoIdcard { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -96px; }
-.icoKey { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -96px; }
+.icoSubGroup { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -96px; }
+.icoSubGear2 { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -96px; }
+.icoSubPresentation { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -96px; }
+.icoSubShuffle { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -96px; }
+.icoSubStar { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -96px; }
+.icoSubSound { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -96px; }
+.icoSubList { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -96px; }
+.icoSubIdcard { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -96px; }
+.icoSubKey { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -96px; }
 
-.icoGroupHover { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -128px; }
-.icoGear2Hover { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -128px; }
-.icoPresentationHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -128px; }
-.icoShuffleHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -128px; }
-.icoStarHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -128px; }
-.icoSoundHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -128px; }
-.icoListHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -128px; }
-.icoIdcardHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -128px; }
-.icoKeyHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -128px; }
+.icoSubGroupHover { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -128px; }
+.icoSubGear2Hover { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -128px; }
+.icoSubPresentationHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -128px; }
+.icoSubShuffleHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -128px; }
+.icoSubStarHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -128px; }
+.icoSubSoundHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -128px; }
+.icoSubListHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -128px; }
+.icoSubIdcardHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -128px; }
+.icoSubKeyHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -128px; }
 
 /* 6.2.3 actions */
 
-.icoUser { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -160px; }
-.icoPencil { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -160px; }
-.icoTrash { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -160px; }
-.icoNew { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -160px; }
-.icoBack { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -160px; }
-.icoInfo { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -160px; }
-.icoCircleplay { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -160px; }
-.icoPaperclip { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -160px; }
-.icoDownload { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -160px; }
-.icoPrinter { width:32px; height:32px; background:url(../img/sprite_icons.png) -288px -160px; }
-.icoMagnify { width:32px; height:32px; background:url(../img/sprite_icons.png) -320px -160px; }
+.icoActionsUser { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -160px; }
+.icoActionsPencil { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -160px; }
+.icoActionsTrash { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -160px; }
+.icoActionsNew { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -160px; }
+.icoActionsBack { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -160px; }
+.icoActionsInfo { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -160px; }
+.icoActionsCircleplay { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -160px; }
+.icoActionsPaperclip { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -160px; }
+.icoActionsDownload { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -160px; }
+.icoActionsPrinter { width:32px; height:32px; background:url(../img/sprite_icons.png) -288px -160px; }
+.icoActionsMagnify { width:32px; height:32px; background:url(../img/sprite_icons.png) -320px -160px; }
 
-.icoUserHover { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -192px; }
-.icoPencilHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -192px; }
-.icoTrashHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -192px; }
-.icoNewHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -192px; }
-.icoBackHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -192px; }
-.icoInfoHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -192px; }
-.icoCircleplayHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -192px; }
-.icoPaperclipHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -192px; }
-.icoDownloadHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -192px; }
-.icoPrinterHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -288px -192px; }
-.icoMagnifyHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -320px -192px; }
+.icoActionsUserHover { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -192px; }
+.icoActionsPencilHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -192px; }
+.icoActionsTrashHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -192px; }
+.icoActionsNewHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -192px; }
+.icoActionsBackHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -192px; }
+.icoActionsInfoHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -192px; }
+.icoActionsCircleplayHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -192px; }
+.icoActionsPaperclipHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -192px; }
+.icoActionsDownloadHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -192px; }
+.icoActionsPrinterHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -288px -192px; }
+.icoActionsMagnifyHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -320px -192px; }
 
 /* 6.2.4 list */
 
-.icoBulletgreen { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -224px; }
-.icoBulletred { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -224px; }
-.icoBulletblue { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -224px; }
-.icoBulletyellow { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -224px; }
-.icoCirclecheck { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -224px; }
-.icoCheckmark { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -224px; }
-.icoCompose { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -224px; }
-.icoPlay { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -224px; }
+.icoListBulletgreen { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -224px; }
+.icoListBulletred { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -224px; }
+.icoListBulletblue { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -224px; }
+.icoListBulletyellow { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -224px; }
+.icoListCirclecheck { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -224px; }
+.icoListCheckmark { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -224px; }
+.icoListCompose { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -224px; }
+.icoListPlay { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -224px; }
 
-.icoCirclecheckHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -256px; }
-.icoCheckmarkHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -256px; }
-.icoComposeHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -256px; }
-.icoPlayHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -256px; }
+.icoListCirclecheckHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -256px; }
+.icoListCheckmarkHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -256px; }
+.icoListComposeHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -256px; }
+.icoListPlayHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -256px; }
 
 /* 6.3 ui */
 
