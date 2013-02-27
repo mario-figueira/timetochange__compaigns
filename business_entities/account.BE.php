@@ -13,9 +13,9 @@ class account__BE extends base__BE {
 	protected function __construct($a_fields_array) {
 		parent::__construct($a_fields_array);
 		
-		//parent::register_validation("email", array($this, 'string__is_valid_email'), "email is inválid");
+		parent::register_validation("email", array($this, 'string__is_valid_email'), "email is inválid");
 		//parent::register_validation("email", array($this, 'string__is_valid_email'), "email is not valid");
-		//parent::register_validation("name", array($this, 'name_is_valid'), "name is not valid");
+		parent::register_validation("name", array($this, 'name_is_valid'), "name is not valid");
 	}
 
 	public static function create_from_record($a_business_entity_record) {
@@ -37,11 +37,11 @@ class account__BE extends base__BE {
 	
 	public static function create_from_POST_array($a_post_array){
 		
-		$data = parent::POST_array__prepare($a_POST_array);
+		$data = parent::POST_array__prepare($a_post_array);
 		
 		$instance = new account__BE($data);
 
-		foreach($a_business_entity_record as $field_name=>$field_value){
+		foreach($data as $field_name=>$field_value){
 			$instance->$field_name = $field_value;
 		}
 		
@@ -79,7 +79,7 @@ class account__BE extends base__BE {
 	protected function name_is_valid($a_name) {
 		$ret_val = false;
 
-		$ret_val = strlen($a_name)>100;
+		$ret_val = strlen($a_name)>5;
 
 		return $ret_val;
 	}

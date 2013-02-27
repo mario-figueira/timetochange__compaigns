@@ -180,14 +180,21 @@ class base__BE {
 	
 	public function is_valid(){
 		$ret_val = array();
+		
+		$is_valid = true;
+		$fields_evaluations = array();
 		foreach ($this->_validations as $field_name=>$field_validations){
 			
 			$field_value = $this->$field_name;
 			$evaluation_result = $this->value_is_valid_for_field($field_value, $field_name);			
 			
-			$ret_val[$field_name] = $evaluation_result;			
+			$fields_evaluations[$field_name] = $evaluation_result;
+			$field_is_valid =$evaluation_result['is_valid'];
+			$is_valid &= $field_is_valid;
 			
-		}		
+		}	
+		
+		return array("is_valid"=>$is_valid, "fields_evaluations"=>$fields_evaluations);
 	}
 	
 	protected function value_is_valid_for_field($a_value, $a_field_name){
