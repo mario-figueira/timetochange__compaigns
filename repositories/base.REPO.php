@@ -11,14 +11,14 @@ abstract class base__REPO {
 	}
 
 	
-	private function get_default_dao_by_business_entity($a_business_entity){
+	protected function get_default_dao_by_table_name($a_table_name){
 		$ret_val = null;
 		
 		$default_dao = null;
 		
 		require_once REALPATH . 'model/default.model.php';
 		
-		$default_model = new defaultModel($a_business_entity);
+		$default_model = new defaultModel($a_table_name);
 		
 		$default_dao = $default_model;
 		
