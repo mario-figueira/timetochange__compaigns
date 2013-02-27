@@ -17,6 +17,11 @@ class base__BE {
 		$ret_val = null;
 		
 		$instance = new base__BE($a_business_entity_record);
+
+		foreach($a_business_entity_record as $field_name=>$field_value){
+			$instance->$field_name = $field_value;
+		}
+		
 		
 		//$instance->fields = $a_business_entity_record;
 		
@@ -43,6 +48,7 @@ class base__BE {
 		}
 	}
 	
+	//magic methods for get/set interception
 	public function __get($a_field_name) {
 		DBCHelper2::require_that()->the_param($a_field_name)->is_a_string();
 

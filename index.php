@@ -103,8 +103,8 @@ if(ENVIRONMENT=='LOCAL_DEVELOP' && DEVELOP==true && ENVIRONMENT_OWNER == 'mfigue
 	//require_once REALPATH ."repositories/repository.FACTORY.TESTS.php";
 	//repository__FACTORY__TESTS::run();
 
-	//require_once REALPATH ."business_entities/ztest.BE.TESTS.php";
-	//ztest__BE__Tests::run();
+	require_once REALPATH ."business_entities/ztest.BE.TESTS.php";
+	ztest__BE__Tests::run();
 }
 
 

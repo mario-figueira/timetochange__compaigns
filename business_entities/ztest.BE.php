@@ -16,7 +16,8 @@ class ztest__BE extends base__BE{
 		$ret_val = null;
 		
 		$instance = new ztest__BE($a_business_entity_record);
-		
+		$instance = parent::create_from_record($a_business_entity_record);
+
 		//$instance->fields = $a_business_entity_record;
 		
 		$ret_val = $instance;
