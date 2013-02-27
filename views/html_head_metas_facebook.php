@@ -5,13 +5,13 @@
 	$country_name = $country['name'];
 	$country_code = strtolower($country['id']);
 	//$printable_name = $community['printable_name'];
-	$img_name = empty($country_code)?'og_ambassadors_white_default.jpg':"og_ambassadors_white_{$country_code}.jpg";
+	$img_name = 'to_facebook_img.jpg';
 
 	$og_url = empty($active_site['domain']) ? $_SERVER['HTTP_HOST'] : $active_site['domain'] ."/". $country['name'];
 	$og_image_url = $this->build_img_url($img_name);
-	$og_title = empty($country_code)? '' : _("Estamos à procura de 20.000 experimentadores de produtos no Brasil.");
-	$og_description =  empty($country_code)?'': _("Queres ajudar a renovar tendências? Como embaixador podes transformar-te num autêntico trend setter. Vais poder experimentar produtos das tuas marcas ou produtos preferidos e dar-lhes feedback sobre os mesmos. É tudo muito simples, sem custos e com muita diversão. ");
-	$og_site_name = empty($printable_name)?$_SERVER['HTTP_HOST'] :$community['printable_name'];
+	$og_title = _("to_facebook_title");
+	$og_description =  _("to_facebook_description");
+	$og_site_name = _("to_facebook_site_name");
 	
 ?>
  
