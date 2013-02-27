@@ -4,129 +4,77 @@
 
     <div class="actionButtons">
         <ul>
-            <li><a href="#" title="Tooltip"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoDashboard"></a></li>
-            <li><a href="#" title="Tooltip"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoDatabase"></a></li>   
+            <li><a href="<?php echo $this->build_action_url('campaigns_mgnt', 'add_account'); ?>" title="Add Account"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsNew"></a></li>
+		<li><a href="#" title="Delete Account"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsTrash"></a></li>
+		<li><a href="#" title="Edit Account"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsPencil"></a></li>
+		<li><a href="#" title="Users Account"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsUser"></a></li>
         </ul>        
     </div>
 	
-	campaigns_mgnt/accounts
-	
-	
-<?php
-foreach ($accounts as $account){
-	echo $account->name; echo "<br/>";
-}
-?>
-    
     <!--List Table Example-->
     
     <div class="listTable">
     	<ul class="header">
         	<li class="w4">&nbsp;</li>
-        	<li class="w24">Column 1</li>
-            <li class="w24">Column 2</li>
-            <li class="w24">Column 3</li>
-            <li class="w24">Column 4</li>
+        	<li class="w24">Account Name</li>
+            <li class="w24">Created By</li>
+            <li class="w24">Date Created</li>
+            <li class="w24">Status</li>
         </ul>
-		<ul class="row">
+	    
+<?php
+
+foreach ($accounts as $account){
+	$class_to_status = account_status_2_class_name($account->status);
+?>
+	<ul class="row">
         	<label>
                 <li class="w4"><input name="" type="checkbox" value="" class="formCheckbox"></li>
-                <li class="w24">Row</li>
-                <li class="w24">Row</li>
-                <li class="w24">Row</li>
-                <li class="w24"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoDatabase"></li>
-            </label>
+             </label>   
+		    <li class="w24"><?php echo $account->name; ?></li>
+                <li class="w24"><?php echo $account->auditUser; ?></li>
+                <li class="w24"><?php echo $account->auditTimestamp; ?></li>
+                <li class="w24"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="<?php echo $class_to_status;?>"></li>
+            
             <p>
             	<img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoDatabase"> 
                 <input type="text" class="formField fwWideRow" value="Write Here...">
             </p>
-        </ul>        
-    	<ul class="row">
-        	<label>
-                <li class="w4"><input name="" type="checkbox" value="" class="formCheckbox"></li>
-                <li class="w24">Row</li>
-                <li class="w24">Row</li>
-                <li class="w24">Row</li>
-                <li class="w24">Text<img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoDatabase"></li>
-            </label>
-        </ul>
-    	<ul class="row">
-        	<label>
-                <li class="w4"><input name="" type="checkbox" value="" class="formCheckbox"></li>
-                <li class="w24">Row</li>
-                <li class="w24">Row</li>
-                <li class="w24">Row</li>
-                <li class="w24">
-                    <input name="" type="text" class="formField fwSmallRow">
-                    <img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoDatabase">
-                </li>
-            </label>
-        </ul>               
+        </ul> 
+<?php	    
+}
+?>
+	                  
     </div>
+    
+ <?php
+	function account_status_2_class_name($a_account_status) {
+		DBCHelper2::require_that()->the_param($a_account_status)->is_an_integer_string();
+
+		require_once REALPATH ."enums/account_status_enum.php";
+
+		$ret_val = "";
+
+		$status_class = "";
+		switch ($a_account_status) {
+			case account_status_enum::$C_INACTIVO:
+				$status_class = "icoListBulletred";
+				break;
+			case account_status_enum::$C_ACTIVO:
+				$status_class = "icoListBulletgreen";
+				break;
+
+			default:
+				throw new Exception("Unsuported case:[{$a_account_status}].");		
+		}
+
+		$ret_val = $status_class;
+
+		DBCHelper2::ensure_that()->the_return_value($ret_val)->is_a_string();
+		return $ret_val;
+	}
+ ?>
     
     <!--End of List Table Example-->
     
-    <!--Form Example-->
     
-    <div class="listForm">
-    	<ul>
-        	<li class="label">Text Field</li>
-            <li class="field">
-            	<input name="" type="text" class="formField fwLarge">
-            </li>
-            <li class="label">Text Field Small</li>
-            <li class="field">
-            	<input name="" type="text" class="formField fwSmall"> - <input name="" type="text" class="formField fwSmall">
-            </li>
-        </ul>
-    	<ul>
-       	  <li class="label">List Menu</li>
-          <li class="field">
-               <select name="" class="formField fwLargeList">
-                 <option>List A</option>
-                 <option>List B</option>
-               </select>
-          </li>
-       	  <li class="label">List Menu Small</li>
-          <li class="field">
-               <select name="" class="formField fwSmallList">
-                 <option>List A</option>
-                 <option>List B</option>
-               </select>
-          </li>          
-        </ul>
-        <ul>
-       	  <li class="label">Button</li>
-            <li class="field">
-				<input type="button" value="Button" class="formButton">
-            </li>
-        </ul> 
-    	<ul>
-        	<li class="label">Text Field + Action Button</li>
-            <li class="field">
-            	<a href="#" title="Tooltip"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoDatabase"></a>
-                <a href="#" title="Tooltip"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoDatabase"></a>
-                <input name="" type="text" class="formField fwLarge">
-            </li>
-            <li class="label">Action Button</li>
-            <li class="field">
-            	<a href="#" title="Tooltip"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoDatabase"></a>
-            </li>
-        </ul>
-    	<ul>
-        	<li class="label">Checkbox</li>
-            <li class="field">
-				<label class="checkbox">
-                	<input name="" type="checkbox" value="" class="formCheckbox">
-                    760201853
-                </label>
-				<label class="checkbox">
-                	<input name="" type="checkbox" value="" class="formCheckbox">
-                    760201853
-                </label>                
-            </li>
-        </ul>                                   
-    </div>
-    
-    <!--End of Form Example-->
-
