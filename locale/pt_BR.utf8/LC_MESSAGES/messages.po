@@ -2,2374 +2,50 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wom\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-28 15:27-0000\n"
-"PO-Revision-Date: 2012-12-28 15:27-0000\n"
+"POT-Creation-Date: 2013-02-27 14:55-0000\n"
+"PO-Revision-Date: 2013-02-27 14:55-0000\n"
 "Last-Translator: Mário Figueira <mario.figueira@gtinformatica.eu>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
-"X-Poedit-Basepath: D:\\AWork_updigital\\_src\\wom_public\n"
+"X-Poedit-Basepath: D:\\AWork_PHP\\timetochange__compaigns\\_src\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "Language: pt_BR\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: strings_to_translate.php:3
-#: strings_to_translate.php:7
-#: strings_to_translate.php:14
-#: strings_to_translate.php:17
-#: strings_to_translate.php:18
-#: strings_to_translate.php:22
-msgid "Formato inválido, tem de ter 10 digitos"
-msgstr "Formato inválido, precisa ter 10 dígitos"
-
-#: strings_to_translate.php:4
-msgid "Formato inválido, tem de ter entre 4 a 13 digitos"
-msgstr "Formato inválido, precisa ter entre 4 e 13 dígitos"
-
-#: strings_to_translate.php:5
-msgid "Formato inválido, tem de ter entre 8 a 9 digitos"
-msgstr "Formato inválido, precisa ter entre 8 e 9 dígitos"
-
-#: strings_to_translate.php:6
-msgid "Formato inválido, tem de ter 11 digitos"
-msgstr "Formato inválido, precisa ter 11 dígitos"
-
-#: strings_to_translate.php:8
-#: strings_to_translate.php:11
-#: strings_to_translate.php:13
-#: strings_to_translate.php:15
-#: strings_to_translate.php:20
-msgid "Formato inválido, tem de ter 9 digitos"
-msgstr "Formato inválido, precisa ter 9 dígitos"
-
-#: strings_to_translate.php:9
-msgid "Formato inválido, tem de ter entre 4 a 12 digitos"
-msgstr "Formato inválido, precisa ter entre 4 e 12 dígitos"
-
-#: strings_to_translate.php:10
-#: strings_to_translate.php:19
-msgid "Formato inválido, tem de ter 8 digitos"
-msgstr "Formato inválido, precisa ter 8 dígitos"
-
-#: strings_to_translate.php:12
-msgid "Formato inválido, tem de ter entre 5 a 12 digitos"
-msgstr "Formato inválido, precisa ter entre 5 e 12 dígitos"
-
-#: strings_to_translate.php:16
-msgid "Formato inválido, tem de ter entre 8 a 11 digitos"
-msgstr "Formato inválido, precisa ter entre 8 e 11 dígitos"
-
-#: strings_to_translate.php:21
-msgid "Formato inválido, tem de ter entre 7 a 9 digitos"
-msgstr "Formato inválido, precisa ter entre 7 e 9 dígitos"
-
-#: strings_to_translate.php:26
-msgid "Trabalho por conta de outrém a tempo inteiro"
-msgstr "Sou empregado de tempo integral"
-
-#: strings_to_translate.php:27
-msgid "Tenho o meu próprio negócio"
-msgstr "Tenho meu próprio negócio"
-
-#: strings_to_translate.php:28
-msgid "Trabalho por conta de outrém a tempo parcial"
-msgstr "Sou empregado de meio expediente"
-
-#: strings_to_translate.php:29
-msgid "Trabalho em casa"
-msgstr "Trabalho em casa"
-
-#: strings_to_translate.php:30
-msgid "Sou estudante a tempo inteiro"
-msgstr "Sou estudante de tempo integral"
-
-#: strings_to_translate.php:31
-msgid "Sou estudante em tempo parcial"
-msgstr "Sou estudante de meio expediente"
-
-#: strings_to_translate.php:32
-msgid "Estou desempregado"
-msgstr "Estou desempregado"
-
-#: strings_to_translate.php:36
-msgid "Não é um formato válido. ex: Annnn(AAA)"
-msgstr "Não é um formato válido. ex: Annnn(AAA)"
-
-#: strings_to_translate.php:37
-#: strings_to_translate.php:38
-#: strings_to_translate.php:40
-#: strings_to_translate.php:51
-msgid "Não é um formato válido. ex: nnnn"
-msgstr "Não é um formato válido. ex: nnnn"
-
-#: strings_to_translate.php:39
-#, fuzzy
-msgid "Não é um formato válido. ex: nnnnn-nnn"
-msgstr "Não é um formato válido. ex: nnnnn-nnnn"
-
-#: strings_to_translate.php:41
-#: strings_to_translate.php:42
-#: strings_to_translate.php:43
-#: strings_to_translate.php:45
-#: strings_to_translate.php:48
-#: strings_to_translate.php:49
-msgid "Não é um formato válido. ex: nnnnn"
-msgstr "Não é um formato válido. ex: nnnnn"
-
-#: strings_to_translate.php:44
-msgid "Não é um formato válido. ex: FInnnnn"
-msgstr "Não é um formato válido. ex: FInnnnn"
-
-#: strings_to_translate.php:46
-msgid "Não é um formato válido. ex: AA(AA) nAA"
-msgstr "Não é um formato válido. ex: AA(AA) nAA"
-
-#: strings_to_translate.php:47
-#, fuzzy
-msgid "Não é um formato válido. ex: nnn nn"
-msgstr "Não é um formato válido. ex: nnnnn"
-
-#: strings_to_translate.php:50
-msgid "Não é um formato válido. ex: nnnn AA"
-msgstr "Não é um formato válido. ex: nnnn AA"
-
-#: strings_to_translate.php:52
-msgid "Não é um formato válido. ex: nnnn(-nnn)"
-msgstr "Não é um formato válido. ex: nnnn(-nnn)"
-
-#: strings_to_translate.php:53
-msgid "Não é um formato válido. ex: SEnnn nn"
-msgstr "Não é um formato válido. ex: SEnnn nn"
-
-#: strings_to_translate.php:54
-msgid "Não é um formato válido. ex: nnnnn-nnnn"
-msgstr "Não é um formato válido. ex: nnnnn-nnnn"
-
-#: strings_to_translate.php:58
-msgid "Sozinho (eu sei o que quero e o que é bom para mim)"
-msgstr "Sozinho (sei o que quero e o que parece bom)"
-
-#: strings_to_translate.php:59
-msgid "Com amigos (eles são sempre honestos comigo!)"
-msgstr "Com amigos (eles me dizem a verdade!)"
-
-#: strings_to_translate.php:60
-msgid "Online (rápido e eficiente)"
-msgstr "Online (rápido e indolor)"
-
-#: strings_to_translate.php:61
-msgid "É outra pessoa que normalmente compras as coisas para mim (eu não tenho tempo nem interesse)"
-msgstr "Geralmente outra pessoa compra coisas para mim (não tenho tempo ou interesse)"
-
-#: strings_to_translate.php:62
-msgid "Nenhuma das respostas anteriores"
-msgstr "Nenhuma das respostas anteriores"
-
-#: strings_to_translate.php:66
-msgid "Banca/Finanças/Seguros"
-msgstr "Banca/Finanças/Seguros"
-
-#: strings_to_translate.php:67
-msgid "Antiguidades"
-msgstr "Antiguidades"
-
-#: strings_to_translate.php:68
-msgid "Arte/Exposições/Museus"
-msgstr "Arte/Exposições/Museus"
-
-#: strings_to_translate.php:69
-msgid "Conferências"
-msgstr "Conferências"
-
-#: strings_to_translate.php:70
-msgid "Cozinhar"
-msgstr "Cozinhar"
-
-#: strings_to_translate.php:71
-msgid "Gastronomia"
-msgstr "Gastronomia"
-
-#: strings_to_translate.php:72
-msgid "Animação online/3D"
-msgstr "Animação online/3D"
-
-#: strings_to_translate.php:73
-msgid "Decoração"
-msgstr "Decoração"
-
-#: strings_to_translate.php:74
-msgid "Bricolage"
-msgstr "Bricolagem"
-
-#: strings_to_translate.php:75
-msgid "Design"
-msgstr "Design"
-
-#: strings_to_translate.php:76
-msgid "Desenho/Artes plásticas"
-msgstr "Desenho/Artes plásticas"
-
-#: strings_to_translate.php:77
-msgid "Pesca"
-msgstr "Pesca"
-
-#: strings_to_translate.php:78
-msgid "Caça"
-msgstr "Caça"
-
-#: strings_to_translate.php:79
-msgid "Jogo/Poker/Casino"
-msgstr "Jogo/Pôquer/Casino"
-
-#: strings_to_translate.php:80
-msgid "Artesanato"
-msgstr "Artesanato"
-
-#: strings_to_translate.php:81
-msgid "Internet"
-msgstr "Internet"
-
-#: strings_to_translate.php:82
-msgid "Bebidas"
-msgstr "Bebidas"
-
-#: strings_to_translate.php:83
-msgid "Tocar música"
-msgstr "Tocar música"
-
-#: strings_to_translate.php:84
-msgid "Vinhos"
-msgstr "Vinhos"
-
-#: strings_to_translate.php:85
-msgid "Fotografia"
-msgstr "Fotografia"
-
-#: strings_to_translate.php:86
-msgid "Vídeo"
-msgstr "Vídeo"
-
-#: strings_to_translate.php:87
-msgid "Teatro"
-msgstr "Teatro"
-
-#: strings_to_translate.php:88
-msgid "Cinema"
-msgstr "Cinema"
-
-#: strings_to_translate.php:89
-msgid "Vídeojogos"
-msgstr "Videogames"
-
-#: strings_to_translate.php:90
-msgid "Computadores"
-msgstr "Computadores"
-
-#: strings_to_translate.php:91
-msgid "Ler revistas"
-msgstr "Ler revistas"
-
-#: strings_to_translate.php:92
-msgid "Fazer compras"
-msgstr "Fazer compras"
-
-#: strings_to_translate.php:93
-msgid "Jogar na bolsa"
-msgstr "Jogar na bolsa"
-
-#: strings_to_translate.php:94
-msgid "Viajar"
-msgstr "Viajar"
-
-#: strings_to_translate.php:95
-msgid "Escrever"
-msgstr "Escrever"
-
-#: strings_to_translate.php:96
-msgid "Automóveis "
-msgstr "Automóveis "
-
-#: strings_to_translate.php:97
-msgid "Motociclismo"
-msgstr "Motociclismo"
-
-#: strings_to_translate.php:98
-msgid "Vida saudável/Nutrição"
-msgstr "Vida saudável/Nutrição"
-
-#: strings_to_translate.php:99
-msgid "Campismo"
-msgstr "Campismo"
-
-#: strings_to_translate.php:100
-msgid "Ópera"
-msgstr "Ópera"
-
-#: strings_to_translate.php:101
-msgid "Cosmética/Beleza"
-msgstr "Cosmética/Beleza"
-
-#: strings_to_translate.php:102
-msgid "Férias/Viagens"
-msgstr "Férias/Viagens"
-
-#: strings_to_translate.php:103
-msgid "Jardinagem"
-msgstr "Jardinagem"
-
-#: strings_to_translate.php:104
-msgid "Limpeza"
-msgstr "Limpeza"
-
-#: strings_to_translate.php:105
-msgid "Literatura/Livros"
-msgstr "Literatura/Livros"
-
-#: strings_to_translate.php:106
-msgid "Moda/Roupa/Acessórios"
-msgstr "Moda/Roupa/Acessórios"
-
-#: strings_to_translate.php:107
-msgid "Montanhismo"
-msgstr "Montanhismo"
-
-#: strings_to_translate.php:108
-msgid "Música/Concertos"
-msgstr "Música/Concertos"
-
-#: strings_to_translate.php:109
-msgid "Negócios"
-msgstr "Negócios"
-
-#: strings_to_translate.php:113
-msgid "Eu adoro ter e experimentar produtos novos, e estou sempre à procura deles."
-msgstr "Eu curto ter e experimentar produtos novos e estou sempre à procura deles."
-
-#: strings_to_translate.php:114
-msgid "Eu compro produtos novos, se vir neles conveniência"
-msgstr "Eu compro produtos novos, se vir conveniência neles"
-
-#: strings_to_translate.php:115
-msgid "Se os meus amigos me recomendarem um produto novo, normalmente compro."
-msgstr "Se meus amigos me recomendarem um produto novo, geralmente compro."
-
-#: strings_to_translate.php:116
-msgid "Apenas compro e experimento produtos novos de vez em quando."
-msgstr "Somente compro e experimento produtos novos de vez em quando."
-
-#: strings_to_translate.php:120
-msgid "Ator"
-msgstr "Ator"
-
-#: strings_to_translate.php:121
-msgid "Administrativo"
-msgstr "Administrativo"
-
-#: strings_to_translate.php:122
-msgid "Advogado"
-msgstr "Advogado"
-
-#: strings_to_translate.php:123
-msgid "Agente de Segurança"
-msgstr "Agente de Segurança"
-
-#: strings_to_translate.php:124
-msgid "Agricultor"
-msgstr "Agricultor"
-
-#: strings_to_translate.php:125
-msgid "Analista"
-msgstr "Analista"
-
-#: strings_to_translate.php:126
-msgid "Antropólogo"
-msgstr "Antropólogo"
-
-#: strings_to_translate.php:127
-msgid "Arqueólogo"
-msgstr "Arqueólogo"
-
-#: strings_to_translate.php:128
-msgid "Arquiteto"
-msgstr "Arquiteto"
-
-#: strings_to_translate.php:129
-msgid "Artista"
-msgstr "Artista"
-
-#: strings_to_translate.php:130
-msgid "Auditor"
-msgstr "Auditor"
-
-#: strings_to_translate.php:131
-msgid "Bancário"
-msgstr "Bancário"
-
-#: strings_to_translate.php:132
-msgid "Barbeiro"
-msgstr "Barbeiro"
-
-#: strings_to_translate.php:133
-msgid "Biólogo"
-msgstr "Biólogo"
-
-#: strings_to_translate.php:134
-msgid "Bombeiro"
-msgstr "Bombeiro"
-
-#: strings_to_translate.php:135
-msgid "Cabeleireiro"
-msgstr "Cabeleireiro"
-
-#: strings_to_translate.php:136
-msgid "Canalizador"
-msgstr "Encanador"
-
-#: strings_to_translate.php:137
-msgid "Carpinteiro"
-msgstr "Carpinteiro"
-
-#: strings_to_translate.php:138
-msgid "Cientista"
-msgstr "Cientista"
-
-#: strings_to_translate.php:139
-msgid "Comerciante"
-msgstr "Comerciante"
-
-#: strings_to_translate.php:140
-msgid "Comunicação"
-msgstr "Comunicação"
-
-#: strings_to_translate.php:141
-msgid "Construtor Civil"
-msgstr "Construtor"
-
-#: strings_to_translate.php:142
-msgid "Consultor"
-msgstr "Consultor"
-
-#: strings_to_translate.php:143
-msgid "Contabilista"
-msgstr "Contabilista"
-
-#: strings_to_translate.php:144
-msgid "Cozinheiro"
-msgstr "Cozinheiro"
-
-#: strings_to_translate.php:145
-msgid "Dançarino"
-msgstr "Dançarino"
-
-#: strings_to_translate.php:146
-msgid "Decorador"
-msgstr "Decorador"
-
-#: strings_to_translate.php:147
-msgid "Dentista"
-msgstr "Dentista"
-
-#: strings_to_translate.php:148
-msgid "Designer Gráfico"
-msgstr "Designer Gráfico"
-
-#: strings_to_translate.php:149
-msgid "Designer de Moda"
-msgstr "Designer de Moda"
-
-#: strings_to_translate.php:150
-msgid "Desportista"
-msgstr "Atleta"
-
-#: strings_to_translate.php:151
-msgid "Dietista"
-msgstr "Dietista"
-
-#: strings_to_translate.php:152
-msgid "Doméstico"
-msgstr "Doméstico"
-
-#: strings_to_translate.php:153
-msgid "Economista"
-msgstr "Economista"
-
-#: strings_to_translate.php:154
-msgid "Educador de Infância"
-msgstr "Educador Infantil"
-
-#: strings_to_translate.php:155
-msgid "Eletricista"
-msgstr "Eletricista"
-
-#: strings_to_translate.php:156
-msgid "Empregado de Bar"
-msgstr "Barman"
-
-#: strings_to_translate.php:157
-msgid "Empregado de Loja"
-msgstr "Empregado de balcão"
-
-#: strings_to_translate.php:158
-msgid "Empregado de Mesa"
-msgstr "Garçom"
-
-#: strings_to_translate.php:159
-msgid "Enfermeiro"
-msgstr "Enfermeiro"
-
-#: strings_to_translate.php:160
-msgid "Engenheiro"
-msgstr "Engenheiro"
-
-#: strings_to_translate.php:161
-msgid "Escritor"
-msgstr "Escritor"
-
-#: strings_to_translate.php:162
-msgid "Escultor"
-msgstr "Escultor"
-
-#: strings_to_translate.php:163
-msgid "Estudante"
-msgstr "Estudante"
-
-#: strings_to_translate.php:164
-msgid "Farmacêutico"
-msgstr "Farmacêutico"
-
-#: strings_to_translate.php:165
-msgid "Físico"
-msgstr "Físico"
-
-#: strings_to_translate.php:166
-msgid "Fisioterapeuta"
-msgstr "Fisioterapeuta"
-
-#: strings_to_translate.php:167
-msgid "Fotógrafo"
-msgstr "Fotógrafo"
-
-#: strings_to_translate.php:168
-msgid "Funcionário Público"
-msgstr "Servidor público"
-
-#: strings_to_translate.php:169
-msgid "Geólogo"
-msgstr "Geólogo"
-
-#: strings_to_translate.php:170
-msgid "Gestor"
-msgstr "Gerente"
-
-#: strings_to_translate.php:171
-msgid "Governanta"
-msgstr "Governanta"
-
-#: strings_to_translate.php:172
-msgid "Historiador"
-msgstr "Historiador"
-
-#: strings_to_translate.php:173
-msgid "Informático"
-msgstr "Técnico de computadores"
-
-#: strings_to_translate.php:174
-msgid "Jardineiro"
-msgstr "Jardineiro"
-
-#: strings_to_translate.php:175
-msgid "Jornalista"
-msgstr "Jornalista"
-
-#: strings_to_translate.php:176
-msgid "Juiz"
-msgstr "Juiz"
-
-#: strings_to_translate.php:177
-msgid "Marinheiro"
-msgstr "Marinheiro"
-
-#: strings_to_translate.php:178
-msgid "Marketeer"
-msgstr "Marketeiro"
-
-#: strings_to_translate.php:179
-msgid "Massagista"
-msgstr "Massagista"
-
-#: strings_to_translate.php:180
-msgid "Matemático"
-msgstr "Matemático"
-
-#: strings_to_translate.php:181
-msgid "Mecânico"
-msgstr "Mecânico"
-
-#: strings_to_translate.php:182
-msgid "Médico"
-msgstr "Médico"
-
-#: strings_to_translate.php:183
-msgid "Militar"
-msgstr "Militar"
-
-#: strings_to_translate.php:184
-msgid "Mineiro"
-msgstr "Mineiro"
-
-#: strings_to_translate.php:185
-msgid "Modelo"
-msgstr "Modelo"
-
-#: strings_to_translate.php:186
-msgid "Motorista"
-msgstr "Motorista"
-
-#: strings_to_translate.php:187
-msgid "Músico"
-msgstr "Músico"
-
-#: strings_to_translate.php:188
-msgid "Nutricionista"
-msgstr "Nutricionista"
-
-#: strings_to_translate.php:189
-msgid "Operário"
-msgstr "Operário"
-
-#: strings_to_translate.php:190
-msgid "Ótico"
-msgstr "Oftalmologista"
-
-#: strings_to_translate.php:191
-msgid "Paisagista"
-msgstr "Paisagista"
-
-#: strings_to_translate.php:192
-msgid "Pasteleiro"
-msgstr "Pasteleiro"
-
-#: strings_to_translate.php:193
-msgid "Pescador"
-msgstr "Pescador"
-
-#: strings_to_translate.php:194
-msgid "Pintor"
-msgstr "Pintor"
-
-#: strings_to_translate.php:195
-msgid "Polícia"
-msgstr "Policial"
-
-#: strings_to_translate.php:196
-msgid "Professor"
-msgstr "Professor"
-
-#: strings_to_translate.php:197
-msgid "Professor de Fitness"
-msgstr "Profissional de educação física"
-
-#: strings_to_translate.php:198
-msgid "Programador"
-msgstr "Programador"
-
-#: strings_to_translate.php:199
-msgid "Psicólogo"
-msgstr "Psicólogo"
-
-#: strings_to_translate.php:200
-msgid "Publicitário"
-msgstr "Publicitário"
-
-#: strings_to_translate.php:201
-msgid "Químico"
-msgstr "Químico"
-
-#: strings_to_translate.php:202
-msgid "Rececionista"
-msgstr "Recepcionista"
-
-#: strings_to_translate.php:203
-msgid "Soldador"
-msgstr "Soldador"
-
-#: strings_to_translate.php:204
-msgid "Talhante"
-msgstr "Açougueiro"
-
-#: strings_to_translate.php:205
-msgid "Taxista"
-msgstr "Taxista"
-
-#: strings_to_translate.php:206
-msgid "Técnico de Saúde"
-msgstr "Técnico em Saúde"
-
-#: strings_to_translate.php:207
-msgid "Trabalhador da Construção Civil"
-msgstr "Trabalhador da construção"
-
-#: strings_to_translate.php:208
-msgid "Trabalho Social"
-msgstr "Trabalho Social"
-
-#: strings_to_translate.php:209
-msgid "Turismo"
-msgstr "Turismo"
-
-#: strings_to_translate.php:210
-msgid "Urbanista"
-msgstr "Urbanista"
-
-#: strings_to_translate.php:211
-msgid "Vendedor"
-msgstr "Vendedor"
-
-#: strings_to_translate.php:212
-msgid "Veterinário"
-msgstr "Veterinário"
-
-#: strings_to_translate.php:213
-msgid "Vigilante"
-msgstr "Vigilante"
-
-#: strings_to_translate.php:217
-msgid "Normalmente faço as coisas sozinho. Assim posso fazer o que quero."
-msgstr "Geralmente faço as coisas sozinho. Desse jeito posso fazer o que quero."
-
-#: strings_to_translate.php:218
-msgid "Se os meus amigos tomarem as decisões, normalmente eu participo sempre"
-msgstr "Se meus amigos tomarem as decisões, geralmente eu sempre participo"
-
-#: strings_to_translate.php:219
-msgid "Quase sempre decidimos em conjunto o que fazer."
-msgstr "Quase sempre decidimos juntos o que fazer."
-
-#: strings_to_translate.php:220
-msgid "Eu sugiro frequentemente o que devemos fazer e convenço os meus amigos."
-msgstr "Eu sugiro frequentemente o que nós devemos fazer e convenço meus amigos."
-
-#: strings_to_translate.php:221
-msgid "Eu planeio na maior parte das vezes o que fazemos."
-msgstr "Eu planejo na maioria das vezes o que nós fazemos."
-
-#: strings_to_translate.php:225
-msgid "Facebook"
-msgstr "Facebook"
-
-#: strings_to_translate.php:226
-msgid "Twitter"
-msgstr "Twitter"
-
-#: strings_to_translate.php:227
-msgid "Google +"
-msgstr "Google +"
-
-#: strings_to_translate.php:228
-msgid "Myspace"
-msgstr "Myspace"
-
-#: strings_to_translate.php:229
-msgid "Orkut"
-msgstr "Orkut"
-
-#: strings_to_translate.php:230
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-#: strings_to_translate.php:231
-msgid "Hi5"
-msgstr "Hi5"
-
-#: strings_to_translate.php:232
-msgid "Flickr"
-msgstr "Flickr"
-
-#: strings_to_translate.php:233
-msgid "Pinterest"
-msgstr "Pinterest"
-
-#: strings_to_translate.php:234
-msgid "Netlog"
-msgstr "Netlog"
-
-#: strings_to_translate.php:235
-msgid "Foursquare"
-msgstr "Foursquare"
-
-#: strings_to_translate.php:236
-msgid "Bebo"
-msgstr "Bebo"
-
-#: strings_to_translate.php:237
-msgid "Istagr.am"
-msgstr "Istagr.am"
-
-#: strings_to_translate.php:241
-#: strings_to_translate.php:242
-#: strings_to_translate.php:243
-#: strings_to_translate.php:244
-#: strings_to_translate.php:255
-#: strings_to_translate.php:258
-msgid "Com que frequência usas as seguintes tecnologias?"
-msgstr "Quão frequentemente você usa as tecnologias seguintes"
-
-#: strings_to_translate.php:245
-msgid "Os Embaixadores recebem todo o material necessário para o desenvolvimento do projecto, por exemplo: embalagens de produto, telemóveis, livros, consolas de jogos, música. Recebem ainda material informativo e uma descrição detalhada do projecto. Para te podermos contactar e enviar todo o material referente a um projecto necessitamos que nos dês as seguintes informações:"
-msgstr ""
-
-#: strings_to_translate.php:246
-#: strings_to_translate.php:247
-#: strings_to_translate.php:248
-#: strings_to_translate.php:253
-#: strings_to_translate.php:256
-msgid "TRADUZIR:Os Embaixadores recebem todo o material necessário para o desenvolvimento do projecto, por exemplo: embalagens de produto, telemóveis, livros, consolas de jogos, música. Recebem ainda material informativo e uma descrição detalhada do projecto. Para te podermos contactar e enviar todo o material referente a um projecto necessitamos que nos dês as seguintes informações:"
-msgstr ""
-
-#: strings_to_translate.php:249
-#: strings_to_translate.php:250
-#: strings_to_translate.php:251
-#: strings_to_translate.php:254
-#: strings_to_translate.php:257
-msgid "TRADUZIR:A morada alternativa deve ser preenchida sempre que pretendas que os envios de correspondência sejam feitos para outra morada, que não a da tua residência. Caso seja a mesma assinala na opção no fundo da página"
-msgstr ""
-
-#: strings_to_translate.php:252
-msgid "A morada alternativa deve ser preenchida sempre que pretendas que os envios de correspondência sejam feitos para outra morada, que não a da tua residência. Caso seja a mesma assinala na opção no fundo da página"
-msgstr ""
-
-#: strings_to_translate.php:262
-msgid "flags"
-msgstr ""
-
-#: strings_to_translate.php:263
-msgid "Condições de utilização"
-msgstr "Termos e condições de uso do site"
-
-#: strings_to_translate.php:264
-msgid "Entrada"
-msgstr "Entrada"
-
-#: strings_to_translate.php:265
-msgid "Wom no Mundo"
-msgstr "WOM no mundo"
-
-#: strings_to_translate.php:266
-msgid "Para empresas"
-msgstr "Para empresas"
-
-#: strings_to_translate.php:267
-msgid "Para embaixadores"
-msgstr "Para embaixadores"
-
-#: strings_to_translate.php:268
-msgid "Contacta-nos"
-msgstr "Nos contate"
-
-#: strings_to_translate.php:269
-msgid "Política de privacidade"
-msgstr "Política de Privacidade"
-
-#: strings_to_translate.php:270
-msgid "Registo"
-msgstr "Registro"
-
-#: strings_to_translate.php:271
-msgid "Recuperar Pass"
-msgstr "Recuperar senha"
-
-#: strings_to_translate.php:272
-msgid "Questionários"
-msgstr "Questionários"
-
-#: strings_to_translate.php:273
-msgid "Questionario Mostra"
-msgstr ""
-
-#: strings_to_translate.php:274
-msgid "O meu perfil"
-msgstr "Meu perfil"
-
-#: strings_to_translate.php:275
-msgid "Confirmação"
-msgstr "Confirmação"
-
-#: strings_to_translate.php:276
-msgid "Campanhas"
-msgstr "Campanhas"
-
-#: strings_to_translate.php:277
-msgid "Informação"
-msgstr "Informação"
-
-#: strings_to_translate.php:278
-msgid "site_entrance"
-msgstr "site_entrance"
-
-#: strings_to_translate.php:279
-msgid "Nova Password"
-msgstr "Nova senha"
-
-#: strings_to_translate.php:280
-msgid "Confirmação Password"
-msgstr "Confirmação senha"
-
-#: strings_to_translate.php:281
-msgid "fake_page"
-msgstr "fake_page"
-
-#: strings_to_translate.php:285
-msgid "Feminino"
-msgstr "Feminino"
-
-#: strings_to_translate.php:286
-msgid "Masculino"
-msgstr "Masculino"
-
-#: strings_to_translate.php:290
-msgid "Solteiro"
-msgstr "Solteiro"
-
-#: strings_to_translate.php:291
-msgid "Casado"
-msgstr "Casado"
-
-#: strings_to_translate.php:292
-msgid "Divorciado"
-msgstr "Divorciado"
-
-#: strings_to_translate.php:293
-msgid "Viuvo"
-msgstr "Viúvo"
-
-#: strings_to_translate.php:297
-msgid "Primária"
-msgstr "Ensino Fundamental - Inicial"
-
-#: strings_to_translate.php:298
-msgid "Preparatória"
-msgstr "Ensino Fundamental - Final"
-
-#: strings_to_translate.php:299
-msgid "Secundário"
-msgstr "Ensino Médio"
-
-#: strings_to_translate.php:300
-msgid "Licenciatura"
-msgstr "Ensino Superior"
-
-#: strings_to_translate.php:301
-msgid "Mestrado"
-msgstr "Mestrado"
-
-#: strings_to_translate.php:302
-msgid "Doutoramento"
-msgstr "Doutorado"
-
-#: strings_to_translate.php:306
-msgid "Sim"
-msgstr "Sim"
-
-#: strings_to_translate.php:307
-msgid "Não"
-msgstr "Não"
-
-#: controllers/ambassadors.controller.php:107
-msgid "Bem-vindo"
-msgstr "Bem-vindo"
-
-#: controllers/ambassadors.controller.php:160
-#: controllers/ambassadors.controller.php:206
-msgid "É necessário um endereço de e-mail válido."
-msgstr "É preciso um endereço de email válido."
-
-#: controllers/ambassadors.controller.php:234
-msgid "O endereço fornecido já existe."
-msgstr "O endereço fornecido já existe."
-
-#: controllers/ambassadors.controller.php:273
-msgid "Lamentamos mas ocorreu um erro ao efectuar o seu pré-registo. Foi-nos impossível guardá-lo."
-msgstr "Lamentamos o sucedido, mas houve um erro durante o pré-registro. Não foi possível guardar."
-
-#: controllers/ambassadors.controller.php:287
-msgid "Lamentamos mas ocorreu um erro ao efectuar o pré-registo. Foi-nos impossível guardar o endereço de mail fornecido."
-msgstr "Lamentamos o sucedido, mas houve um erro durante o pré-registro. Não foi possível salvar o endereço de email fornecido."
-
-#: controllers/ambassadors.controller.php:326
-msgid "Lamentamos mas ocorreu um erro ao enviar o mail para o endereço fornecido."
-msgstr "Lamentamos o sucedido, mas houve um erro no envio do email para o endereço fornecido."
-
-#: controllers/ambassadors.controller.php:338
-msgid ""
-"<p>5 - Parabéns. O teu registo foi efectuado.</p>\n"
-"\t\t\t\t\t\t<p class=\"texto5\">Dentro de alguns dias receberás novidades no teu email. Entretanto recomenda já o nosso site a todos os teus amigos. Podes ganhar pontos adicionais por cada um que se inscreva através da tua recomendação. Mais pontos são mais possibilidades de receberes convites para as campanhas que são do teu interesse. Não percas tempo!</p>"
-msgstr ""
-
-#: controllers/ambassadors.controller.php:349
-msgid "Lamentamos imenso mas uma situação imprevista inviabilizou a acção de pre-registo."
-msgstr "Lamentamos o sucedido, mas uma situação imprevista não permitiu a ação de pré-registro."
-
-#: controllers/ambassadors.controller.php:372
-#: controllers/ambassadors.controller.php:382
-msgid "Ups! Algo correu mal!"
-msgstr "Opa! algo correu mal!"
-
-#: controllers/ambassadors.controller.php:456
-msgid "Não foi possível confirmar o registo."
-msgstr "Não foi possível confirmar o registro."
-
-#: controllers/ambassadors.controller.php:465
-msgid "O registo já se encontra confirmado."
-msgstr "O registro já está confirmado."
-
-#: controllers/ambassadors.controller.php:514
-msgid "<p>Parabéns.</p>O teu registo foi um sucesso. Dentro de alguns dias receberás novidades no teu email. Entretanto recomenda já o nosso site a todos os teus amigos. Podes ganhar pontos adicionais por cada um que se inscreva através da tua recomendação. Mais pontos são mais possibilidades de receberes convites para as campanhas que são do teu interesse. Não percas tempo!"
-msgstr ""
-
-#: controllers/ambassadors.controller.php:517
-msgid "Ocorreu um erro ao efectuar o teu registo."
-msgstr "Ocorreu um erro ao efectuar o seu registo."
-
-#: controllers/change_password.controller.php:33
-msgid "change_password::change_password::ok::title - OK"
-msgstr ""
-
-#: controllers/change_password.controller.php:33
-msgid "change_password::change_password::ok::message - Password sucessfully changed."
-msgstr ""
-
-#: controllers/change_password.controller.php:36
-#: controllers/change_password.controller.php:39
-msgid "change_password::change_password::failure::title - OOPS"
-msgstr ""
-
-#: controllers/change_password.controller.php:36
-#: controllers/change_password.controller.php:39
-msgid "change_password::change_password::failure::message - something went wrong."
-msgstr ""
-
-#: controllers/content.controller.php:389
-msgid "Community"
-msgstr "Comunidade"
-
-#: controllers/content.controller.php:427
-msgid "Sobre nós"
-msgstr "Sobre nós"
-
-#: controllers/content.controller.php:458
-#: controllers/content.controller.php:481
-#: controllers/content.controller.php:521
-msgid "Suporte"
-msgstr "Suporte"
-
-#: controllers/content.controller.php:541
-msgid "Junta-te a nós"
-msgstr "Junte-se a nós"
-
-#: controllers/dashboard.controller.php:19
-msgid "Dados Demográficos"
-msgstr "Dados Demográficos"
-
-#: controllers/dashboard.controller.php:22
-msgid "Género"
-msgstr "Gênero"
-
-#: controllers/dashboard.controller.php:25
-msgid "Idade"
-msgstr "Idade"
-
-#: controllers/dashboard.controller.php:29
-msgid "Escolaridade"
-msgstr "Escolaridade"
-
-#: controllers/default.controller.php:370
+#: controllers/default.controller.php:193
 msgid "Lamentamos imenso o sucedido mas uma situação imprevista inviabilizou a satisfação do pedido com sucesso"
 msgstr "Lamentamos o sucedido, mas uma situação imprevista não permitiu satisfazer o pedido com sucesso"
 
-#: controllers/default.controller.php:436
-#: controllers/default.controller.php:441
+#: controllers/default.controller.php:222
+#: controllers/default.controller.php:227
 msgid "login_box::message - Login session expired."
 msgstr ""
 
-#: controllers/default.controller.php:446
+#: controllers/default.controller.php:232
 msgid "login_box::message - Inválid login credentials."
 msgstr ""
 
-#: controllers/default.controller.php:451
-#: controllers/default.controller.php:456
-#: controllers/default.controller.php:461
+#: controllers/default.controller.php:237
+#: controllers/default.controller.php:242
+#: controllers/default.controller.php:247
 msgid "login_box::message - Unexpected error. Please try later!"
 msgstr ""
 
-#: controllers/profile.controller.php:40
-#, fuzzy
-msgid "Registo inicial"
-msgstr "Questionário inicial"
-
-#: controllers/profile.controller.php:77
-msgid "Bónus"
-msgstr ""
-
-#: controllers/profile.controller.php:83
-msgid "profile::bonus_item::help_text - Bonus help text"
-msgstr ""
-
-#: controllers/profile.controller.php:160
-msgid "Profile::points details::profile"
-msgstr ""
-
-#: controllers/profile.controller.php:163
-msgid "Profile::points details::these_points_are_permanent - These points are permanent."
-msgstr ""
-
-#: controllers/profile.controller.php:166
-#, php-format
-msgid "Profile::points details::me_as_invitee_points - You earned %d points as invitee."
-msgstr ""
-
-#: controllers/profile.controller.php:172
-msgid "Profile::points details::friend that registered"
-msgstr ""
-
-#: controllers/profile.controller.php:175
-#, php-format
-msgid "Profile::points details::Friend had registered - %d friends had registered with your code"
-msgstr ""
-
-#: controllers/profile.controller.php:184
-msgid "Profile::points details::enrolled campaigns - Campaigns you had participated"
-msgstr ""
-
-#: controllers/recover_password.controller.php:35
-msgid "recover_password::notification_mail::subject - Password recovery"
-msgstr ""
-
-#: controllers/recover_password.controller.php:36
-msgid "recover_password::notification_mail::body::header - Click the link to change your password"
-msgstr ""
-
-#: controllers/recover_password.controller.php:37
-msgid "recover_password::notification_mail::body::footer - See you"
-msgstr ""
-
-#: controllers/recover_password.controller.php:44
-msgid "recover_password_submit:success_title Success"
-msgstr ""
-
-#: controllers/recover_password.controller.php:45
-msgid "recover_password_submit:success_message Check your email and follow the instructions"
-msgstr ""
-
-#: controllers/recover_password.controller.php:58
-msgid "recover_password_submit:failure_notification_title"
-msgstr ""
-
-#: controllers/recover_password.controller.php:73
-msgid "recover_password::recover_password::title Recuperação de password"
-msgstr ""
-
-#: controllers/recover_password.controller.php:75
-msgid "recover_password::recover_password::sub_title Escreve em baixo a tua nova password"
-msgstr ""
-
-#: controllers/recover_password.controller.php:110
-#: controllers/registration.controller.php:115
-#: controllers/registration.controller.php:116
-#: controllers/registration.controller.php:137
-#: controllers/registration.controller.php:138
-#: controllers/registration.controller.php:200
-#: controllers/registration.controller.php:215
-#: controllers/registration.controller.php:446
-#: controllers/registration.controller.php:513
-#: controllers/registration.controller.php:575
-#: controllers/registration.controller.php:622
-msgid "Parabéns"
-msgstr "Parabéns"
-
-#: controllers/recover_password.controller.php:111
-msgid "update_password::success_tex - Your password was updated."
-msgstr ""
-
-#: controllers/recover_password.controller.php:118
-#: controllers/recover_password.controller.php:130
-#: controllers/recover_password.controller.php:136
-#: controllers/recover_password.controller.php:141
-msgid "update_password::failed_text - operation failed."
-msgstr ""
-
-#: controllers/recover_password.controller.php:119
-#: controllers/recover_password.controller.php:125
-#: controllers/recover_password.controller.php:131
-#: controllers/recover_password.controller.php:137
-#: controllers/recover_password.controller.php:142
-#: controllers/registration.controller.php:148
-#: controllers/registration.controller.php:149
-#: controllers/registration.controller.php:219
-#: controllers/registration.controller.php:571
-#: controllers/registration.controller.php:584
-#: controllers/registration.controller.php:589
-#: controllers/registration.controller.php:631
-#: controllers/registration.controller.php:640
-#: controllers/registration.controller.php:1271
-msgid "Oops!"
-msgstr ""
-
-#: controllers/recover_password.controller.php:124
-msgid "update_password::failed_text - invalid operation"
-msgstr ""
-
-#: controllers/registration.controller.php:57
-msgid "TODO"
-msgstr ""
-
-#: controllers/registration.controller.php:117
-#: controllers/registration.controller.php:139
-msgid "registration::activate_registration::success_essage_1 - Your registration has been successfully submitted"
-msgstr ""
-
-#: controllers/registration.controller.php:118
-#: controllers/registration.controller.php:140
-msgid "registration::activate_registration::success_essage_2 - Thanks for joining our community. You can now login and you will be able to:"
-msgstr ""
-
-#: controllers/registration.controller.php:119
-#: controllers/registration.controller.php:141
-msgid "registration::activate_registration::success_essage_3 - Complete your profile and keep it updated so we get to know you better and we can adjust our campaigns to your interests and needs;"
-msgstr ""
-
-#: controllers/registration.controller.php:120
-#: controllers/registration.controller.php:142
-msgid "registration::activate_registration::success_essage_4 - Register on campaigns available that are of interest to you;"
-msgstr ""
-
-#: controllers/registration.controller.php:121
-#: controllers/registration.controller.php:143
-msgid "registration::activate_registration::success_essage_5 - Learn more about how to be an ambassador, with our training program;"
-msgstr ""
-
-#: controllers/registration.controller.php:122
-#: controllers/registration.controller.php:144
-msgid "registration::activate_registration::success_essage_6 - Start getting the word out about our community and recommend it to your friends. You'll get points for each one that register. With more points you also have more opportunities we select you for the campaigns that interest you."
-msgstr ""
-
-#: controllers/registration.controller.php:123
-#: controllers/registration.controller.php:145
-msgid "registration::activate_registration::success_essage_7 - Good Luck!"
-msgstr ""
-
-#: controllers/registration.controller.php:150
-msgid "registration::activate_registration::failure - Your registration was not updated"
-msgstr ""
-
-#: controllers/registration.controller.php:201
-#: controllers/registration.controller.php:216
-msgid "Pré-registo bem sucedido"
-msgstr "Pré-registro com sucesso"
-
-#: controllers/registration.controller.php:220
-msgid "registration::activate_pre_registration::failure - Your registration was not updated"
-msgstr ""
-
-#: controllers/registration.controller.php:259
-msgid "registration::edit::registration_information::title - Registration"
-msgstr ""
-
-#: controllers/registration.controller.php:260
-msgid "registration::edit::profile::sub_title - This is where you edit your registration information"
-msgstr ""
-
-#: controllers/registration.controller.php:262
-msgid "registration::edit::profile::html_desc - You can directly edit your first, and last name. And you can use the links provided to change you login or you password."
-msgstr ""
-
-#: controllers/registration.controller.php:448
-msgid "registration::register::submit::submit_succeded - Registo bem sucedido"
-msgstr ""
-
-#: controllers/registration.controller.php:449
-#, fuzzy
-msgid "registration::register::submit::confirmation_mail_sended - Verifica o teu email e clica no link enviado."
-msgstr "Verifique seu email agora e clique clique no link que lhe enviámos!"
-
-#: controllers/registration.controller.php:515
-#, fuzzy
-msgid "Alteração de registo bem sucedida"
-msgstr "Pré-registro com sucesso"
-
-#: controllers/registration.controller.php:558
-msgid "registration::update_mail_submit::introdunction - Click this link to update your email."
-msgstr ""
-
-#: controllers/registration.controller.php:559
-msgid "registration::update_mail_submit::thanks_note - Thank You"
-msgstr ""
-
-#: controllers/registration.controller.php:567
-msgid "registration::update_mail_submit::mail_subject Mail update requested "
-msgstr ""
-
-#: controllers/registration.controller.php:572
-msgid "registration::update_mail_submit::send_mail_failure - Something went wrong while sending you a confirmation email."
-msgstr ""
-
-#: controllers/registration.controller.php:576
-msgid "registration::update_mail_submit::send_mail_sucess - Success."
-msgstr ""
-
-#: controllers/registration.controller.php:585
-#: controllers/registration.controller.php:590
-msgid "registration::update_mail_submit::generic_failure - Something went wrong."
-msgstr ""
-
-#: controllers/registration.controller.php:624
-msgid "registration::update_mail_confirm::update_succeded - Your registration was updated"
-msgstr ""
-
-#: controllers/registration.controller.php:633
-#: controllers/registration.controller.php:642
-#: controllers/registration.controller.php:649
-msgid "registration::update_mail_confirm::update_failed - Your registration was not updated"
-msgstr ""
-
-#: controllers/registration.controller.php:734
-#: controllers/registration.controller.php:762
-msgid "Email inválido."
-msgstr ""
-
-#: controllers/registration.controller.php:738
-#: controllers/registration.controller.php:750
-msgid "Campo de preenchimento obrigatorio."
-msgstr ""
-
-#: controllers/registration.controller.php:746
-msgid "os mails devem ser iguais."
-msgstr ""
-
-#: controllers/registration.controller.php:776
-msgid "Ambassador code is required"
-msgstr ""
-
-#: controllers/registration.controller.php:784
-#: controllers/registration.controller.php:790
-#: controllers/registration.controller.php:824
-#: controllers/registration.controller.php:880
-#: controllers/registration.controller.php:957
-#: controllers/registration.controller.php:998
-#: controllers/registration.controller.php:1044
-#: controllers/registration.controller.php:1065
-#: controllers/registration.controller.php:1072
-msgid "Tem de introduzir um email válido."
-msgstr "Você precisa introduzir um email válido."
-
-#: controllers/registration.controller.php:809
-msgid "Invalide code"
-msgstr ""
-
-#: controllers/registration.controller.php:844
-#: controllers/registration.controller.php:849
-#: controllers/registration.controller.php:868
-msgid "A introdução do nome é obrigatória."
-msgstr "A introdução do nome é obrigatória."
-
-#: controllers/registration.controller.php:863
-msgid "Existem erros de preenchimento que devem ser corrigidos para poder continuar."
-msgstr "Existem erros de preenchimento que precisam ser corrigidos para poder continuar."
-
-#: controllers/registration.controller.php:874
-msgid "A introdução do apelido é obrigatória."
-msgstr "A introdução do sobrenome é obrigatória."
-
-#: controllers/registration.controller.php:886
-msgid "A password tem de ter no mínimo 6 caracteres"
-msgstr "A senha precisa ter no mínimo 6 carateres."
-
-#: controllers/registration.controller.php:893
-msgid "Erro na confirmação de email."
-msgstr "Erro na confirmação do email."
-
-#: controllers/registration.controller.php:894
-msgid "Este email está incorreto."
-msgstr "Esse email está incorreto."
-
-#: controllers/registration.controller.php:899
-msgid "Erro na confirmação da password."
-msgstr "Erro na confirmação da senha."
-
-#: controllers/registration.controller.php:905
-msgid "Necessita aceitar os termos"
-msgstr "Você precisa aceitar os termos"
-
-#: controllers/registration.controller.php:920
-msgid "Este email já existe no sistema."
-msgstr "Esse email já existe no sistema."
-
-#: controllers/registration.controller.php:933
-msgid "Código errado."
-msgstr "Código errado."
-
-#: controllers/registration.controller.php:1293
-#: controllers/registration.controller.php:1330
-msgid "Olá"
-msgstr "Olá"
-
-#: controllers/registration.controller.php:1294
-#: controllers/registration.controller.php:1331
-msgid "Estás apenas a um passo de completar o processo de registo."
-msgstr "Você está a um passo somente de completar o processo de registro."
-
-#: controllers/registration.controller.php:1295
-#: controllers/registration.controller.php:1332
-msgid "Para terminar clica no link seguinte para confirmares a criação da tua conta:"
-msgstr "Para terminar, por favor clique no link seguinte para confirmar a criação de sua conta:"
-
-#: controllers/registration.controller.php:1296
-#: controllers/registration.controller.php:1333
-msgid "Link de activação"
-msgstr "Link de activação"
-
-#: controllers/registration.controller.php:1297
-#: controllers/registration.controller.php:1334
-msgid "Aproveita e activa este e-mail como &ldquo;Safe/Not junk&rdquo; para que possas continuar a receber e-mails nossos e a participar nas campanhas e estudos que temos para ti."
-msgstr "Aproveite e ative esse email como &ldquo;Safe/Not junk&rdquo; para poder continuar recebendo nossos emails e participando das Campanhas e Estudos que temos para você."
-
-#: controllers/registration.controller.php:1298
-#: controllers/registration.controller.php:1335
-msgid "Obrigado"
-msgstr "Obrigado"
-
-#: controllers/registration.controller.php:1361
-#, php-format
-msgid "Obrigado pelo tempo que dispensaste para aderir à comunidade %s."
-msgstr "Obrigado pelo tempo que você dedicou para aderir à comunidade %s. "
-
-#: controllers/registration.controller.php:1363
-msgid "Obrigado pelo tempo que dispensaste para aderir à comunidade."
-msgstr "Obrigado pelo tempo que você dedicou para aderir à comunidade."
-
-#: controllers/survey.controller.php:163
-msgid "Achas que és um principiante"
-msgstr "Você acha que é um principiante"
-
-#: controllers/survey.controller.php:164
-msgid "Um bom conselheiro"
-msgstr "Um bom conselheiro"
-
-#: controllers/survey.controller.php:165
-msgid "Um ótimo conselheiro"
-msgstr "Um ótimo conselheiro"
-
-#: controllers/survey.controller.php:166
-msgid "Um especialista"
-msgstr "Um especialista"
-
-#: controllers/survey.controller.php:171
-msgid "Diariamente"
-msgstr "Diariamente"
-
-#: controllers/survey.controller.php:172
-msgid "3 Vezes por semana"
-msgstr "3 Vezes por semana"
-
-#: controllers/survey.controller.php:173
-msgid "2 Vezes por semana"
-msgstr "2 Vezes por semana"
-
-#: controllers/survey.controller.php:174
-msgid "1 Vez por semana"
-msgstr "1 Vez por semana"
-
-#: controllers/survey.controller.php:175
-msgid "2 Vezes por mês"
-msgstr "2 Vezes por mês"
-
-#: controllers/survey.controller.php:176
-msgid "1 Vez por mês"
-msgstr "1 Vez por mês"
-
-#: controllers/survey.controller.php:177
-msgid "4 Vezes por ano"
-msgstr "4 Vezes por ano"
-
-#: controllers/survey.controller.php:178
-msgid "2 Vezes por ano"
-msgstr "2 Vezes por ano"
-
-#: controllers/survey.controller.php:179
-msgid "1 Vez por ano"
-msgstr "1 Vez por ano"
-
-#: controllers/survey.controller.php:180
-msgid "Não pratico"
-msgstr "Não pratico"
-
-#: controllers/survey.controller.php:187
-msgid "profile::social_network::time_spent - All day long"
-msgstr ""
-
-#: controllers/survey.controller.php:188
-msgid "profile::social_network::time_spent - Once a day"
-msgstr ""
-
-#: controllers/survey.controller.php:189
-msgid "profile::social_network::time_spent - 3 times a week"
-msgstr ""
-
-#: controllers/survey.controller.php:190
-msgid "profile::social_network::time_spent - Twice a week"
-msgstr ""
-
-#: controllers/survey.controller.php:191
-msgid "profile::social_network::time_spent - Once a week"
-msgstr ""
-
-#: controllers/survey.controller.php:192
-msgid "profile::social_network::time_spent - Twice a month"
-msgstr ""
-
-#: controllers/survey.controller.php:193
-msgid "profile::social_network::time_spent - Once a month"
-msgstr ""
-
-#: controllers/survey.controller.php:194
-msgid "profile::social_network::time_spent - 4 times a year"
-msgstr ""
-
-#: controllers/survey.controller.php:195
-msgid "profile::social_network::time_spent - Twice a year"
-msgstr ""
-
-#: controllers/survey.controller.php:196
-msgid "profile::social_network::time_spent - Once a year"
-msgstr ""
-
-#: controllers/survey.controller.php:201
-msgid "profile::social_network::behaviour - I follow other people posts"
-msgstr ""
-
-#: controllers/survey.controller.php:202
-msgid "profile::social_network::behaviour - I write posts on a regular basis"
-msgstr ""
-
-#: controllers/survey.controller.php:203
-msgid "profile::social_network::behaviour - I comment the posts that other people publish"
-msgstr ""
-
-#: controllers/survey.controller.php:208
-msgid "profile::social_network::contacts_quantity - Less than 100"
-msgstr ""
-
-#: controllers/survey.controller.php:209
-msgid "profile::social_network::contacts_quantity - Between 100 and 200"
-msgstr ""
-
-#: controllers/survey.controller.php:210
-msgid "profile::social_network::contacts_quantity - Between 200 and 300"
-msgstr ""
-
-#: controllers/survey.controller.php:211
-msgid "profile::social_network::contacts_quantity - Between 300 and 400"
-msgstr ""
-
-#: controllers/survey.controller.php:212
-msgid "profile::social_network::contacts_quantity - Between 400 and 500"
-msgstr ""
-
-#: controllers/survey.controller.php:213
-msgid "profile::social_network::contacts_quantity - Between 500 and 1.000"
-msgstr ""
-
-#: controllers/survey.controller.php:214
-msgid "profile::social_network::contacts_quantity - Between 1.000 and 1.500"
-msgstr ""
-
-#: controllers/survey.controller.php:215
-msgid "profile::social_network::contacts_quantity - Between 1.500 and 2.000"
-msgstr ""
-
-#: controllers/survey.controller.php:216
-msgid "profile::social_network::contacts_quantity - Between 2.000 and 3.000"
-msgstr ""
-
-#: controllers/survey.controller.php:217
-msgid "profile::social_network::contacts_quantity - Between 3.000 and 4.000"
-msgstr ""
-
-#: controllers/survey.controller.php:218
-msgid "profile::social_network::contacts_quantity - Between 4.000 and 5.000"
-msgstr ""
-
-#: controllers/survey.controller.php:219
-msgid "profile::social_network::contacts_quantity - Between 5.000 and 10.000"
-msgstr ""
-
-#: controllers/survey.controller.php:220
-msgid "profile::social_network::contacts_quantity - More than 10.000"
-msgstr ""
-
-#: controllers/survey.controller.php:1713
-msgid "Success."
-msgstr ""
-
-#: controllers/survey.controller.php:1737
-#, php-format
-msgid "survey::question::file_upload::invalid_file_size - Invalid file size %d should be smaller than than 120000 bytes (12 Kb). Please resize it or use another."
-msgstr ""
-
-#: controllers/survey.controller.php:1752
-#, php-format
-msgid "survey::question::file_upload::invalid_file_type - Invalid file type %d. Please use another."
-msgstr ""
-
-#: controllers/survey.controller.php:1765
-msgid "survey::question::file_upload::unspecified_error_default_error_msg - An error occurred while processing your upload. Try again."
-msgstr ""
-
-#: controllers/tellafriend.controller.php:118
-msgid "Por favor insere o email com que te registaste na nossa comunidade."
-msgstr "Por favor insira o email que você usou para se registrar em nossa comunidade."
-
-#: controllers/tellafriend.controller.php:119
-msgid "Ao fazê-lo poderás ganhar pontos para a tua conta, por cada amigo teu que se registe."
-msgstr "Desse jeito, você poderá ganhar pontos para sua conta, por cada amigo seu que se registre."
-
-#: controllers/tellafriend.controller.php:120
-msgid "Quanto mais pontos tiveres mais probabilidades tens de ser seleccionado para as campanhas que realmente te interessam."
-msgstr "Quantos mais pontos você tiver, mais chances haverá de ser selecionado para as campanhas que realmente lhe interessam."
-
-#: controllers/tellafriend.controller.php:121
-msgid "Atenção: para ganhares os pontos terás que ter a tua conta registada."
-msgstr "Atenção: para ganhar os pontos, você precisa ter sua conta registrada."
-
-#: controllers/tellafriend.controller.php:169
-msgid "Configura a tua mensagem"
-msgstr "Configure sua mensagem:"
-
-#: controllers/tellafriend.controller.php:177
-msgid "Tens de preencher pelo menos um endereço de email."
-msgstr "Tem de preencher pelo menos um endereço de email."
-
-#: controllers/tellafriend.controller.php:226
-#, php-format
-msgid "Foi enviado um email para %s"
-msgstr ""
-
-#: controllers/tellafriend.controller.php:302
-msgid "Junta-te já"
-msgstr "Se junte agora mesmo"
-
-#: controllers/tellafriend.controller.php:307
-#: controllers/tellafriend.controller.php:333
-msgid "Olá,"
-msgstr "Oi,"
-
-#: controllers/tellafriend.controller.php:310
-#: controllers/tellafriend.controller.php:334
-msgid "Vê já este site que te vai interessar."
-msgstr "Veja agora esse site que vai interessar você. "
-
-#: controllers/tellafriend.controller.php:311
-#: controllers/tellafriend.controller.php:335
-msgid "É uma comunidade onde podes experimentar produtos e serviços das tuas marcas preferidas gratuitamente."
-msgstr "Se chama Embaixadores.com e você pode experimentar grátis produtos e serviços de suas marcas favoritas."
-
-#: controllers/tellafriend.controller.php:312
-#: controllers/tellafriend.controller.php:336
-msgid "Eu já sou membro."
-msgstr "Eu já sou membro."
-
-#: controllers/tellafriend.controller.php:323
-#: controllers/tellafriend.controller.php:338
-#, php-format
-msgid "Regista-te usando este link - %s - e ambos ganharemos pontos para a nossa conta."
-msgstr "Se registre usando esse link – %s – e nós dois iremos ganhar pontos para nossas contas."
-
-#: controllers/tellafriend.controller.php:326
-#: controllers/tellafriend.controller.php:340
-msgid "Quanto mais pontos tivermos mais probabilidades temos de ser seleccionados para as campanhas."
-msgstr "Quantos mais pontos nós tivermos, mais chances haverá de sermos selecionados para as campanhas."
-
-#: controllers/tellafriend.controller.php:328
-#: controllers/tellafriend.controller.php:341
-msgid "Até já,"
-msgstr "Até já,"
-
-#: controllers/tellafriend.controller.php:353
-#: controllers/tellafriend.controller.php:380
-msgid "Enviar email"
-msgstr "Enviar email"
-
-#: controllers/tellafriend.controller.php:359
-#: controllers/tellafriend.controller.php:386
-msgid "Redes sociais"
-msgstr "Redes sociais"
-
-#: to/views/tellafriend.vto.php:35
-msgid "Enviar"
-msgstr "Enviar"
-
-#: views/footer.php:57
-msgid "&copy; 2008 - 2012 Todos os direitos reservados. Embaixadores.com &reg; é uma marca registada da WOM - Marketing Agency, Lda."
-msgstr "&copy; 2008 - 2012 Todos os direitos reservados. Embaixadores.com &reg; é uma marca registada da WOM - Marketing Agency, Lda."
-
-#: views/header.php:85
-msgid "Enviar a amigo"
-msgstr "Enviar a amigo"
-
 #: views/html_head_metas_facebook.php:12
-msgid "Estamos à procura de 20.000 experimentadores de produtos no Brasil."
-msgstr "Estamos procurando 20.000 expirementadores de produtos no Brasil."
+msgid "to_facebook_title"
+msgstr ""
 
 #: views/html_head_metas_facebook.php:13
-msgid "Queres ajudar a renovar tendências? Como embaixador podes transformar-te num autêntico trend setter. Vais poder experimentar produtos das tuas marcas ou produtos preferidos e dar-lhes feedback sobre os mesmos. É tudo muito simples, sem custos e com muita diversão. "
-msgstr "Você quer ajudar a renovar tendências? Como embaixador, você pode virar um autêntico criador de tendências. Vai poder experimentar produtos de suas marcas ou produtos favoritos e lhes dar seu feedback sobre eles. É tudo muito simples, sem custos e com muita diversão."
-
-#: views/ambassadors/pre_activate.php:10
-msgid "Parabéns."
-msgstr "Parabéns."
-
-#: views/ambassadors/pre_activate.php:20
-msgid "O teu registo foi um sucesso."
-msgstr "Seu registro foi um sucesso."
-
-#: views/ambassadors/pre_activate.php:24
-msgid "Dentro de alguns dias receberás novidades no teu email. Entretanto recomenda já o nosso site a todos os teus amigos. Podes ganhar pontos adicionais por cada um que se inscreva através da tua recomendação. Mais pontos são mais possibilidades de receberes convites para as campanhas que são do teu interesse. Não percas tempo!"
-msgstr "Dentro de alguns dias você irá novidades em seu email. Enquanto isso, recomende já nosso site a todos os seus amigos. Você pode ganhar pontos complementares por cada amigo que se registre através de sua recomendação. Mais pontos são mais chances de você receber convites para as campanhas que lhe interessam. Não perca tempo!"
-
-#: views/ambassadors/pre_register_mail.php:58
-#, php-format
-msgid "A equipa de %s"
-msgstr "A equipe de %s"
-
-#: views/ambassadors/pre_register_mail.php:61
-msgid "A equipa"
-msgstr "A equipe"
-
-#: views/ambassadors/pre_register_mail.php:84
-msgid "Por favor não respondas para este endereço de e-mail. Este é um endereço gerado automaticamente. Se tiveres alguma questão sobre a tua conta, ou acontecer algum erro, por favor envia um e-mail para:"
-msgstr "Por favor não responda para esse endereço de email. Esse endereço é gerado automaticamente. Se você tiver alguma dúvida sobre a sua conta, ou acontecer algum erro, por favor envie um email para: "
-
-#: views/ambassadors/pre_register_mail.php:152
-msgid "Para ver este email num browser"
-msgstr "Para ver esse email num browser"
-
-#: views/ambassadors/pre_register_mail.php:152
-msgid "clica aqui"
-msgstr "clique aqui"
-
-#: views/ambassadors/pre_register_show_ok.php:7
-msgid "Parabéns!"
-msgstr "Parabéns!"
-
-#: views/ambassadors/pre_register_show_ok.php:8
-msgid "O teu registo está quase concluído."
+msgid "to_facebook_description"
 msgstr ""
 
-#: views/ambassadors/pre_register_show_ok.php:11
-msgid "Verifica agora o teu email e clica no link que te enviámos para validar a tua conta"
-msgstr "Por favor verifique seu email agora e clique clique no link que lhe enviámos!"
-
-#: views/campaign/campaign.header.php:83
-#, php-format
-msgid "De %s até %s."
-msgstr "De %s até %s."
-
-#: views/campaign/campaign.header.php:94
-msgid "O meu desempenho"
-msgstr "Meu desempenho"
-
-#: views/campaign/campaign.header.php:95
-msgid "Galeria"
-msgstr "Galeria"
-
-#: views/campaign/campaign.header.php:96
-msgid "Blog"
-msgstr "Blog"
-
-#: views/campaign/campaign.header.php:97
-msgid "Informações"
-msgstr "Informações"
-
-#: views/campaign/campaign.header.php:99
-msgid "Voltar listagem"
-msgstr "Voltar à listagem"
-
-#: views/campaign/campaign.header.php:157
-msgid "Minhas ações"
-msgstr "Minhas ações"
-
-#: views/campaign/campaign.header.php:160
-msgid "Material recebido"
+#: views/html_head_metas_facebook.php:14
+msgid "to_facebook_site_name"
 msgstr ""
-
-#: views/campaign/campaign.header.php:162
-msgid "Envia a tua opinião"
-msgstr "Envie sua opinião"
-
-#: views/campaign/campaign.header.php:163
-msgid "Visitar site"
-msgstr "Visitar site"
-
-#: views/campaign/campaign.header.php:165
-msgid "Questionário inicial"
-msgstr "Questionário inicial"
-
-#: views/campaign/campaign.header.php:167
-msgid "Relatório WOM"
-msgstr "Relato WOM"
-
-#: views/campaign/campaign.header.php:169
-msgid "Questionário final"
-msgstr "Questionário final"
-
-#: views/campaign/campaign.header.php:170
-#, fuzzy
-msgid "Enviar questionário a amigos"
-msgstr "Enviar a amigo"
-
-#: views/campaign/campaign.header.php:173
-msgid "Questionário A"
-msgstr "Questionário A"
-
-#: views/campaign/campaign.header.php:178
-msgid "Fala connosco (dúvidas)"
-msgstr "Fale connosco (dúvidas)"
-
-#: views/campaign/campaign.header.php:180
-msgid "CALENDÁRIO:"
-msgstr "CALENDÁRIO:"
-
-#: views/campaign/campaign.header.php:181
-msgid "STATUS:"
-msgstr "STATUS:"
-
-#: views/campaign/list.fo.campaign.detailed.php:19
-#: views/campaign/list.fo.campaign.summary.php:21
-msgid "Entrar"
-msgstr "Entrar"
-
-#: views/campaign/list.fo.campaign.detailed.php:57
-#: views/campaign/list.fo.campaign.summary.php:58
-msgid "até"
-msgstr "até"
-
-#: views/campaign/list.fo.campaign.detailed.php:73
-#: views/campaign/list.fo.campaign.summary.php:74
-#, php-format
-msgid "Vale %s pontos"
-msgstr "Vale %s pontos"
-
-#: views/campaign/list.fo.campaign.summary.php:19
-msgid "Campanha de experimentação"
-msgstr "Campanha de experimentação"
-
-#: views/campaign/list.fo.current.php:30
-#: views/campaign/list.fo.next.php:30
-#: views/campaign/list.fo.past.php:30
-msgid "Não existem campanhas."
-msgstr "Não existem campanhas."
-
-#: views/campaign/list.fo.php:188
-msgid "Ver apenas campanhas em que participo ou participei"
-msgstr "Ver apenas campanhas nas quais participo ou participei"
-
-#: views/campaign/list.fo.php:254
-msgid " em curso"
-msgstr " em curso"
-
-#: views/campaign/list.fo.php:255
-msgid "Próximas"
-msgstr "Próximas"
-
-#: views/campaign/list.fo.php:256
-#, fuzzy
-msgid "Terminadas"
-msgstr " terminadas"
-
-#: views/campaign/list.fo.php:271
-msgid "Mostrar vista reduzida"
-msgstr "Exibir vista reduzida"
-
-#: views/campaign/list.fo.php:272
-msgid "Mostrar vista estendida"
-msgstr "Exibir vista estendida"
-
-#: views/campaign/list.fo.php:273
-msgid "Ordenar por data"
-msgstr "Ordenar por data"
-
-#: views/campaign/list.fo.php:274
-msgid "Ordenar alfabeticamente"
-msgstr "Ordenar alfabeticamente"
-
-#: views/campaign/list.fo.php:275
-msgid "Mostrar campanhas de experimentação"
-msgstr "Exibir campanhas de experimentação"
-
-#: views/campaign/list.fo.php:276
-msgid "Mostrar campanhas online (Womcasts)"
-msgstr "Exibir campanhas online (Womcasts)"
-
-#: views/campaign/show.fo.body.php:11
-msgid "The Experience"
-msgstr ""
-
-#: views/campaign/show.fo.body.php:13
-msgid "The ambassadors have received:"
-msgstr ""
-
-#: views/campaign/show.fo.body.php:15
-msgid "The Most Fun Photo"
-msgstr "A foto mais divertida"
-
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:10
-#: views/campaignGallery/list.fo.temporary.100.php:10
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:10
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:10
-msgid "fotos:"
-msgstr "fotos:"
-
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:14
-#: views/campaignGallery/list.fo.temporary.100.php:14
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:14
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:14
-msgid "Submeter fotos"
-msgstr "Submeter fotos"
-
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:57
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:97
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:137
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:177
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:217
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:257
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:297
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:337
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:377
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:417
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:457
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:497
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:537
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:577
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:617
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:657
-#: views/campaignGallery/list.fo.temporary.100.php:57
-#: views/campaignGallery/list.fo.temporary.100.php:97
-#: views/campaignGallery/list.fo.temporary.100.php:137
-#: views/campaignGallery/list.fo.temporary.100.php:177
-#: views/campaignGallery/list.fo.temporary.100.php:217
-#: views/campaignGallery/list.fo.temporary.100.php:257
-#: views/campaignGallery/list.fo.temporary.100.php:297
-#: views/campaignGallery/list.fo.temporary.100.php:337
-#: views/campaignGallery/list.fo.temporary.100.php:377
-#: views/campaignGallery/list.fo.temporary.100.php:417
-#: views/campaignGallery/list.fo.temporary.100.php:457
-#: views/campaignGallery/list.fo.temporary.100.php:497
-#: views/campaignGallery/list.fo.temporary.100.php:537
-#: views/campaignGallery/list.fo.temporary.100.php:577
-#: views/campaignGallery/list.fo.temporary.100.php:617
-#: views/campaignGallery/list.fo.temporary.100.php:657
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:57
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:97
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:137
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:177
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:217
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:257
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:297
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:337
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:377
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:417
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:457
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:497
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:537
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:577
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:617
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:657
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:57
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:97
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:137
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:177
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:217
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:257
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:297
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:337
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:377
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:417
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:457
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:497
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:537
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:577
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:617
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:657
-#: views/campaignGallery/show.fo.temporary.1001.en_GB.php:8
-#: views/campaignGallery/show.fo.temporary.1001.php:8
-#: views/campaignGallery/show.fo.temporary.1002.en_GB.php:8
-msgid "Por:"
-msgstr "Por:"
-
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:57
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:97
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:137
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:177
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:217
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:257
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:297
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:337
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:377
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:417
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:457
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:497
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:537
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:577
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:617
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:657
-#: views/campaignGallery/list.fo.temporary.100.php:57
-#: views/campaignGallery/list.fo.temporary.100.php:97
-#: views/campaignGallery/list.fo.temporary.100.php:137
-#: views/campaignGallery/list.fo.temporary.100.php:177
-#: views/campaignGallery/list.fo.temporary.100.php:217
-#: views/campaignGallery/list.fo.temporary.100.php:257
-#: views/campaignGallery/list.fo.temporary.100.php:297
-#: views/campaignGallery/list.fo.temporary.100.php:337
-#: views/campaignGallery/list.fo.temporary.100.php:377
-#: views/campaignGallery/list.fo.temporary.100.php:417
-#: views/campaignGallery/list.fo.temporary.100.php:457
-#: views/campaignGallery/list.fo.temporary.100.php:497
-#: views/campaignGallery/list.fo.temporary.100.php:537
-#: views/campaignGallery/list.fo.temporary.100.php:577
-#: views/campaignGallery/list.fo.temporary.100.php:617
-#: views/campaignGallery/list.fo.temporary.100.php:657
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:57
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:97
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:137
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:177
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:217
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:257
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:297
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:337
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:377
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:417
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:457
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:497
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:537
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:577
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:617
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:657
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:57
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:97
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:137
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:177
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:217
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:257
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:297
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:337
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:377
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:417
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:457
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:497
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:537
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:577
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:617
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:657
-#: views/campaignGallery/show.fo.temporary.1001.en_GB.php:29
-#: views/campaignGallery/show.fo.temporary.1001.php:29
-#: views/campaignGallery/show.fo.temporary.1002.en_GB.php:29
-msgid "Votos:"
-msgstr "Votos:"
-
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:65
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:105
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:145
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:185
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:225
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:265
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:305
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:345
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:385
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:425
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:465
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:505
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:545
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:585
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:625
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:665
-#: views/campaignGallery/list.fo.temporary.100.php:65
-#: views/campaignGallery/list.fo.temporary.100.php:105
-#: views/campaignGallery/list.fo.temporary.100.php:145
-#: views/campaignGallery/list.fo.temporary.100.php:185
-#: views/campaignGallery/list.fo.temporary.100.php:225
-#: views/campaignGallery/list.fo.temporary.100.php:265
-#: views/campaignGallery/list.fo.temporary.100.php:305
-#: views/campaignGallery/list.fo.temporary.100.php:345
-#: views/campaignGallery/list.fo.temporary.100.php:385
-#: views/campaignGallery/list.fo.temporary.100.php:425
-#: views/campaignGallery/list.fo.temporary.100.php:465
-#: views/campaignGallery/list.fo.temporary.100.php:505
-#: views/campaignGallery/list.fo.temporary.100.php:545
-#: views/campaignGallery/list.fo.temporary.100.php:585
-#: views/campaignGallery/list.fo.temporary.100.php:625
-#: views/campaignGallery/list.fo.temporary.100.php:665
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:65
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:105
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:145
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:185
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:225
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:265
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:305
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:345
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:385
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:425
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:465
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:505
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:545
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:585
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:625
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:665
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:65
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:105
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:145
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:185
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:225
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:265
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:305
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:345
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:385
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:425
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:465
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:505
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:545
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:585
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:625
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:665
-#: views/campaignGallery/show.fo.temporary.1001.en_GB.php:18
-#: views/campaignGallery/show.fo.temporary.1001.php:18
-#: views/campaignGallery/show.fo.temporary.1002.en_GB.php:18
-msgid "Gosto!"
-msgstr "Curto!"
-
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:72
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:112
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:152
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:192
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:232
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:272
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:312
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:352
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:392
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:432
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:472
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:512
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:552
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:592
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:632
-#: views/campaignGallery/list.fo.temporary.100.en_GB.php:672
-#: views/campaignGallery/list.fo.temporary.100.php:72
-#: views/campaignGallery/list.fo.temporary.100.php:112
-#: views/campaignGallery/list.fo.temporary.100.php:152
-#: views/campaignGallery/list.fo.temporary.100.php:192
-#: views/campaignGallery/list.fo.temporary.100.php:232
-#: views/campaignGallery/list.fo.temporary.100.php:272
-#: views/campaignGallery/list.fo.temporary.100.php:312
-#: views/campaignGallery/list.fo.temporary.100.php:352
-#: views/campaignGallery/list.fo.temporary.100.php:392
-#: views/campaignGallery/list.fo.temporary.100.php:432
-#: views/campaignGallery/list.fo.temporary.100.php:472
-#: views/campaignGallery/list.fo.temporary.100.php:512
-#: views/campaignGallery/list.fo.temporary.100.php:552
-#: views/campaignGallery/list.fo.temporary.100.php:592
-#: views/campaignGallery/list.fo.temporary.100.php:632
-#: views/campaignGallery/list.fo.temporary.100.php:672
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:72
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:112
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:152
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:192
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:232
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:272
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:312
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:352
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:392
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:432
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:472
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:512
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:552
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:592
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:632
-#: views/campaignGallery/list.fo.temporary.121.es_ES.php:672
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:72
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:112
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:152
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:192
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:232
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:272
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:312
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:352
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:392
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:432
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:472
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:512
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:552
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:592
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:632
-#: views/campaignGallery/list.fo.temporary.366.en_GB.php:672
-#: views/campaignGallery/show.fo.temporary.1001.en_GB.php:25
-#: views/campaignGallery/show.fo.temporary.1001.php:25
-#: views/campaignGallery/show.fo.temporary.1002.en_GB.php:25
-msgid "Já votaste!"
-msgstr "Você já votou!"
-
-#: views/campaignGallery/show.fo.temporary.1001.en_GB.php:39
-#: views/campaignGallery/show.fo.temporary.1001.php:39
-#: views/campaignGallery/show.fo.temporary.1002.en_GB.php:39
-msgid "Enviar a amigos"
-msgstr "Enviar a amigos"
-
-#: views/change_password/request_change_password.php:32
-msgid "change_password::form::title - Mudança de password"
-msgstr ""
-
-#: views/change_password/request_change_password.php:33
-msgid "change_password::form::message1 - Escreve em baixo a tua nova password"
-msgstr ""
-
-#: views/change_password/request_change_password.php:34
-msgid "change_password::form::message2 - Depois de confirmares a mudança receberás por email a confirmação."
-msgstr ""
-
-#: views/change_password/request_change_password.php:35
-msgid "change_password::form::submit_button_text - ok."
-msgstr ""
-
-#: views/change_password/request_change_password.php:37
-#, fuzzy
-msgid "new password"
-msgstr "Senha"
-
-#: views/change_password/request_change_password.php:38
-msgid "password confirmation"
-msgstr ""
-
-#: views/components/fileUpload.php:19
-msgid "A enviar... Por favor aguarde."
-msgstr "Enviando... Por favor aguarde."
-
-#: views/components/landing_top.php:65
-msgid "Partilha com os teus amigos:"
-msgstr "Recomende a seus amigos:"
-
-#: views/components/slider.php:73
-msgid "Mais informações"
-msgstr "Mais informações"
-
-#: views/components/teaserRegisterForm.php:34
-#: views/components/teaserRegisterForm.php:35
-#: views/components/teaserRegisterForm.php:36
-msgid "Email"
-msgstr "Email"
-
-#: views/components/teaserRegisterForm.php:43
-msgid "Submeter"
-msgstr "Submeter"
-
-#: views/components/login/login_form.php:15
-msgid "Username ou email"
-msgstr "Nome de usuário ou email"
-
-#: views/components/login/login_form.php:18
-msgid "Password"
-msgstr "Senha"
-
-#: views/components/login/login_form.php:21
-msgid "login::remember_me"
-msgstr ""
-
-#: views/components/login/login_form.php:23
-msgid "label::sign_in Sign in"
-msgstr ""
-
-#: views/components/login/login_form.php:25
-msgid "login::recover_password"
-msgstr ""
-
-#: views/components/login/user_info.php:4
-msgid "Bem-vindo(a)"
-msgstr "Bem-vindo"
-
-#: views/components/login/user_info.php:10
-msgid "Logout"
-msgstr ""
-
-#: views/dashboard/header.php:63
-#: views/default/logged_in_homepage.php:160
-msgid "Perfil"
-msgstr "Perfil"
-
-#: views/dashboard/header.php:64
-msgid "Avaliação"
-msgstr "Avaliação"
-
-#: views/dashboard/header.php:65
-msgid "Buzz"
-msgstr "Buzz"
-
-#: views/dashboard/header.php:66
-#, fuzzy
-msgid "Histórias"
-msgstr "Historiador"
-
-#: views/default/default.php:20
-msgid "Como funciona"
-msgstr "Como funciona"
-
-#: views/default/logged_in_homepage.php:63
-msgid "Tens notificações novas! Clica aqui."
-msgstr "Você tem notificações novas! Por favor clique aqui."
-
-#: views/default/logged_in_homepage.php:82
-msgid "default::logged_in_homepage::campaign_section_title The first campaigns are about to begin. Stay tuned to your email."
-msgstr ""
-
-#: views/default/logged_in_homepage.php:86
-msgid "default::logged_in_homepage::campaign_section_line_1 Meanwhile:"
-msgstr ""
-
-#: views/default/logged_in_homepage.php:88
-msgid "default::logged_in_homepage::campaign_section_line_2 - Keep your profile complete and  updated. With that you have more opportunities to be selected for campaigns that interest you;"
-msgstr ""
-
-#: views/default/logged_in_homepage.php:91
-msgid "default::logged_in_homepage::campaign_section_line_3 - Learn more about how to be an ambassador, with our training program;"
-msgstr ""
-
-#: views/default/logged_in_homepage.php:94
-msgid "default::logged_in_homepage::campaign_section_line_4 - Start now spreading the word and recommending our community to your friends. You get points for each one that registers."
-msgstr ""
-
-#: views/default/logged_in_homepage.php:97
-msgid "default::logged_in_homepage::campaign_section_line_5 Good Luck!"
-msgstr ""
-
-#: views/default/logged_in_homepage.php:162
-msgid "Completa o teu perfil."
-msgstr "Complete seu perfil."
-
-#: views/default/logged_in_homepage.php:177
-#: views/default/logged_in_homepage.php:186
-msgid "Ver"
-msgstr "Ver"
-
-#: views/default/logged_in_homepage.php:191
-msgid "Pontos totais"
-msgstr "Pontos totais"
-
-#: views/default/logged_in_homepage.php:192
-#, fuzzy
-msgid "Nível "
-msgstr "Nível"
-
-#: views/default/logged_in_homepage.php:193
-msgid "Código:"
-msgstr "Código:"
 
 #: views/error/default.php:24
 msgid "Tem de fazer Login"
@@ -2390,551 +66,6 @@ msgstr "404"
 #: views/error/default.php:66
 msgid "Ocorreu um erro inesperado, se o erro persistir contacte o administrador do site."
 msgstr "Houve um erro imprevisto; se o erro continuar, por favor contate o administrador do site."
-
-#: views/flags/default.php:7
-msgid "Ambassadors.com"
-msgstr "Ambassadors.com"
-
-#: views/flags/default.php:9
-msgid "word-of-mouth marketing"
-msgstr ""
-
-#: views/landing_page_video/show_video.php:15
-msgid "Loading the player. Please wait ..."
-msgstr "Carregando o reprodutor de video. Por favor aguarde ..."
-
-#: views/profile/show.fo.php:72
-msgid "Completa o teu perfil e ganha 150 pontos incluindo 40 pontos de Bónus."
-msgstr "Complete seu perfil e ganhe 160 pontos, incluindo 40 pontos de bônus."
-
-#: views/profile/show.fo.php:74
-msgid "Completa o teu perfil"
-msgstr "Complete seu perfil"
-
-#: views/profile/show.fo.php:91
-#: views/profile/show.fo.php:142
-#: views/profile/show.fo.php:209
-msgid "Pontos"
-msgstr "Pontos"
-
-#: views/profile/show.fo.php:92
-msgid "Nível"
-msgstr "Nível"
-
-#: views/profile/show.fo.php:99
-#, php-format
-msgid "pontos ganhos"
-msgstr "pontos ganhos"
-
-#: views/profile/show.fo.php:101
-#, php-format
-msgid "%d amigos teus inscreveram-se em embaixadores.com utilizando o teu código de convite"
-msgstr "%d amigos seus se registraram em embaixadores.com usando seu código de convite"
-
-#: views/profile/show.fo.php:141
-msgid "Categorias"
-msgstr "Categorias"
-
-#: views/profile/show.fo.php:147
-msgid "Ganhos"
-msgstr "Ganhos"
-
-#: views/profile/show.fo.php:148
-msgid "Disponíveis"
-msgstr "Disponíveis"
-
-#: views/profile/show.fo.php:149
-msgid "Percentagem preenchida"
-msgstr "Percentagem completada"
-
-#: views/profile/show.fo.php:193
-msgid "Liga o teu perfil ás redes sociais e expande a tua influência online!"
-msgstr "Conecte seu perfil às redes sociais e amplie sua influência online!"
-
-#: views/profile/show.fo.php:255
-msgid "pts."
-msgstr ""
-
-#: views/profile/show.fo.php:369
-msgid "Editar"
-msgstr "Editar"
-
-#: views/profile_form/show.fo.form.php:152
-#, php-format
-msgid "Parte %d"
-msgstr "Parte %d"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Jan"
-msgstr "Jan"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Fev"
-msgstr "Fev"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Mar"
-msgstr "Mar"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Abr"
-msgstr "Abr"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Mai"
-msgstr "Mai"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Jun"
-msgstr "Jun"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Jul"
-msgstr "Jul"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Ago"
-msgstr "Ago"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Set"
-msgstr "Set"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Out"
-msgstr "Out"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Nov"
-msgstr "Nov"
-
-#: views/questions/free_response_DATE.php:23
-msgid "Dez"
-msgstr "Dez"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Janeiro"
-msgstr "Janeiro"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Fevereiro"
-msgstr "Fevereiro"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Março"
-msgstr "Março"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Abril"
-msgstr "Abril"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Maio"
-msgstr "Maio"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Junho"
-msgstr "Junho"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Julho"
-msgstr "Julho"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Agosto"
-msgstr "Agosto"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Setembro"
-msgstr "Setembro"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Outubro"
-msgstr "Outubro"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Novembro"
-msgstr "Novembro"
-
-#: views/questions/free_response_DATE.php:24
-msgid "Dezembro"
-msgstr "Dezembro"
-
-#: views/questions/free_response_DATE.php:25
-msgid "Dom"
-msgstr "Dom"
-
-#: views/questions/free_response_DATE.php:25
-msgid "Seg"
-msgstr "Seg"
-
-#: views/questions/free_response_DATE.php:25
-msgid "Ter"
-msgstr "Ter"
-
-#: views/questions/free_response_DATE.php:25
-msgid "Qua"
-msgstr "Qua"
-
-#: views/questions/free_response_DATE.php:25
-msgid "Qui"
-msgstr "Qui"
-
-#: views/questions/free_response_DATE.php:25
-msgid "Sex"
-msgstr "Sex"
-
-#: views/questions/free_response_DATE.php:25
-msgid "Sab"
-msgstr "Sab"
-
-#: views/questions/free_response_DATE.php:26
-msgid "Domingo"
-msgstr "Domingo"
-
-#: views/questions/free_response_DATE.php:26
-msgid "Segunda"
-msgstr "Segunda"
-
-#: views/questions/free_response_DATE.php:26
-msgid "Terça"
-msgstr "Terça"
-
-#: views/questions/free_response_DATE.php:26
-msgid "Quarta"
-msgstr "Quarta"
-
-#: views/questions/free_response_DATE.php:26
-msgid "Quinta"
-msgstr "Quinta"
-
-#: views/questions/free_response_DATE.php:26
-msgid "Sexta"
-msgstr "Sexta"
-
-#: views/questions/free_response_DATE.php:26
-msgid "Sábado"
-msgstr "Sábado"
-
-#: views/questions/free_response_DATE.php:27
-msgid "Hoje"
-msgstr "Hoje"
-
-#: views/questions/free_response_DATE.php:28
-msgid "X"
-msgstr "X"
-
-#: views/questions/free_response_DATE.php:29
-msgid "Seguinte"
-msgstr "Seguinte"
-
-#: views/questions/free_response_DATE.php:30
-msgid "Anterior"
-msgstr "Anterior"
-
-#: views/questions/multiple_choice_multiple_response_checkbox.php:57
-#: views/questions/multiple_choice_single_response_radiobutton.php:45
-msgid "outra"
-msgstr "outra"
-
-#: views/questions/profile_interests.php:39
-msgid "profile::interests::activity - Activity"
-msgstr ""
-
-#: views/questions/profile_interests.php:40
-msgid "profile::interests::activity - What do you think you are"
-msgstr ""
-
-#: views/questions/profile_interests.php:41
-msgid "profile::interests::activity - Frequency"
-msgstr ""
-
-#: views/questions/profile_social_networks.php:103
-msgid "Qual o url da conta"
-msgstr ""
-
-#: views/questions/profile_social_networks.php:118
-msgid "profile:social_networks:contacts_quantity:question - Número de contatos"
-msgstr ""
-
-#: views/questions/profile_social_networks.php:183
-msgid "profile:social_networks:time_spent:question - Com que regularidade utilizas?"
-msgstr ""
-
-#: views/questions/profile_social_networks.php:246
-msgid "profile:social_networks:behaviour:question - Qual o teu comportamentos (escolhe o que mais se adequa ao teu estilo)"
-msgstr ""
-
-#: views/questions/question.php:102
-msgid "Esta pergunta é obrigatória."
-msgstr "Essa pergunta é obrigatória."
-
-#: views/recover_password/recover_password.php:19
-msgid "recover_password::recover_password::text Depois de confirmares a mudança receberás por email a confirmação."
-msgstr ""
-
-#: views/recover_password/recover_password.php:29
-msgid "label::Password; Password"
-msgstr ""
-
-#: views/recover_password/recover_password.php:48
-#, fuzzy
-msgid "label:confirm_password Confirmar password"
-msgstr "Confirmar senha"
-
-#: views/recover_password/recover_password.php:67
-msgid "label::Ok Ok"
-msgstr ""
-
-#: views/recover_password/request_recover_password.php:28
-msgid "request_password_recover_email::text"
-msgstr ""
-
-#: views/recover_password/request_recover_password.php:32
-msgid "request_password_recover_email_field::Email:"
-msgstr ""
-
-#: views/registration/default.form.php:39
-msgid "Embaixadores"
-msgstr "Embaixadores"
-
-#: views/registration/default.form.php:206
-msgid "Nome próprio"
-msgstr "Nome"
-
-#: views/registration/default.form.php:215
-msgid "Apelido"
-msgstr "Sobrenome"
-
-#: views/registration/default.form.php:233
-msgid "Confirmar email"
-msgstr "Confirmar email"
-
-#: views/registration/default.form.php:253
-msgid "Confirmar password"
-msgstr "Confirmar senha"
-
-#: views/registration/default.form.php:265
-msgid "Código de convite"
-msgstr "Código de convite"
-
-#: views/registration/default.form.php:267
-msgid "Se recebeste um código de convite de um amigo, insere-o aqui. Vais ganhar pontos adicionais se o fizeres. Se não tiveres um código de convite deixa o campo vazio e continua."
-msgstr "Se você recebeu um código de convite de um amigo, o digite aqui. Vai ganhar pontos complementares se o fizer. Se você não tem um código de convite, por favor deixe o campo vazio e continue."
-
-#: views/registration/default.form.php:281
-#: views/registration/default.form.php:287
-#: views/registration/default.form.php:288
-msgid "Verificação de SPAM"
-msgstr "Verificação de spam:"
-
-#: views/registration/default.form.php:314
-msgid "Insira código"
-msgstr "Digite o código:"
-
-#: views/registration/default.form.php:317
-msgid "Insere aqui o texto que vês ao lado"
-msgstr ""
-
-#: views/registration/default.form.php:342
-msgid "Li e aceito a política de"
-msgstr "Li e aceito a Política de"
-
-#: views/registration/default.form.php:349
-msgid "Privacidade"
-msgstr "Privacidade"
-
-#: views/registration/default.form.php:350
-msgid "Termos e Condições de Utilização"
-msgstr "Termos e Condições de Uso"
-
-#: views/registration/default.form.php:351
-msgid "Respeitamos a tua privacidade. Nunca te enviaremos spam ou partilharemos a tua informação pessoal com ninguém sem o teu consentimento."
-msgstr "Respeitamos sua privacidade. Jamais lhe enviaremos spam ou compartilharemos sua informação pessoal com ninguém sem sua autorização."
-
-#: views/registration/default.form.php:356
-msgid "Registar"
-msgstr "Registrar"
-
-#: views/registration/show.php:25
-msgid "Back to My profile"
-msgstr ""
-
-#: views/registration/show.php:84
-msgid "registration::show::change_email_link_label - Click here to change your email"
-msgstr ""
-
-#: views/registration/show.php:95
-msgid "registration::show::change_password_link_label - Click here to change your password"
-msgstr ""
-
-#: views/registration/show.php:104
-msgid "registration::show::update::button::text"
-msgstr ""
-
-#: views/registration/update_mail.php:28
-msgid "registration::update_email::explanation_text Please fill the form. an email will be sent to your current address for you to update your email you must click the link on the mail"
-msgstr ""
-
-#: views/registration/update_mail.php:42
-msgid "Email confirmation"
-msgstr ""
-
-#: views/survey/list.fo.php:96
-msgid " por responder"
-msgstr " por responder"
-
-#: views/survey/list.fo.php:118
-msgid " respondidos"
-msgstr " respondidos"
-
-#: views/survey/list.fo.survey.detailed.php:48
-#: views/survey/list.fo.survey.summary.php:51
-msgid "De"
-msgstr "De"
-
-#: views/survey/list.fo.survey.detailed.php:79
-#: views/survey/list.fo.survey.summary.php:79
-msgid "Ainda não preencheste Relatório WOM"
-msgstr "Você ainda não completou o Relato WOM"
-
-#: views/survey/list.fo.survey.detailed.php:80
-#: views/survey/list.fo.survey.summary.php:80
-msgid "You did not fullfill this questionnaire."
-msgstr ""
-
-#: views/survey/list.fo.survey.summary.php:49
-msgid "Clique para deixar de receber questionários desta categoria"
-msgstr "Clique para não receber mais questionários dessa categoria"
-
-#: views/survey/show.fo.form.inner.page.matrix.php:5
-msgid "Nunca"
-msgstr "Nunca"
-
-#: views/survey/show.fo.form.inner.page.matrix.php:6
-msgid "Diaramente"
-msgstr "Diaramente"
-
-#: views/survey/show.fo.form.inner.php:333
-msgid "Página sem questões"
-msgstr "Página sem perguntas"
-
-#: views/survey/show.fo.form.inner.php:342
-msgid "salvar"
-msgstr "salvar"
-
-#: views/survey/show.fo.form.inner.php:374
-msgid "A gravação dos teus dados no formulário é feita automaticamente."
-msgstr "A gravação de seus dados no formulário é automática."
-
-#: views/survey/show.fo.form.inner.php:393
-msgid "página anterior"
-msgstr "página anterior"
-
-#: views/survey/show.fo.form.inner.php:399
-msgid "próxima página"
-msgstr "próxima página"
-
-#: views/survey/show.fo.form.inner.php:419
-#, php-format
-msgid "%d de %d"
-msgstr "%d de %d"
-
-#: views/survey/show.fo.form.php:81
-#, fuzzy
-msgid "Voltar"
-msgstr "Militar"
-
-#: views/survey/show.fo.form.php:127
-msgid "Por favor, responde a todas as questões do questionário."
-msgstr "Por favor responda a todas as perguntas do questionário abaixo."
-
-#: views/survey/show.fo.form.php:131
-#: views/survey/show.fo.form.php:160
-msgid "Questionário completo. Obrigado por responderes."
-msgstr "Questionário completo. Obrigado por responder."
-
-#: views/survey/show.fo.form.php:140
-#: views/survey/show.fo.form.php:176
-msgid "Progresso:"
-msgstr "Progresso:"
-
-#: views/survey/show.fo.form.php:162
-#, php-format
-msgid "Acabaste de ganhar %d pontos!"
-msgstr "Você acabou de ganhar %d pontos!"
-
-#: views/tellafriend/email_content.php:33
-msgid "Título:"
-msgstr "Título:"
-
-#: views/tellafriend/email_content.php:37
-msgid "Mensagem:"
-msgstr "Mensagem:"
-
-#: views/tellafriend/email_set_recipients.php:29
-msgid "Clica aqui"
-msgstr "Clique aqui"
-
-#: views/tellafriend/email_set_recipients.php:29
-msgid "para usares o teu editor de email ou (2) preenche os campos."
-msgstr "para usar o seu editor de email ou (2) preencha os campos."
-
-#: views/tellafriend/send_email.php:17
-msgid "Obrigado por partilhar com os teus amigos!"
-msgstr "Obrigado por recomendar a seus amigos!"
-
-#: views/welcomeEmail/default.php:89
-msgid "Obrigado pelo tempo que dispensaste para aderir à comunidade"
-msgstr "Obrigado pelo tempo que você dedicou para aderir à comunidade"
-
-#: views/welcomeEmail/default.php:91
-msgid "Para terminar clica no link seguinte para confirmares a criação  da tua conta:"
-msgstr "Para terminar, por favor clique no link seguinte para confirmar a criação de sua conta:"
-
-#: views/welcomeEmail/default.php:94
-msgid "Aproveita e activa este  e-mail como &ldquo;Safe/Not junk&rdquo; para que possas continuar a receber e-mails nossos  e a participar nas Campanhas e WOMCasts que temos para ti."
-msgstr "Aproveite e ative esse email como &ldquo;Safe/Not junk&rdquo; para poder continuar recebendo nossos emails e participando das Campanhas e WOMCasts que temos para você."
-
-#: views/welcomeEmail/default.php:114
-msgid "Por favor não respondas para  este endereço de e-mail. Este é um endereço gerado automaticamente. Se tiveres  alguma questão sobre a tua conta, ou acontecer algum erro, por favor envia um  e-mail para:"
-msgstr "Por favor não responda para esse endereço de email. Esse endereço é gerado automaticamente. Se você tiver alguma dúvida sobre a sua conta, ou acontecer algum erro, por favor envie um email para: "
-
-#: views/welcomeEmail/default.php:114
-#, php-format
-msgid "Recomendamos que incluas o e-mail %s &nbsp;no teu livro de endereços (address  book)."
-msgstr ""
-
-#: views/welcomeEmail/default.php:114
-#, php-format
-msgid "Deste modo, evitarás que as mensagens que te enviamos desde %s&nbsp;sejam movidas por erro para a pasta de  correio não desejado do teu e-mail."
-msgstr "Desse jeito, você irá evitar que os emails que lhe enviamos desde %s&nbsp;sejam movidos por engano para a pasta de  correio spam de seu email."
-
-#: views/welcomeEmail/default.php:114
-msgid "Desta forma nunca perderás uma das nossas  campanhas ou WOMCasts."
-msgstr "Desse jeito, você jamais perderá uma de nossas  campanhas ou WOMCasts."
-
-#: views/womworld/default.php:53
-#, fuzzy
-msgid "Comunidades no mundo:"
-msgstr "WOM no mundo"
-
-#: views/womworld/default.php:62
-msgid "País:"
-msgstr "País:"
-
-#: views/womworld/default.php:63
-msgid "Embaixadores:"
-msgstr "Embaixadores:"
-
-#: views/womworld/default.php:83
-#: views/womworld/default.php:91
-msgid "brevemente"
-msgstr "brevemente"
-
-#: views/womworld/default.php:99
-msgid "aberto"
-msgstr "aberto"
 
 #: views/zOffline/default.php:38
 #: views/zOffline/show_offline_message.php:38
@@ -2962,15 +93,1608 @@ msgstr "Logon:"
 msgid "Password:"
 msgstr "Senha"
 
-#: zzzHtmlSnapshots/survey.php:362
-#: zzzHtmlSnapshots/survey.php:393
-msgid "Localização"
-msgstr "Localização"
+#: views/zOffline/special_login.php:78
+msgid "Submeter"
+msgstr "Submeter"
 
-#: zzzHtmlSnapshots/survey.php:429
-#: zzzHtmlSnapshots/survey.php:460
-msgid "Interesses"
-msgstr "Interesses"
+#~ msgid "Formato inválido, tem de ter 10 digitos"
+#~ msgstr "Formato inválido, precisa ter 10 dígitos"
+
+#~ msgid "Formato inválido, tem de ter entre 4 a 13 digitos"
+#~ msgstr "Formato inválido, precisa ter entre 4 e 13 dígitos"
+
+#~ msgid "Formato inválido, tem de ter entre 8 a 9 digitos"
+#~ msgstr "Formato inválido, precisa ter entre 8 e 9 dígitos"
+
+#~ msgid "Formato inválido, tem de ter 11 digitos"
+#~ msgstr "Formato inválido, precisa ter 11 dígitos"
+
+#~ msgid "Formato inválido, tem de ter 9 digitos"
+#~ msgstr "Formato inválido, precisa ter 9 dígitos"
+
+#~ msgid "Formato inválido, tem de ter entre 4 a 12 digitos"
+#~ msgstr "Formato inválido, precisa ter entre 4 e 12 dígitos"
+
+#~ msgid "Formato inválido, tem de ter 8 digitos"
+#~ msgstr "Formato inválido, precisa ter 8 dígitos"
+
+#~ msgid "Formato inválido, tem de ter entre 5 a 12 digitos"
+#~ msgstr "Formato inválido, precisa ter entre 5 e 12 dígitos"
+
+#~ msgid "Formato inválido, tem de ter entre 8 a 11 digitos"
+#~ msgstr "Formato inválido, precisa ter entre 8 e 11 dígitos"
+
+#~ msgid "Formato inválido, tem de ter entre 7 a 9 digitos"
+#~ msgstr "Formato inválido, precisa ter entre 7 e 9 dígitos"
+
+#~ msgid "Trabalho por conta de outrém a tempo inteiro"
+#~ msgstr "Sou empregado de tempo integral"
+
+#~ msgid "Tenho o meu próprio negócio"
+#~ msgstr "Tenho meu próprio negócio"
+
+#~ msgid "Trabalho por conta de outrém a tempo parcial"
+#~ msgstr "Sou empregado de meio expediente"
+
+#~ msgid "Trabalho em casa"
+#~ msgstr "Trabalho em casa"
+
+#~ msgid "Sou estudante a tempo inteiro"
+#~ msgstr "Sou estudante de tempo integral"
+
+#~ msgid "Sou estudante em tempo parcial"
+#~ msgstr "Sou estudante de meio expediente"
+
+#~ msgid "Estou desempregado"
+#~ msgstr "Estou desempregado"
+
+#~ msgid "Não é um formato válido. ex: Annnn(AAA)"
+#~ msgstr "Não é um formato válido. ex: Annnn(AAA)"
+
+#~ msgid "Não é um formato válido. ex: nnnn"
+#~ msgstr "Não é um formato válido. ex: nnnn"
+
+#, fuzzy
+#~ msgid "Não é um formato válido. ex: nnnnn-nnn"
+#~ msgstr "Não é um formato válido. ex: nnnnn-nnnn"
+
+#~ msgid "Não é um formato válido. ex: nnnnn"
+#~ msgstr "Não é um formato válido. ex: nnnnn"
+
+#~ msgid "Não é um formato válido. ex: FInnnnn"
+#~ msgstr "Não é um formato válido. ex: FInnnnn"
+
+#~ msgid "Não é um formato válido. ex: AA(AA) nAA"
+#~ msgstr "Não é um formato válido. ex: AA(AA) nAA"
+
+#, fuzzy
+#~ msgid "Não é um formato válido. ex: nnn nn"
+#~ msgstr "Não é um formato válido. ex: nnnnn"
+
+#~ msgid "Não é um formato válido. ex: nnnn AA"
+#~ msgstr "Não é um formato válido. ex: nnnn AA"
+
+#~ msgid "Não é um formato válido. ex: nnnn(-nnn)"
+#~ msgstr "Não é um formato válido. ex: nnnn(-nnn)"
+
+#~ msgid "Não é um formato válido. ex: SEnnn nn"
+#~ msgstr "Não é um formato válido. ex: SEnnn nn"
+
+#~ msgid "Não é um formato válido. ex: nnnnn-nnnn"
+#~ msgstr "Não é um formato válido. ex: nnnnn-nnnn"
+
+#~ msgid "Sozinho (eu sei o que quero e o que é bom para mim)"
+#~ msgstr "Sozinho (sei o que quero e o que parece bom)"
+
+#~ msgid "Com amigos (eles são sempre honestos comigo!)"
+#~ msgstr "Com amigos (eles me dizem a verdade!)"
+
+#~ msgid "Online (rápido e eficiente)"
+#~ msgstr "Online (rápido e indolor)"
+
+#~ msgid ""
+#~ "É outra pessoa que normalmente compras as coisas para mim (eu não tenho "
+#~ "tempo nem interesse)"
+#~ msgstr ""
+#~ "Geralmente outra pessoa compra coisas para mim (não tenho tempo ou "
+#~ "interesse)"
+
+#~ msgid "Nenhuma das respostas anteriores"
+#~ msgstr "Nenhuma das respostas anteriores"
+
+#~ msgid "Banca/Finanças/Seguros"
+#~ msgstr "Banca/Finanças/Seguros"
+
+#~ msgid "Antiguidades"
+#~ msgstr "Antiguidades"
+
+#~ msgid "Arte/Exposições/Museus"
+#~ msgstr "Arte/Exposições/Museus"
+
+#~ msgid "Conferências"
+#~ msgstr "Conferências"
+
+#~ msgid "Cozinhar"
+#~ msgstr "Cozinhar"
+
+#~ msgid "Gastronomia"
+#~ msgstr "Gastronomia"
+
+#~ msgid "Animação online/3D"
+#~ msgstr "Animação online/3D"
+
+#~ msgid "Decoração"
+#~ msgstr "Decoração"
+
+#~ msgid "Bricolage"
+#~ msgstr "Bricolagem"
+
+#~ msgid "Design"
+#~ msgstr "Design"
+
+#~ msgid "Desenho/Artes plásticas"
+#~ msgstr "Desenho/Artes plásticas"
+
+#~ msgid "Pesca"
+#~ msgstr "Pesca"
+
+#~ msgid "Caça"
+#~ msgstr "Caça"
+
+#~ msgid "Jogo/Poker/Casino"
+#~ msgstr "Jogo/Pôquer/Casino"
+
+#~ msgid "Artesanato"
+#~ msgstr "Artesanato"
+
+#~ msgid "Internet"
+#~ msgstr "Internet"
+
+#~ msgid "Bebidas"
+#~ msgstr "Bebidas"
+
+#~ msgid "Tocar música"
+#~ msgstr "Tocar música"
+
+#~ msgid "Vinhos"
+#~ msgstr "Vinhos"
+
+#~ msgid "Fotografia"
+#~ msgstr "Fotografia"
+
+#~ msgid "Vídeo"
+#~ msgstr "Vídeo"
+
+#~ msgid "Teatro"
+#~ msgstr "Teatro"
+
+#~ msgid "Cinema"
+#~ msgstr "Cinema"
+
+#~ msgid "Vídeojogos"
+#~ msgstr "Videogames"
+
+#~ msgid "Computadores"
+#~ msgstr "Computadores"
+
+#~ msgid "Ler revistas"
+#~ msgstr "Ler revistas"
+
+#~ msgid "Fazer compras"
+#~ msgstr "Fazer compras"
+
+#~ msgid "Jogar na bolsa"
+#~ msgstr "Jogar na bolsa"
+
+#~ msgid "Viajar"
+#~ msgstr "Viajar"
+
+#~ msgid "Escrever"
+#~ msgstr "Escrever"
+
+#~ msgid "Automóveis "
+#~ msgstr "Automóveis "
+
+#~ msgid "Motociclismo"
+#~ msgstr "Motociclismo"
+
+#~ msgid "Vida saudável/Nutrição"
+#~ msgstr "Vida saudável/Nutrição"
+
+#~ msgid "Campismo"
+#~ msgstr "Campismo"
+
+#~ msgid "Ópera"
+#~ msgstr "Ópera"
+
+#~ msgid "Cosmética/Beleza"
+#~ msgstr "Cosmética/Beleza"
+
+#~ msgid "Férias/Viagens"
+#~ msgstr "Férias/Viagens"
+
+#~ msgid "Jardinagem"
+#~ msgstr "Jardinagem"
+
+#~ msgid "Limpeza"
+#~ msgstr "Limpeza"
+
+#~ msgid "Literatura/Livros"
+#~ msgstr "Literatura/Livros"
+
+#~ msgid "Moda/Roupa/Acessórios"
+#~ msgstr "Moda/Roupa/Acessórios"
+
+#~ msgid "Montanhismo"
+#~ msgstr "Montanhismo"
+
+#~ msgid "Música/Concertos"
+#~ msgstr "Música/Concertos"
+
+#~ msgid "Negócios"
+#~ msgstr "Negócios"
+
+#~ msgid ""
+#~ "Eu adoro ter e experimentar produtos novos, e estou sempre à procura "
+#~ "deles."
+#~ msgstr ""
+#~ "Eu curto ter e experimentar produtos novos e estou sempre à procura deles."
+
+#~ msgid "Eu compro produtos novos, se vir neles conveniência"
+#~ msgstr "Eu compro produtos novos, se vir conveniência neles"
+
+#~ msgid ""
+#~ "Se os meus amigos me recomendarem um produto novo, normalmente compro."
+#~ msgstr "Se meus amigos me recomendarem um produto novo, geralmente compro."
+
+#~ msgid "Apenas compro e experimento produtos novos de vez em quando."
+#~ msgstr "Somente compro e experimento produtos novos de vez em quando."
+
+#~ msgid "Ator"
+#~ msgstr "Ator"
+
+#~ msgid "Administrativo"
+#~ msgstr "Administrativo"
+
+#~ msgid "Advogado"
+#~ msgstr "Advogado"
+
+#~ msgid "Agente de Segurança"
+#~ msgstr "Agente de Segurança"
+
+#~ msgid "Agricultor"
+#~ msgstr "Agricultor"
+
+#~ msgid "Analista"
+#~ msgstr "Analista"
+
+#~ msgid "Antropólogo"
+#~ msgstr "Antropólogo"
+
+#~ msgid "Arqueólogo"
+#~ msgstr "Arqueólogo"
+
+#~ msgid "Arquiteto"
+#~ msgstr "Arquiteto"
+
+#~ msgid "Artista"
+#~ msgstr "Artista"
+
+#~ msgid "Auditor"
+#~ msgstr "Auditor"
+
+#~ msgid "Bancário"
+#~ msgstr "Bancário"
+
+#~ msgid "Barbeiro"
+#~ msgstr "Barbeiro"
+
+#~ msgid "Biólogo"
+#~ msgstr "Biólogo"
+
+#~ msgid "Bombeiro"
+#~ msgstr "Bombeiro"
+
+#~ msgid "Cabeleireiro"
+#~ msgstr "Cabeleireiro"
+
+#~ msgid "Canalizador"
+#~ msgstr "Encanador"
+
+#~ msgid "Carpinteiro"
+#~ msgstr "Carpinteiro"
+
+#~ msgid "Cientista"
+#~ msgstr "Cientista"
+
+#~ msgid "Comerciante"
+#~ msgstr "Comerciante"
+
+#~ msgid "Comunicação"
+#~ msgstr "Comunicação"
+
+#~ msgid "Construtor Civil"
+#~ msgstr "Construtor"
+
+#~ msgid "Consultor"
+#~ msgstr "Consultor"
+
+#~ msgid "Contabilista"
+#~ msgstr "Contabilista"
+
+#~ msgid "Cozinheiro"
+#~ msgstr "Cozinheiro"
+
+#~ msgid "Dançarino"
+#~ msgstr "Dançarino"
+
+#~ msgid "Decorador"
+#~ msgstr "Decorador"
+
+#~ msgid "Dentista"
+#~ msgstr "Dentista"
+
+#~ msgid "Designer Gráfico"
+#~ msgstr "Designer Gráfico"
+
+#~ msgid "Designer de Moda"
+#~ msgstr "Designer de Moda"
+
+#~ msgid "Desportista"
+#~ msgstr "Atleta"
+
+#~ msgid "Dietista"
+#~ msgstr "Dietista"
+
+#~ msgid "Doméstico"
+#~ msgstr "Doméstico"
+
+#~ msgid "Economista"
+#~ msgstr "Economista"
+
+#~ msgid "Educador de Infância"
+#~ msgstr "Educador Infantil"
+
+#~ msgid "Eletricista"
+#~ msgstr "Eletricista"
+
+#~ msgid "Empregado de Bar"
+#~ msgstr "Barman"
+
+#~ msgid "Empregado de Loja"
+#~ msgstr "Empregado de balcão"
+
+#~ msgid "Empregado de Mesa"
+#~ msgstr "Garçom"
+
+#~ msgid "Enfermeiro"
+#~ msgstr "Enfermeiro"
+
+#~ msgid "Engenheiro"
+#~ msgstr "Engenheiro"
+
+#~ msgid "Escritor"
+#~ msgstr "Escritor"
+
+#~ msgid "Escultor"
+#~ msgstr "Escultor"
+
+#~ msgid "Estudante"
+#~ msgstr "Estudante"
+
+#~ msgid "Farmacêutico"
+#~ msgstr "Farmacêutico"
+
+#~ msgid "Físico"
+#~ msgstr "Físico"
+
+#~ msgid "Fisioterapeuta"
+#~ msgstr "Fisioterapeuta"
+
+#~ msgid "Fotógrafo"
+#~ msgstr "Fotógrafo"
+
+#~ msgid "Funcionário Público"
+#~ msgstr "Servidor público"
+
+#~ msgid "Geólogo"
+#~ msgstr "Geólogo"
+
+#~ msgid "Gestor"
+#~ msgstr "Gerente"
+
+#~ msgid "Governanta"
+#~ msgstr "Governanta"
+
+#~ msgid "Historiador"
+#~ msgstr "Historiador"
+
+#~ msgid "Informático"
+#~ msgstr "Técnico de computadores"
+
+#~ msgid "Jardineiro"
+#~ msgstr "Jardineiro"
+
+#~ msgid "Jornalista"
+#~ msgstr "Jornalista"
+
+#~ msgid "Juiz"
+#~ msgstr "Juiz"
+
+#~ msgid "Marinheiro"
+#~ msgstr "Marinheiro"
+
+#~ msgid "Marketeer"
+#~ msgstr "Marketeiro"
+
+#~ msgid "Massagista"
+#~ msgstr "Massagista"
+
+#~ msgid "Matemático"
+#~ msgstr "Matemático"
+
+#~ msgid "Mecânico"
+#~ msgstr "Mecânico"
+
+#~ msgid "Médico"
+#~ msgstr "Médico"
+
+#~ msgid "Militar"
+#~ msgstr "Militar"
+
+#~ msgid "Mineiro"
+#~ msgstr "Mineiro"
+
+#~ msgid "Modelo"
+#~ msgstr "Modelo"
+
+#~ msgid "Motorista"
+#~ msgstr "Motorista"
+
+#~ msgid "Músico"
+#~ msgstr "Músico"
+
+#~ msgid "Nutricionista"
+#~ msgstr "Nutricionista"
+
+#~ msgid "Operário"
+#~ msgstr "Operário"
+
+#~ msgid "Ótico"
+#~ msgstr "Oftalmologista"
+
+#~ msgid "Paisagista"
+#~ msgstr "Paisagista"
+
+#~ msgid "Pasteleiro"
+#~ msgstr "Pasteleiro"
+
+#~ msgid "Pescador"
+#~ msgstr "Pescador"
+
+#~ msgid "Pintor"
+#~ msgstr "Pintor"
+
+#~ msgid "Polícia"
+#~ msgstr "Policial"
+
+#~ msgid "Professor"
+#~ msgstr "Professor"
+
+#~ msgid "Professor de Fitness"
+#~ msgstr "Profissional de educação física"
+
+#~ msgid "Programador"
+#~ msgstr "Programador"
+
+#~ msgid "Psicólogo"
+#~ msgstr "Psicólogo"
+
+#~ msgid "Publicitário"
+#~ msgstr "Publicitário"
+
+#~ msgid "Químico"
+#~ msgstr "Químico"
+
+#~ msgid "Rececionista"
+#~ msgstr "Recepcionista"
+
+#~ msgid "Soldador"
+#~ msgstr "Soldador"
+
+#~ msgid "Talhante"
+#~ msgstr "Açougueiro"
+
+#~ msgid "Taxista"
+#~ msgstr "Taxista"
+
+#~ msgid "Técnico de Saúde"
+#~ msgstr "Técnico em Saúde"
+
+#~ msgid "Trabalhador da Construção Civil"
+#~ msgstr "Trabalhador da construção"
+
+#~ msgid "Trabalho Social"
+#~ msgstr "Trabalho Social"
+
+#~ msgid "Turismo"
+#~ msgstr "Turismo"
+
+#~ msgid "Urbanista"
+#~ msgstr "Urbanista"
+
+#~ msgid "Vendedor"
+#~ msgstr "Vendedor"
+
+#~ msgid "Veterinário"
+#~ msgstr "Veterinário"
+
+#~ msgid "Vigilante"
+#~ msgstr "Vigilante"
+
+#~ msgid "Normalmente faço as coisas sozinho. Assim posso fazer o que quero."
+#~ msgstr ""
+#~ "Geralmente faço as coisas sozinho. Desse jeito posso fazer o que quero."
+
+#~ msgid ""
+#~ "Se os meus amigos tomarem as decisões, normalmente eu participo sempre"
+#~ msgstr "Se meus amigos tomarem as decisões, geralmente eu sempre participo"
+
+#~ msgid "Quase sempre decidimos em conjunto o que fazer."
+#~ msgstr "Quase sempre decidimos juntos o que fazer."
+
+#~ msgid ""
+#~ "Eu sugiro frequentemente o que devemos fazer e convenço os meus amigos."
+#~ msgstr ""
+#~ "Eu sugiro frequentemente o que nós devemos fazer e convenço meus amigos."
+
+#~ msgid "Eu planeio na maior parte das vezes o que fazemos."
+#~ msgstr "Eu planejo na maioria das vezes o que nós fazemos."
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Google +"
+#~ msgstr "Google +"
+
+#~ msgid "Myspace"
+#~ msgstr "Myspace"
+
+#~ msgid "Orkut"
+#~ msgstr "Orkut"
+
+#~ msgid "LinkedIn"
+#~ msgstr "LinkedIn"
+
+#~ msgid "Hi5"
+#~ msgstr "Hi5"
+
+#~ msgid "Flickr"
+#~ msgstr "Flickr"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "Netlog"
+#~ msgstr "Netlog"
+
+#~ msgid "Foursquare"
+#~ msgstr "Foursquare"
+
+#~ msgid "Bebo"
+#~ msgstr "Bebo"
+
+#~ msgid "Istagr.am"
+#~ msgstr "Istagr.am"
+
+#~ msgid "Com que frequência usas as seguintes tecnologias?"
+#~ msgstr "Quão frequentemente você usa as tecnologias seguintes"
+
+#~ msgid "Condições de utilização"
+#~ msgstr "Termos e condições de uso do site"
+
+#~ msgid "Entrada"
+#~ msgstr "Entrada"
+
+#~ msgid "Wom no Mundo"
+#~ msgstr "WOM no mundo"
+
+#~ msgid "Para empresas"
+#~ msgstr "Para empresas"
+
+#~ msgid "Para embaixadores"
+#~ msgstr "Para embaixadores"
+
+#~ msgid "Contacta-nos"
+#~ msgstr "Nos contate"
+
+#~ msgid "Política de privacidade"
+#~ msgstr "Política de Privacidade"
+
+#~ msgid "Registo"
+#~ msgstr "Registro"
+
+#~ msgid "Recuperar Pass"
+#~ msgstr "Recuperar senha"
+
+#~ msgid "Questionários"
+#~ msgstr "Questionários"
+
+#~ msgid "O meu perfil"
+#~ msgstr "Meu perfil"
+
+#~ msgid "Confirmação"
+#~ msgstr "Confirmação"
+
+#~ msgid "Campanhas"
+#~ msgstr "Campanhas"
+
+#~ msgid "Informação"
+#~ msgstr "Informação"
+
+#~ msgid "site_entrance"
+#~ msgstr "site_entrance"
+
+#~ msgid "Nova Password"
+#~ msgstr "Nova senha"
+
+#~ msgid "Confirmação Password"
+#~ msgstr "Confirmação senha"
+
+#~ msgid "fake_page"
+#~ msgstr "fake_page"
+
+#~ msgid "Feminino"
+#~ msgstr "Feminino"
+
+#~ msgid "Masculino"
+#~ msgstr "Masculino"
+
+#~ msgid "Solteiro"
+#~ msgstr "Solteiro"
+
+#~ msgid "Casado"
+#~ msgstr "Casado"
+
+#~ msgid "Divorciado"
+#~ msgstr "Divorciado"
+
+#~ msgid "Viuvo"
+#~ msgstr "Viúvo"
+
+#~ msgid "Primária"
+#~ msgstr "Ensino Fundamental - Inicial"
+
+#~ msgid "Preparatória"
+#~ msgstr "Ensino Fundamental - Final"
+
+#~ msgid "Secundário"
+#~ msgstr "Ensino Médio"
+
+#~ msgid "Licenciatura"
+#~ msgstr "Ensino Superior"
+
+#~ msgid "Mestrado"
+#~ msgstr "Mestrado"
+
+#~ msgid "Doutoramento"
+#~ msgstr "Doutorado"
+
+#~ msgid "Sim"
+#~ msgstr "Sim"
+
+#~ msgid "Não"
+#~ msgstr "Não"
+
+#~ msgid "Bem-vindo"
+#~ msgstr "Bem-vindo"
+
+#~ msgid "É necessário um endereço de e-mail válido."
+#~ msgstr "É preciso um endereço de email válido."
+
+#~ msgid "O endereço fornecido já existe."
+#~ msgstr "O endereço fornecido já existe."
+
+#~ msgid ""
+#~ "Lamentamos mas ocorreu um erro ao efectuar o seu pré-registo. Foi-nos "
+#~ "impossível guardá-lo."
+#~ msgstr ""
+#~ "Lamentamos o sucedido, mas houve um erro durante o pré-registro. Não foi "
+#~ "possível guardar."
+
+#~ msgid ""
+#~ "Lamentamos mas ocorreu um erro ao efectuar o pré-registo. Foi-nos "
+#~ "impossível guardar o endereço de mail fornecido."
+#~ msgstr ""
+#~ "Lamentamos o sucedido, mas houve um erro durante o pré-registro. Não foi "
+#~ "possível salvar o endereço de email fornecido."
+
+#~ msgid ""
+#~ "Lamentamos mas ocorreu um erro ao enviar o mail para o endereço fornecido."
+#~ msgstr ""
+#~ "Lamentamos o sucedido, mas houve um erro no envio do email para o "
+#~ "endereço fornecido."
+
+#~ msgid ""
+#~ "Lamentamos imenso mas uma situação imprevista inviabilizou a acção de pre-"
+#~ "registo."
+#~ msgstr ""
+#~ "Lamentamos o sucedido, mas uma situação imprevista não permitiu a ação de "
+#~ "pré-registro."
+
+#~ msgid "Ups! Algo correu mal!"
+#~ msgstr "Opa! algo correu mal!"
+
+#~ msgid "Não foi possível confirmar o registo."
+#~ msgstr "Não foi possível confirmar o registro."
+
+#~ msgid "O registo já se encontra confirmado."
+#~ msgstr "O registro já está confirmado."
+
+#~ msgid "Ocorreu um erro ao efectuar o teu registo."
+#~ msgstr "Ocorreu um erro ao efectuar o seu registo."
+
+#~ msgid "Community"
+#~ msgstr "Comunidade"
+
+#~ msgid "Sobre nós"
+#~ msgstr "Sobre nós"
+
+#~ msgid "Suporte"
+#~ msgstr "Suporte"
+
+#~ msgid "Junta-te a nós"
+#~ msgstr "Junte-se a nós"
+
+#~ msgid "Dados Demográficos"
+#~ msgstr "Dados Demográficos"
+
+#~ msgid "Género"
+#~ msgstr "Gênero"
+
+#~ msgid "Idade"
+#~ msgstr "Idade"
+
+#~ msgid "Escolaridade"
+#~ msgstr "Escolaridade"
+
+#, fuzzy
+#~ msgid "Registo inicial"
+#~ msgstr "Questionário inicial"
+
+#~ msgid "Parabéns"
+#~ msgstr "Parabéns"
+
+#~ msgid "Pré-registo bem sucedido"
+#~ msgstr "Pré-registro com sucesso"
+
+#, fuzzy
+#~ msgid ""
+#~ "registration::register::submit::confirmation_mail_sended - Verifica o teu "
+#~ "email e clica no link enviado."
+#~ msgstr "Verifique seu email agora e clique clique no link que lhe enviámos!"
+
+#, fuzzy
+#~ msgid "Alteração de registo bem sucedida"
+#~ msgstr "Pré-registro com sucesso"
+
+#~ msgid "Tem de introduzir um email válido."
+#~ msgstr "Você precisa introduzir um email válido."
+
+#~ msgid "A introdução do nome é obrigatória."
+#~ msgstr "A introdução do nome é obrigatória."
+
+#~ msgid ""
+#~ "Existem erros de preenchimento que devem ser corrigidos para poder "
+#~ "continuar."
+#~ msgstr ""
+#~ "Existem erros de preenchimento que precisam ser corrigidos para poder "
+#~ "continuar."
+
+#~ msgid "A introdução do apelido é obrigatória."
+#~ msgstr "A introdução do sobrenome é obrigatória."
+
+#~ msgid "A password tem de ter no mínimo 6 caracteres"
+#~ msgstr "A senha precisa ter no mínimo 6 carateres."
+
+#~ msgid "Erro na confirmação de email."
+#~ msgstr "Erro na confirmação do email."
+
+#~ msgid "Este email está incorreto."
+#~ msgstr "Esse email está incorreto."
+
+#~ msgid "Erro na confirmação da password."
+#~ msgstr "Erro na confirmação da senha."
+
+#~ msgid "Necessita aceitar os termos"
+#~ msgstr "Você precisa aceitar os termos"
+
+#~ msgid "Este email já existe no sistema."
+#~ msgstr "Esse email já existe no sistema."
+
+#~ msgid "Código errado."
+#~ msgstr "Código errado."
+
+#~ msgid "Olá"
+#~ msgstr "Olá"
+
+#~ msgid "Estás apenas a um passo de completar o processo de registo."
+#~ msgstr "Você está a um passo somente de completar o processo de registro."
+
+#~ msgid ""
+#~ "Para terminar clica no link seguinte para confirmares a criação da tua "
+#~ "conta:"
+#~ msgstr ""
+#~ "Para terminar, por favor clique no link seguinte para confirmar a criação "
+#~ "de sua conta:"
+
+#~ msgid "Link de activação"
+#~ msgstr "Link de activação"
+
+#~ msgid ""
+#~ "Aproveita e activa este e-mail como &ldquo;Safe/Not junk&rdquo; para que "
+#~ "possas continuar a receber e-mails nossos e a participar nas campanhas e "
+#~ "estudos que temos para ti."
+#~ msgstr ""
+#~ "Aproveite e ative esse email como &ldquo;Safe/Not junk&rdquo; para poder "
+#~ "continuar recebendo nossos emails e participando das Campanhas e Estudos "
+#~ "que temos para você."
+
+#~ msgid "Obrigado"
+#~ msgstr "Obrigado"
+
+#~ msgid "Obrigado pelo tempo que dispensaste para aderir à comunidade %s."
+#~ msgstr "Obrigado pelo tempo que você dedicou para aderir à comunidade %s. "
+
+#~ msgid "Obrigado pelo tempo que dispensaste para aderir à comunidade."
+#~ msgstr "Obrigado pelo tempo que você dedicou para aderir à comunidade."
+
+#~ msgid "Achas que és um principiante"
+#~ msgstr "Você acha que é um principiante"
+
+#~ msgid "Um bom conselheiro"
+#~ msgstr "Um bom conselheiro"
+
+#~ msgid "Um ótimo conselheiro"
+#~ msgstr "Um ótimo conselheiro"
+
+#~ msgid "Um especialista"
+#~ msgstr "Um especialista"
+
+#~ msgid "Diariamente"
+#~ msgstr "Diariamente"
+
+#~ msgid "3 Vezes por semana"
+#~ msgstr "3 Vezes por semana"
+
+#~ msgid "2 Vezes por semana"
+#~ msgstr "2 Vezes por semana"
+
+#~ msgid "1 Vez por semana"
+#~ msgstr "1 Vez por semana"
+
+#~ msgid "2 Vezes por mês"
+#~ msgstr "2 Vezes por mês"
+
+#~ msgid "1 Vez por mês"
+#~ msgstr "1 Vez por mês"
+
+#~ msgid "4 Vezes por ano"
+#~ msgstr "4 Vezes por ano"
+
+#~ msgid "2 Vezes por ano"
+#~ msgstr "2 Vezes por ano"
+
+#~ msgid "1 Vez por ano"
+#~ msgstr "1 Vez por ano"
+
+#~ msgid "Não pratico"
+#~ msgstr "Não pratico"
+
+#~ msgid "Por favor insere o email com que te registaste na nossa comunidade."
+#~ msgstr ""
+#~ "Por favor insira o email que você usou para se registrar em nossa "
+#~ "comunidade."
+
+#~ msgid ""
+#~ "Ao fazê-lo poderás ganhar pontos para a tua conta, por cada amigo teu que "
+#~ "se registe."
+#~ msgstr ""
+#~ "Desse jeito, você poderá ganhar pontos para sua conta, por cada amigo seu "
+#~ "que se registre."
+
+#~ msgid ""
+#~ "Quanto mais pontos tiveres mais probabilidades tens de ser seleccionado "
+#~ "para as campanhas que realmente te interessam."
+#~ msgstr ""
+#~ "Quantos mais pontos você tiver, mais chances haverá de ser selecionado "
+#~ "para as campanhas que realmente lhe interessam."
+
+#~ msgid ""
+#~ "Atenção: para ganhares os pontos terás que ter a tua conta registada."
+#~ msgstr ""
+#~ "Atenção: para ganhar os pontos, você precisa ter sua conta registrada."
+
+#~ msgid "Configura a tua mensagem"
+#~ msgstr "Configure sua mensagem:"
+
+#~ msgid "Tens de preencher pelo menos um endereço de email."
+#~ msgstr "Tem de preencher pelo menos um endereço de email."
+
+#~ msgid "Junta-te já"
+#~ msgstr "Se junte agora mesmo"
+
+#~ msgid "Olá,"
+#~ msgstr "Oi,"
+
+#~ msgid "Vê já este site que te vai interessar."
+#~ msgstr "Veja agora esse site que vai interessar você. "
+
+#~ msgid ""
+#~ "É uma comunidade onde podes experimentar produtos e serviços das tuas "
+#~ "marcas preferidas gratuitamente."
+#~ msgstr ""
+#~ "Se chama Embaixadores.com e você pode experimentar grátis produtos e "
+#~ "serviços de suas marcas favoritas."
+
+#~ msgid "Eu já sou membro."
+#~ msgstr "Eu já sou membro."
+
+#~ msgid ""
+#~ "Regista-te usando este link - %s - e ambos ganharemos pontos para a nossa "
+#~ "conta."
+#~ msgstr ""
+#~ "Se registre usando esse link – %s – e nós dois iremos ganhar pontos para "
+#~ "nossas contas."
+
+#~ msgid ""
+#~ "Quanto mais pontos tivermos mais probabilidades temos de ser "
+#~ "seleccionados para as campanhas."
+#~ msgstr ""
+#~ "Quantos mais pontos nós tivermos, mais chances haverá de sermos "
+#~ "selecionados para as campanhas."
+
+#~ msgid "Até já,"
+#~ msgstr "Até já,"
+
+#~ msgid "Enviar email"
+#~ msgstr "Enviar email"
+
+#~ msgid "Redes sociais"
+#~ msgstr "Redes sociais"
+
+#~ msgid "Enviar"
+#~ msgstr "Enviar"
+
+#~ msgid ""
+#~ "&copy; 2008 - 2012 Todos os direitos reservados. Embaixadores.com &reg; é "
+#~ "uma marca registada da WOM - Marketing Agency, Lda."
+#~ msgstr ""
+#~ "&copy; 2008 - 2012 Todos os direitos reservados. Embaixadores.com &reg; é "
+#~ "uma marca registada da WOM - Marketing Agency, Lda."
+
+#~ msgid "Enviar a amigo"
+#~ msgstr "Enviar a amigo"
+
+#~ msgid "Estamos à procura de 20.000 experimentadores de produtos no Brasil."
+#~ msgstr "Estamos procurando 20.000 expirementadores de produtos no Brasil."
+
+#~ msgid ""
+#~ "Queres ajudar a renovar tendências? Como embaixador podes transformar-te "
+#~ "num autêntico trend setter. Vais poder experimentar produtos das tuas "
+#~ "marcas ou produtos preferidos e dar-lhes feedback sobre os mesmos. É tudo "
+#~ "muito simples, sem custos e com muita diversão. "
+#~ msgstr ""
+#~ "Você quer ajudar a renovar tendências? Como embaixador, você pode virar "
+#~ "um autêntico criador de tendências. Vai poder experimentar produtos de "
+#~ "suas marcas ou produtos favoritos e lhes dar seu feedback sobre eles. É "
+#~ "tudo muito simples, sem custos e com muita diversão."
+
+#~ msgid "Parabéns."
+#~ msgstr "Parabéns."
+
+#~ msgid "O teu registo foi um sucesso."
+#~ msgstr "Seu registro foi um sucesso."
+
+#~ msgid ""
+#~ "Dentro de alguns dias receberás novidades no teu email. Entretanto "
+#~ "recomenda já o nosso site a todos os teus amigos. Podes ganhar pontos "
+#~ "adicionais por cada um que se inscreva através da tua recomendação. Mais "
+#~ "pontos são mais possibilidades de receberes convites para as campanhas "
+#~ "que são do teu interesse. Não percas tempo!"
+#~ msgstr ""
+#~ "Dentro de alguns dias você irá novidades em seu email. Enquanto isso, "
+#~ "recomende já nosso site a todos os seus amigos. Você pode ganhar pontos "
+#~ "complementares por cada amigo que se registre através de sua "
+#~ "recomendação. Mais pontos são mais chances de você receber convites para "
+#~ "as campanhas que lhe interessam. Não perca tempo!"
+
+#~ msgid "A equipa de %s"
+#~ msgstr "A equipe de %s"
+
+#~ msgid "A equipa"
+#~ msgstr "A equipe"
+
+#~ msgid ""
+#~ "Por favor não respondas para este endereço de e-mail. Este é um endereço "
+#~ "gerado automaticamente. Se tiveres alguma questão sobre a tua conta, ou "
+#~ "acontecer algum erro, por favor envia um e-mail para:"
+#~ msgstr ""
+#~ "Por favor não responda para esse endereço de email. Esse endereço é "
+#~ "gerado automaticamente. Se você tiver alguma dúvida sobre a sua conta, ou "
+#~ "acontecer algum erro, por favor envie um email para: "
+
+#~ msgid "Para ver este email num browser"
+#~ msgstr "Para ver esse email num browser"
+
+#~ msgid "clica aqui"
+#~ msgstr "clique aqui"
+
+#~ msgid "Parabéns!"
+#~ msgstr "Parabéns!"
+
+#~ msgid ""
+#~ "Verifica agora o teu email e clica no link que te enviámos para validar a "
+#~ "tua conta"
+#~ msgstr ""
+#~ "Por favor verifique seu email agora e clique clique no link que lhe "
+#~ "enviámos!"
+
+#~ msgid "De %s até %s."
+#~ msgstr "De %s até %s."
+
+#~ msgid "O meu desempenho"
+#~ msgstr "Meu desempenho"
+
+#~ msgid "Galeria"
+#~ msgstr "Galeria"
+
+#~ msgid "Blog"
+#~ msgstr "Blog"
+
+#~ msgid "Informações"
+#~ msgstr "Informações"
+
+#~ msgid "Voltar listagem"
+#~ msgstr "Voltar à listagem"
+
+#~ msgid "Minhas ações"
+#~ msgstr "Minhas ações"
+
+#~ msgid "Envia a tua opinião"
+#~ msgstr "Envie sua opinião"
+
+#~ msgid "Visitar site"
+#~ msgstr "Visitar site"
+
+#~ msgid "Questionário inicial"
+#~ msgstr "Questionário inicial"
+
+#~ msgid "Relatório WOM"
+#~ msgstr "Relato WOM"
+
+#~ msgid "Questionário final"
+#~ msgstr "Questionário final"
+
+#, fuzzy
+#~ msgid "Enviar questionário a amigos"
+#~ msgstr "Enviar a amigo"
+
+#~ msgid "Questionário A"
+#~ msgstr "Questionário A"
+
+#~ msgid "Fala connosco (dúvidas)"
+#~ msgstr "Fale connosco (dúvidas)"
+
+#~ msgid "CALENDÁRIO:"
+#~ msgstr "CALENDÁRIO:"
+
+#~ msgid "STATUS:"
+#~ msgstr "STATUS:"
+
+#~ msgid "Entrar"
+#~ msgstr "Entrar"
+
+#~ msgid "até"
+#~ msgstr "até"
+
+#~ msgid "Vale %s pontos"
+#~ msgstr "Vale %s pontos"
+
+#~ msgid "Campanha de experimentação"
+#~ msgstr "Campanha de experimentação"
+
+#~ msgid "Não existem campanhas."
+#~ msgstr "Não existem campanhas."
+
+#~ msgid "Ver apenas campanhas em que participo ou participei"
+#~ msgstr "Ver apenas campanhas nas quais participo ou participei"
+
+#~ msgid " em curso"
+#~ msgstr " em curso"
+
+#~ msgid "Próximas"
+#~ msgstr "Próximas"
+
+#, fuzzy
+#~ msgid "Terminadas"
+#~ msgstr " terminadas"
+
+#~ msgid "Mostrar vista reduzida"
+#~ msgstr "Exibir vista reduzida"
+
+#~ msgid "Mostrar vista estendida"
+#~ msgstr "Exibir vista estendida"
+
+#~ msgid "Ordenar por data"
+#~ msgstr "Ordenar por data"
+
+#~ msgid "Ordenar alfabeticamente"
+#~ msgstr "Ordenar alfabeticamente"
+
+#~ msgid "Mostrar campanhas de experimentação"
+#~ msgstr "Exibir campanhas de experimentação"
+
+#~ msgid "Mostrar campanhas online (Womcasts)"
+#~ msgstr "Exibir campanhas online (Womcasts)"
+
+#~ msgid "The Most Fun Photo"
+#~ msgstr "A foto mais divertida"
+
+#~ msgid "fotos:"
+#~ msgstr "fotos:"
+
+#~ msgid "Submeter fotos"
+#~ msgstr "Submeter fotos"
+
+#~ msgid "Por:"
+#~ msgstr "Por:"
+
+#~ msgid "Votos:"
+#~ msgstr "Votos:"
+
+#~ msgid "Gosto!"
+#~ msgstr "Curto!"
+
+#~ msgid "Já votaste!"
+#~ msgstr "Você já votou!"
+
+#~ msgid "Enviar a amigos"
+#~ msgstr "Enviar a amigos"
+
+#, fuzzy
+#~ msgid "new password"
+#~ msgstr "Senha"
+
+#~ msgid "A enviar... Por favor aguarde."
+#~ msgstr "Enviando... Por favor aguarde."
+
+#~ msgid "Partilha com os teus amigos:"
+#~ msgstr "Recomende a seus amigos:"
+
+#~ msgid "Mais informações"
+#~ msgstr "Mais informações"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Username ou email"
+#~ msgstr "Nome de usuário ou email"
+
+#~ msgid "Password"
+#~ msgstr "Senha"
+
+#~ msgid "Bem-vindo(a)"
+#~ msgstr "Bem-vindo"
+
+#~ msgid "Perfil"
+#~ msgstr "Perfil"
+
+#~ msgid "Avaliação"
+#~ msgstr "Avaliação"
+
+#~ msgid "Buzz"
+#~ msgstr "Buzz"
+
+#, fuzzy
+#~ msgid "Histórias"
+#~ msgstr "Historiador"
+
+#~ msgid "Como funciona"
+#~ msgstr "Como funciona"
+
+#~ msgid "Tens notificações novas! Clica aqui."
+#~ msgstr "Você tem notificações novas! Por favor clique aqui."
+
+#~ msgid "Completa o teu perfil."
+#~ msgstr "Complete seu perfil."
+
+#~ msgid "Ver"
+#~ msgstr "Ver"
+
+#~ msgid "Pontos totais"
+#~ msgstr "Pontos totais"
+
+#, fuzzy
+#~ msgid "Nível "
+#~ msgstr "Nível"
+
+#~ msgid "Código:"
+#~ msgstr "Código:"
+
+#~ msgid "Ambassadors.com"
+#~ msgstr "Ambassadors.com"
+
+#~ msgid "Loading the player. Please wait ..."
+#~ msgstr "Carregando o reprodutor de video. Por favor aguarde ..."
+
+#~ msgid ""
+#~ "Completa o teu perfil e ganha 150 pontos incluindo 40 pontos de Bónus."
+#~ msgstr ""
+#~ "Complete seu perfil e ganhe 160 pontos, incluindo 40 pontos de bônus."
+
+#~ msgid "Completa o teu perfil"
+#~ msgstr "Complete seu perfil"
+
+#~ msgid "Pontos"
+#~ msgstr "Pontos"
+
+#~ msgid "Nível"
+#~ msgstr "Nível"
+
+#~ msgid "pontos ganhos"
+#~ msgstr "pontos ganhos"
+
+#~ msgid ""
+#~ "%d amigos teus inscreveram-se em embaixadores.com utilizando o teu código "
+#~ "de convite"
+#~ msgstr ""
+#~ "%d amigos seus se registraram em embaixadores.com usando seu código de "
+#~ "convite"
+
+#~ msgid "Categorias"
+#~ msgstr "Categorias"
+
+#~ msgid "Ganhos"
+#~ msgstr "Ganhos"
+
+#~ msgid "Disponíveis"
+#~ msgstr "Disponíveis"
+
+#~ msgid "Percentagem preenchida"
+#~ msgstr "Percentagem completada"
+
+#~ msgid ""
+#~ "Liga o teu perfil ás redes sociais e expande a tua influência online!"
+#~ msgstr "Conecte seu perfil às redes sociais e amplie sua influência online!"
+
+#~ msgid "Editar"
+#~ msgstr "Editar"
+
+#~ msgid "Parte %d"
+#~ msgstr "Parte %d"
+
+#~ msgid "Jan"
+#~ msgstr "Jan"
+
+#~ msgid "Fev"
+#~ msgstr "Fev"
+
+#~ msgid "Mar"
+#~ msgstr "Mar"
+
+#~ msgid "Abr"
+#~ msgstr "Abr"
+
+#~ msgid "Mai"
+#~ msgstr "Mai"
+
+#~ msgid "Jun"
+#~ msgstr "Jun"
+
+#~ msgid "Jul"
+#~ msgstr "Jul"
+
+#~ msgid "Ago"
+#~ msgstr "Ago"
+
+#~ msgid "Set"
+#~ msgstr "Set"
+
+#~ msgid "Out"
+#~ msgstr "Out"
+
+#~ msgid "Nov"
+#~ msgstr "Nov"
+
+#~ msgid "Dez"
+#~ msgstr "Dez"
+
+#~ msgid "Janeiro"
+#~ msgstr "Janeiro"
+
+#~ msgid "Fevereiro"
+#~ msgstr "Fevereiro"
+
+#~ msgid "Março"
+#~ msgstr "Março"
+
+#~ msgid "Abril"
+#~ msgstr "Abril"
+
+#~ msgid "Maio"
+#~ msgstr "Maio"
+
+#~ msgid "Junho"
+#~ msgstr "Junho"
+
+#~ msgid "Julho"
+#~ msgstr "Julho"
+
+#~ msgid "Agosto"
+#~ msgstr "Agosto"
+
+#~ msgid "Setembro"
+#~ msgstr "Setembro"
+
+#~ msgid "Outubro"
+#~ msgstr "Outubro"
+
+#~ msgid "Novembro"
+#~ msgstr "Novembro"
+
+#~ msgid "Dezembro"
+#~ msgstr "Dezembro"
+
+#~ msgid "Dom"
+#~ msgstr "Dom"
+
+#~ msgid "Seg"
+#~ msgstr "Seg"
+
+#~ msgid "Ter"
+#~ msgstr "Ter"
+
+#~ msgid "Qua"
+#~ msgstr "Qua"
+
+#~ msgid "Qui"
+#~ msgstr "Qui"
+
+#~ msgid "Sex"
+#~ msgstr "Sex"
+
+#~ msgid "Sab"
+#~ msgstr "Sab"
+
+#~ msgid "Domingo"
+#~ msgstr "Domingo"
+
+#~ msgid "Segunda"
+#~ msgstr "Segunda"
+
+#~ msgid "Terça"
+#~ msgstr "Terça"
+
+#~ msgid "Quarta"
+#~ msgstr "Quarta"
+
+#~ msgid "Quinta"
+#~ msgstr "Quinta"
+
+#~ msgid "Sexta"
+#~ msgstr "Sexta"
+
+#~ msgid "Sábado"
+#~ msgstr "Sábado"
+
+#~ msgid "Hoje"
+#~ msgstr "Hoje"
+
+#~ msgid "X"
+#~ msgstr "X"
+
+#~ msgid "Seguinte"
+#~ msgstr "Seguinte"
+
+#~ msgid "Anterior"
+#~ msgstr "Anterior"
+
+#~ msgid "outra"
+#~ msgstr "outra"
+
+#~ msgid "Esta pergunta é obrigatória."
+#~ msgstr "Essa pergunta é obrigatória."
+
+#, fuzzy
+#~ msgid "label:confirm_password Confirmar password"
+#~ msgstr "Confirmar senha"
+
+#~ msgid "Embaixadores"
+#~ msgstr "Embaixadores"
+
+#~ msgid "Nome próprio"
+#~ msgstr "Nome"
+
+#~ msgid "Apelido"
+#~ msgstr "Sobrenome"
+
+#~ msgid "Confirmar email"
+#~ msgstr "Confirmar email"
+
+#~ msgid "Confirmar password"
+#~ msgstr "Confirmar senha"
+
+#~ msgid "Código de convite"
+#~ msgstr "Código de convite"
+
+#~ msgid ""
+#~ "Se recebeste um código de convite de um amigo, insere-o aqui. Vais ganhar "
+#~ "pontos adicionais se o fizeres. Se não tiveres um código de convite deixa "
+#~ "o campo vazio e continua."
+#~ msgstr ""
+#~ "Se você recebeu um código de convite de um amigo, o digite aqui. Vai "
+#~ "ganhar pontos complementares se o fizer. Se você não tem um código de "
+#~ "convite, por favor deixe o campo vazio e continue."
+
+#~ msgid "Verificação de SPAM"
+#~ msgstr "Verificação de spam:"
+
+#~ msgid "Insira código"
+#~ msgstr "Digite o código:"
+
+#~ msgid "Li e aceito a política de"
+#~ msgstr "Li e aceito a Política de"
+
+#~ msgid "Privacidade"
+#~ msgstr "Privacidade"
+
+#~ msgid "Termos e Condições de Utilização"
+#~ msgstr "Termos e Condições de Uso"
+
+#~ msgid ""
+#~ "Respeitamos a tua privacidade. Nunca te enviaremos spam ou partilharemos "
+#~ "a tua informação pessoal com ninguém sem o teu consentimento."
+#~ msgstr ""
+#~ "Respeitamos sua privacidade. Jamais lhe enviaremos spam ou "
+#~ "compartilharemos sua informação pessoal com ninguém sem sua autorização."
+
+#~ msgid "Registar"
+#~ msgstr "Registrar"
+
+#~ msgid " por responder"
+#~ msgstr " por responder"
+
+#~ msgid " respondidos"
+#~ msgstr " respondidos"
+
+#~ msgid "De"
+#~ msgstr "De"
+
+#~ msgid "Ainda não preencheste Relatório WOM"
+#~ msgstr "Você ainda não completou o Relato WOM"
+
+#~ msgid "Clique para deixar de receber questionários desta categoria"
+#~ msgstr "Clique para não receber mais questionários dessa categoria"
+
+#~ msgid "Nunca"
+#~ msgstr "Nunca"
+
+#~ msgid "Diaramente"
+#~ msgstr "Diaramente"
+
+#~ msgid "Página sem questões"
+#~ msgstr "Página sem perguntas"
+
+#~ msgid "salvar"
+#~ msgstr "salvar"
+
+#~ msgid "A gravação dos teus dados no formulário é feita automaticamente."
+#~ msgstr "A gravação de seus dados no formulário é automática."
+
+#~ msgid "página anterior"
+#~ msgstr "página anterior"
+
+#~ msgid "próxima página"
+#~ msgstr "próxima página"
+
+#~ msgid "%d de %d"
+#~ msgstr "%d de %d"
+
+#, fuzzy
+#~ msgid "Voltar"
+#~ msgstr "Militar"
+
+#~ msgid "Por favor, responde a todas as questões do questionário."
+#~ msgstr "Por favor responda a todas as perguntas do questionário abaixo."
+
+#~ msgid "Questionário completo. Obrigado por responderes."
+#~ msgstr "Questionário completo. Obrigado por responder."
+
+#~ msgid "Progresso:"
+#~ msgstr "Progresso:"
+
+#~ msgid "Acabaste de ganhar %d pontos!"
+#~ msgstr "Você acabou de ganhar %d pontos!"
+
+#~ msgid "Título:"
+#~ msgstr "Título:"
+
+#~ msgid "Mensagem:"
+#~ msgstr "Mensagem:"
+
+#~ msgid "Clica aqui"
+#~ msgstr "Clique aqui"
+
+#~ msgid "para usares o teu editor de email ou (2) preenche os campos."
+#~ msgstr "para usar o seu editor de email ou (2) preencha os campos."
+
+#~ msgid "Obrigado por partilhar com os teus amigos!"
+#~ msgstr "Obrigado por recomendar a seus amigos!"
+
+#~ msgid "Obrigado pelo tempo que dispensaste para aderir à comunidade"
+#~ msgstr "Obrigado pelo tempo que você dedicou para aderir à comunidade"
+
+#~ msgid ""
+#~ "Para terminar clica no link seguinte para confirmares a criação  da tua "
+#~ "conta:"
+#~ msgstr ""
+#~ "Para terminar, por favor clique no link seguinte para confirmar a criação "
+#~ "de sua conta:"
+
+#~ msgid ""
+#~ "Aproveita e activa este  e-mail como &ldquo;Safe/Not junk&rdquo; para que "
+#~ "possas continuar a receber e-mails nossos  e a participar nas Campanhas e "
+#~ "WOMCasts que temos para ti."
+#~ msgstr ""
+#~ "Aproveite e ative esse email como &ldquo;Safe/Not junk&rdquo; para poder "
+#~ "continuar recebendo nossos emails e participando das Campanhas e WOMCasts "
+#~ "que temos para você."
+
+#~ msgid ""
+#~ "Por favor não respondas para  este endereço de e-mail. Este é um endereço "
+#~ "gerado automaticamente. Se tiveres  alguma questão sobre a tua conta, ou "
+#~ "acontecer algum erro, por favor envia um  e-mail para:"
+#~ msgstr ""
+#~ "Por favor não responda para esse endereço de email. Esse endereço é "
+#~ "gerado automaticamente. Se você tiver alguma dúvida sobre a sua conta, ou "
+#~ "acontecer algum erro, por favor envie um email para: "
+
+#~ msgid ""
+#~ "Deste modo, evitarás que as mensagens que te enviamos desde %s&nbsp;sejam "
+#~ "movidas por erro para a pasta de  correio não desejado do teu e-mail."
+#~ msgstr ""
+#~ "Desse jeito, você irá evitar que os emails que lhe enviamos desde %s&nbsp;"
+#~ "sejam movidos por engano para a pasta de  correio spam de seu email."
+
+#~ msgid "Desta forma nunca perderás uma das nossas  campanhas ou WOMCasts."
+#~ msgstr ""
+#~ "Desse jeito, você jamais perderá uma de nossas  campanhas ou WOMCasts."
+
+#, fuzzy
+#~ msgid "Comunidades no mundo:"
+#~ msgstr "WOM no mundo"
+
+#~ msgid "País:"
+#~ msgstr "País:"
+
+#~ msgid "Embaixadores:"
+#~ msgstr "Embaixadores:"
+
+#~ msgid "brevemente"
+#~ msgstr "brevemente"
+
+#~ msgid "aberto"
+#~ msgstr "aberto"
+
+#~ msgid "Localização"
+#~ msgstr "Localização"
+
+#~ msgid "Interesses"
+#~ msgstr "Interesses"
 
 #~ msgid "MSN"
 #~ msgstr "MSN"
