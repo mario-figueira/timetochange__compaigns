@@ -31,7 +31,8 @@ class base__BE {
 		return $ret_val;
 	}
 	
-	public static function create_from_POST_array($a_POST_array){
+	
+	protected static function POST_array__prepare($a_POST_array){
 		DBCHelper2::require_that()->the_param($a_POST_array)->is_an_array_with_at_least_one_element();
 		
 		$ret_val = null;
@@ -55,19 +56,11 @@ class base__BE {
 			$data[$new_key] = $raw_data[$key];
 		}
 		
-		
-		$instance = new base__BE($data);
-
-		foreach($a_business_entity_record as $field_name=>$field_value){
-			$instance->$field_name = $field_value;
-		}
-		
-		
-		//$instance->fields = $a_business_entity_record;
-		
-		$ret_val = $instance;
+		$ret_val = $data;
 		
 		return $ret_val;
+		
+		
 	}
 		
 	public function update_field_matches_from_array($a_array_of_values){

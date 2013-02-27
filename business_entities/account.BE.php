@@ -34,6 +34,23 @@ class account__BE extends base__BE {
 
 		return $ret_val;
 	}
+	
+	public static function create_from_POST_array($a_post_array){
+		
+		$data = parent::POST_array__prepare($a_POST_array);
+		
+		$instance = new account__BE($data);
+
+		foreach($a_business_entity_record as $field_name=>$field_value){
+			$instance->$field_name = $field_value;
+		}
+		
+		//$instance->fields = $a_business_entity_record;
+		
+		$ret_val = $instance;
+		
+		return $ret_val;
+	}
 
 
 	protected function email__set($a_value) {
