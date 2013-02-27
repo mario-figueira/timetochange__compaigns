@@ -66,30 +66,45 @@ a:hover {
 	------------------------------------------------------------- */
 
 .formField {
-	font-family: 'Ubuntu', sans-serif; font-size: 12px; color: #000000;
+	font-family: 'Ubuntu', sans-serif; font-size: 12px; color: #808080;
 	background: #ffffff;
 	border: 1px solid #e6e6e6;
 	outline: none;
 }
 
-.fwLogin { width: 158px; height: 46px; padding: 0px 16px; margin-bottom: 16px; border: 1px solid #dddddd; }
+.formFieldFocus {
+	border: 1px solid #cccccc;
+	color: #000000;
+}
+
+.fwLogin { width: 158px; height: 46px; padding: 0px 16px; margin-bottom: 16px; border: 1px solid #cccccc; }
 .fwLarge { width: 222px; height: 46px; padding: 0px 16px; }
 .fwSmall { width: 62px; height: 46px; padding: 0px 16px; }
 .fwSmallRow { width: 22px; height: 22px; text-align: center; }
-.fwWideRow { width: 50%; height: 22px; background: #f2f2f2; border: none; }
+.fwWideRow { width: 50%; height: 22px; background: #f2f2f2; border: 1px solid #f2f2f2; padding: 0px 3px; }
 .fwLargeList { width: 256px; height: 48px; padding: 14px; }
 .fwSmallList { width: 96px; height: 48px; padding: 14px; }
+
+.fwWideRowFocus {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	color: #000000;
+}
 
 .formButton {
 	width: 128px; height: 48px;
 	font-family: 'Ubuntu', sans-serif; font-size: 12px; color: #ffffff;
-	background: #000000;
-	border: none; 
+	background: #5087c7;
+	border: 1px solid #1268b3; 
 	outline: none;
 	cursor: pointer;
 }
 
-.fbLogin { float: right; background: #5087c7; border: 1px solid #1268b3; margin-top: 16px; }
+.formButtonHover {
+	background: #1268b3; 
+}
+
+.fbLogin { float: right; margin-top: 16px; }
 
 .formCheckbox {
 	position: relative;
@@ -211,7 +226,7 @@ a:hover {
 /* 6.4 nav */
 
 .nav {
-	position: absolute;
+	position: fixed;
 	top: 0px; left: 0px;
 	width: 64px; height: 100%;
 	background: #000000;
@@ -240,7 +255,7 @@ a:hover {
 /* 6.5 subnav */
 
 .subnav {
-	position: absolute;
+	position: fixed;
 	margin-left: 64px;
 	width: 256px; height: 100%;
 	background: #e6e6e6;
@@ -348,6 +363,7 @@ a:hover {
 }
 
 .listTable ul li {
+	text-indent: 8px;
 	float: left;
 }
 
@@ -358,11 +374,11 @@ a:hover {
 	color: #808080;
 }
 
-.listTable ul.row li {
+.listTable ul.row label {
 	cursor: pointer;
 }
 
-.listTable ul.rowHover {
+.listTable ul.rowSelected {
 	background: #e6e6e6;
 }
 
@@ -370,6 +386,11 @@ a:hover {
 	position: relative;
 	vertical-align: middle;
 	top: -2px;
+}
+
+.listTable ul.row p {
+	line-height: 0px;
+	margin-bottom: 14px;
 }
 
 /* 6.6.4 list form */
@@ -424,7 +445,7 @@ fieldset.login {
 
 fieldset.login .line {
 	width: 100%; height: 1px;
-	background: #dddddd;
+	background: #cccccc;
 	margin: 8px 0px;		
 }
 

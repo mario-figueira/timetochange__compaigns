@@ -8,6 +8,8 @@
 	
 		1. tooltip
 		2. inputs
+		3. list table
+		4. date picker
 	
 	------------------------------------------------------------- */
 
@@ -47,16 +49,52 @@ $(".formField_clear").each(function() {
 	
 });
 
+$(".formField")
+  .focus (function () {
+		$(this).addClass("formFieldFocus");
+  })
+  .blur (function () {
+		$(this).removeClass("formFieldFocus");
+});
+
+$(".fwWideRow")
+  .focus (function () {
+		$(this).addClass("fwWideRowFocus");
+  })
+  .blur (function () {
+		$(this).removeClass("fwWideRowFocus");
+});
+
+$(".formButton").hover(
+  function () {
+		$(this).addClass("formButtonHover");					
+  }, 
+  function () {
+		$(this).removeClass("formButtonHover");					 
+  }
+);
+
 /*	-------------------------------------------------------------
 	3. list table
 	------------------------------------------------------------- */
 
+$(document).ready(function(){
+    $('.listTable ul.row').click(function(e){
+        $('.listTable ul.row').removeClass('rowSelected');
+        $(this).addClass('rowSelected');
+    });
+});
 
-$('.listTable ul.row').hover(
-  function () {
-		$(this).addClass('rowHover');					
-  }, 
-  function () {
-		$(this).removeClass('rowHover');					 
-  }
-);
+/*	-------------------------------------------------------------
+	4. date picker
+	------------------------------------------------------------- */
+
+$(function(){
+
+	$('.datepicker').datepicker({
+		dateFormat: "yy-mm-dd",
+		showOtherMonths: true,
+		selectOtherMonths: true
+	});	
+
+});
