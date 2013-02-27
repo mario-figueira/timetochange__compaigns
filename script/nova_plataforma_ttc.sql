@@ -1,193 +1,196 @@
+/**
+ * Time2Change Database Model
+ */
+
 /*
 drop database `ttc`;
 create database `ttc`;
 */
+
 USE `ttc`;
 
 
 CREATE TABLE IF NOT EXISTS `auditLog` (
-    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp de auditoria',
-    `auditUser` VARCHAR(25) NOT NULL COMMENT 'Utilizador de auditoria',
-    `operation` VARCHAR(255) NOT NULL COMMENT 'Operação efetuada',
+    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Audit timestamp ',
+    `auditUser` VARCHAR(25) NOT NULL COMMENT 'Audit user',
+    `operation` VARCHAR(255) NOT NULL COMMENT 'Operation',
     PRIMARY KEY (`auditTimestamp` , `auditUser`)
-)  COMMENT 'Tabela de auditoria' ENGINE=InnoDB DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
+)  COMMENT 'Audit log' ENGINE=InnoDB DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
 
-CREATE TABLE IF NOT EXISTS `pais` (
-    `idPais` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identificador',
-    `pais` VARCHAR(35) NULL DEFAULT NULL COMMENT 'País',
-    PRIMARY KEY (`idPais`)
-)  COMMENT 'Países' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
+CREATE TABLE IF NOT EXISTS `country` (
+    `idCountry` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identifier',
+    `country` VARCHAR(35) NULL DEFAULT NULL COMMENT 'Country',
+    PRIMARY KEY (`idCountry`)
+)  COMMENT 'Countries' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
-CREATE TABLE IF NOT EXISTS `conta` (
-    `idConta` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Indentificador',
-    `nome` VARCHAR(100) NOT NULL COMMENT 'Nome da conta',
-    `logo` VARCHAR(255) NOT NULL COMMENT 'Caminho para a localização do ficheiro de logotipo',
-    `telefone` BIGINT(20) NULL DEFAULT NULL COMMENT 'Telefone de contacto',
-    `fax` BIGINT(20) NULL DEFAULT NULL COMMENT 'Fax de contacto',
-    `email` VARCHAR(200) NULL DEFAULT NULL COMMENT 'Email de contacto',
-    `morada` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Morada',
-    `cp` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Código Postal',
-    `cidade` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Cidade',
-    `idPais` INT(10) UNSIGNED NOT NULL COMMENT 'País',
-    `notas` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Notas',
-    `status` BOOLEAN NOT NULL DEFAULT TRUE COMMENT 'Estado da conta (ativa/inativa)',
-    `auditUser` VARCHAR(25) NOT NULL COMMENT 'Utilizador responsável pela informação atual',
-    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp da informação atual',
-    PRIMARY KEY (`idConta`),
-    CONSTRAINT `fk_conta_pais_id` FOREIGN KEY (`idPais`)
-        REFERENCES `pais` (`idPais`)
+CREATE TABLE IF NOT EXISTS `account` (
+    `idAccount` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identifier',
+    `name` VARCHAR(100) NOT NULL COMMENT 'Account name',
+    `logo` VARCHAR(255) NOT NULL COMMENT 'Path for logo file',
+    `phone` BIGINT(20) NULL DEFAULT NULL COMMENT 'Contact telephone',
+    `fax` BIGINT(20) NULL DEFAULT NULL COMMENT 'Contact fax',
+    `email` VARCHAR(200) NULL DEFAULT NULL COMMENT 'Contact email',
+    `address` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Address',
+    `zip` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Zip code',
+    `city` VARCHAR(255) NULL DEFAULT NULL COMMENT 'City',
+    `idCountry` INT(10) UNSIGNED NOT NULL COMMENT 'Country',
+    `notes` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Notes',
+    `status` BOOLEAN NOT NULL DEFAULT TRUE COMMENT 'Account state (active/inactive)',
+    `auditUser` VARCHAR(25) NOT NULL COMMENT 'User responsible for the current data',
+    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp of the current data',
+    PRIMARY KEY (`idAccount`),
+    CONSTRAINT `fk_account_country_id` FOREIGN KEY (`idCountry`)
+        REFERENCES `country` (`idCountry`)
         ON DELETE NO ACTION ON UPDATE NO ACTION
-)  COMMENT 'Contas' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
+)  COMMENT 'Accounts' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
 
 
 CREATE TABLE IF NOT EXISTS `alias` (
-    `idAlias` VARCHAR(20) NOT NULL COMMENT 'Indentificador',
-    `alias` VARCHAR(45) NOT NULL DEFAULT '' COMMENT 'Número de telefone',
-    `la` INT UNSIGNED NOT NULL COMMENT 'Indicativo do número',
-    `idConta` INT UNSIGNED NULL DEFAULT NULL COMMENT 'Qual a conta a que pertence este número',
-    `auditUser` VARCHAR(25) NOT NULL COMMENT 'Utilizador responsável pela informação atual',
-    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp da informação atual',
+    `idAlias` VARCHAR(20) NOT NULL COMMENT 'Indentifier',
+    `alias` VARCHAR(45) NOT NULL DEFAULT '' COMMENT 'Telephone number',
+    `la` INT UNSIGNED NOT NULL COMMENT 'Telephone number prefix',
+    `idAccount` INT UNSIGNED NULL DEFAULT NULL COMMENT 'Account to which the number belongs to',
+    `auditUser` VARCHAR(25) NOT NULL COMMENT 'User responsible for the current data',
+    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp of the current data',
     PRIMARY KEY (`idAlias`),
     INDEX `idx_alias` (`alias` ASC),
-    CONSTRAINT `fk_alias_conta_id` FOREIGN KEY (`idConta`)
-        REFERENCES `conta` (`idConta`)
+    CONSTRAINT `fk_alias_account_id` FOREIGN KEY (`idAccount`)
+        REFERENCES `account` (`idAccount`)
         ON DELETE NO ACTION ON UPDATE NO ACTION
-)  COMMENT 'Números de Telefone' ENGINE=InnoDB DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
+)  COMMENT 'Telephone Numbers' ENGINE=InnoDB DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
 
-CREATE TABLE IF NOT EXISTS `tipoPrompt` (
-    `idTipoPrompt` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identificador', 
-    `tipo` VARCHAR(25) NOT NULL COMMENT 'Tipo de prompt', 
-    `descricao` VARCHAR(255) NOT NULL COMMENT 'Descrção do tipo de prompt', 
-    `auditUser` VARCHAR(25) NOT NULL COMMENT 'Utilizador responsável pela informação atual',
-	`auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp da informação atual',
-	PRIMARY KEY (`idTipoPrompt`)
-)  COMMENT 'Tipos de prompt (associado à mecanica da campanha)' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
+CREATE TABLE IF NOT EXISTS `promptType` (
+    `idPromptType` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identifier', 
+    `type` VARCHAR(25) NOT NULL COMMENT 'Type of prompt', 
+    `description` VARCHAR(255) NOT NULL COMMENT 'Prompt description', 
+    `auditUser` VARCHAR(25) NOT NULL COMMENT 'User responsible for the current data',
+    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp of the current data',
+	PRIMARY KEY (`idPromptType`)
+)  COMMENT 'Types of  prompt (associate with the campaign mechanism)' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
-CREATE TABLE IF NOT EXISTS `tipoCampanha` (
-    `idTipoCampanha` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT  COMMENT 'Identificador',
-    `nome` VARCHAR(20) NOT NULL  COMMENT 'Nome do tipo de campanha',
-    `descricao` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Descrição do tipo de campanha',
-    PRIMARY KEY (`idTipoCampanha`)
-)   COMMENT 'Tipos de Campanhas' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
+CREATE TABLE IF NOT EXISTS `campaignType` (
+    `idCampaignType` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT  COMMENT 'Identifier',
+    `name` VARCHAR(20) NOT NULL  COMMENT 'Capaign type name',
+    `description` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Capaign type description',
+    PRIMARY KEY (`idCampaignType`)
+)   COMMENT 'Typs of Campaigns' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
-CREATE TABLE IF NOT EXISTS `tipoPromptPorTipoCampanha` (
-	`idTipoCampanha` INT(10) UNSIGNED NOT NULL COMMENT 'Tipo de campanha',
-	`idTipoPrompt` INT(10) UNSIGNED NOT NULL COMMENT 'Tipo de prompt',
-	`obrigatorio` BOOLEAN NOT NULL  COMMENT 'Indicação se o tipo de prompt é obrigatório para o tipo de campanha',
-	PRIMARY KEY (`idTipoCampanha`, `idTipoPrompt`),
-    CONSTRAINT `fk_PromptCampanha_tipoCampanha_id` FOREIGN KEY (`idTipoCampanha`)
-        REFERENCES `tipoCampanha` (`idTipoCampanha`)
+CREATE TABLE IF NOT EXISTS `promptTypeByCampaignType` (
+	`idCampaignType` INT(10) UNSIGNED NOT NULL COMMENT 'Type of campaign',
+	`idPromptType` INT(10) UNSIGNED NOT NULL COMMENT 'Type of prompt',
+	`mandatory` BOOLEAN NOT NULL  COMMENT 'States if the prompt type is mandatory for the campaign type',
+	PRIMARY KEY (`idCampaignType`, `idPromptType`),
+    CONSTRAINT `fk_PromptCampaign_campaignType_id` FOREIGN KEY (`idCampaignType`)
+        REFERENCES `campaignType` (`idCampaignType`)
         ON DELETE NO ACTION ON UPDATE NO ACTION,
-    CONSTRAINT `fk_PromptCampanha_tipoPrompt_id` FOREIGN KEY (`idTipoPrompt`)
-        REFERENCES `tipoPrompt` (`idTipoPrompt`)
+    CONSTRAINT `fk_PromptCampaign_promptType_id` FOREIGN KEY (`idPromptType`)
+        REFERENCES `promptType` (`idPromptType`)
         ON DELETE NO ACTION ON UPDATE NO ACTION
-)  COMMENT 'Campanhas' ENGINE=InnoDB DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
+)  COMMENT 'Prompt Types by Campaign Types' ENGINE=InnoDB DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
 
-CREATE TABLE IF NOT EXISTS `campanha` (
-    `idCampanha` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identificador', 
-    `nome` VARCHAR(100) NOT NULL COMMENT 'Nome da campanha',
-    `idTipoCampanha` INT(10) UNSIGNED NOT NULL COMMENT 'Tipo de campanha',
-    `logo` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Caminho para a localização do ficheiro de logotigo',
-    `regulamento` VARCHAR(100) NULL DEFAULT NULL COMMENT 'Caminho para a localização do ficheiro de regulamento',
-    `dataInicio` DATETIME NULL DEFAULT NULL COMMENT 'Data de inicio da campanha',
-    `dataFim` DATETIME NULL DEFAULT NULL COMMENT 'Data de fim da campanha',
-    `status` BOOLEAN NOT NULL DEFAULT TRUE COMMENT 'Estado da conta (ativa/inativa)',
-    `auditUser` VARCHAR(25) NOT NULL COMMENT 'Utilizador responsável pela informação atual',
-    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp da informação atual',
-    PRIMARY KEY (`idCampanha`),
-    CONSTRAINT `fk_campanha_tipoCampanha_id` FOREIGN KEY (`idTipoCampanha`)
-        REFERENCES `tipoCampanha` (`idTipoCampanha`)
+CREATE TABLE IF NOT EXISTS `campaign` (
+    `idCampaign` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identifier', 
+    `name` VARCHAR(100) NOT NULL COMMENT 'Campaign name',
+    `idCampaignType` INT(10) UNSIGNED NOT NULL COMMENT 'Type of campaign',
+    `logo` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Path for the logo file',
+    `rules` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Path for the rules document',
+    `startDate` DATETIME NOT NULL COMMENT 'Campaign start date',
+    `endDate` DATETIME NULL DEFAULT NULL COMMENT 'Campaign end date',
+    `status` BOOLEAN NOT NULL DEFAULT TRUE COMMENT 'Account status (active/inactive)',
+    `auditUser` VARCHAR(25) NOT NULL COMMENT 'User responsible for the current data',
+    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp of the current data',
+    PRIMARY KEY (`idCampaign`),
+    CONSTRAINT `fk_campaign_campaignType_id` FOREIGN KEY (`idCampaignType`)
+        REFERENCES `campaignType` (`idCampaignType`)
         ON DELETE NO ACTION ON UPDATE NO ACTION
-)  COMMENT 'Campanhas' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
+)  COMMENT 'Campaigns' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
 CREATE TABLE IF NOT EXISTS `prompt` (
-    `idPrompt` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identificador', 
-    `nome` VARCHAR(50) NOT NULL COMMENT 'Nome da prompt',
-    `prompt` VARCHAR(255) NOT NULL COMMENT 'Caminho para a localização do ficheiro da prompt',
-    `descricao` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Descrição da prompt',
-	`idCampanha` INT(10) UNSIGNED NOT NULL COMMENT 'Campanha',
-    `auditUser` VARCHAR(25) NOT NULL COMMENT 'Utilizador responsável pela informação atual',
-    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp da informação atual',
+    `idPrompt` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identifier', 
+    `name` VARCHAR(50) NOT NULL COMMENT 'Prompt name',
+    `prompt` VARCHAR(255) NOT NULL COMMENT 'Path for prompt audio file',
+    `description` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Prompt description',
+	`idCampaign` INT(10) UNSIGNED NOT NULL COMMENT 'Campaign',
+    `auditUser` VARCHAR(25) NOT NULL COMMENT 'User responsible for the current data',
+    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp of the current data',
     PRIMARY KEY (`idPrompt`),
-    CONSTRAINT `fk_prompts_campanha_id` FOREIGN KEY (`idCampanha`)
-        REFERENCES `campanha` (`idCampanha`)
+    CONSTRAINT `fk_prompt_campaign_id` FOREIGN KEY (`idCampaign`)
+        REFERENCES `campaign` (`idCampaign`)
         ON DELETE NO ACTION ON UPDATE NO ACTION
 )  COMMENT 'Prompts' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
-CREATE TABLE IF NOT EXISTS `numeros` (
-    `idCampanha` INT(10) UNSIGNED NOT NULL COMMENT 'Identificador da campanha', 
-    `idAlias` VARCHAR(20) NOT NULL COMMENT 'Identificador do alias', 
-    `idPrompt` INT(10) UNSIGNED NOT NULL COMMENT 'Identificador da prompt', 
-    `idTipoPrompt` INT(10) UNSIGNED NOT NULL COMMENT 'Tipo de prompt (associado à mecanica da campanha)', 
-    `auditUser` VARCHAR(25) NOT NULL COMMENT 'Utilizador responsável pela informação atual',
-    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp da informação atual',
-    PRIMARY KEY (`idCampanha`, `idAlias`, `idPrompt`, `idTipoPrompt`),
-    CONSTRAINT `fk_numero_campanha_id` FOREIGN KEY (`idCampanha`)
-        REFERENCES `campanha` (`idCampanha`)
+CREATE TABLE IF NOT EXISTS `numbers` (
+    `idCampaign` INT(10) UNSIGNED NOT NULL COMMENT 'Campaign identifier', 
+    `idAlias` VARCHAR(20) NOT NULL COMMENT 'Alias identifier', 
+    `idPrompt` INT(10) UNSIGNED NOT NULL COMMENT 'Prompt identifier', 
+    `idPromptType` INT(10) UNSIGNED NOT NULL COMMENT 'Prompt type (associated with the campaign mechanism)', 
+    `auditUser` VARCHAR(25) NOT NULL COMMENT 'User responsible for the current data',
+    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp of the current data',
+    PRIMARY KEY (`idCampaign`, `idAlias`, `idPrompt`, `idPromptType`),
+    CONSTRAINT `fk_number_campaign_id` FOREIGN KEY (`idCampaign`)
+        REFERENCES `campaign` (`idCampaign`)
         ON DELETE NO ACTION ON UPDATE NO ACTION,
-	CONSTRAINT `fk_numero_alias_id` FOREIGN KEY (`idAlias`)
+	CONSTRAINT `fk_number_alias_id` FOREIGN KEY (`idAlias`)
         REFERENCES `alias` (`idAlias`)
         ON DELETE NO ACTION ON UPDATE NO ACTION,
-	CONSTRAINT `fk_numero_prompt_id` FOREIGN KEY (`idPrompt`)
+	CONSTRAINT `fk_number_prompt_id` FOREIGN KEY (`idPrompt`)
         REFERENCES `prompt` (`idPrompt`)
         ON DELETE NO ACTION ON UPDATE NO ACTION,
-	CONSTRAINT `fk_numero_tipoPrompt_id` FOREIGN KEY (`idTipoPrompt`)
-        REFERENCES `tipoPrompt` (`idTipoPrompt`)
+	CONSTRAINT `fk_number_promptType_id` FOREIGN KEY (`idPromptType`)
+        REFERENCES `promptType` (`idPromptType`)
         ON DELETE NO ACTION ON UPDATE NO ACTION
-)  COMMENT 'Números da Campanha' ENGINE=InnoDB DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
+)  COMMENT 'Campaign Telephone Numbers' ENGINE=InnoDB DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
 
 
 
 
 CREATE TABLE IF NOT EXISTS `incoming` (
-    `idIncoming` INT(9) NOT NULL AUTO_INCREMENT COMMENT 'Identificador',
-    `idAlias` VARCHAR(20) NOT NULL DEFAULT '0' COMMENT 'Número de telefone para o qual foi feita a chamada',
-    `msisdn` BIGINT(20) NOT NULL DEFAULT '0' COMMENT 'Número de telefone de quem ligou',
-    `callDate` DATETIME NULL DEFAULT NULL COMMENT 'Timestamp da chamada (serve para auditoria e sincronização)',
-    `callDuration` BIGINT(10) NULL DEFAULT NULL COMMENT 'Duração da chamada',
-    `idSinc` bigint(20) unsigned DEFAULT NULL COMMENT 'Identificador de sincronização',
+    `idIncoming` BIGINT(20) UNSIGNED NOT NULL COMMENT 'Identifier',
+    `idAlias` VARCHAR(20) NOT NULL DEFAULT '0' COMMENT 'Telephone number to where the call was made',
+    `msisdn` BIGINT(20) NOT NULL DEFAULT '0' COMMENT 'Telephone number of the person that called',
+    `callDate` DATETIME NULL DEFAULT NULL COMMENT 'Call timestamp (also used for audit and synchronization)',
+    `callDuration` BIGINT(10) NULL DEFAULT NULL COMMENT 'Call duration',
+    `idSync`BIGINT(20) UNSIGNED NOT NULL COMMENT 'Synchronization identifier',
     PRIMARY KEY (`idIncoming`),
     INDEX `idx_data_alias` (`callDate` ASC , `idAlias` ASC),
     INDEX `idx_alias` (`idAlias` ASC),
     CONSTRAINT `fk_incoming_alias_id` FOREIGN KEY (`idAlias`)
         REFERENCES `alias` (`idAlias`)
         ON DELETE NO ACTION ON UPDATE NO ACTION
-)  COMMENT 'Registo de chamadas - principal' ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
+)  COMMENT 'Incoming Calls - Main' ENGINE=InnoDB DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
 CREATE TABLE IF NOT EXISTS `incomingExtended` (
-    `idIncoming` INT(9) NOT NULL COMMENT 'Chave',
-    `messageReceived` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Mensagem recebida',
-    `lida` TINYINT(1) NULL DEFAULT '0' COMMENT 'Lida',
-    `deleted` TINYINT(1) NULL DEFAULT '0' COMMENT 'Apagada',
-    `audioFile` VARCHAR(40) NULL DEFAULT NULL COMMENT 'Ficheiro de audio',
-    `connectRadius` VARCHAR(80) NULL DEFAULT NULL COMMENT 'Inicio de ligação Radius',
-    `disconnectRadius` VARCHAR(80) NULL DEFAULT NULL COMMENT 'Fim de ligação Radius',
-    `idSinc` bigint(20) unsigned DEFAULT NULL COMMENT 'Identificador de sincronização',
+    `idIncoming` BIGINT(20) UNSIGNED NOT NULL  COMMENT 'Indentifier',
+    `messageReceived` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Message received',
+    `lida` TINYINT(1) NULL DEFAULT '0' COMMENT 'Read',
+    `deleted` TINYINT(1) NULL DEFAULT '0' COMMENT 'Deleted',
+    `audioFile` VARCHAR(40) NULL DEFAULT NULL COMMENT 'Audio file',
+    `connectRadius` VARCHAR(80) NULL DEFAULT NULL COMMENT 'Radius connect string',
+    `disconnectRadius` VARCHAR(80) NULL DEFAULT NULL COMMENT 'Radius disconnect string',
     PRIMARY KEY (`idIncoming`),
     CONSTRAINT `fk_incomingExtended_incoming_id` FOREIGN KEY (`idIncoming`)
         REFERENCES `incoming` (`idIncoming`)
         ON DELETE NO ACTION ON UPDATE NO ACTION
-)  COMMENT 'Registo de chamadas - campos adicionais' ENGINE=InnoDB DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
+)  COMMENT 'Incoming Calls - Main' ENGINE=InnoDB DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
 
 
 
-CREATE TABLE IF NOT EXISTS `utilizadores` (
-    `idUtilizador` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identificador', 
-    `nome` VARCHAR(100) NOT NULL COMMENT 'Nome do utilizador',
-	`apelido` VARCHAR(100) NOT NULL COMMENT 'Apelido do utilizador',
-	`iniciais` VARCHAR(100) NOT NULL COMMENT 'Iniciais do utilizador',
-	`foto` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Caminho para a localização do ficheiro de foto do utilizador',
-    `email` VARCHAR(200) NOT NULL COMMENT 'Email do utilizador',
-    `telefone` BIGINT(20) NULL DEFAULT NULL COMMENT 'Telefone de contacto',
-    `senha` VARCHAR(32) NOT NULL COMMENT 'Código de acesso do utilizador',
-    `status` BOOLEAN NOT NULL DEFAULT TRUE COMMENT 'Estado do utilizador (ativo/inativo)',
-    `auditUser` VARCHAR(25) NOT NULL COMMENT 'Utilizador responsável pela informação atual',
-    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp da informação atual',
-    PRIMARY KEY (`idUtilizador`)
-)  COMMENT 'Utilizadores' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
-
+CREATE TABLE IF NOT EXISTS `user` (
+    `idUser` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identifier', 
+    `name` VARCHAR(100) NOT NULL COMMENT 'User name',
+	`surname` VARCHAR(100) NOT NULL COMMENT 'User last name',
+	`initiais` VARCHAR(100) NOT NULL COMMENT 'User initials',
+	`photo` VARCHAR(255) NULL DEFAULT NULL COMMENT 'Path to user photo file',
+    `email` VARCHAR(200) NOT NULL COMMENT 'User email',
+    `telephone` BIGINT(20) NULL DEFAULT NULL COMMENT 'Contact telephone',
+    `password` VARCHAR(32) NOT NULL COMMENT 'User password',
+    `status` BOOLEAN NOT NULL DEFAULT TRUE COMMENT 'User status (active/inactive)',
+    `auditUser` VARCHAR(25) NOT NULL COMMENT 'User responsible for the current data',
+    `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp of the current data',
+    PRIMARY KEY (`idUser`)
+)  COMMENT 'Users' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=latin1 COLLATE = latin1_general_ci;
