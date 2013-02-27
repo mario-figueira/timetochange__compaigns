@@ -41,8 +41,10 @@ class account__REPO extends base__REPO {
 		
 		$ret_val = array();
 		
-		foreach($records as $record){
-			$ret_val[] = account__BE::create_from_record($record);
+		foreach($records as $record){			
+			$account_instance = account__BE::create_from_record($record);
+			$ret_val[] = $account_instance;
+			
 		}
 		
 		return $ret_val;
