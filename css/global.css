@@ -1,0 +1,448 @@
+/*	File: global.css
+	Date Created: 28 January 2013
+	Author: LCM <lcm@t2change.com>
+	
+	-------------------------------------------------------------
+	
+	Table of Contents
+	
+		1. body
+		2. fonts
+		3. links
+		4. headings
+		5. inputs
+		6. interface
+			6.1 container
+			6.2 icons
+			6.3 ui
+			6.4 nav
+			6.5 subnav
+			6.6 content
+				6.6.1 breadcrumbs
+				6.6.2 action buttons
+				6.6.3 list table
+				6.6.4 list form
+			6.7 login
+	
+	------------------------------------------------------------- */
+ 
+/*	-------------------------------------------------------------
+	1. body
+	------------------------------------------------------------- */
+
+body {
+	background: #f2f2f2;
+	font-family: 'Ubuntu', sans-serif; font-size: 12px; font-weight: 400; color: #000000;
+}
+
+/*	-------------------------------------------------------------
+	2. fonts
+	------------------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+
+/*	-------------------------------------------------------------
+	3. links
+	------------------------------------------------------------- */
+
+a {
+	text-decoration: none;
+	color: #000000;	
+}
+
+a:hover {
+	text-decoration: none;
+	color: #5087c7;	
+}
+
+/*	-------------------------------------------------------------
+	4. headings
+	------------------------------------------------------------- */
+
+
+	
+/*	-------------------------------------------------------------
+	5. inputs
+	------------------------------------------------------------- */
+
+.formField {
+	font-family: 'Ubuntu', sans-serif; font-size: 12px; color: #000000;
+	background: #ffffff;
+	border: 1px solid #e6e6e6;
+	outline: none;
+}
+
+.fwLogin { width: 158px; height: 46px; padding: 0px 16px; margin-bottom: 16px; border: 1px solid #dddddd; }
+.fwLarge { width: 222px; height: 46px; padding: 0px 16px; }
+.fwSmall { width: 62px; height: 46px; padding: 0px 16px; }
+.fwSmallRow { width: 22px; height: 22px; text-align: center; }
+.fwWideRow { width: 50%; height: 22px; background: #f2f2f2; border: none; }
+.fwLargeList { width: 256px; height: 48px; padding: 14px; }
+.fwSmallList { width: 96px; height: 48px; padding: 14px; }
+
+.formButton {
+	width: 128px; height: 48px;
+	font-family: 'Ubuntu', sans-serif; font-size: 12px; color: #ffffff;
+	background: #000000;
+	border: none; 
+	outline: none;
+	cursor: pointer;
+}
+
+.fbLogin { float: right; background: #5087c7; border: 1px solid #1268b3; margin-top: 16px; }
+
+.formCheckbox {
+	position: relative;
+	top: 2px; left: -4px;
+	cursor: pointer;
+}
+
+/*	-------------------------------------------------------------
+	6. interface
+	------------------------------------------------------------- */
+
+.clear {
+	clear: both;	
+}
+
+/* 6.1 container */
+
+.container {
+	position: absolute;
+	width: 100%; height: 100%;
+}
+
+/* 6.2 icons */
+
+.icoT2C { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px 0px; }
+
+/* 6.2.1 nav */
+
+.icoLock { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -32px; }
+.icoDashboard { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -32px; }
+.icoGear { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -32px; }
+.icoShoebox { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -32px; }
+.icoWrench { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -32px; }
+.icoUser { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -32px; }
+.icoCirclex { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -32px; }
+
+.icoLockHover { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -64px; }
+.icoDashboardHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -64px; }
+.icoGearHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -64px; }
+.icoShoeboxHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -64px; }
+.icoWrenchHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -64px; }
+.icoUserHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -64px; }
+.icoCirclexHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -64px; }
+
+/* 6.2.2 subnav */
+
+.icoGroup { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -96px; }
+.icoGear2 { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -96px; }
+.icoPresentation { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -96px; }
+.icoShuffle { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -96px; }
+.icoStar { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -96px; }
+.icoSound { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -96px; }
+.icoList { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -96px; }
+.icoIdcard { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -96px; }
+.icoKey { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -96px; }
+
+.icoGroupHover { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -128px; }
+.icoGear2Hover { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -128px; }
+.icoPresentationHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -128px; }
+.icoShuffleHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -128px; }
+.icoStarHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -128px; }
+.icoSoundHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -128px; }
+.icoListHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -128px; }
+.icoIdcardHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -128px; }
+.icoKeyHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -128px; }
+
+/* 6.2.3 actions */
+
+.icoUser { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -160px; }
+.icoPencil { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -160px; }
+.icoTrash { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -160px; }
+.icoNew { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -160px; }
+.icoBack { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -160px; }
+.icoInfo { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -160px; }
+.icoCircleplay { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -160px; }
+.icoPaperclip { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -160px; }
+.icoDownload { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -160px; }
+.icoPrinter { width:32px; height:32px; background:url(../img/sprite_icons.png) -288px -160px; }
+.icoMagnify { width:32px; height:32px; background:url(../img/sprite_icons.png) -320px -160px; }
+
+.icoUserHover { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -192px; }
+.icoPencilHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -192px; }
+.icoTrashHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -192px; }
+.icoNewHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -192px; }
+.icoBackHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -192px; }
+.icoInfoHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -192px; }
+.icoCircleplayHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -192px; }
+.icoPaperclipHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -192px; }
+.icoDownloadHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -256px -192px; }
+.icoPrinterHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -288px -192px; }
+.icoMagnifyHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -320px -192px; }
+
+/* 6.2.4 list */
+
+.icoBulletgreen { width:32px; height:32px; background:url(../img/sprite_icons.png) 0px -224px; }
+.icoBulletred { width:32px; height:32px; background:url(../img/sprite_icons.png) -32px -224px; }
+.icoBulletblue { width:32px; height:32px; background:url(../img/sprite_icons.png) -64px -224px; }
+.icoBulletyellow { width:32px; height:32px; background:url(../img/sprite_icons.png) -96px -224px; }
+.icoCirclecheck { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -224px; }
+.icoCheckmark { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -224px; }
+.icoCompose { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -224px; }
+.icoPlay { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -224px; }
+
+.icoCirclecheckHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -128px -256px; }
+.icoCheckmarkHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -160px -256px; }
+.icoComposeHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -192px -256px; }
+.icoPlayHover { width:32px; height:32px; background:url(../img/sprite_icons.png) -224px -256px; }
+
+/* 6.3 ui */
+
+.ui-tooltip {
+	position: absolute;
+	padding: 8px;
+	background: #000000;
+	color: #ffffff;
+	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, .10); -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, .10);
+}
+
+/* 6.4 nav */
+
+.nav {
+	position: absolute;
+	top: 0px; left: 0px;
+	width: 64px; height: 100%;
+	background: #000000;
+}
+
+.nav a {
+	display: block;
+	width: 32px; height: 32px;
+	padding: 16px;
+	outline: none;
+}
+
+.nav a:hover {
+	background: #e6e6e6;
+}
+
+.nav .selected {
+	background: #e6e6e6;
+}
+
+.nav .logoT2C {
+	position: absolute;
+	bottom: 16px; left: 16px;	
+}
+
+/* 6.5 subnav */
+
+.subnav {
+	position: absolute;
+	margin-left: 64px;
+	width: 256px; height: 100%;
+	background: #e6e6e6;
+}
+
+.subnav .header {
+	width: 192px;
+	padding: 32px;
+	cursor: default;
+}
+
+.subnav .header p.desc {
+	margin-top: 16px;	
+	color: #808080; 
+	line-height: 18px;
+}
+
+.subnav .buttons {
+	margin: 0px 0px 0px 32px;
+}
+
+.subnav .buttons a {
+	position: relative;
+	display: block;
+	width: 100%; height: 48px;
+	outline: none;
+	color: #808080;
+}
+
+.subnav .buttons a:hover {
+	color: #000000;
+	background: #f2f2f2;
+}
+
+.subnav .buttons a img {
+	margin: 8px;
+}
+
+.subnav .buttons a span {
+	position: absolute;
+	top: 17px; left: 48px;
+}
+
+.subnav .buttons .selected {
+	color: #000000;
+	background: #f2f2f2;
+	cursor: default;
+}
+
+/* 6.6 content */
+
+.content {
+	position: relative;
+	margin-left: 320px;
+	padding: 32px;
+	min-width: 576px;
+}
+
+/* 6.6.1 breadcrumbs */
+
+.breadcrumbs {
+	margin-bottom: 16px;
+	cursor: default;
+}
+
+.breadcrumbs a {
+	color: #808080;
+}
+
+.breadcrumbs a:hover {
+	color: #000000;	
+}
+
+/* 6.6.2 action buttons */
+
+.actionButtons {
+	width: 100%; height: 49px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.actionButtons ul li {
+	float: right;
+}
+
+.actionButtons a {
+	display: block;
+	width: 32px; height: 32px;
+	padding: 8px;
+	outline: none;
+	background: #e6e6e6;
+	margin: 0px 0px 0px 1px;
+}
+
+.actionButtons a:hover {
+	background: #000000;
+}
+
+/* 6.6.3 list table */
+
+.listTable ul {
+	line-height: 48px;
+	border-bottom: 1px solid #e6e6e6;
+	clear: both;
+	overflow: auto;
+}
+
+.listTable ul li {
+	float: left;
+}
+
+.listTable ul li.w4 { width: 4%; }
+.listTable ul li.w24 { width: 24%; }
+
+.listTable ul.header {
+	color: #808080;
+}
+
+.listTable ul.row li {
+	cursor: pointer;
+}
+
+.listTable ul.rowHover {
+	background: #e6e6e6;
+}
+
+.listTable ul.row img {
+	position: relative;
+	vertical-align: middle;
+	top: -2px;
+}
+
+/* 6.6.4 list form */
+
+.listForm ul {
+	border-bottom: 1px solid #e6e6e6;
+	overflow: auto;
+	padding: 0px 0px 16px 0px;
+	color: #808080;
+}
+
+.listForm ul li {
+	float: left;
+	margin-top: 16px;
+}
+
+.listForm ul li.label {
+	width: 30%;
+	line-height: 48px;
+}
+
+.listForm ul li.field {
+	width: 70%;
+	text-align: right;
+}
+
+.listForm ul li.field a {
+	display: block;
+	float:left;
+	margin-right: 16px;
+	width: 32px; height: 32px;
+	padding: 8px;
+	outline: none;
+	background: #e6e6e6;
+}
+
+.listForm ul li.field a:hover {
+	background: #000000;
+}
+
+.listForm ul li.field label.checkbox {
+	line-height: 48px;
+	cursor: pointer;
+	margin-right: 16px;
+}
+
+/* 6.7 login */
+
+fieldset.login {
+	margin: 0px 32px 0px 32px;
+}
+
+fieldset.login .line {
+	width: 100%; height: 1px;
+	background: #dddddd;
+	margin: 8px 0px;		
+}
+
+fieldset.login label {
+	cursor: pointer;	
+}
+	
+.clock {
+	position: absolute;
+	bottom: 32px; right: 32px;
+	text-align: right;
+	color: #cccccc;
+}
+
+.clock .time {
+	font-size: 72px; font-weight: 700;
+}
+
+.clock .date {
+	font-size: 30px;
+}
