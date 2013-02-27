@@ -90,12 +90,12 @@
 ?>
 			<div class="nav">
 				<ul>
-					<li><a class="<?php echo $dashboard_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_DASHBOARD); ?>" title="Dashboard"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Dashboard" class="icoDashboard"></a></li>
-					<li><a class="<?php echo $campaigns_mgnt_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_CAMPAIGNS_MGNT); ?>" title="Campaign Management"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Campaign Management" class="icoDatabase"></a></li>   
-					<li><a class="<?php echo $explorer_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_EXPLORER); ?>" title="File Explorer"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="File Explorer" class="icoShoebox"></a></li>    
-					<li><a class="<?php echo $settings_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_SETTINGS); ?>" title="Settings"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Settings" class="icoGear"></a></li>
-					<li><a class="<?php echo $profile_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_PROFILE); ?>" title="Profile"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Profile" class="icoUser"></a></li>
-					<li><a class="<?php echo $logout_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_LOGOUT); ?>" title="Logout"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Logout" class="icoCirclex"></a></li>
+					<li><a class="<?php echo $dashboard_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_DASHBOARD); ?>" title="Dashboard"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Dashboard" class="icoNavDashboard"></a></li>
+					<li><a class="<?php echo $campaigns_mgnt_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_CAMPAIGNS_MGNT); ?>" title="Campaign Management"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Campaign Management" class="icoNavGear"></a></li>   
+					<li><a class="<?php echo $explorer_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_EXPLORER); ?>" title="File Explorer"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="File Explorer" class="icoNavShoebox"></a></li>    
+					<li><a class="<?php echo $settings_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_SETTINGS); ?>" title="Settings"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Settings" class="icoNavWrench"></a></li>
+					<li><a class="<?php echo $profile_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_PROFILE); ?>" title="Profile"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Profile" class="icoNavUser"></a></li>
+					<li><a class="<?php echo $logout_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_LOGOUT); ?>" title="Logout"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Logout" class="icoNavCirclex"></a></li>
 				</ul>
 				<div class="logoT2C"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Time 2 Change" class="icoT2C"></div>
 			</div>
