@@ -14,6 +14,8 @@
             <li><a class="" href="#"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoCirclex"><span>Button A</span></a></li>
             <li><a class="selected" href="#"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoCirclex"><span>Button B</span></a></li>
             <li><a class="" href="<?php echo $this->build_action_url('sample', 'show'); ?>"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoCirclex"><span>Sample/Show</span></a></li>
+            <li><a class="" href="<?php echo $this->build_action_url('campaigns_mgnt', 'accounts'); ?>"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoCirclex"><span>Accounts</span></a></li>
+            <li><a class="" href="<?php echo $this->build_action_url('campaigns_mgnt', 'campaigns'); ?>"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoCirclex"><span>Campaigns</span></a></li>
         </ul>                       
     </div>    
 </div>      
