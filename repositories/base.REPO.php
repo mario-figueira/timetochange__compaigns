@@ -64,7 +64,7 @@ abstract class base__REPO {
 	public abstract function get_by_id($a_business_entity_id);
 
 	public function _store($a_business_entity_instance){
-		$dao = $this->get_default_dao_by_business_entity($this->business_entity);
+		$dao = $this->get_default_dao_by_table_name($this->business_entity);
 		
 		$business_entity_id = $a_business_entity_instance->id;
 		

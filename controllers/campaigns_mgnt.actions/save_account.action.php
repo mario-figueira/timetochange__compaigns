@@ -15,6 +15,14 @@ class save_accountAction {
 		if (!$is_valid){
 			throw new Exception ('tás maluco');
 		}
+		
+		require_once REALPATH ."/repositories/repository.FACTORY.php";
+		
+		$repo_factory = new repository__FACTORY();
+		
+		$accounts_repo = $repo_factory->get_repository_by_business_entity_name("account");
+		
+		$accounts_repo->_store($account);
 	}
 
 }
