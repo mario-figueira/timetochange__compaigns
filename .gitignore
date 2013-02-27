@@ -2,3 +2,4 @@
 /config/sysvars.php
 /logs/apache.access.log.txt
 /logs/apache.error.log.txt
+/logs/error.log.txt
