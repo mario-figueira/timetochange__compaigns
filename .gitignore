@@ -3,3 +3,5 @@
 /logs/apache.access.log.txt
 /logs/apache.error.log.txt
 /logs/error.log.txt
+/nbproject/project.xml
+/nbproject/private/private.properties
