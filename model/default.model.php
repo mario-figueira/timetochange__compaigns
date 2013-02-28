@@ -272,6 +272,10 @@ class defaultModel {
 		//Logger::debug($this, '$sql [' . $sql . '] GOT ' . TextUtil::toString($values));
 		return $values;
 	}
+	
+	public function get_records_by_filter($arrayFilters, $asArray = true){
+		return $this->getFilteredBy($arrayFilters, $asArray);
+	}
 
 	/* UPDATE */
 
