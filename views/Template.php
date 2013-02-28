@@ -195,22 +195,19 @@ class Template {
             }
         }
 
-	  $action_is_set = isset($a_action);
 	  
-	  $selected_menu = $this->variables['selected_menu'];
-	  if($action_is_set){
-		$controller_action_url = BASEPATH ."{$a_controller_name}/{$a_action}/selected_menu/{$selected_menu}/";
-	  }
-	  else{
-		$controller_action_url = BASEPATH ."{$a_controller_name}/default/selected_menu/{$selected_menu}/";		  
-	  }
-        if (isset($a_parameters_string)) {
-            $controller_action_url = "$controller_action_url{$a_parameters_string}/";
-        }
-        $controller_action_url = declare_url($controller_action_url);
+	  $selected_menu_index = $this->variables['selected_menu'];
+	  
+	  require_once __DIR__ ."/action_url_builder.php";
+
+	  $action_url_builder = new action_url_builder();
+	  $controller_action_url = $action_url_builder->build_url($a_controller_name, $a_action, $selected_menu_index, $a_parameters_string);
+	  
 
         return $controller_action_url;
     }
+    
+     
         
      public function build_select_menu_action_url($a_selected_menu) {
 		DBCHelper2::require_that()->the_param($a_selected_menu)->is_an_integer_string();
