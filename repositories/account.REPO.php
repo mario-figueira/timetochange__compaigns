@@ -18,7 +18,7 @@ class account__REPO extends base__REPO {
 		
 		require_once REALPATH ."/business_entities/account.BE.php";
 		
-		$instance =  account::create_from_record($record);
+		$instance =  account__BE::create_from_record($record);
 		
 		$ret_val = $instance;
 		
