@@ -35,7 +35,7 @@ abstract class base__REPO {
 		
 		$business_entity_table_record = null;
 		
-		$dao = $this->get_default_dao_by_business_entity($this->business_entity);
+		$dao = $this->get_default_dao_by_table_name($this->business_entity);
 		
 		$business_entity_table_record = $dao->getById($a_business_entity_id);
 		
@@ -51,7 +51,7 @@ abstract class base__REPO {
 		
 		$business_entity_table_record = null;
 		
-		$dao = $this->get_default_dao_by_business_entity($this->business_entity);
+		$dao = $this->get_default_dao_by_table_name($this->business_entity);
 		
 		$business_entity_table_record = $dao->getFilteredBy($a_filter, true);
 		
@@ -89,6 +89,13 @@ abstract class base__REPO {
 		$business_entity_id = $a_business_entity_instance->id;
 		
 		$dao->deleteById($business_entity_id);
+		
+	}
+	
+	public function remove_by_id($a_business_entity_id){
+		$dao = $this->get_default_dao_by_table_name($this->business_entity);
+		
+		$dao->deleteById($a_business_entity_id);
 		
 	}
 	
