@@ -62,7 +62,7 @@ class helloController extends defaultController {
 		
 		$this->Command->Parameters['string_to_show']  = "Hello world!";
 		
-		//$this->Command->setAction($this->Command->getAction() . ".fo.current");
+		//$this->Command->set_action($this->Command->getAction() . ".fo.current");
 		
 		/*
 			$this->Template = new Template($this->Command);

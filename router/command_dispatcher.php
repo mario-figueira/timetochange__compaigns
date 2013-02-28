@@ -41,7 +41,7 @@ class command_dispatcher {
 					//$this->Command->Parameters['messages'] = array('Cannot find the controller component ' . $controllerName); ////TODO: the text should reviewed
 				}
 				$controllerName = 'default';
-				$this->command->setAction('error');
+				$this->command->set_action('error');
 				////TODO: it should be a 404 page
 			}
 			

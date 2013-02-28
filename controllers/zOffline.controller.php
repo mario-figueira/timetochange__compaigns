@@ -15,18 +15,18 @@ class zOfflineController extends defaultController {
 	}
 	
 	public function _show_offline_message(){
-		$this->Command->setAction("show_offline_message");
+		$this->Command->set_action("show_offline_message");
 		parent::_defaultAction();		
 	}
 	
 	
 	public function _special_login(){
-		$this->Command->setAction("special_login");
+		$this->Command->set_action("special_login");
 		parent::_defaultAction();		
 	}
 
 	public function _special_login_submit(){
-		//$this->Command->setAction("special_login_submit");
+		//$this->Command->set_action("special_login_submit");
 		
 		
 		$login = $_POST['login'];

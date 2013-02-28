@@ -281,7 +281,7 @@ class defaultController extends contentController {
 		unset($_COOKIE['wrm']);
 		$this->auth->start();
 		$this->Command->reset_is_logged_in_and_update_site_mode();
-		$this->Command->setAction('default');
+		$this->Command->set_action('default');
 		$this->default_FO();
 		//TODO remover o carregamento dos menus do contrutor e passar para os metodos
 		$this->load_main_menu();
