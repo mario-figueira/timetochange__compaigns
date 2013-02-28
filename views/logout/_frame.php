@@ -6,7 +6,7 @@
 
 <div class="subnav">
     <div class="header">
-    	<p class="title">Campaign Management</p>
+    	<p class="title">Logout</p>
         <p class="desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
     </div>
     <div class="buttons">
