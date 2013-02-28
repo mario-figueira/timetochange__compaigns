@@ -42,8 +42,12 @@ class campaigns_mgntController extends defaultController {
 		$action->execute($this->Command);
 	
 		
-		parent::_defaultAction();
+		$this->redirect_to_controller_action("campaigns_mgnt", "accounts");
+		
 	}
+	
+	
+	
 	
 	public function _campaigns(){
 		
