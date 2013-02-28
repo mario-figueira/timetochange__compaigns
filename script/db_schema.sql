@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `country` (
 )  COMMENT 'Countries' ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET=utf8 COLLATE = utf8_general_ci;
 
 CREATE TABLE IF NOT EXISTS `account` (
-    `idAccount` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identifier',
+    `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identifier',
     `name` VARCHAR(100) NOT NULL COMMENT 'Account name',
     `logo` VARCHAR(255) NOT NULL COMMENT 'Path for logo file',
     `phone` BIGINT(20) NULL DEFAULT NULL COMMENT 'Contact telephone',
@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS `account` (
     `status` BOOLEAN NOT NULL DEFAULT TRUE COMMENT 'Account state (active/inactive)',
     `auditUser` VARCHAR(25) NOT NULL COMMENT 'User responsible for the current data',
     `auditTimestamp` TIMESTAMP NOT NULL COMMENT 'Timestamp of the current data',
-    PRIMARY KEY (`idAccount`),
+    PRIMARY KEY (`id`),
     CONSTRAINT `fk_account_country_id` FOREIGN KEY (`idCountry`)
         REFERENCES `country` (`idCountry`)
         ON DELETE NO ACTION ON UPDATE NO ACTION
@@ -138,7 +138,7 @@ CREATE TABLE IF NOT EXISTS `alias` (
     PRIMARY KEY (`idAlias`),
     INDEX `idx_alias` (`alias` ASC),
     CONSTRAINT `fk_alias_account_id` FOREIGN KEY (`idAccount`)
-        REFERENCES `account` (`idAccount`)
+        REFERENCES `account` (`id`)
         ON DELETE NO ACTION ON UPDATE NO ACTION
 )  COMMENT 'Telephone Numbers' ENGINE=InnoDB DEFAULT CHARACTER SET=utf8 COLLATE = utf8_general_ci;
 
@@ -283,150 +283,150 @@ update app___zsystem_db_info set database_version = 3;
 -- ---------------------------------------------------------------------------------------------------------------------------
 
 
--- Carregamento de paÌses
-insert into country (idCountry, country) values (1, 'Afeganist„o');
-insert into country (idCountry, country) values (2, '¡frica do Sul');
-insert into country (idCountry, country) values (3, 'Alb‚nia');
+-- Carregamento de pa√≠ses
+insert into country (idCountry, country) values (1, 'Afeganist√£o');
+insert into country (idCountry, country) values (2, '√Åfrica do Sul');
+insert into country (idCountry, country) values (3, 'Alb√¢nia');
 insert into country (idCountry, country) values (4, 'Alemanha');
 insert into country (idCountry, country) values (5, 'Andorra');
 insert into country (idCountry, country) values (6, 'Angola');
-insert into country (idCountry, country) values (7, 'ArgÈlia');
+insert into country (idCountry, country) values (7, 'Arg√©lia');
 insert into country (idCountry, country) values (8, 'Argentina');
-insert into country (idCountry, country) values (9, 'ArmÈnia');
-insert into country (idCountry, country) values (10, 'Austr·lia');
-insert into country (idCountry, country) values (11, '¡ustria');
-insert into country (idCountry, country) values (12, 'Azerbaij„o');
+insert into country (idCountry, country) values (9, 'Arm√©nia');
+insert into country (idCountry, country) values (10, 'Austr√°lia');
+insert into country (idCountry, country) values (11, '√Åustria');
+insert into country (idCountry, country) values (12, 'Azerbaij√£o');
 insert into country (idCountry, country) values (13, 'Bangladesh');
-insert into country (idCountry, country) values (14, 'BÈlgica');
+insert into country (idCountry, country) values (14, 'B√©lgica');
 insert into country (idCountry, country) values (15, 'Benim');
 insert into country (idCountry, country) values (16, 'Bermudas');
-insert into country (idCountry, country) values (17, 'Bielorr˙ssia');
-insert into country (idCountry, country) values (18, 'BolÌvia');
-insert into country (idCountry, country) values (19, 'BÛsnia e Herzegovina');
+insert into country (idCountry, country) values (17, 'Bielorr√∫ssia');
+insert into country (idCountry, country) values (18, 'Bol√≠via');
+insert into country (idCountry, country) values (19, 'B√≥snia e Herzegovina');
 insert into country (idCountry, country) values (20, 'Brasil');
 insert into country (idCountry, country) values (21, 'Brunei');
-insert into country (idCountry, country) values (22, 'Bulg·ria');
+insert into country (idCountry, country) values (22, 'Bulg√°ria');
 insert into country (idCountry, country) values (23, 'Burquina Faso');
-insert into country (idCountry, country) values (24, 'Bur˙ndi');
-insert into country (idCountry, country) values (25, 'But„o');
+insert into country (idCountry, country) values (24, 'Bur√∫ndi');
+insert into country (idCountry, country) values (25, 'But√£o');
 insert into country (idCountry, country) values (26, 'Cabo Verde');
-insert into country (idCountry, country) values (27, 'Camarıes');
+insert into country (idCountry, country) values (27, 'Camar√µes');
 insert into country (idCountry, country) values (28, 'Camboja');
-insert into country (idCountry, country) values (29, 'Canad·');
-insert into country (idCountry, country) values (30, 'Cazaquist„o');
+insert into country (idCountry, country) values (29, 'Canad√°');
+insert into country (idCountry, country) values (30, 'Cazaquist√£o');
 insert into country (idCountry, country) values (31, 'Chade');
 insert into country (idCountry, country) values (32, 'Chile');
 insert into country (idCountry, country) values (33, 'China');
 insert into country (idCountry, country) values (34, 'Chipre');
-insert into country (idCountry, country) values (35, 'ColÙmbia');
+insert into country (idCountry, country) values (35, 'Col√¥mbia');
 insert into country (idCountry, country) values (36, 'Coreia do Sul');
 insert into country (idCountry, country) values (37, 'Costa do Marfim');
 insert into country (idCountry, country) values (38, 'Costa Rica');
-insert into country (idCountry, country) values (39, 'Cro·cia');
+insert into country (idCountry, country) values (39, 'Cro√°cia');
 insert into country (idCountry, country) values (40, 'Cuba');
 insert into country (idCountry, country) values (41, 'Dinamarca');
 insert into country (idCountry, country) values (42, 'Equador');
-insert into country (idCountry, country) values (43, 'Eslov·quia');
-insert into country (idCountry, country) values (44, 'EslovÈnia');
+insert into country (idCountry, country) values (43, 'Eslov√°quia');
+insert into country (idCountry, country) values (44, 'Eslov√©nia');
 insert into country (idCountry, country) values (45, 'Espanha');
 insert into country (idCountry, country) values (46, 'Estados Unidos');
-insert into country (idCountry, country) values (47, 'EstÛnia');
-insert into country (idCountry, country) values (48, 'EtiÛpia');
+insert into country (idCountry, country) values (47, 'Est√≥nia');
+insert into country (idCountry, country) values (48, 'Eti√≥pia');
 insert into country (idCountry, country) values (49, 'Filipinas');
-insert into country (idCountry, country) values (50, 'Finl‚ndia');
-insert into country (idCountry, country) values (51, 'FranÁa');
-insert into country (idCountry, country) values (52, 'GrÈcia');
+insert into country (idCountry, country) values (50, 'Finl√¢ndia');
+insert into country (idCountry, country) values (51, 'Fran√ßa');
+insert into country (idCountry, country) values (52, 'Gr√©cia');
 insert into country (idCountry, country) values (53, 'Guatemala');
 insert into country (idCountry, country) values (54, 'Haiti');
 insert into country (idCountry, country) values (55, 'Honduras');
 insert into country (idCountry, country) values (56, 'Hungria');
-insert into country (idCountry, country) values (57, 'IÈmen');
-insert into country (idCountry, country) values (58, 'Õndia');
-insert into country (idCountry, country) values (59, 'IndonÈsia');
-insert into country (idCountry, country) values (60, 'Ir„o');
+insert into country (idCountry, country) values (57, 'I√©men');
+insert into country (idCountry, country) values (58, '√çndia');
+insert into country (idCountry, country) values (59, 'Indon√©sia');
+insert into country (idCountry, country) values (60, 'Ir√£o');
 insert into country (idCountry, country) values (61, 'Iraque');
 insert into country (idCountry, country) values (62, 'Irlanda');
-insert into country (idCountry, country) values (63, 'Isl‚ndia');
+insert into country (idCountry, country) values (63, 'Isl√¢ndia');
 insert into country (idCountry, country) values (64, 'Israel');
-insert into country (idCountry, country) values (65, 'It·lia');
+insert into country (idCountry, country) values (65, 'It√°lia');
 insert into country (idCountry, country) values (66, 'Jamaica');
-insert into country (idCountry, country) values (67, 'Jap„o');
-insert into country (idCountry, country) values (68, 'LetÛnia');
-insert into country (idCountry, country) values (69, 'LÌbano');
-insert into country (idCountry, country) values (70, 'LibÈria');
-insert into country (idCountry, country) values (71, 'LÌbia');
+insert into country (idCountry, country) values (67, 'Jap√£o');
+insert into country (idCountry, country) values (68, 'Let√≥nia');
+insert into country (idCountry, country) values (69, 'L√≠bano');
+insert into country (idCountry, country) values (70, 'Lib√©ria');
+insert into country (idCountry, country) values (71, 'L√≠bia');
 insert into country (idCountry, country) values (72, 'Listenstaine');
-insert into country (idCountry, country) values (73, 'Litu‚nia');
+insert into country (idCountry, country) values (73, 'Litu√¢nia');
 insert into country (idCountry, country) values (74, 'Luxemburgo');
-insert into country (idCountry, country) values (75, 'MacedÛnia');
-insert into country (idCountry, country) values (76, 'Madag·scar');
-insert into country (idCountry, country) values (77, 'Mal·sia');
+insert into country (idCountry, country) values (75, 'Maced√≥nia');
+insert into country (idCountry, country) values (76, 'Madag√°scar');
+insert into country (idCountry, country) values (77, 'Mal√°sia');
 insert into country (idCountry, country) values (78, 'Maldivas');
 insert into country (idCountry, country) values (79, 'Mali');
 insert into country (idCountry, country) values (80, 'Malta');
 insert into country (idCountry, country) values (81, 'Marrocos');
-insert into country (idCountry, country) values (82, 'MÈxico');
-insert into country (idCountry, country) values (83, 'MoÁambique');
-insert into country (idCountry, country) values (84, 'Mold·via');
-insert into country (idCountry, country) values (85, 'MÛnaco');
-insert into country (idCountry, country) values (86, 'MongÛlia');
+insert into country (idCountry, country) values (82, 'M√©xico');
+insert into country (idCountry, country) values (83, 'Mo√ßambique');
+insert into country (idCountry, country) values (84, 'Mold√°via');
+insert into country (idCountry, country) values (85, 'M√≥naco');
+insert into country (idCountry, country) values (86, 'Mong√≥lia');
 insert into country (idCountry, country) values (87, 'Montenegro');
 insert into country (idCountry, country) values (88, 'Myanmar');
 insert into country (idCountry, country) values (89, 'Nepal');
-insert into country (idCountry, country) values (90, 'Nicar·gua');
-insert into country (idCountry, country) values (91, 'NÌger');
-insert into country (idCountry, country) values (92, 'NigÈria');
+insert into country (idCountry, country) values (90, 'Nicar√°gua');
+insert into country (idCountry, country) values (91, 'N√≠ger');
+insert into country (idCountry, country) values (92, 'Nig√©ria');
 insert into country (idCountry, country) values (93, 'Noruega');
-insert into country (idCountry, country) values (94, 'Nova Zel‚ndia');
-insert into country (idCountry, country) values (95, 'PaÌses Baixos');
-insert into country (idCountry, country) values (96, 'Panam·');
-insert into country (idCountry, country) values (97, 'Papua-Nova GuinÈ');
-insert into country (idCountry, country) values (98, 'Paquist„o');
+insert into country (idCountry, country) values (94, 'Nova Zel√¢ndia');
+insert into country (idCountry, country) values (95, 'Pa√≠ses Baixos');
+insert into country (idCountry, country) values (96, 'Panam√°');
+insert into country (idCountry, country) values (97, 'Papua-Nova Guin√©');
+insert into country (idCountry, country) values (98, 'Paquist√£o');
 insert into country (idCountry, country) values (99, 'Paraguai');
 insert into country (idCountry, country) values (100, 'Peru');
-insert into country (idCountry, country) values (101, 'PolÛnia');
+insert into country (idCountry, country) values (101, 'Pol√≥nia');
 insert into country (idCountry, country) values (102, 'Portugal');
-insert into country (idCountry, country) values (103, 'QuÈnia');
-insert into country (idCountry, country) values (104, 'Quirguizist„o');
+insert into country (idCountry, country) values (103, 'Qu√©nia');
+insert into country (idCountry, country) values (104, 'Quirguizist√£o');
 insert into country (idCountry, country) values (105, 'Reino Unido');
-insert into country (idCountry, country) values (106, 'Rep˙blica Centro-Africana');
-insert into country (idCountry, country) values (107, 'Rep˙blica Checa');
-insert into country (idCountry, country) values (108, 'Rep˙blica Dominicana');
-insert into country (idCountry, country) values (109, 'RomÈnia');
-insert into country (idCountry, country) values (110, 'R˙ssia');
+insert into country (idCountry, country) values (106, 'Rep√∫blica Centro-Africana');
+insert into country (idCountry, country) values (107, 'Rep√∫blica Checa');
+insert into country (idCountry, country) values (108, 'Rep√∫blica Dominicana');
+insert into country (idCountry, country) values (109, 'Rom√©nia');
+insert into country (idCountry, country) values (110, 'R√∫ssia');
 insert into country (idCountry, country) values (111, 'Salvador');
-insert into country (idCountry, country) values (112, 'S„o Marinho');
+insert into country (idCountry, country) values (112, 'S√£o Marinho');
 insert into country (idCountry, country) values (113, 'Senegal');
-insert into country (idCountry, country) values (114, 'SÈrvia');
+insert into country (idCountry, country) values (114, 'S√©rvia');
 insert into country (idCountry, country) values (115, 'Singapura');
-insert into country (idCountry, country) values (116, 'Som·lia');
+insert into country (idCountry, country) values (116, 'Som√°lia');
 insert into country (idCountry, country) values (117, 'Sri Lanca');
-insert into country (idCountry, country) values (118, 'Suazil‚ndia');
-insert into country (idCountry, country) values (119, 'SuÈcia');
-insert into country (idCountry, country) values (120, 'SuÌÁa');
-insert into country (idCountry, country) values (121, 'Tail‚ndia');
+insert into country (idCountry, country) values (118, 'Suazil√¢ndia');
+insert into country (idCountry, country) values (119, 'Su√©cia');
+insert into country (idCountry, country) values (120, 'Su√≠√ßa');
+insert into country (idCountry, country) values (121, 'Tail√¢ndia');
 insert into country (idCountry, country) values (122, 'Taiwan');
-insert into country (idCountry, country) values (123, 'Tanz‚nia');
+insert into country (idCountry, country) values (123, 'Tanz√¢nia');
 insert into country (idCountry, country) values (124, 'Timor Leste');
-insert into country (idCountry, country) values (125, 'TunÌsia');
+insert into country (idCountry, country) values (125, 'Tun√≠sia');
 insert into country (idCountry, country) values (126, 'Turquia');
-insert into country (idCountry, country) values (127, 'Ucr‚nia');
+insert into country (idCountry, country) values (127, 'Ucr√¢nia');
 insert into country (idCountry, country) values (128, 'Uganda');
 insert into country (idCountry, country) values (129, 'Uruguai');
-insert into country (idCountry, country) values (130, 'Usbequist„o');
+insert into country (idCountry, country) values (130, 'Usbequist√£o');
 insert into country (idCountry, country) values (131, 'Vaticano');
 insert into country (idCountry, country) values (132, 'Venezuela');
 insert into country (idCountry, country) values (133, 'Vietname');
-insert into country (idCountry, country) values (134, 'ZimbabuÈ');
+insert into country (idCountry, country) values (134, 'Zimbabu√©');
 
 -- Tipos de Campanha
-insert into campaignType (idCampaignType, name, description) values (1, 'VotaÁ„o', 'Sorteio de chama vencedora numa votaÁ„o.');
+insert into campaignType (idCampaignType, name, description) values (1, 'Vota√ß√£o', 'Sorteio de chama vencedora numa vota√ß√£o.');
 insert into campaignType (idCampaignType, name, description) values (2, 'Chamada Dourada', 'Chamada vencedora a cada X chamadas recebidas.');
 
 -- Tipos de Prompt
 insert into promptType (idPromptType, type, description, auditUser, auditTimestamp) values (1, 'Entrada', 'Prompt usada na entrada da chamada.', 'SYSTEM', now());
-insert into promptType (idPromptType, type, description, auditUser, auditTimestamp) values (2, 'SaÌda', 'Prompt usada na saÌda da chamada.', 'SYSTEM', now());
-insert into promptType (idPromptType, type, description, auditUser, auditTimestamp) values (3, 'Vencedor', 'Prompt usada no an˙ncio de chamada vencedora.', 'SYSTEM', now());
+insert into promptType (idPromptType, type, description, auditUser, auditTimestamp) values (2, 'Sa√≠da', 'Prompt usada na sa√≠da da chamada.', 'SYSTEM', now());
+insert into promptType (idPromptType, type, description, auditUser, auditTimestamp) values (3, 'Vencedor', 'Prompt usada no an√∫ncio de chamada vencedora.', 'SYSTEM', now());
 
 
 -- Tipos de Prompt por Tipos de Campanha
