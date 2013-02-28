@@ -46,7 +46,7 @@ try {
 
 	
 	$bootstrap_step = "0003";
-	require_once 'config/sysvars.php';
+	require_once __DIR__.'/config/sysvars.php';
 	
 	if (DEBUG) {
 		if (!defined('DEBUG_PHP_ERROR_REPORTING')) {
