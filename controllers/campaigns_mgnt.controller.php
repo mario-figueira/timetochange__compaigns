@@ -5,11 +5,11 @@ require_once 'controllers/default.controller.php';
 class campaigns_mgntController extends defaultController {
 
 	public function _default() {
-		parent::_default();
+		$this->redirect_to_controller_action("campaigns_mgnt", "accounts");
 	}
 	
 	public function _home(){
-		parent::_defaultAction();
+		$this->redirect_to_controller_action("campaigns_mgnt", "accounts");
 	}
 
 	public function _accounts(){
