@@ -1,6 +1,5 @@
 <?php
 
-require_once REALPATH . 'controllers/content.controller.php';
 
 require_once REALPATH . 'util/DBCHelper.php';
 require_once 'Auth.php';
@@ -17,7 +16,7 @@ define("DEFAULT_ACTION_NAME", "default");
 /**
  * 
  */
-class defaultController extends contentController {
+class defaultController {
 
 	protected $auth;
 	var $Command;
@@ -45,6 +44,43 @@ class defaultController extends contentController {
 		DBCHelper2::ensure_that()->the_variable($this->Command)->is_an_object_instance_of_the_class("Command");
 	}
 
+	protected function load_active_site() {
+		
+		$active_site = array();
+		$active_site['id'] = 1;
+		$active_site['name'] = "default";
+		$active_site['fk_default_language_id'] = 1;
+		$active_site['domain'] = BASEPATH;
+		
+		$this->Command->set_active_site($active_site);
+	}
+
+	protected function load_default_css() {
+
+		//$this->Command->add_css("css/reset.css{$timestamp}");
+		//$this->Command->add_css("js/jsjquery-ui-1.8.23.custom_allmodules/css/ui-lightness/jquery-ui-1.8.23.custom.css{$timestamp}");
+		//$this->Command->add_css("js/tinybox2/style.css{$timestamp}");
+
+		$this->Command->add_css("css/reset.css{$timestamp}");
+		$this->Command->add_css("css/global.css{$timestamp}");
+		
+	}
+
+	protected function load_default_js() {
+		//$jsArray[] = 'js/libs/jquery-1.7.1.min.js';
+		//$jsArray[] = 'js/libs/modernizr-2.5.3.min.js';
+		//$jsArray[] = 'js/tinybox2/tinybox.js';
+		//$jsArray[] = 'js/jquery.form.js';
+		//$jsArray[] = "js/jquery.validate.jform.js";
+		//$jsArray[] = "js/jsjquery-ui-1.8.23.custom_allmodules/js/jquery-ui-1.8.23.custom.min.js";
+		
+
+		$this->Command->add_js('js/jquery-1.9.0.js');
+		$this->Command->add_js('js/jquery-ui-1.10.0.custom.js');
+		$this->Command->add_js('js/jquery.form.v3_27.js');		
+		$this->Command->add_js('js/global.js');
+		$this->Command->add_js('js/timetochange__framework.js');
+	}
 
 
 	function load_site() {
