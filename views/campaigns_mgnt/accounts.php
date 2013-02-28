@@ -35,11 +35,6 @@ foreach ($accounts as $account){
                 <li class="w24"><?php echo $account->auditUser; ?></li>
                 <li class="w24"><?php echo $account->auditTimestamp; ?></li>
                 <li class="w24"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="<?php echo $class_to_status;?>"></li>
-            
-            <p>
-            	<img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoDatabase"> 
-                <input type="text" class="formField fwWideRow" value="Write Here...">
-            </p>
         </ul> 
 <?php	    
 }
