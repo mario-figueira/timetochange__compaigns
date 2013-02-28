@@ -9,7 +9,7 @@ class base__BE {
 	
 	protected function __construct($a_fields_array){
 		DBCHelper2::require_that()->the_param($a_fields_array)->is_an_array_with_at_least_one_element();
-		$this->_base_fields = $a_fields_array;		
+		$this->_base_fields = $a_fields_array;	
 	}
 	
 	public static function create_from_record($a_business_entity_record){
@@ -83,6 +83,10 @@ class base__BE {
 	
 	//magic methods for get/set interception
 	public function __get($a_field_name) {
+		return $this->_get($a_field_name);
+	}
+	
+	public function _get($a_field_name) {
 		DBCHelper2::require_that()->the_param($a_field_name)->is_a_string();
 
 		$ret_val = null;
@@ -110,6 +114,10 @@ class base__BE {
 	}
 	
 	public function __set($a_field_name, $a_field_value) {
+		$this->_set($a_field_name, $a_field_value);
+	}
+	
+	public function _set($a_field_name, $a_field_value) {
 		DBCHelper2::require_that()->the_param($a_field_name)->is_a_string();
 		
 		$this_class = get_class($this);
@@ -122,11 +130,12 @@ class base__BE {
 		if($has_set_method){
 			$this->$set_method($a_field_value);/*TODO rever método não existe*/
 		}else if($class_field_exists){
-			$this->$field_name = $a_field_value;
-		}else{
+			$this->$a_field_name = $a_field_value;
+		}
+		else{
 			$this->_set_field_with_value($a_field_name, $a_field_value);
 		}
-		
+
 	}
 	
 	
@@ -169,6 +178,14 @@ class base__BE {
 		$ret_val = null;
 		
 		$ret_val = $this->_base_fields;
+		
+		$this_class = get_class($this);
+		$declared_fields = get_class_vars($this_class);
+		foreach($declared_fields as $field_name=>$field_something){	
+			if(!key_exists($field_name, $ret_val)){
+				$ret_val[$field_name]=$this->$field_name;
+			}
+		}
 		
 		DBCHelper2::ensure_that()->the_return_value($ret_val)->is_an_array_with_at_least_one_element();
 		return $ret_val;
