@@ -4,6 +4,7 @@ require_once REALPATH .'util/DBCHelper.php';
 
 class base__BE {	
 	
+	public $id;
 	protected $_base_fields = array();
 	protected $_validations = array();
 	
