@@ -9,6 +9,8 @@ class account__BE extends base__BE {
 	protected $email;
 	protected $zip1;
 	protected $zip2;
+	protected $zip;
+	
 
 	protected function __construct($a_fields_array) {
 		parent::__construct($a_fields_array);
@@ -42,7 +44,8 @@ class account__BE extends base__BE {
 		$instance = new account__BE($data);
 
 		foreach($data as $field_name=>$field_value){
-			$instance->$field_name = $field_value;
+			//$instance->$field_name = $field_value;
+			$instance->_set($field_name, $field_value);
 		}
 		
 		//$instance->fields = $a_business_entity_record;
@@ -52,6 +55,20 @@ class account__BE extends base__BE {
 		return $ret_val;
 	}
 
+	
+	private function zip_compute_and_set(){
+		$zip_value = $this->zip1 ."-" . $this->zip2;		
+		$this->_set('zip', $zip_value);
+	}
+	protected function zip1__set($a_value) {
+		$this->zip1 = $a_value;
+		$this->zip_compute_and_set();
+	}
+
+	protected function zip2__set($a_value) {
+		$this->zip2 = $a_value;
+		$this->zip_compute_and_set();
+	}
 
 	protected function email__set($a_value) {
 		
@@ -79,7 +96,7 @@ class account__BE extends base__BE {
 	protected function name_is_valid($a_name) {
 		$ret_val = false;
 
-		$ret_val = strlen($a_name)>5;
+		$ret_val = strlen($a_name)>1;
 
 		return $ret_val;
 	}
