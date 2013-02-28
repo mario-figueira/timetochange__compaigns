@@ -13,10 +13,12 @@ class defaultModel {
 
 	var $tableName;
 	private $connection;
+	private $columns_definitions;
 
 	function __construct($tableName) {
 		DBCHelper::require_that(DBCHelper::the_param(DBCHelper::is_a_string($tableName)));
 		$this->tableName = $tableName;
+		$this->columns_definitions = $this->table_columns_get();
 	}
 
 	protected function begin_transaction() {
@@ -103,11 +105,23 @@ class defaultModel {
 	/* CREATE */
 
 	function persist($arrayValues) {
+		
+		
+		
+		$data = array();
+		foreach($arrayValues as $key=>$value){
+			if(key_exists($key, $this->columns_definitions)){
+				$data[$key] = $value;
+			}
+		}
+		
+		
+		
 		$result = array("boolean" => false, 'id' => 0, 'message' => 'no message');
 		try {
 			$sql = 'INSERT INTO ' . $this->tableName . ' (';
 
-			foreach ($arrayValues as $key => $value) {
+			foreach ($data as $key => $value) {
 				$cols[] = "`$key`";
 				$values [] = '\'' . mysql_escape_string($value) . '\'';
 			}
@@ -339,6 +353,58 @@ class defaultModel {
 		$this->disconnect();
 
 		return $result;
+	}
+	
+	
+	public function table_columns_get(){
+		$ret_val = array();
+		
+		
+		$values = array();
+		Logger::debug($this, 'table_columns_get');
+		try {
+			$table_name = $this->tableName;
+			$sql = "SHOW COLUMNS FROM {$table_name}";
+			Logger::debug($this, $sql);
+
+			$this->connect();
+			$result = mysql_query($sql);
+			Logger::debug($this, $result);
+
+			if (!$result) {
+				Logger::debug($this, $sql . ' INVALID!');
+			} else if (mysql_num_rows($result) == 0) {
+				Logger::debug($this, $sql . ' GOT 0 results!');
+			} else {
+				while ($value = mysql_fetch_assoc($result)) {
+					$values[] = $value;
+				}
+
+			}
+
+			
+
+			Logger::debug($this, print_r($value, true));
+		} catch (Exception $e) {
+			Logger::exception($this, $e);
+			$this->disconnect();
+			throw $e;
+		}
+		$this->disconnect();
+		
+		
+		$columns_definitions = array();
+		
+		foreach($values as $column_definition){
+			$field_name = $column_definition['Field'];
+			$definition = array_slice($column_definition, 1);
+			$columns_definitions[$field_name] = $definition;
+		}
+		
+		
+		$ret_val = $columns_definitions;
+		
+		return $ret_val;
 	}
 
 }
