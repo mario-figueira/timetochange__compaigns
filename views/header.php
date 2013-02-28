@@ -57,6 +57,7 @@
 	$settings_classes = "";
 	$profile_classes = "";
 	$logout_classes = "";
+	$sample_code_classes = "";
 	
 	
 	//$selected_menu = menus_items_enum::$C_CAMPAIGNS; //hardcoded;
@@ -80,6 +81,9 @@
 		case menus_items_enum::$C_LOGOUT;
 			$logout_classes = "selected";
 			break;
+		case menus_items_enum::$C_SAMPLE_CODE;
+			$sample_code_classes = "selected";
+			break;
 		default:
 				throw new Exception("Unsuported case:[{$selected_menu}].");		
 			break;
@@ -96,6 +100,7 @@
 					<li><a class="<?php echo $settings_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_SETTINGS); ?>" title="Settings"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Settings" class="icoNavWrench"></a></li>
 					<li><a class="<?php echo $profile_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_PROFILE); ?>" title="Profile"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Profile" class="icoNavUser"></a></li>
 					<li><a class="<?php echo $logout_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_LOGOUT); ?>" title="Logout"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Logout" class="icoNavCirclex"></a></li>
+					<li><a class="<?php echo $sample_code_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_SAMPLE_CODE); ?>" title="Sample code"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Sample code" class=""></a></li>
 				</ul>
 				<div class="logoT2C"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Time 2 Change" class="icoT2C"></div>
 			</div>
