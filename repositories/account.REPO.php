@@ -54,5 +54,30 @@ class account__REPO extends base__REPO {
 	}
 	
 	
+	public function users_of_account__get_by_account_id($a_account_id){
+		$ret_val = array();
+		
+		$useraccountrule_dao = $this->get_default_dao_by_table_name("useraccountrole");
+		
+		$account_users_records = $useraccountrule_dao->get_records_by_filter(array("idAccount"=>$a_account_id));
+
+		$repo_factory = new repository__FACTORY();
+		
+		$users_repo = $repo_factory->get_repository_by_business_entity_name("user");
+
+		$users = array();
+		foreach ($account_users_records as $account_user_record){
+			$user_id = $account_user_record['idUser'];
+			
+			$user = $users_repo->get_by_id($user_id);
+			$users[] = $user;
+		}
+		
+		$ret_val = $users;
+		
+		return $ret_val;
+	}
+	
+	
 
 }

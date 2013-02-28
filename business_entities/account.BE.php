@@ -11,6 +11,8 @@ class account__BE extends base__BE {
 	protected $zip2;
 	protected $zip;
 	
+	private $users;
+	
 
 	protected function __construct($a_fields_array) {
 		parent::__construct($a_fields_array);
@@ -60,6 +62,7 @@ class account__BE extends base__BE {
 		$zip_value = $this->zip1 ."-" . $this->zip2;		
 		$this->_set('zip', $zip_value);
 	}
+	
 	protected function zip1__set($a_value) {
 		$this->zip1 = $a_value;
 		$this->zip_compute_and_set();
@@ -101,5 +104,13 @@ class account__BE extends base__BE {
 		return $ret_val;
 	}
 
+	
+	public function users__add_user($a_user){
+		$users[] = $a_user;
+	}
+
+	public function users__get($a_user){
+		return $users;
+	}
 
 }

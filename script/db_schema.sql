@@ -443,10 +443,23 @@ update app___zsystem_db_info set database_version = 4;
 
 -- ---------------------------------------------------------------------------------------------------------------------------
 
+ALTER TABLE `account`  CHANGE COLUMN `idAccount` `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identifier' FIRST;
+
+update app___zsystem_db_info set database_version = 5;
+
+-- ---------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE `useraccountrole` (  `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,  `idAccount` INT(10) UNSIGNED NOT NULL,  `idaccountRole` INT(10) UNSIGNED NOT NULL,  `idUser` INT(10) UNSIGNED NOT NULL,  `auditUser` VARCHAR(25) NOT NULL,  `audittimestamp` TIMESTAMP NOT NULL,  PRIMARY KEY (`id`),  CONSTRAINT `useraccountrole__fk001` FOREIGN KEY (`idAccount`) REFERENCES `account` (`id`) ) COLLATE='utf8_general_ci' ENGINE=InnoDB ROW_FORMAT=DEFAULT;
 
 
+ALTER TABLE `user`  CHANGE COLUMN `idUser` `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Identifier' FIRST;
 
+ALTER TABLE `useraccountrole`  ADD CONSTRAINT `useraccountrole__fk002` FOREIGN KEY (`idUser`) REFERENCES `user` (`id`);
 
+CREATE TABLE `accountrole` (  `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,  `name` VARCHAR(100) NOT NULL,  `description` VARCHAR(100) NOT NULL,  PRIMARY KEY (`id`) ) COLLATE='utf8_general_ci' ENGINE=InnoDB ROW_FORMAT=DEFAULT;
 
+ALTER TABLE `useraccountrole`  ADD CONSTRAINT `useraccountrole__fk003` FOREIGN KEY (`idaccountRole`) REFERENCES `accountrole` (`id`);
 
+update app___zsystem_db_info set database_version = 6;
 
+-- ---------------------------------------------------------------------------------------------------------------------------
