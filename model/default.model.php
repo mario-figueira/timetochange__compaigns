@@ -103,17 +103,27 @@ class defaultModel {
 
 
 	/* CREATE */
-
-	function persist($arrayValues) {
-		
-		
+	
+	private function extract_only_fields_to_save($a_arrayValues){
+		$ret_val = array();
 		
 		$data = array();
-		foreach($arrayValues as $key=>$value){
+		foreach($a_arrayValues as $key=>$value){
 			if(key_exists($key, $this->columns_definitions)){
 				$data[$key] = $value;
 			}
 		}
+		
+		$ret_val = $data;
+		
+		return $ret_val;
+	}
+
+	function persist($arrayValues) {
+		
+		
+		$data = $this->extract_only_fields_to_save($arrayValues);
+		
 		
 		
 		
@@ -285,6 +295,10 @@ class defaultModel {
 		DBCHelper2::require_that()->the_param($id)->is_an_integer_string();
 		DBCHelper2::require_that()->the_param($arrayValues)->is_an_array_with_at_least_one_element();
 		
+		
+		$data = $this->extract_only_fields_to_save($arrayValues);
+
+		
 		try {
 			$result = array("boolean" => true, 'id' => 0, 'message' => 'nomessage');
 			$sql = '
@@ -292,8 +306,8 @@ class defaultModel {
 		SET ';
 
 			$i = 1;
-			foreach ($arrayValues as $key => $value) {
-				$sql .= ' ' . $key . '=' . $this->format($value) . (($i == sizeof($arrayValues)) ? ' ' : ' ,');
+			foreach ($data as $key => $value) {
+				$sql .= ' ' . $key . '=' . $this->format($value) . (($i == sizeof($data)) ? ' ' : ' ,');
 				$i++;
 			}
 			$sql .= 'WHERE id=' . $id . ';';
