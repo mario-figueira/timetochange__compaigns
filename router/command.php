@@ -44,12 +44,20 @@ class Command {
 		return $ret_val;
 	}
 
-	public function setAction(
+	private function setAction(
 		$a_action_name
 	) {
 		DBCHelper2::require_that()->the_param($a_action_name)->is_a_string();
 		$this->Action = $a_action_name;
 	}
+	
+	public function set_action(
+		$a_action_name
+	) {
+		DBCHelper2::require_that()->the_param($a_action_name)->is_a_string();
+		$this->Action = $a_action_name;
+	}
+
 
 	public function getParameters() {
 		$ret_val = $this->Parameters;
