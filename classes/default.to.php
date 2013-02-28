@@ -14,7 +14,7 @@ class defaultTO__DOESNT_WORK__OBSOLET {
 
 	public static function byArray__DOESNT_WORK($a_class_name, $a_values) {
 		$constructor_method_descriptor = new ReflectionMethod($a_class_name,  '__construct');
-		$constructor_arg_descriptors = $constructor_method_descriptor->getParameters(); 
+		$constructor_arg_descriptors = $constructor_method_descriptor->get_parameters(); 
 		
 		$args = array();
 		foreach($constructor_arg_descriptors as $arg_descriptor){

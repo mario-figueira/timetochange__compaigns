@@ -54,7 +54,7 @@ class defaultController extends contentController {
 
 				//$this->load_language();
 
-				//$language_record = $this->Command->Parameters['language'];
+				//$language_record = $this->Command->get_parameter('language');
 				//$this->load_locales($language_record);
 				$this->load_default_css();
 				$this->load_default_js();
@@ -65,7 +65,7 @@ class defaultController extends contentController {
 		} catch (Exception $e) {
 			Logger::exception($this, $e);
 			Logger::debug($this, 'Exception getting Active site.' . $e->getMessage());
-			//$this->Command->Parameters['messages'][] = $e->getMessage();
+			//$this->Command->add_message( $e->getMessage());
 			//$this->_error();
 			throw $e;
 		}
@@ -129,8 +129,8 @@ class defaultController extends contentController {
 			$this->Command->add_message($msg);
 		}
 		$this->Template = new Template($this->Command);
-		$this->Template->overideController('error');
-		$this->Template->overideAction('default');
+		$this->Template->override_controller('error');
+		$this->Template->override_action('default');
 
 
 		//$this->Template->
@@ -142,7 +142,7 @@ class defaultController extends contentController {
 		Logger::debug($this, 'execute - BEGIN ');
 		DBCHelper2::require_that()->the_variable($this->Command)->is_an_object_instance_of_the_class("Command");
 
-		$action = $this->Command->getAction();
+		$action = $this->Command->get_action();
 		$action_is_defined = !empty($action);
 
 		if (!$action_is_defined) {
@@ -156,7 +156,7 @@ class defaultController extends contentController {
 			if (!$action_corresponds_to_callable_method) {
 				$method_name = '_' . $action;
 				$class_name = get_class($this);
-				$controller_name = $this->Command->getControllerName();
+				$controller_name = $this->Command->get_controller_name();
 				$display_msg = "The requested action [{$action}] is NOT CALLABLE.";
 				$log_msg = "The method [{$method_name}] of the class [{$class_name}] that corresponds to the requested action [{$action}] of the controller [{$controller_name}] is NOT CALLABLE.";
 
@@ -176,7 +176,7 @@ class defaultController extends contentController {
 
 				Logger::debug($this, 'executing ' . $action);
 
-				$var_controllername = $this->Command->getControllerName();
+				$var_controllername = $this->Command->get_controller_name();
 
 				$is_default_controller = ($var_controllername == DEFAULT_CONTROLLER_NAME);
 				$is_default_action = ($action == DEFAULT_ACTION_NAME);
@@ -257,7 +257,8 @@ class defaultController extends contentController {
 			if (!BACKOFFICE) {
 				$this->set_current_ambassador();
 				//raise the login event on the user points sub-system
-				$ambassador_id = $this->Command->Parameters['ambassador']['id'];
+				$ambassador = $this->Command->get_parameter('ambassador');
+				$ambassador_id = $ambassador['id'];
 				require_once REALPATH . 'classes/ambassador.php';
 				$ambassador = new ambassador($ambassador_id);
 				$event_processor = $GLOBALS['event_processor'];
@@ -346,7 +347,7 @@ class defaultController extends contentController {
 		try {
 			$this->Command->set_parameter('fb_app_id', '241504035968115'); //@TODO load dinamucly
 			$this->Command->set_parameter('fb_secret', '743c324e894290debfa8c7d799dec246'); //@TODO load dinamucly
-			$this->Command->set_parameter('fb_app_url', BASEPATH . '/' . $this->Command->Parameters['language']);
+			$this->Command->set_parameter('fb_app_url', BASEPATH . '/' . $this->Command->get_parameters('language'));
 
 
 			$this->Command->set_parameter('twitter_key', 'j97sAUJ7YEdZgt0eD7Uw');
@@ -429,7 +430,8 @@ class defaultController extends contentController {
 					//$aut_data = $this->auth->getAuthData();
 					$this->Command->set_parameter('ambassador', $appUser);
 				} else {
-					$appUser = $ambassador_model->get_ambassador_by_email_and_site_id($user_email, $this->Command->Parameters['active_site']['id']);
+					$active_site = $this->Command->get_parameter('active_site');
+					$appUser = $ambassador_model->get_ambassador_by_email_and_site_id($user_email, $active_site['id']);
 
 					//verificar se existe na base de dados
 					$existe_registo = ($appUser != null);
@@ -441,9 +443,9 @@ class defaultController extends contentController {
 							$this->auth->setAuth($user_email);
 						} else {
 							if (DEBUG) {
-								$this->Command->Parameters['messages'][] = $result['message'];
+								$this->Command->add_message($result['message']);
 							} else {
-								$this->Command->Parameters['messages'][] = 'Unexpected error! Try again latert';
+								$this->Command->add_message('Unexpected error! Try again later.');
 							}
 						}
 						//faz login,ver peer auth visto não termos password
@@ -468,7 +470,7 @@ class defaultController extends contentController {
 	private function login_ambassador_from_cookie() {
 		$res = false;
 		if (	
-			  $this->Command->getAction() != 'logout' &&
+			  $this->Command->get_action() != 'logout' &&
 			  isset($_COOKIE['wrm'])) {
 			$remeber_me_cookie = json_decode($_COOKIE['wrm'], true);
 			$active_site = $this->Command->get_active_site();
@@ -567,7 +569,7 @@ class defaultController extends contentController {
 	protected function is_logged_in() {
 		$ret_val = null;
 
-		//$ret_val = !isset($this->Command->Parameters['ambassador']);
+		//$ret_val = !isset($this->Command->get_parameter('ambassador'));
 		$ret_val = $this->Command->is_logged_in();
 
 		return $ret_val;

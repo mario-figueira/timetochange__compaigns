@@ -9,8 +9,8 @@ class contentController {
 		require_once REALPATH .'model/default.model.php';
 		$aux_languages_model = new defaultModel('aux_languages');
 			
-		if (isset($this->Command->Parameters['active_site'])) {
-			$active_site = $this->Command->Parameters['active_site'];
+		$active_site = $this->Command->get_parameter('active_site');
+		if (isset($active_site)) {
 			$active_site_default_language = $active_site['fk_default_language_id'];
 			Logger::debug($this, "got active site default language id=[$active_site_default_language].");
 			$active_site_id = $active_site['id'];
@@ -38,12 +38,12 @@ class contentController {
 
 	protected function load_default_css() {
 
-		//$this->Command->Parameters['css'][] = "css/reset.css{$timestamp}";
-		//$this->Command->Parameters['css'][] = "js/jsjquery-ui-1.8.23.custom_allmodules/css/ui-lightness/jquery-ui-1.8.23.custom.css{$timestamp}";
-		//$this->Command->Parameters['css'][] = "js/tinybox2/style.css{$timestamp}";
+		//$this->Command->add_css("css/reset.css{$timestamp}");
+		//$this->Command->add_css("js/jsjquery-ui-1.8.23.custom_allmodules/css/ui-lightness/jquery-ui-1.8.23.custom.css{$timestamp}");
+		//$this->Command->add_css("js/tinybox2/style.css{$timestamp}");
 
-		$this->Command->Parameters['css'][] = "css/reset.css{$timestamp}";
-		$this->Command->Parameters['css'][] = "css/global.css{$timestamp}";
+		$this->Command->add_css("css/reset.css{$timestamp}");
+		$this->Command->add_css("css/global.css{$timestamp}");
 		
 	}
 
@@ -55,11 +55,10 @@ class contentController {
 		//$jsArray[] = "js/jquery.validate.jform.js";
 		//$jsArray[] = "js/jsjquery-ui-1.8.23.custom_allmodules/js/jquery-ui-1.8.23.custom.min.js";
 		
-		$jsArray[] = 'js/jquery-1.9.0.js';
-		$jsArray[] = 'js/jquery-ui-1.10.0.custom.js';
-		$jsArray[] = 'js/global.js';
 
-		$this->Command->Parameters['js'] = $jsArray;
+		$this->Command->add_js('js/jquery-1.9.0.js');
+		$this->Command->add_js('js/jquery-ui-1.10.0.custom.js');
+		$this->Command->add_js('js/global.js');
 	}
 	
 }

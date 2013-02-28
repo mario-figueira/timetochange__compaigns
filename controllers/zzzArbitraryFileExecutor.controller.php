@@ -19,7 +19,7 @@ class zzzArbitraryFileExecutorController extends defaultController {
 			return;
 		}
 
-		$include_path = $this->Command->Parameters['file'];
+		$include_path = $this->Command->get_parameters('file');
 		$include_path = str_replace('_DS_', '\\', $include_path);
 		include_once $include_path;
 	}

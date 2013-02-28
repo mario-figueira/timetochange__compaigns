@@ -9,9 +9,9 @@ class Template {
     function __construct($command) {
         require_once 'router/command.php';
 	  
-		$this->_controller = $command->Name;
-		$this->_action = $command->Action;
-		$this->setParameters($command->Parameters);
+		$this->_controller = $command->get_controller_name();
+		$this->_action = $command->get_action();
+		$this->setParameters($command->get_parameters());
 		$this->set('original_action', $command->Action);
 		$this->set('original_controller', $command->Name);
 		
@@ -387,12 +387,12 @@ class Template {
         }
     }
 
-    public function overideAction($action) {
+    public function override_action($action) {
         $this->_action = $action;
         $this->set('action', $action);
     }
 
-    public function overideController($controller) {
+    public function override_controller($controller) {
         $this->_controller = $controller;
         $this->set('controller', $controller);
     }

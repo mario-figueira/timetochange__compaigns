@@ -28,7 +28,7 @@ class command_dispatcher {
 		Logger::debug($this, 'Dispatch()' . $this->command);
 		try {
 			//$cookie_setted = $this->bootstrap();
-			$controllerName = $this->command->getControllerName();
+			$controllerName = $this->command->get_controller_name();
 
 			DBCHelper2::assert_that()->the_variable($controllerName)->is_a_string();
 			
@@ -36,9 +36,9 @@ class command_dispatcher {
 
 				if (DEBUG) {
 					$include_path = 'controllers/' . $controllerName . '.controller.php';
-					$this->command->Parameters['messages'] = array('commanddispatcher: cannot find file ' . $include_path);
+					$this->command->add_message('commanddispatcher: cannot find file ' . $include_path);
 				} else {
-					//$this->Command->Parameters['messages'] = array('Cannot find the controller component ' . $controllerName); ////TODO: the text should reviewed
+					//$this->Command->add_message('Cannot find the controller component ' . $controllerName); ////TODO: the text should reviewed
 				}
 				$controllerName = 'default';
 				$this->command->set_action('error');
@@ -48,8 +48,8 @@ class command_dispatcher {
 			
 			/*
 			if(IS_OFFLINE){
-				$this->Command->setControllerName("zOffline");
-				$this->Command->setAction("default");
+				$this->Command->set_controller_name("zOffline");
+				$this->Command->set_action("default");
 				$controllerName = "zOffline";
 			}
 			*/
@@ -62,8 +62,8 @@ class command_dispatcher {
 
 				$go_to_special_login = true;
 
-				$is_offline_controller = ($this->command->getControllerName() == "zOffline");
-				$is_special_login_submit_action = ($this->command->getAction() == "special_login_submit");
+				$is_offline_controller = ($this->command->get_controller_name() == "zOffline");
+				$is_special_login_submit_action = ($this->command->get_action() == "special_login_submit");
 				$is_offline_special_login_submit = $is_offline_controller && $is_special_login_submit_action;
 
 				if($is_offline_special_login_submit){
@@ -94,8 +94,8 @@ class command_dispatcher {
 				
 				if($go_to_special_login)
 				{
-					$this->command->setControllerName("zOffline");
-					$this->command->setAction("special_login");
+					$this->command->set_controller_name("zOffline");
+					$this->command->set_action("special_login");
 					$controllerName = "zOffline";					
 				}
 				

@@ -25,31 +25,25 @@ class Command {
 		$this->Parameters = $a_url_interpreter->command_parameters;
 	}
 
-	public function getControllerName() {
+	public function get_controller_name() {
 		$ret_val = $this->Name;
 		DBCHelper2::ensure_that()->the_return_value($ret_val)->is_a_string();
 		return $ret_val;
 	}
 
-	public function setControllerName(
+	public function set_controller_name(
 		$a_controller_name
 	) {
 		DBCHelper2::require_that()->the_param($a_controller_name)->is_a_string();
 		$this->Name = $a_controller_name;
 	}
 
-	public function getAction() {
+	public function get_action() {
 		$ret_val = $this->Action;
 		DBCHelper2::ensure_that()->the_return_value($ret_val)->is_a_string();
 		return $ret_val;
 	}
 
-	private function setAction(
-		$a_action_name
-	) {
-		DBCHelper2::require_that()->the_param($a_action_name)->is_a_string();
-		$this->Action = $a_action_name;
-	}
 	
 	public function set_action(
 		$a_action_name
@@ -59,13 +53,13 @@ class Command {
 	}
 
 
-	public function getParameters() {
+	public function get_parameters() {
 		$ret_val = $this->Parameters;
 		DBCHelper2::ensure_that()->the_return_value($ret_val)->is_an_array();
 		return $ret_val;
 	}
 
-	public function setParameters(
+	public function set_parameters(
 		$a_controller_parameters
 	) {
 		DBCHelper2::require_that()->the_param($a_controller_parameters)->is_an_array();
@@ -196,6 +190,12 @@ class Command {
 	
 	public function add_message($a_message){
 		$this->Parameters['messages'][] = $a_message;
+	}
+
+	public function add_messages($a_messages_array){
+		foreach($a_messages_array as $message){
+			$this->add_message($message);
+		}
 	}
 
 	public function get_messages(){
