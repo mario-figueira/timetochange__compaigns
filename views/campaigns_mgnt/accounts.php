@@ -26,13 +26,19 @@
 
 foreach ($accounts as $account){
 	$class_to_status = account_status_2_class_name($account->status);
+	$auditUser = $account->auditUser;
+	$auditUser_is_empty = !isset($auditUser) || !empty($auditUser) || trim($auditUser)==="";
+	if($auditUser_is_empty){
+		$auditUser = "&nbsp";
+	}
+	
 ?>
 	<ul class="row">
         	<label>
                 <li class="w4"><input name="id" type="checkbox" value="<?php echo $account->id ;?>" class="formCheckbox"></li>
              </label>   
 		    <li class="w24"><?php echo $account->name; ?></li>
-                <li class="w24"><?php echo $account->auditUser; ?></li>
+                <li class="w24"><?php echo $auditUser; ?></li>
                 <li class="w24"><?php echo $account->auditTimestamp; ?></li>
                 <li class="w24"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="<?php echo $class_to_status;?>"></li>
         </ul> 
