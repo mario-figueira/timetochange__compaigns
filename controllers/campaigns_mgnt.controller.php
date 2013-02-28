@@ -61,11 +61,37 @@ class campaigns_mgntController extends defaultController {
 		
 	}
 	
+	
+	//timetochange__compaigns.com:8888/campaigns_mgnt/account_users/account_id/14/selected_menu/2/?XDEBUG_SESSION_START=netbeans-xdebug
+	
+	public function _account_users(){
+		
+		require_once REALPATH ."/controllers/campaigns_mgnt.actions/account_users.action.php";
+		
+		$action = new account_usersAction();
+		$action->execute($this->Command);	
+	
+		
+		parent::_defaultAction();
+	}
+
+	
 	public function _add_user_to_account(){
 		
 		require_once REALPATH ."/controllers/campaigns_mgnt.actions/add_user_to_account.action.php";
 		
 		$action = new add_user_to_accountAction();
+		$action->execute($this->Command);	
+	
+		
+		parent::_defaultAction();
+	}
+	
+	public function _save_user_to_account(){
+		
+		require_once REALPATH ."/controllers/campaigns_mgnt.actions/save_user_to_account.action.php";
+		
+		$action = new save_user_to_accountAction();
 		$action->execute($this->Command);	
 	
 		
