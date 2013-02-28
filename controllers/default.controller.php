@@ -5,10 +5,8 @@ require_once REALPATH . 'util/DBCHelper.php';
 require_once 'Auth.php';
 require_once REALPATH . 'views/Template.php';
 
-if (!BACKOFFICE) {
-	require_once REALPATH . 'util/facebook/facebook.php';
-	require_once REALPATH . 'util/twitteroauth/twitteroauth.php';
-}
+require_once REALPATH . 'util/facebook/facebook.php';
+require_once REALPATH . 'util/twitteroauth/twitteroauth.php';
 
 define("DEFAULT_CONTROLLER_NAME", "default");
 define("DEFAULT_ACTION_NAME", "default");
@@ -19,45 +17,33 @@ define("DEFAULT_ACTION_NAME", "default");
 class defaultController {
 
 	protected $auth;
-	var $Command;
-	var $Template;
-	var $fb_app_id;
-	var $fb_secret;
-	var $fb_app_url;
-	var $twitter_key;
-	var $twitter_secret;
-	var $loaded_site = false;
+	protected $Command;
+	private $Template;
+	private $fb_app_id;
+	private $fb_secret;
+	private $fb_app_url;
+	private $twitter_key;
+	private $twitter_secret;
 
-	function __construct($command) {
-		DBCHelper2::require_that()->the_param($command)->is_an_object_instance_of_the_class("Command");
+	function __construct($a_command) {
+		DBCHelper2::require_that()->the_param($a_command)->is_an_object_instance_of_the_class("Command");
 
-		Logger::debug($this, '__contruct(' . $command . ')');
+		Logger::debug($this, '__contruct(' . $a_command . ')');
 
-		$this->Command = $command;
-
-		$this->load_active_site();
+		$this->Command = $a_command;
+		
 
 		$this->start_pear_auth();
 
 		$this->load_site();
+		
 			
 		DBCHelper2::ensure_that()->the_variable($this->Command)->is_an_object_instance_of_the_class("Command");
 	}
 
-	protected function load_active_site() {
-		
-		$active_site = array();
-		$active_site['id'] = 1;
-		$active_site['name'] = "default";
-		$active_site['fk_default_language_id'] = 1;
-		$active_site['domain'] = BASEPATH;
-		
-		$this->Command->set_active_site($active_site);
-	}
 
-	protected function load_default_css() {
+	private function load_default_css() {
 
-		//$this->Command->add_css("css/reset.css{$timestamp}");
 		//$this->Command->add_css("js/jsjquery-ui-1.8.23.custom_allmodules/css/ui-lightness/jquery-ui-1.8.23.custom.css{$timestamp}");
 		//$this->Command->add_css("js/tinybox2/style.css{$timestamp}");
 
@@ -66,7 +52,7 @@ class defaultController {
 		
 	}
 
-	protected function load_default_js() {
+	private function load_default_js() {
 		//$jsArray[] = 'js/libs/jquery-1.7.1.min.js';
 		//$jsArray[] = 'js/libs/modernizr-2.5.3.min.js';
 		//$jsArray[] = 'js/tinybox2/tinybox.js';
@@ -83,13 +69,11 @@ class defaultController {
 	}
 
 
-	function load_site() {
+	private function load_site() {
 		try {
-			if (!$this->loaded_site) {
 				//TODO remover isto e respectivas utilizações
 
 				//$this->load_language();
-
 				//$language_record = $this->Command->get_parameter('language');
 				//$this->load_locales($language_record);
 				$this->load_default_css();
@@ -97,7 +81,6 @@ class defaultController {
 				
 				//$this->load_headder();
 				//$this->load_footer();
-			}
 		} catch (Exception $e) {
 			Logger::exception($this, $e);
 			Logger::debug($this, 'Exception getting Active site.' . $e->getMessage());
@@ -105,7 +88,6 @@ class defaultController {
 			//$this->_error();
 			throw $e;
 		}
-		$this->loaded_site = true;
 	}
 
 	private static $C_DEFAULT_CALL_UNLOCK_KEY = "tranca_do_default";
@@ -142,7 +124,7 @@ class defaultController {
 				//$parent_code = $this->Command->get_variable_from_context('parent_code','',FALSE);
 				//$_SESSION['parent_code'] = $parent_code;
 				//$this->Command->set_parameter('parent_code', $parent_code,false);
-				$this->Template = new Template($this->Command);
+				$this->Template = new Template($this, $this->Command);
 				$this->Template->render();
 			} catch (Exception $e) {
 				$this->Command->add_message($e->getMessage());
@@ -164,7 +146,7 @@ class defaultController {
 			$msg = nl2br($msg);
 			$this->Command->add_message($msg);
 		}
-		$this->Template = new Template($this->Command);
+		$this->Template = new Template($this, $this->Command);
 		$this->Template->override_controller('error');
 		$this->Template->override_action('default');
 
@@ -239,7 +221,7 @@ class defaultController {
 
 	/* DATABASE OPERATIONS */
 
-
+/*
 	function _login() {
 
 		$this->auth->logout();
@@ -291,7 +273,7 @@ class defaultController {
 			$json_reply['message'] = 'Success';
 			$json_reply['printable_message'] = "";
 			if (!BACKOFFICE) {
-				$this->set_current_ambassador();
+				$this->set_current_user();
 				//raise the login event on the user points sub-system
 				$ambassador = $this->Command->get_parameter('ambassador');
 				$ambassador_id = $ambassador['id'];
@@ -307,7 +289,9 @@ class defaultController {
 
 		echo json_encode($json_reply);
 	}
-
+*/
+	
+/*	
 	function _logout() {
 		$this->auth->logout();
 		$cookie_expire = time() - 3600;
@@ -326,45 +310,35 @@ class defaultController {
 		$this->Template = new Template($this->Command);
 		$this->Template->render();
 	}
-
+*/
+	
 	private function start_pear_auth() {
 		/* HANDLE AUTH */
 		
 		require_once REALPATH .'enums/user_registration_status.php';
 		
 		try {
-			if (BACKOFFICE) {
-				
-				$sessionName = "_wom_backoffice";
-				$options = array(
-				    'dsn' => 'mysql://' . DBUSERNAME . ':' . DBPASSWORD . '@' . DBHOST . '/' . DBNAME,
-				    'usernamecol' => 'username',
-				    'passwordcol' => 'password',
-				    'table' => 'auth',
-				    'db_fields' => array('fk_admin_level_id'),
-				    'sessionName' => $sessionName
-				);
-			} else {
-				$active_site = $this->Command->get_active_site();
-				$active_site_id = $active_site['id'];
+			
+			//$active_site = $this->Command->get_active_site();
+			//$active_site_id = $active_site['id'];
 
 
-				$community_name = "default";
-				$cookie_name = "wom_{$community_name}";
+			$community_name = "default";
+			$cookie_name = "wom_{$community_name}";
 
-				$sessionName = $cookie_name;
+			$sessionName = $cookie_name;
 
-				
-				$options = array(
-				    'dsn' => 'mysql://' . DBUSERNAME . ':' . DBPASSWORD . '@' . DBHOST . '/' . DBNAME,
-				    'usernamecol' => 'email',
-				    'passwordcol' => 'password',
-				    'table' => 'ambassador',
-				    'db_fields' => array('id', 'first_name', 'last_name'),
-				    'db_where' => "(fk_site_id={$active_site_id} and is_active<>0 and registration_status=" . user_registration_status::REGISTERED_CONFIRMED .")",
-				    'sessionName' => $sessionName
-				);
-			}
+
+			$options = array(
+			    'dsn' => 'mysql://' . DBUSERNAME . ':' . DBPASSWORD . '@' . DBHOST . '/' . DBNAME,
+			    'usernamecol' => 'email',
+			    'passwordcol' => 'password',
+			    'table' => 'ambassador',
+			    'db_fields' => array('id', 'first_name', 'last_name'),
+			    'db_where' => "(fk_site_id={$active_site_id} and is_active<>0 and registration_status=" . user_registration_status::REGISTERED_CONFIRMED .")",
+			    'sessionName' => $sessionName
+			);
+			
 
 			$auth = new Auth('MDB2', $options, '', false);
 
@@ -379,7 +353,7 @@ class defaultController {
 
 	/* AFOA */
 
-	public function setSocialSettings() {
+	private function setSocialSettings() {
 		try {
 			$this->Command->set_parameter('fb_app_id', '241504035968115'); //@TODO load dinamucly
 			$this->Command->set_parameter('fb_secret', '743c324e894290debfa8c7d799dec246'); //@TODO load dinamucly
@@ -509,9 +483,7 @@ class defaultController {
 			  $this->Command->get_action() != 'logout' &&
 			  isset($_COOKIE['wrm'])) {
 			$remeber_me_cookie = json_decode($_COOKIE['wrm'], true);
-			$active_site = $this->Command->get_active_site();
-			$active_site_id = $active_site['id'];
-			$valid_cookie_pair = $this->validate_ambassador_email_md5_password($remeber_me_cookie['u'], $remeber_me_cookie['p'], $active_site_id);
+			$valid_cookie_pair = $this->validate_user_email_md5_password($remeber_me_cookie['u'], $remeber_me_cookie['p'], $active_site_id);
 			if ($valid_cookie_pair) {
 				$this->force_user_login($remeber_me_cookie['u']);
 				$res = true;
@@ -543,16 +515,15 @@ class defaultController {
 		}
 		return $result;
 	}
-
-	private function validate_ambassador_email_md5_password($a_ambassador_email, $a_ambassador_password, $a_active_site_id) {
+/*
+	private function validate_user_email_md5_password($a_ambassador_email, $a_ambassador_password) {
 		$result = false;
 		try {
 			require_once REALPATH . 'model/ambassador.model.php';
 			$ambassador_model = new ambassadorModel();
 			$arrayFilters = array(
 			    'email' => $a_ambassador_email,
-			    'password' => $a_ambassador_password,
-			    'fk_site_id' => $a_active_site_id);
+			    'password' => $a_ambassador_password);
 			$result = $ambassador_model->getFilteredBy($arrayFilters);
 
 			if (sizeof($result) == 1) {
@@ -564,7 +535,7 @@ class defaultController {
 
 		return $result;
 	}
-
+*/
 	/*	 * pmcosta end of aux for login v2 */
 
 	/* END OF AUTH */
@@ -572,20 +543,19 @@ class defaultController {
 	protected function SetFieldError($a_fieldName, $a_errorMsg) {
 		$this->Command->set_parameter($a_fieldName . '_error', $a_errorMsg);
 	}
-
+/*
 	function get_current_auth_user() {
-		require_once REALPATH . 'model/ambassador.model.php';
-		$ambassador_model = new ambassadorModel();
+		require_once REALPATH . 'repositories/repository.FACTORY.php';
+		$repo_factory = new repository__FACTORY();
+		$user_repo = new $repo_factory->get_repository_by_business_entity_name("user");
 
-		$ambassador_data = $this->auth->getAuthData();
+		$user_data = $this->auth->getAuthData();
 
-		if (empty($ambassador_data)) {
+		if (empty($user_data)) {
 			$isAuth = $this->auth->checkAuth();
 			if ($isAuth) {
 				if ($this->auth->session) {
 					$mail = $this->auth->session['username'];
-					$active_site = $this->Command->get_active_site();
-					$active_site_id = $active_site['id'];
 					$ambassador_data = $ambassador_model->get_ambassador_by_email_and_site_id($mail, $active_site_id);
 				}
 			}
@@ -595,7 +565,7 @@ class defaultController {
 		return new ambassador($ambassador_data['id']);
 		
 	}
-
+*/
 	protected function force_user_is_loggedin() {
 		if (!$this->is_logged_in()) {
 			$this->_error("Deverá estar logado para ver este conteúdo.", 1);
@@ -612,21 +582,18 @@ class defaultController {
 	}
 
 	
-	private function set_current_ambassador() {
+	private function set_current_user() {
 		try {
-			require_once REALPATH . 'model/ambassador.model.php';
-			$ambassador_model = new ambassadorModel();
+			require_once REALPATH . 'repositories/repository.FACTORY.php';
+			$repo_factory = new repository__FACTORY();
+			$user_repo = new $repo_factory->get_repository_by_business_entity_name("user");
 
-			$ambassador = $this->get_current_auth_user();
-			$current_ambassador_id = $ambassador->id;
-			if (isset($current_ambassador_id)) {
-				$ambassador_record = $ambassador_model->get_ambassador_by_id($current_ambassador_id);
-				if (isset($ambassador_record)) {
-
-					$this->Command->set_ambassador__OLD($ambassador_record);  //obsolete_to_be_removed
-					require_once REALPATH . 'to/ambassador.to.php';
-					$ambassador_to = new ambassadorTO($ambassador_record);
-					$this->Command->set_ambassador_to($ambassador_to);
+			$user = $this->get_current_auth_user();
+			$current_user_id = $user->id;
+			if (isset($current_user_id)) {
+				$user = $user_repo->get_by_id($current_user_id);
+				if (isset($user)) {
+					$this->Command->set_current_user($user);  
 				}
 				else{
 					//WHAT!?!? REVIEW IT
@@ -649,12 +616,14 @@ class defaultController {
 		$str = implode('|', get_object_vars($this->Command));
 		return $str;
 	}
+	
+	
+	
 
 	protected function get_from_post($a_key, $a_default_value = null) {
 		return key_exists($a_key, $_POST) ? $_POST[$a_key] : $a_default_value;
 	}
 
-	
 	protected function redirect_to_controller_action($a_controller_name, $a_action_name){
 		require_once REALPATH ."/views/action_url_builder.php";
 		$action_url_builder = new action_url_builder();

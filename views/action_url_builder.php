@@ -6,7 +6,12 @@ class action_url_builder {
 	  }
 	 */
 
-	public function build_url($a_controller_name, $a_action_name, $a_selected_menu_index, $a_parameters_string = null) {
+	public function build_url(
+		$a_controller_name
+		, $a_action_name
+		, $a_selected_menu_index
+		, $a_parameters_string = null
+	) {
 		$ret_val = "";
 
 		$action_is_set = isset($a_action_name);

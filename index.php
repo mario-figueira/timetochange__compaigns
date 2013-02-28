@@ -169,10 +169,10 @@ try {
 //	dispatching
 try {
 	$bootstrap_step = "1030";
-	$commandDispatcher = new command_dispatcher($command);
+	$commandDispatcher = new command_dispatcher();
 
 	$bootstrap_step = "1040";
-	$commandDispatcher->dispatch();
+	$commandDispatcher->dispatch($command);
 } catch (Exception $e) {
 	$msg = "BOOTSTRAP DISPATCH FASE ERROR: An error ocurred while executing the dispatching step: [$bootstrap_step].";
 	Logger::exception(null, $e);

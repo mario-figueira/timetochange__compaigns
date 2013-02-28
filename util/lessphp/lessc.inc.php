@@ -583,7 +583,7 @@ class lessc {
 				} else $value = null;
 
 				$value = $this->reduce($value);
-				$this->set($a[1], $value);
+				$this->set_parameter($a[1], $value);
 				$assignedValues[] = $value;
 			}
 			$i++;
@@ -593,7 +593,7 @@ class lessc {
 		$last = end($args);
 		if ($last[0] == "rest") {
 			$rest = array_slice($values, count($args) - 1);
-			$this->set($last[1], $this->reduce(array("list", " ", $rest)));
+			$this->set_parameter($last[1], $this->reduce(array("list", " ", $rest)));
 		}
 
 		$this->env->arguments = $assignedValues;
@@ -608,7 +608,7 @@ class lessc {
 		case 'assign':
 			list(, $name, $value) = $prop;
 			if ($name[0] == $this->vPrefix) {
-				$this->set($name, $value);
+				$this->set_parameter($name, $value);
 			} else {
 				$out->lines[] = $this->formatter->property($name,
 						$this->compileValue($this->reduce($value)));
@@ -1514,7 +1514,7 @@ class lessc {
 	}
 
 	// set something in the current env
-	protected function set($name, $value) {
+	protected function set_parameter($name, $value) {
 		$this->env->store[$name] = $value;
 	}
 
@@ -1552,7 +1552,7 @@ class lessc {
 				throw new Exception("failed to parse passed in variable $name: $strValue");
 			}
 
-			$this->set($name, $value);
+			$this->set_parameter($name, $value);
 		}
 	}
 

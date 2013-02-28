@@ -1,5 +1,5 @@
 <?php
-require_once 'util/DBCHelper.php';
+require_once REALPATH .'/util/DBCHelper.php';
 
 
 /**

@@ -1,5 +1,5 @@
 <?php
-require_once 'util/DBCHelper.php';
+require_once REALPATH .'/util/DBCHelper.php';
 
 /**
  * 
@@ -9,39 +9,30 @@ require_once 'util/DBCHelper.php';
  */
 class command_dispatcher {
 
-	private $command;
 
-	public function command_dispatcher(& $a_command) {
-		Logger::debug($this, 'CREATING CommandDispatcher[' . $a_command . ']');
-		DBCHelper2::require_that()->the_param($a_command)->is_an_object_instance_of_the_class("Command");
-		
-		Logger::debug($this, ' creating (' . $a_command . ')');
-		
-		$this->command = $a_command;
-		
-		DBCHelper2::ensure_that()->the_variable($this->command)->is_an_object_instance_of_the_class("Command");
+	public function command_dispatcher() {
+		Logger::debug($this, 'CREATING CommandDispatcher[' . $a_command . ']');		
 	}
 
-	public function dispatch() {
-		DBCHelper2::require_that()->the_variable($this->command)->is_not_null();
+	public function dispatch(& $a_command) {
+		DBCHelper2::ensure_that()->the_variable($a_command)->is_an_object_instance_of_the_class("Command");
 		
-		Logger::debug($this, 'Dispatch()' . $this->command);
+		Logger::debug($this, 'Dispatch()' . $a_command);
 		try {
-			//$cookie_setted = $this->bootstrap();
-			$controllerName = $this->command->get_controller_name();
+			$controller_name = $a_command->get_controller_name();
 
-			DBCHelper2::assert_that()->the_variable($controllerName)->is_a_string();
+			DBCHelper2::assert_that()->the_variable($controller_name)->is_a_string();
 			
-			if ($this->is_a_controller($controllerName) == false) {
+			if ($this->is_a_controller($controller_name) == false) {
 
 				if (DEBUG) {
-					$include_path = 'controllers/' . $controllerName . '.controller.php';
-					$this->command->add_message('commanddispatcher: cannot find file ' . $include_path);
+					$include_path = 'controllers/' . $controller_name . '.controller.php';
+					$a_command->add_message('command dispatcher: cannot find file ' . $include_path);
 				} else {
 					//$this->Command->add_message('Cannot find the controller component ' . $controllerName); ////TODO: the text should reviewed
 				}
-				$controllerName = 'default';
-				$this->command->set_action('error');
+				$controller_name = 'default';
+				$a_command->set_action('error');
 				////TODO: it should be a 404 page
 			}
 			
@@ -56,14 +47,14 @@ class command_dispatcher {
 
 			$is_public_access = (OFFLINE_CLEARANCE_LEVEL==0);
 			$is_special_offline_access_mode = !$is_public_access;
-			$is_going_to_flags = ($controllerName == "flags");
+			$is_going_to_flags = ($controller_name == "flags");
 			
 			if(!$is_going_to_flags && $is_special_offline_access_mode){
 
 				$go_to_special_login = true;
 
-				$is_offline_controller = ($this->command->get_controller_name() == "zOffline");
-				$is_special_login_submit_action = ($this->command->get_action() == "special_login_submit");
+				$is_offline_controller = ($a_command->get_controller_name() == "zOffline");
+				$is_special_login_submit_action = ($a_command->get_action() == "special_login_submit");
 				$is_offline_special_login_submit = $is_offline_controller && $is_special_login_submit_action;
 
 				if($is_offline_special_login_submit){
@@ -94,19 +85,19 @@ class command_dispatcher {
 				
 				if($go_to_special_login)
 				{
-					$this->command->set_controller_name("zOffline");
-					$this->command->set_action("special_login");
-					$controllerName = "zOffline";					
+					$a_command->set_controller_name("zOffline");
+					$a_command->set_action("special_login");
+					$controller_name = "zOffline";					
 				}
 				
 			}
 			
-			$controller = $this->controller__get($controllerName);
+			$controller = $this->controller__get($controller_name, $a_command);
 			
 			$controller->execute();
 		} catch (Exception $e) {
 			Logger::exception($this, $e);
-			Logger::debug($this, 'Error Dispatching ' . $controllerName . 'file controllers/' . $controllerName . '.controller.php -> HERE HERE' . $e->getMessage());
+			Logger::debug($this, 'Error Dispatching ' . $controller_name . 'file controllers/' . $controller_name . '.controller.php -> HERE HERE' . $e->getMessage());
 			throw $e;
 		}
 	}
@@ -128,7 +119,7 @@ class command_dispatcher {
 		return $ret_val;
 	}
 
-	private function controller__get($a_controller_name){
+	private function controller__get($a_controller_name, $a_command){
 		$ret_val = null;
 		
 		$include_path = REALPATH .'controllers/' . $a_controller_name . '.controller.php';			
@@ -139,7 +130,7 @@ class command_dispatcher {
 		$controllerClass = $a_controller_name . "Controller";
 		DBCHelper2::assert_that()->the_class($controllerClass)->exists();
 
-		$controller = new $controllerClass($this->command);			
+		$controller = new $controllerClass($a_command);			
 		DBCHelper2::assert_that()->the_variable($controller)->is_not_null();
 		
 		$ret_val = $controller;
@@ -149,7 +140,7 @@ class command_dispatcher {
 	}
 	
 	
-	function offline_cookie__get(){
+	private function offline_cookie__get(){
 		$ret_val = null;
 		
 		$offline_cookie_name = "wom-offline";

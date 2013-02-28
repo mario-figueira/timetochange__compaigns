@@ -45,9 +45,9 @@ class ambassadorModel extends defaultModel {
 		return parent::update_by_id($id, $arrayValues);
 	}
 
-	function get_ambassador_by_email_and_site_id($a_email, $site_id) {
+	function get_user_by_email_and_site_id($a_email, $site_id) {
 		//$arrayFilters = array('email'=>$a_email, 'country'=>$a_country);
-		$arrayFilters = array('email' => $a_email, 'fk_site_id' => $site_id,);
+		$arrayFilters = array('email' => $a_email);
 		return parent::getFilteredBy($arrayFilters);
 	}
 

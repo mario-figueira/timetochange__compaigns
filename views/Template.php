@@ -6,34 +6,34 @@ class Template {
     protected $_controller;
     protected $_action;
 
-    function __construct($command) {
+    function __construct($a_controller, $a_command) {
         require_once 'router/command.php';
-	  
-		$this->_controller = $command->get_controller_name();
-		$this->_action = $command->get_action();
-		$this->setParameters($command->get_parameters());
-		$this->set('original_action', $command->Action);
-		$this->set('original_controller', $command->Name);
+	    
+		$this->_controller = $a_command->get_controller_name();
+		$this->_action = $a_command->get_action();
+		$this->set_parameters($a_command->get_parameters());
+		$this->set_parameter('original_action', $a_command->get_action());
+		$this->set_parameter('original_controller', $a_command->get_controller_name());
 		
 		require_once REALPATH ."enums/menu_items_enum.php";
 
 		$selected_menu_value_to_check = $this->variables['selected_menu'];
 		$selected_menu_is_set = isset($selected_menu_value_to_check);
 		$selected_menu = $selected_menu_is_set?$selected_menu_value_to_check:menus_items_enum::$C_DASHBOARD;
-		$this->set("selected_menu", $selected_menu);
+		$this->set_parameter("selected_menu", $selected_menu);
 
     }
 
     /** Set Variables * */
-    function setParameters($parameters) {
+    function set_parameters($parameters) {
         if (is_array($parameters)) {
             foreach ($parameters as $key => $value) {
-                $this->set($key, $value);
+                $this->set_parameter($key, $value);
             }
         }
     }
 
-    function set($name, $value) {
+    function set_parameter($name, $value) {
         $this->variables[$name] = $value;
     }
 
@@ -78,9 +78,7 @@ class Template {
             return "";
         }
 
-        $active_site = $this->variables['active_site'];
-        $active_domain = $active_site['domain'];
-        $image_url = "{$active_domain}/img/{$a_image_filename}";
+        $image_url = BASEPATH ."/img/{$a_image_filename}";
 
         return $image_url;
     }
@@ -89,15 +87,6 @@ class Template {
 
 
     
-    private function build_current_site_base_url() {
-        $active_site = $this->variables['active_site'];
-        $active_domain = $active_site['domain'];
-        $community = $this->variables['community'];
-        $community_name = $community['name'];
-        $controller_action_url = "{$active_domain}/{$community_name}/";
-        return $controller_action_url;
-        
-    }
 
     private function build_css_url($a_css_filename) {
     
@@ -105,85 +94,28 @@ class Template {
     		return "";
     	}
     	 
-    	$active_site = $this->variables['active_site'];
-    	$active_domain = $active_site['domain'];
-    	$image_url = "{$active_domain}/css/{$a_css_filename}";
+    	$css_url = BASEPATH ."/css/{$a_css_filename}";
     	 
-    	return $image_url;
+    	return $css_url;
     }
 
+    
     private function build_video_url($a_video_filename) {
 
         if (!isset($a_video_filename) or $a_video_filename == "") {
             return "";
         }
 
-        $active_site = $this->variables['active_site'];
-        $active_domain = $active_site['domain'];
-        $video_url = "{$active_domain}/media/{$a_video_filename}";
+        $video_url = BASEPATH ."/media/{$a_video_filename}";
 
         return $video_url;
     }
 
     
-    
-     private function  build_img_url_dashboard($a_img_fie_name){
-    	if (!isset($a_img_fie_name) or $a_img_fie_name == "") {
-    		return "";
-    	}
-    	 
-    	$active_site = $this->variables['active_site'];
-    	$active_domain = $active_site['domain'];
-    	$img_url = "{$active_domain}/imgs/dashboard/{$a_img_fie_name}";
-    	 
-    	return $img_url;
-    }
-    
-    /**
-     * 
-     * @return string
-     */
-    private function  build_js_url_dashboard($a_js_fie_name){
-    	if (!isset($a_js_fie_name) or $a_js_fie_name == "") {
-    		return "";
-    	}
-    	 
-    	$active_site = $this->variables['active_site'];
-    	$active_domain = $active_site['domain'];
-    	$css_url = "{$active_domain}/js/dashboard/{$a_js_fie_name}";
-    	 
-    	return $css_url;
-    }
-    
-    private function  build_js_url($a_js_fie_name){
-    	if (!isset($a_js_fie_name) or $a_js_fie_name == "") {
-    		return "";
-    	}
-    	 
-    	$active_site = $this->variables['active_site'];
-    	$active_domain = $active_site['domain'];
-    	$css_url = "{$active_domain}/js/{$a_js_fie_name}";
-    	 
-    	return $css_url;
-    }
-    
-    /**
-     * 
-     * @param string $a_css_filename
-     * @return string
-     */
-    private function build_css_url_dashboard($a_css_filename) {
+  
 
-    	if (!isset($a_css_filename) or $a_css_filename == "") {
-    		return "";
-    	}
-    	
-    	$active_site = $this->variables['active_site'];
-    	$active_domain = $active_site['domain'];
-    	$css_url = "{$active_domain}/css/dashboard/{$a_css_filename}";
-    	
-    	return $css_url;
-    }
+    
+ 
     //DUPLICATE IN RECOVER PASSWORD CONTROLLER DEAL WITH IT LATER
     public function build_action_url($a_controller_name, $a_action, $a_parameters_string = null) {
         if (DEBUG) {
@@ -231,31 +163,14 @@ class Template {
     
     
 
-	private function build_action_url__SPECIAL_CASE($a_relative_url, $a_parameters_string = null) {
-
-        $active_site = $this->variables['active_site'];
-        $active_domain = $active_site['domain'];
-        $community = $this->variables['community'];
-        $community_name = $community['name'];
-        $relative_url = "{$active_domain}/{$community_name}{$a_relative_url}/";
-        if (isset($a_parameters_string)) {
-            $relative_url = "$relative_url{$a_parameters_string}/";
-        }
-        $relative_url = declare_url($relative_url);
-
-        return $relative_url;
-    }
-
 	private function render_js_declarations(){
 		$js = $this->variables['js'];
-		$active_site = $this->variables['active_site'];
-		$site_domain = $active_site['domain'];
 		
 		foreach ($js as $jsName) { 
 ?>
 			<script 
 				type="text/javascript" 
-				src="<?php echo $site_domain . '/' . $jsName ?>"
+				src="<?php echo BASEPATH . '/' . $jsName ?>"
 			></script>
 <?php 
 		} 	    
@@ -269,16 +184,7 @@ class Template {
     private function render_common() {
         Logger::debug($this, 'RENDERING template' . $this);
         extract($this->variables);
-        $template_variables = $this->variables;
 
-        $v_active_domain = $active_site['domain'];
-	  if(isset($country)&& isset($country['name'])&& !empty($country['name'])){
-		  $country_name = $country['name'];
-	  }else{
-		  $country_name = '';
-	  }
-        $v_country_prefix = $v_active_domain . '/' . $country_name;
-	  
 
         if (file_exists(REALPATH . 'views/' . $this->_controller . '/' . $this->_action . '.php')) {		  
 		$view_folder = REALPATH . 'views/' . $this->_controller; 
@@ -389,12 +295,12 @@ class Template {
 
     public function override_action($action) {
         $this->_action = $action;
-        $this->set('action', $action);
+        $this->set_parameter('action', $action);
     }
 
     public function override_controller($controller) {
         $this->_controller = $controller;
-        $this->set('controller', $controller);
+        $this->set_parameter('controller', $controller);
     }
 
     function __toString() {
@@ -406,14 +312,6 @@ class Template {
         ?>
         <label class="error" generated="true"><?php echo $this->variables[$variablename]; ?></label>
         <?php
-    }
-
-    private function echo_variable($a_var_name, $a_default_value = '') {
-        if (in_array($a_var_name, $this->variables)) {
-            echo _($a_var_name);
-        } else {
-            echo _($a_default_value);
-        }
     }
 
     private function compute_header_file_to_use() {
@@ -469,26 +367,7 @@ class Template {
     }
     
     
-    
-    	function get_profile_image($a_ambassador_record){
-		$ret_val = "";
-		
-		$picture_url = $this->build_img_url("foto_perfil_default.jpg");
-		
-		$picture_name = $a_ambassador_record['picture_url'];
-		$picture_name_is_set = isset($picture_name);
-		$picture_physical_path = $this->build_uploaded_img_physical_path($picture_name);
-		$picture_physicalfile_exists = file_exists($picture_physical_path);
-
-		if ($picture_name_is_set && $picture_physicalfile_exists) { 
-			$picture_url = $this->build_uploaded_img_url($picture_name);
-		}
-		
-		$ret_val = $picture_url;
-		
-		return $ret_val;
-		
-	}
+   
 	
 	static function build_video_file_physical_path($a_video_file_file_name){
 
@@ -496,7 +375,6 @@ class Template {
 			return "";
 		  }
 
-		  $active_site = $this->variables['active_site'];
 		  $video_file_physical_path = REALPATH ."/media/{$a_video_file_file_name}";
 
 		  return $video_file_physical_path;		
