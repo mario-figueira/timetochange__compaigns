@@ -49,6 +49,45 @@ class campaigns_mgntController extends defaultController {
 	
 	
 	
+	public function _edit_account(){
+		
+		require_once REALPATH ."/controllers/campaigns_mgnt.actions/edit_account.action.php";
+		
+		$action = new edit_accountAction();
+		$action->execute($this->Command);
+	
+		
+		parent::_defaultAction();
+		
+	}
+	
+	public function _add_user_to_account(){
+		
+		require_once REALPATH ."/controllers/campaigns_mgnt.actions/add_user_to_account.action.php";
+		
+		$action = new add_user_to_accountAction();
+		$action->execute($this->Command);	
+	
+		
+		parent::_defaultAction();
+	}
+
+	
+	public function _delete_account(){
+		
+		require_once REALPATH ."/controllers/campaigns_mgnt.actions/delete_account.action.php";
+		
+		$action = new delete_accountAction();
+		$action->execute($this->Command);
+	
+		
+		$this->redirect_to_controller_action("campaigns_mgnt", "accounts");
+		
+	}
+	
+	
+	
+	
 	public function _campaigns(){
 		
 		require_once REALPATH ."/controllers/campaigns_mgnt.actions/campaigns.action.php";

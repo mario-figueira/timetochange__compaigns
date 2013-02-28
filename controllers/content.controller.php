@@ -58,7 +58,9 @@ class contentController {
 
 		$this->Command->add_js('js/jquery-1.9.0.js');
 		$this->Command->add_js('js/jquery-ui-1.10.0.custom.js');
+		$this->Command->add_js('js/jquery.form.v3_27.js');		
 		$this->Command->add_js('js/global.js');
+		$this->Command->add_js('js/timetochange__framework.js');
 	}
 	
 }

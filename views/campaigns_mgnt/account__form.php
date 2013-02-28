@@ -5,11 +5,14 @@
 
     <!--List fields-->
     <form id="account_form" method="post" action="<?php echo $submit_action_url;?>" class="form">
+	<input name="field__id" type="hidden" value="<?php echo $account->id; ?>">
+	
+	
     <div class="listForm">
     	<ul>
         	<li class="label">Account Name*</li>
             <li class="field">
-            	<input name="field__name" type="text" class="formField fwLarge">
+            	<input name="field__name" type="text" class="formField fwLarge" value="<?php echo $account->name; ?>">
             </li>
         </ul>
         <ul>
@@ -23,26 +26,26 @@
 	  <ul>
         	<li class="label">Email Address</li>
             <li class="field">
-			<input name="field__email" type="email" class="formField fwLarge">
+			<input name="field__email" type="email" class="formField fwLarge" value="<?php echo $account->email; ?>">
             </li>
         </ul>
 	    
 	  <ul>
         	<li class="label">Phone Number</li>
             <li class="field">
-			<input name="field__phone" type="number" class="formField fwLarge">
+			<input name="field__phone" type="number" class="formField fwLarge" value="<?php echo $account->phone; ?>">
             </li>
         </ul>
 	  <ul>
         	<li class="label">Fax Number</li>
             <li class="field">
-            	<input name="field__fax" type="number" class="formField fwLarge">
+            	<input name="field__fax" type="number" class="formField fwLarge" value="<?php echo $account->fax; ?>">
             </li>
         </ul>
 	  <ul>
         	<li class="label">Address</li>
             <li class="field">
-			<input name="field__address" type="text" class="formField fwLarge">
+			<input name="field__address" type="text" class="formField fwLarge" value="<?php echo $account->address; ?>">
             </li>
         </ul>
 	  <ul>
