@@ -29,7 +29,7 @@ foreach ($accounts as $account){
 ?>
 	<ul class="row">
         	<label>
-                <li class="w4"><input name="" type="checkbox" value="" class="formCheckbox"></li>
+                <li class="w4"><input name="" type="checkbox" value="<?php echo $account->idAccount ;?>" class="formCheckbox"></li>
              </label>   
 		    <li class="w24"><?php echo $account->name; ?></li>
                 <li class="w24"><?php echo $account->auditUser; ?></li>
