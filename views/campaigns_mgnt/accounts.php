@@ -59,10 +59,10 @@
 
 foreach ($accounts as $account){
 	$class_to_status = account_status_2_class_name($account->status);
-	$auditUser = $account->auditUser;
-	$auditUser_is_empty = !isset($auditUser) || !empty($auditUser) || trim($auditUser)==="";
-	if($auditUser_is_empty){
-		$auditUser = "&nbsp";
+	$updateUser = $account->updateUser;
+	$updateUser_is_empty = !isset($updateUser) || !empty($updateUser) || trim($updateUser)==="";
+	if($updateUser_is_empty){
+		$updateUser = "&nbsp";
 	}
 	
 	$select_checkbox_field_name = "selected__" .$account->id;
@@ -73,8 +73,8 @@ foreach ($accounts as $account){
                 <li class="w4"><input name="selected[]" type="checkbox" value="<?php echo $account->id ;?>" class="formCheckbox"></li>
              </label>   
 		    <li class="w24"><?php echo $account->name; ?></li>
-                <li class="w24"><?php echo $auditUser; ?></li>
-                <li class="w24"><?php echo $account->auditTimestamp; ?></li>
+                <li class="w24"><?php echo $updateUser; ?></li>
+                <li class="w24"><?php echo $account->updateTimestamp; ?></li>
                 <li class="w24"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="<?php echo $class_to_status;?>"></li>
         </ul> 
 <?php	    

@@ -68,7 +68,7 @@
 			<?php 
 			foreach ($countries as $country){
 			?>	
-				<option value="<?php echo $country->idCountry; ?>"><?php echo $country->country; ?></option>
+				<option value="<?php echo $country->id; ?>"><?php echo $country->name; ?></option>
 			<?php
 			}
 			?>

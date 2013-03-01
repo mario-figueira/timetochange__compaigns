@@ -4,8 +4,6 @@ require_once __DIR__ . "/base.BE.php";
 
 class country__BE extends base__BE {
 
-	protected $idAccount;
-	protected $name;
 
 	protected function __construct($a_fields_array) {
 		parent::__construct($a_fields_array);

@@ -74,7 +74,7 @@ class account__REPO extends base__REPO {
 			$user_id = $account_user_record['idUser'];
 			$user = $users_repo->get_by_id($user_id);
 
-			$role_id = $account_user_record['idaccountRole'];
+			$role_id = $account_user_record['idAccountRole'];
 			$role = $roles_repo->get_by_id($role_id);
 			
 			$account_user = account_user__VO::create($account_user_record, $a_account, $user, $role);
