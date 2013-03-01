@@ -324,7 +324,7 @@ class defaultController {
 
 
 			$community_name = "default";
-			$cookie_name = "wom_{$community_name}";
+			$cookie_name = "ttc_{$community_name}";
 
 			$sessionName = $cookie_name;
 
@@ -333,9 +333,9 @@ class defaultController {
 			    'dsn' => 'mysql://' . DBUSERNAME . ':' . DBPASSWORD . '@' . DBHOST . '/' . DBNAME,
 			    'usernamecol' => 'email',
 			    'passwordcol' => 'password',
-			    'table' => 'ambassador',
-			    'db_fields' => array('id', 'first_name', 'last_name'),
-			    'db_where' => "(fk_site_id={$active_site_id} and is_active<>0 and registration_status=" . user_registration_status::REGISTERED_CONFIRMED .")",
+			    'table' => 'user',
+			    'db_fields' => array('id', 'name', 'surname'),
+			    'db_where' => "( status==1 )",
 			    'sessionName' => $sessionName
 			);
 			
@@ -440,8 +440,7 @@ class defaultController {
 					//$aut_data = $this->auth->getAuthData();
 					$this->Command->set_parameter('ambassador', $appUser);
 				} else {
-					$active_site = $this->Command->get_parameter('active_site');
-					$appUser = $ambassador_model->get_ambassador_by_email_and_site_id($user_email, $active_site['id']);
+					$appUser = $ambassador_model->get_ambassador_by_email($user_email);
 
 					//verificar se existe na base de dados
 					$existe_registo = ($appUser != null);
@@ -476,14 +475,14 @@ class defaultController {
 		}
 	}
 
-	/** pmcosta login v2 */
+	/*
 	private function login_ambassador_from_cookie() {
 		$res = false;
 		if (	
 			  $this->Command->get_action() != 'logout' &&
 			  isset($_COOKIE['wrm'])) {
 			$remeber_me_cookie = json_decode($_COOKIE['wrm'], true);
-			$valid_cookie_pair = $this->validate_user_email_md5_password($remeber_me_cookie['u'], $remeber_me_cookie['p'], $active_site_id);
+			$valid_cookie_pair = $this->validate_user_email_md5_password($remeber_me_cookie['u'], $remeber_me_cookie['p']);
 			if ($valid_cookie_pair) {
 				$this->force_user_login($remeber_me_cookie['u']);
 				$res = true;
@@ -491,7 +490,7 @@ class defaultController {
 		}
 		return $res;
 	}
-
+*/
 
 
 	private function force_user_login($a_user_email) {
