@@ -1,7 +1,7 @@
 <?php
+require_once REALPATH .'/controllers/base.action.php';
 
-
-class add_user_to_accountAction {
+class add_user_to_accountAction extends baseAction {
 	
 	public function execute($a_command){
 		
@@ -9,13 +9,11 @@ class add_user_to_accountAction {
 		
 		DBCHelper2::require_that()->the_param($idAccount)->is_an_integer_string();
 		
-		require_once REALPATH ."/repositories/repository.FACTORY.php";
-		$repo_factory = new repository__FACTORY();
 
-		$account_repo = $repo_factory->get_repository_by_business_entity_name('account');
+		$account_repo = $this->get_repository_by_business_entity_name('account');
 		$account = $account_repo->get_by_id($idAccount);
 		
-		$role_repo = $repo_factory->get_repository_by_business_entity_name('role');
+		$role_repo = $this->get_repository_by_business_entity_name('role');
 		$default_role = $role_repo->get_by_id(3);
 				
 		require_once REALPATH .'/value_objects/account_user.VO.php';

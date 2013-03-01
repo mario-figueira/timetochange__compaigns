@@ -1,7 +1,7 @@
 <?php
+require_once REALPATH .'/controllers/base.action.php';
 
-
-class save_accountAction {
+class save_accountAction extends baseAction {
 	
 	public function execute($a_command){
 		
@@ -16,11 +16,8 @@ class save_accountAction {
 			throw new Exception ('tás maluco');
 		}
 		
-		require_once REALPATH ."/repositories/repository.FACTORY.php";
 		
-		$repo_factory = new repository__FACTORY();
-		
-		$accounts_repo = $repo_factory->get_repository_by_business_entity_name("account");
+		$accounts_repo = $this->get_repository_by_business_entity_name("account");
 		
 		$accounts_repo->_store($account);
 	}

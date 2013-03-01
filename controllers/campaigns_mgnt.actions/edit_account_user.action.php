@@ -1,10 +1,9 @@
 <?php
+require_once REALPATH .'/controllers/base.action.php';
 
-
-class edit_account_userAction {
+class edit_account_userAction extends baseAction {
 	
 	public function execute($a_command){
-		require_once REALPATH ."/repositories/repository.FACTORY.php";
 		
 		//$repo_factory = new repository__FACTORY();
 

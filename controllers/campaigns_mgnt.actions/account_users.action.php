@@ -1,10 +1,9 @@
 <?php
+require_once REALPATH .'/controllers/base.action.php';
 
-
-class account_usersAction {
+class account_usersAction extends baseAction {
 	
 	public function execute($a_command){
-		require_once REALPATH ."/repositories/repository.FACTORY.php";
 		
 		$idAccount = $a_command->get_variable_from_context("idAccount", null);
 		
@@ -28,9 +27,8 @@ class account_usersAction {
 
 		
 		
-		$repo_factory = new repository__FACTORY();
 		
-		$accounts_repo = $repo_factory->get_repository_by_business_entity_name("account");
+		$accounts_repo = $this->get_repository_by_business_entity_name("account");
 		
 		$account = $accounts_repo->get_by_id($account_id_to_show_users);
 		

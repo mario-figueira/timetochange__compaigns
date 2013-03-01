@@ -1,11 +1,9 @@
 <?php
+require_once REALPATH .'/controllers/base.action.php';
 
-
-class save_user_to_accountAction {
+class save_user_to_accountAction extends baseAction {
 	
 	public function execute($a_command){
-		require_once REALPATH ."/repositories/repository.FACTORY.php";		
-		$repo_factory = new repository__FACTORY();
 				
 		//grab the account_user_VO data
 		require_once REALPATH .'/value_objects/account_user.VO.php';		
@@ -20,19 +18,17 @@ class save_user_to_accountAction {
 		$user = user__BE::create_from_record($account_user->_get_fields_array());
 
 		// grab the role from the database
-		$role_repo = $repo_factory->get_repository_by_business_entity_name("role");		
+		$role_repo = $this->get_repository_by_business_entity_name("role");		
 		$role = $role_repo->get_by_id($role_id);
 		
 		// grab the account from the database	
-		$account_repo = $repo_factory->get_repository_by_business_entity_name("account");
+		$account_repo = $this->get_repository_by_business_entity_name("account");
 		$account = $account_repo->get_by_id($account_id);
 		
 		
 		//save the user entity		
-		require_once REALPATH ."/repositories/repository.FACTORY.php";		
-		$repo_factory = new repository__FACTORY();
 		
-		$user_repo = $repo_factory->get_repository_by_business_entity_name("user");
+		$user_repo = $this->get_repository_by_business_entity_name("user");
 		
 		$user_id = $user_repo->_store($user);
 

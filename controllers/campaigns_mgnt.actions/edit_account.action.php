@@ -1,10 +1,9 @@
 <?php
+require_once REALPATH .'/controllers/base.action.php';
 
-
-class edit_accountAction {
+class edit_accountAction extends baseAction {
 	
 	public function execute($a_command){
-		require_once REALPATH ."/repositories/repository.FACTORY.php";
 		
 		$selected = $_POST['selected'];
 		
@@ -16,9 +15,8 @@ class edit_accountAction {
 		$account_id_to_edit = $selected[0];
 
 		
-		$repo_factory = new repository__FACTORY();
 		
-		$accounts_repo = $repo_factory->get_repository_by_business_entity_name("account");
+		$accounts_repo = $this->get_repository_by_business_entity_name("account");
 		
 		$account = $accounts_repo->get_by_id($account_id_to_edit);
 
@@ -26,9 +24,8 @@ class edit_accountAction {
 		$a_command->set_parameter("account",$account);
 		
 		
-		$repo_factory = new repository__FACTORY();
 		
-		$countries_repo = $repo_factory->get_repository_by_business_entity_name("country");
+		$countries_repo = $this->get_repository_by_business_entity_name("country");
 		
 		$all_countries = $countries_repo->all__get();
 		
