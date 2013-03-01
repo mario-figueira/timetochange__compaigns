@@ -87,6 +87,36 @@ class account__REPO extends base__REPO {
 		return $ret_val;
 	}
 	
+	public function alias_of_account__get_by_account($a_account){
+		$ret_val = array();
+		
+		$accountalias_dao = $this->get_default_dao_by_table_name("accountaliases");
+		
+		$account_id = $a_account->id;
+		$account_aliases_records = $accountalias_dao->get_records_by_filter(array("idAccount"=>$account_id));
+
+		require_once REALPATH ."/repositories/repository.FACTORY.php";
+		$repo_factory = new repository__FACTORY();
+		
+		$alias_repo = $repo_factory->get_repository_by_business_entity_name("alias");
+
+		require_once REALPATH ."/value_objects/account_alias.VO.php";
+		$account_aliases = array();
+		foreach ($account_aliases_records as $account_alias_record){
+			$alias_id = $account_alias_record['idAlias'];
+			$alias = $alias_repo->get_by_id($alias_id);
+
+			
+			$account_alias = account_alias__VO::create($account_alias_record, $a_account, $alias);
+			
+			$account_aliases[] = $account_alias;
+		}
+		
+		$ret_val = $account_aliases;
+		
+		return $ret_val;
+	}	
+	
 	public function add_user_to_account($a_user_id, $a_account_id, $a_role_id){
 		$useraccountrule_dao = $this->get_default_dao_by_table_name("useraccountrole");
 		

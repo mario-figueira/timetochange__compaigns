@@ -85,6 +85,16 @@ class campaigns_mgntController extends defaultController {
 	
 	
 	
+	public function _account_aliases(){
+		
+		$this->execute_action_class();
+			
+		parent::_defaultAction();
+	}
+
+	
+	
+	
 	
 	public function _campaigns(){
 		
