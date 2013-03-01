@@ -4,6 +4,7 @@
 	$campaign_delete_action_url = $this->build_action_url('campaigns_mgnt', 'delete_campaign');
 	$campaign_edit_action_url = $this->build_action_url('campaigns_mgnt', 'edit_campaign');
 	$campaign_users_action_url = $this->build_action_url('campaigns_mgnt', 'campaign_users');
+	$campaign_aliases_action_url = $this->build_action_url('campaigns_mgnt', 'campaign_aliases');
 ?>
 
 <script type="text/javascript">
@@ -31,6 +32,9 @@
 		mysubmit("campaign_list_form", "<?php echo $campaign_users_action_url;?>")
 	}
 	
+	function campaign_aliases(){
+		mysubmit("campaign_list_form", "<?php echo $campaign_aliases_action_url;?>")
+	}
 	
 </script>
 
@@ -40,6 +44,7 @@
 		<li><a href="javascript:void(0);" title="Delete Campaign" onclick="javascript:campaign_delete();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsTrash"></a></li>
 		<li><a href="javascript:void(0);" title="Edit Campaign" onclick="javascript:campaign_edit();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsPencil"></a></li>
 		<li><a href="javascript:void(0);" title="Users Campaign" onclick="javascript:campaign_users();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsUser"></a></li>
+		<li><a href="javascript:void(0);" title="Aliases Campaign" onclick="javascript:campaign_aliases();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsAlias"></a></li>
         </ul>        
     </div>
 

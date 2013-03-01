@@ -5,11 +5,11 @@ require_once 'controllers/default.controller.php';
 class settingsController extends defaultController {
 
 	public function _default() {
-		parent::_default();
+		$this->redirect_to_controller_action("settings", "alias");
 	}
 	
 	public function _home(){
-		parent::_defaultAction();
+		$this->redirect_to_controller_action("settings", "alias");
 	}
 	
 	public function _alias(){

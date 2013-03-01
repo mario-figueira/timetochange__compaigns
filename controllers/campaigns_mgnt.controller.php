@@ -130,4 +130,12 @@ class campaigns_mgntController extends defaultController {
 		
 		parent::_defaultAction();		
 	}
+	
+	public function _campaign_aliases(){
+		
+		$this->execute_action_class();
+			
+		parent::_defaultAction();
+	}
+
 }
