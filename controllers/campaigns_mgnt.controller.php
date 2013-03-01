@@ -136,4 +136,39 @@ class campaigns_mgntController extends defaultController {
 		$this->redirect_to_controller_action("campaigns_mgnt", "campaigns");
 		
 	}
+	
+	public function _add_campaign(){
+		
+		require_once REALPATH ."/controllers/campaigns_mgnt.actions/add_campaign.action.php";
+		
+		$action = new add_campaignAction();
+		$action->execute($this->Command);
+	
+		
+		parent::_defaultAction();
+	}
+	
+	public function _save_campaign(){
+		
+		require_once REALPATH ."/controllers/campaigns_mgnt.actions/save_campaign.action.php";
+		
+		$action = new save_campaignAction();
+		$action->execute($this->Command);
+	
+		
+		$this->redirect_to_controller_action("campaigns_mgnt", "campaigns");
+		
+	}
+	
+	public function _edit_campaign(){
+		
+		require_once REALPATH ."/controllers/campaigns_mgnt.actions/edit_campaign.action.php";
+		
+		$action = new edit_campaignAction();
+		$action->execute($this->Command);
+	
+		
+		parent::_defaultAction();
+		
+	}
 }

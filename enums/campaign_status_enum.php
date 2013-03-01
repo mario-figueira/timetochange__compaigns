@@ -13,6 +13,7 @@ require_once REALPATH .'util/DBCHelper.php';
 		public static $C_INACTIVO = 0;
 		public static $C_ACTIVO = 1;
 		public static $C_CONFIGURADA = 2;
+		public static $C_PARADA = 3;
 		
 		public static function campaign_status_2_display_name($a_campaign_status) {
 			DBCHelper2::require_that()->the_param($a_campaign_status)->is_an_integer_string();
@@ -29,6 +30,9 @@ require_once REALPATH .'util/DBCHelper.php';
 					break;
 				case campaign_status_enum::$C_CONFIGURADA:
 					$status_name = "Configurada";
+					break;
+				case campaign_status_enum::$C_PARADA:
+					$status_name = "Parada";
 					break;
 				default:
 					throw new Exception("Unsuported case:[{$a_campaign_status}].");		

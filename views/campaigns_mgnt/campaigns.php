@@ -99,7 +99,9 @@ foreach ($campaigns as $campaign){
 			case campaign_status_enum::$C_CONFIGURADA:
 				$status_class = "icoListBulletblue";
 				break;
-
+			case campaign_status_enum::$C_PARADA:
+				$status_class = "icoListBulletyellow";
+				break;
 			default:
 				throw new Exception("Unsuported case:[{$a_campaign_status}].");		
 		}

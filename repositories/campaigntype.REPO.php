@@ -4,7 +4,7 @@ require_once __DIR__ ."/base.REPO.php";
 
 require_once __DIR__ ."/IREPO.php";
 
-class campaign__REPO extends base__REPO {	
+class campaigntype__REPO extends base__REPO {	
 	
 	public function __construct($a_business_entity){
 		parent::__construct($a_business_entity);		
@@ -16,9 +16,9 @@ class campaign__REPO extends base__REPO {
 
 		$record = parent::get_record_by_id($a_business_entity_id);
 		
-		require_once REALPATH ."/business_entities/campaign.BE.php";
+		require_once REALPATH ."/business_entities/campaigntype.BE.php";
 		
-		$instance =  campaign__BE::create_from_record($record);
+		$instance =  campaigntype::create_from_record($record);
 		
 		$ret_val = $instance;
 		
@@ -27,17 +27,17 @@ class campaign__REPO extends base__REPO {
 	}
 	
 	public function all__get(){
-				
-		$campaign_dao = $this->get_default_dao_by_table_name("campaign");
 		
-		$records = $campaign_dao->get_all();
+		$campaigntype_dao = $this->get_default_dao_by_table_name("campaigntype");
 		
-		require_once REALPATH ."/business_entities/campaign.BE.php";
+		$records = $campaigntype_dao->get_all();
+		
+		require_once REALPATH ."/business_entities/campaigntype.BE.php";
 		
 		$ret_val = array();
 		
 		foreach($records as $record){
-			$ret_val[] = campaign__BE::create_from_record($record);
+			$ret_val[] = campaigntype__BE::create_from_record($record);
 		}
 		
 		return $ret_val;
