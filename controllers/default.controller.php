@@ -156,6 +156,26 @@ class defaultController {
 		exit;
 	}
 
+	protected function execute_action_class(){
+			$controller_name = $this->Command->get_controller_name();
+			$action = $this->Command->get_action();
+
+			$action_class_file_name = REALPATH ."/controllers/{$controller_name}.actions/{$action}.action.php";
+			$exists_an_action_class= file_exists($action_class_file_name);
+			if($exists_an_action_class){
+				require_once $action_class_file_name;
+				
+			}
+			
+			$action_class_name = "{$action}Action";
+			$exists_action_class_name = class_exists($action_class_name);
+			if($exists_action_class_name){
+				$action_object = new  $action_class_name();
+				$action_object->execute($this->Command);
+			}
+		
+	}
+	
 	function execute() {
 		Logger::debug($this, 'execute - BEGIN ');
 		DBCHelper2::require_that()->the_variable($this->Command)->is_an_object_instance_of_the_class("Command");
@@ -168,45 +188,47 @@ class defaultController {
 		}
 
 		try {
+			$controller_name = $this->Command->get_controller_name();
 
-			$action_corresponds_to_callable_method = is_callable(array(& $this, '_' . $action));
 
-			if (!$action_corresponds_to_callable_method) {
-				$method_name = '_' . $action;
-				$class_name = get_class($this);
-				$controller_name = $this->Command->get_controller_name();
-				$display_msg = "The requested action [{$action}] is NOT CALLABLE.";
-				$log_msg = "The method [{$method_name}] of the class [{$class_name}] that corresponds to the requested action [{$action}] of the controller [{$controller_name}] is NOT CALLABLE.";
+				$action_corresponds_to_callable_method = is_callable(array(& $this, '_' . $action));
 
-				if (DEBUG) {
-					$display_msg = $log_msg;
-				}
+				if (!$action_corresponds_to_callable_method) {
+					$method_name = '_' . $action;
+					$class_name = get_class($this);
+					$display_msg = "The requested action [{$action}] is NOT CALLABLE.";
+					$log_msg = "The method [{$method_name}] of the class [{$class_name}] that corresponds to the requested action [{$action}] of the controller [{$controller_name}] is NOT CALLABLE.";
 
-				Logger::debug($this, $log_msg);
+					if (DEBUG) {
+						$display_msg = $log_msg;
+					}
 
-				if (DEBUG) {
-					throw new Exception($log_msg, 1, null);
+					Logger::debug($this, $log_msg);
+
+					if (DEBUG) {
+						throw new Exception($log_msg, 1, null);
+					} else {
+						$this->Command->add_message($display_msg);
+						$this->_error();
+					}
 				} else {
-					$this->Command->add_message($display_msg);
-					$this->_error();
+
+					Logger::debug($this, 'executing ' . $action);
+
+					$var_controllername = $this->Command->get_controller_name();
+
+					$is_default_controller = ($var_controllername == DEFAULT_CONTROLLER_NAME);
+					$is_default_action = ($action == DEFAULT_ACTION_NAME);
+					$is_default_controller_and_default_action = ($is_default_controller && $is_default_action);
+
+					//set_error_handler(array(get_class(),'_error'));
+					if ($is_default_controller_and_default_action) {
+						call_user_func(array(& $this, '_' . $action), array(self::$C_DEFAULT_CALL_UNLOCK_KEY));
+					} else {
+						call_user_func(array(& $this, '_' . $action));
+					}
 				}
-			} else {
-
-				Logger::debug($this, 'executing ' . $action);
-
-				$var_controllername = $this->Command->get_controller_name();
-
-				$is_default_controller = ($var_controllername == DEFAULT_CONTROLLER_NAME);
-				$is_default_action = ($action == DEFAULT_ACTION_NAME);
-				$is_default_controller_and_default_action = ($is_default_controller && $is_default_action);
-
-				//set_error_handler(array(get_class(),'_error'));
-				if ($is_default_controller_and_default_action) {
-					call_user_func(array(& $this, '_' . $action), array(self::$C_DEFAULT_CALL_UNLOCK_KEY));
-				} else {
-					call_user_func(array(& $this, '_' . $action));
-				}
-			}
+			
 		} catch (Exception $e) {
 			$display_msg = _("Lamentamos imenso o sucedido mas uma situação imprevista inviabilizou a satisfação do pedido com sucesso");
 			$log_msg = $display_msg . "The error was: \r\n" . $e->getMessage();
