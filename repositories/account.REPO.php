@@ -61,19 +61,25 @@ class account__REPO extends base__REPO {
 		
 		$account_users_records = $useraccountrule_dao->get_records_by_filter(array("idAccount"=>$a_account_id));
 
+		require_once REALPATH ."/repositories/repository.FACTORY.php";
 		$repo_factory = new repository__FACTORY();
 		
 		$users_repo = $repo_factory->get_repository_by_business_entity_name("user");
 
-		$users = array();
+		require_once REALPATH ."/value_objects/account_user.VO.php";
+		$account_users = array();
 		foreach ($account_users_records as $account_user_record){
 			$user_id = $account_user_record['idUser'];
 			
+			
 			$user = $users_repo->get_by_id($user_id);
-			$users[] = $user;
+			
+			$account_user = account_user__VO::create($account_user_record, $user);
+			
+			$account_users[] = $account_user;
 		}
 		
-		$ret_val = $users;
+		$ret_val = $account_users;
 		
 		return $ret_val;
 	}
