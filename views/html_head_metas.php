@@ -1,6 +1,6 @@
 <?php
 
-		$title = "WOM-Ambassadors.com";
+		$title = "Time2Change";
 		
 		if(isset($active_site['domain'])){
 			$title = $active_site['domain'];
@@ -14,7 +14,7 @@
 		
 		<meta name="application-name" content="">
 		<meta name="description" content="<?php //TODO esperamos conteudos echo $community['printable_name']; ?>">
-		<meta name="keywords" content="ambassadors, embaixadores, embajadores, boca a boca, wom, word-of-mouth">
+		<meta name="keywords" content="t2c, time2change,timetochange">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- content type -->
 		<meta http-equiv="content-type" content="text/html" charset="<?php echo $charset; ?>">
