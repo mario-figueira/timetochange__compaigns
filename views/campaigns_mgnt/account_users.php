@@ -58,17 +58,20 @@
 <?php
 
 foreach ($account_users as $account_user){
-	//$class_to_status = account_status_2_class_name($account_user->user->status);
-	$class_to_status = account_status_2_class_name(1);
-	//$role_name = $account_user->acountrole->name;
-	$role_name = "&nbsp";
-	$account_name = "&nbsp";
+	$user = $account_user->user;
+	$role = $account_user->role;
+	$account = $account_user->account;
+	
+	$user_name = $user->name;
+	$role_name = $role->name;
+	$account_name = $account->name;
+	$class_to_status = account_status_2_class_name($user->status);
 ?>
 	<ul class="row">
         	<label>
                 <li class="w4"><input name="selected[]" type="checkbox" value="<?php echo $user->id ;?>" class="formCheckbox"></li>
              </label>   
-		    <li class="w24"><?php echo $account_user->name; ?></li>
+		    <li class="w24"><?php echo $user_name; ?></li>
                 <li class="w24"><?php echo $role_name; ?></li>
                 <li class="w24"><?php echo $account_name; ?></li>
                 <li class="w24"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="<?php echo $class_to_status;?>"></li>

@@ -54,27 +54,30 @@ class account__REPO extends base__REPO {
 	}
 	
 	
-	public function users_of_account__get_by_account_id($a_account_id){
+	public function users_of_account__get_by_account($a_account){
 		$ret_val = array();
 		
 		$useraccountrule_dao = $this->get_default_dao_by_table_name("useraccountrole");
 		
-		$account_users_records = $useraccountrule_dao->get_records_by_filter(array("idAccount"=>$a_account_id));
+		$account_id = $a_account->id;
+		$account_users_records = $useraccountrule_dao->get_records_by_filter(array("idAccount"=>$account_id));
 
 		require_once REALPATH ."/repositories/repository.FACTORY.php";
 		$repo_factory = new repository__FACTORY();
 		
 		$users_repo = $repo_factory->get_repository_by_business_entity_name("user");
+		$roles_repo = $repo_factory->get_repository_by_business_entity_name("role");
 
 		require_once REALPATH ."/value_objects/account_user.VO.php";
 		$account_users = array();
 		foreach ($account_users_records as $account_user_record){
 			$user_id = $account_user_record['idUser'];
-			
-			
 			$user = $users_repo->get_by_id($user_id);
+
+			$role_id = $account_user_record['idaccountRole'];
+			$role = $roles_repo->get_by_id($role_id);
 			
-			$account_user = account_user__VO::create($account_user_record, $user);
+			$account_user = account_user__VO::create($account_user_record, $a_account, $user, $role);
 			
 			$account_users[] = $account_user;
 		}

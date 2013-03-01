@@ -21,9 +21,10 @@ class account_usersAction {
 		
 		$accounts_repo = $repo_factory->get_repository_by_business_entity_name("account");
 		
+		$account = $accounts_repo->get_by_id($account_id_to_show_users);
 		
 		
-		$account_users = $accounts_repo->users_of_account__get_by_account_id($account_id_to_show_users);
+		$account_users = $accounts_repo->users_of_account__get_by_account($account);
 		
 		$a_command->set_parameter("account_users", $account_users);
 		
