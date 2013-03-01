@@ -50,8 +50,8 @@
     	<ul class="header">
         	<li class="w4">&nbsp;</li>
         	<li class="w24">Account Name</li>
-            <li class="w24">Created By</li>
-            <li class="w24">Date Created</li>
+            <li class="w24">Update By</li>
+            <li class="w24">Date Update</li>
             <li class="w24">Status</li>
         </ul>
 	    
@@ -60,7 +60,7 @@
 foreach ($accounts as $account){
 	$class_to_status = account_status_2_class_name($account->status);
 	$updateUser = $account->updateUser;
-	$updateUser_is_empty = !isset($updateUser) || !empty($updateUser) || trim($updateUser)==="";
+	$updateUser_is_empty = !isset($updateUser) || empty($updateUser) || trim($updateUser)==="";
 	if($updateUser_is_empty){
 		$updateUser = "&nbsp";
 	}
