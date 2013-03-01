@@ -1,11 +1,6 @@
 <?php 
 	require_once 'util/DBCHelper.php'; 
 	
-	$site_domain = "http://" .$_SERVER['HTTP_HOST'];
-	if(isset($active_site['domain'])){
-		$site_domain = $active_site['domain'];
-	}
-
 ?>
      
 <?php DBCHelper2::assert_that()->the_variable($css)->is_an_array(); ?>            
@@ -20,7 +15,7 @@
 		}
 ?>
 	<link 
-		href="<?php echo $site_domain . '/' . $cssName ?>" 
+		href="<?php echo BASEPATH . '/' . $cssName ?>" 
 		rel="<?php echo $rel_text; ?>"
 		type="text/css">
 <?php
