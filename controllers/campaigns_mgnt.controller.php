@@ -76,6 +76,18 @@ class campaigns_mgntController extends defaultController {
 	}
 
 	
+	public function _delete_account(){
+		
+		require_once REALPATH ."/controllers/campaigns_mgnt.actions/delete_account.action.php";
+		
+		$action = new delete_accountAction();
+		$action->execute($this->Command);
+	
+		
+		$this->redirect_to_controller_action("campaigns_mgnt", "accounts");
+		
+	}
+	
 	public function _add_user_to_account(){
 		
 		require_once REALPATH ."/controllers/campaigns_mgnt.actions/add_user_to_account.action.php";
@@ -87,6 +99,17 @@ class campaigns_mgntController extends defaultController {
 		parent::_defaultAction();
 	}
 	
+	public function _edit_account_user(){
+		
+		require_once REALPATH ."/controllers/campaigns_mgnt.actions/edit_account_user.action.php";
+		
+		$action = new edit_account_userAction();
+		$action->execute($this->Command);	
+	
+		
+		parent::_defaultAction();
+	}
+
 	public function _save_user_to_account(){
 		
 		require_once REALPATH ."/controllers/campaigns_mgnt.actions/save_user_to_account.action.php";
@@ -94,21 +117,9 @@ class campaigns_mgntController extends defaultController {
 		$action = new save_user_to_accountAction();
 		$action->execute($this->Command);	
 	
-		
-		parent::_defaultAction();
-	}
+		$idAccount = $this->Command->get_parameter("idAccount");
+		$this->redirect_to_controller_action("campaigns_mgnt", "account_users", "idAccount/{$idAccount}");
 
-	
-	public function _delete_account(){
-		
-		require_once REALPATH ."/controllers/campaigns_mgnt.actions/delete_account.action.php";
-		
-		$action = new delete_accountAction();
-		$action->execute($this->Command);
-	
-		
-		$this->redirect_to_controller_action("campaigns_mgnt", "accounts");
-		
 	}
 	
 	

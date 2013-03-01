@@ -37,7 +37,7 @@ class account_user__VO extends base__BE {
 		
 		$data = parent::POST_array__prepare($a_post_array);
 		
-		$instance = new account__BE($data);
+		$instance = new account_user__VO($data);
 
 		foreach($data as $field_name=>$field_value){
 			//$instance->$field_name = $field_value;

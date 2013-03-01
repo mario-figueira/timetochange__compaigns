@@ -87,6 +87,16 @@ class account__REPO extends base__REPO {
 		return $ret_val;
 	}
 	
+	public function add_user_to_account($a_user_id, $a_account_id, $a_role_id){
+		$useraccountrule_dao = $this->get_default_dao_by_table_name("useraccountrole");
+		
+		$data_to_persist = array('idAccount'=>$a_account_id, 'idAccountRole'=>$a_role_id, 'idUser'=>$a_user_id, 'isInvited'=>false);
+		
+		$useraccountrule_dao->persist($data_to_persist);
+
+		
+	}
+	
 	
 
 }

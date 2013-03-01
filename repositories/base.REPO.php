@@ -64,6 +64,8 @@ abstract class base__REPO {
 	public abstract function get_by_id($a_business_entity_id);
 
 	public function _store($a_business_entity_instance){
+		$ret_val = "";
+		
 		$dao = $this->get_default_dao_by_table_name($this->business_entity);
 		
 		$business_entity_id = $a_business_entity_instance->id;
@@ -77,10 +79,16 @@ abstract class base__REPO {
 		$store_call_res = null;
 		if($business_entity_record_exists){
 			$dao->update_by_id($business_entity_id, $business_entity_field_array);
+			
 		}
 		else{
-			$new_id = $dao->persist($business_entity_field_array);
+			$call_ret = $dao->persist($business_entity_field_array);
+			$business_entity_id = $call_ret['id'];
 		}
+		
+		$ret_val = $business_entity_id;
+		
+		return $ret_val;
 	}
 
 	public function remove($a_business_entity_instance){

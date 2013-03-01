@@ -623,12 +623,12 @@ class defaultController {
 		return key_exists($a_key, $_POST) ? $_POST[$a_key] : $a_default_value;
 	}
 
-	protected function redirect_to_controller_action($a_controller_name, $a_action_name){
+	protected function redirect_to_controller_action($a_controller_name, $a_action_name, $a_parameters_str=null){
 		require_once REALPATH ."/views/action_url_builder.php";
 		$action_url_builder = new action_url_builder();
 		
 		$selected_menu_index = $this->Command->get_parameter("selected_menu");
-		$action_url = $action_url_builder->build_url($a_controller_name, $a_action_name, $selected_menu_index);
+		$action_url = $action_url_builder->build_url($a_controller_name, $a_action_name, $selected_menu_index, $a_parameters_str);
 		
 		header("location:" .$action_url);
 	}

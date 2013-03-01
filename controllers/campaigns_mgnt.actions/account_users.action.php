@@ -6,14 +6,25 @@ class account_usersAction {
 	public function execute($a_command){
 		require_once REALPATH ."/repositories/repository.FACTORY.php";
 		
-		$selected = $_POST['selected'];
+		$idAccount = $a_command->get_variable_from_context("idAccount", null);
 		
-		$no_selected_accounts = !isset($selected);
-		if($no_selected_accounts){
-			return;
+		$idAccount_was_passed = isset($idAccount);
+		
+		$account_id_to_show_users = null;
+		if($idAccount_was_passed){
+			$account_id_to_show_users = $idAccount;
+		}
+		else{
+			$selected = $_POST['selected'];
+
+			$no_selected_accounts = !isset($selected);
+			if($no_selected_accounts){
+				return;
+			}
+			
+			$account_id_to_show_users = $selected[0];
 		}
 		
-		$account_id_to_show_users = $selected[0];
 
 		
 		
@@ -26,6 +37,7 @@ class account_usersAction {
 		
 		$account_users = $accounts_repo->users_of_account__get_by_account($account);
 		
+		$a_command->set_parameter("account", $account);
 		$a_command->set_parameter("account_users", $account_users);
 		
 	}

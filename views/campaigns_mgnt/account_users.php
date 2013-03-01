@@ -1,9 +1,14 @@
 <?php
 	$transparent_img_url = $this->build_img_url("transparent.png");
 	
-	$account_delete_action_url = $this->build_action_url('campaigns_mgnt', 'delete_account');
-	$account_edit_action_url = $this->build_action_url('campaigns_mgnt', 'edit_account');
-	$account_add_user_action_url = $this->build_action_url('campaigns_mgnt', 'add_user_to_account');
+	$account_name = $account->name;
+	$idAccount = $account->id;
+
+	
+	$account_user_delete_action_url = $this->build_action_url('campaigns_mgnt', 'delete_account_user');
+	$account_user_edit_action_url = $this->build_action_url('campaigns_mgnt', 'edit_account_user');
+	$account_add_user_action_url = $this->build_action_url('campaigns_mgnt', 'add_user_to_account', "idAccount/{$idAccount}");
+	$account_invite_user_action_url = $this->build_action_url('campaigns_mgnt', 'invite_user_to_account', "idAccount/{$idAccount}");
 ?>
 
 <script type="text/javascript">
@@ -18,28 +23,32 @@
 
 
 	
-	function account_delete(){
-		mysubmit("account_list_form", "<?php echo $account_delete_action_url;?>")
+	function account_user_delete(){
+		mysubmit("account_list_form", "<?php echo $account_user_delete_action_url;?>")
 	}
 	
-	function account_edit(){
-		mysubmit("account_list_form", "<?php echo $account_edit_action_url;?>")
+	function account_user_edit(){
+		mysubmit("account_list_form", "<?php echo $account_user_edit_action_url;?>")
 		
 	}
 	
 	function account_add_user(){
 		mysubmit("account_list_form", "<?php echo $account_add_user_action_url;?>")
 	}
-	
+
+	function account_invite_user(){
+		mysubmit("account_list_form", "<?php echo $account_invite_user_action_url;?>")
+	}
+
 	
 </script>
 
     <div class="actionButtons">
         <ul>
-            <li><a href="#" title="Add User to Account"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsNew"></a></li>
-		<li><a href="#" title="Invite User to Account"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsNew"></a></li>
-		<li><a href="javascript:void(0);" title="Delete User from Account" ><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsTrash"></a></li>
-		<li><a href="javascript:void(0);" title="Edit User from Account" ><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsPencil"></a></li>
+            <li><a href="javascript:void(0);" title="Add User to Account" onclick="javascript:account_add_user();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsNew"></a></li>
+		<li><a href="javascript:void(0);" title="Invite User to Account" onclick="javascript:account_invite_user();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsNew"></a></li>
+		<li><a href="javascript:void(0);" title="Delete User from Account" onclick="javascript:account_user_delete();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsTrash"></a></li>
+		<li><a href="javascript:void(0);" title="Edit User from Account" onclick="javascript:account_user_edit();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsPencil"></a></li>
         </ul>        
     </div>
 	
@@ -60,11 +69,9 @@
 foreach ($account_users as $account_user){
 	$user = $account_user->user;
 	$role = $account_user->role;
-	$account = $account_user->account;
 	
 	$user_name = $user->name;
 	$role_name = $role->name;
-	$account_name = $account->name;
 	$class_to_status = account_status_2_class_name($user->status);
 ?>
 	<ul class="row">

@@ -4,7 +4,6 @@ require_once __DIR__ . "/base.BE.php";
 
 class account__BE extends base__BE {
 
-	protected $idAccount;
 	protected $name;
 	protected $email;
 	protected $zip1;
