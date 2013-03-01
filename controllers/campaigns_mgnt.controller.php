@@ -124,4 +124,16 @@ class campaigns_mgntController extends defaultController {
 		
 		parent::_defaultAction();
 	}
+	
+	public function _delete_campaign(){
+		
+		require_once REALPATH ."/controllers/campaigns_mgnt.actions/delete_campaign.action.php";
+		
+		$action = new delete_campaignAction();
+		$action->execute($this->Command);
+	
+		
+		$this->redirect_to_controller_action("campaigns_mgnt", "campaigns");
+		
+	}
 }
