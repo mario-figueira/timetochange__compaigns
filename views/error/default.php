@@ -13,7 +13,7 @@
  */
 ?>
 
-<div class="center_main">
+<div style="position:relative;left:100px;">
 	<!-- END OF HEADER GENERATOR-->
 	<!--<div class="tit_topo">
 		ERROR
