@@ -9,7 +9,9 @@ class explorerController extends defaultController {
 	}
 	
 	public function _home(){
-		parent::_defaultAction();
+		$this->enforce_user_is_loggedin();
+
+		$this->redirect_to_controller_action("explorer", "prompts");
 	}
 
 	public function _prompts(){
