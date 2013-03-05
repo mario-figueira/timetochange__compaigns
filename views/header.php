@@ -112,7 +112,7 @@
 					}
 					else{
 ?>
-						<li><a class="<?php echo $login_classes;?>" href="<?php echo $this->build_action_url("login","show_login"); ?>" title="Login"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Login" class="icoNavLock"></a></li>
+						<li><a class="selected" href="<?php echo $this->build_action_url("login","show_login"); ?>" title="Login"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Login" class="icoNavLock"></a></li>
 <?php
 					}
 ?>

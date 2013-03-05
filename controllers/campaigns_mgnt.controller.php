@@ -5,14 +5,14 @@ require_once 'controllers/default.controller.php';
 class campaigns_mgntController extends defaultController {
 
 	public function _default() {
-		$this->redirect_to_controller_action("campaigns_mgnt", "accounts");
+		$this->redirect_to_controller_action("campaigns_mgnt", "campaigns");
 	}
 	
 	public function _home(){
 		
 		$this->enforce_user_is_loggedin();
 
-		$this->redirect_to_controller_action("campaigns_mgnt", "accounts");
+		$this->redirect_to_controller_action("campaigns_mgnt", "campaigns");
 	}
 
 	public function _accounts(){

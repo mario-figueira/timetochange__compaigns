@@ -22,7 +22,7 @@ class loginController extends defaultController {
 		
 		//$this->execute_action_class();
 		
-		$this->redirect_to_controller_action("campaigns_mgnt", "accounts");
+		$this->redirect_to_controller_action("campaigns_mgnt", "campaigns");
 			
 		parent::_defaultAction();
 	}

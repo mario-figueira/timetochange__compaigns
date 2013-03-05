@@ -94,12 +94,13 @@ class defaultController {
 		}
 	}
 
-	private static $C_DEFAULT_CALL_UNLOCK_KEY = "tranca_do_default";
+
 
 	protected function _default() {
 		$this->enforce_user_is_loggedin();
 
-		$this->_defaultAction();
+		$this->redirect_to_controller_action("campaigns_mgnt", "campaigns");
+		
 	}
 
 
@@ -208,7 +209,7 @@ class defaultController {
 					$selected_menu = $this->Command->get_parameter("selected_menu", null, false);
 					$selected_menu_is_set = isset($selected_menu);
 					if(!$selected_menu_is_set){
-						$this->Command->set_parameter("selected_menu", 7); //
+						$this->Command->set_parameter("selected_menu", 2); //2=campaign_mgnt control
 					}
 /*
 					$var_controllername = $this->Command->get_controller_name();
