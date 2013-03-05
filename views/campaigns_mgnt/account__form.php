@@ -4,7 +4,7 @@
 ?>
 
     <!--List fields-->
-    <form id="account_form" method="post" action="<?php echo $submit_action_url;?>" class="form">
+    <form id="account_form" method="post" action="<?php echo $submit_action_url;?>" class="form" enctype="multipart/form-data">
 	<input name="field__id" type="hidden" value="<?php echo $account->id; ?>">
 	
 	
@@ -17,9 +17,10 @@
         </ul>
         <ul>
        	  <li class="label">Logo</li>
-            <li class="field">
-			<input type="hidden" value="" name="field__logo">
-			<input type="button" value="Upload" class="formButton">
+            <li class="field" >
+			<div style="position:relative">
+				<input name="field__logo" type="file"  class="formField fwLarge" >					
+			</div>
             </li>
         </ul> 
     	  
