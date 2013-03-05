@@ -8,6 +8,14 @@
         </ul>        
     </div>
 
+
+<?php
+	$submit_action_url = $this->build_action_url('settings','save_alias');
+?>
+
+    <!--List fields-->
+    <form id="alias_form" method="post" action="<?php echo $submit_action_url;?>" class="form">
 <?php
 include_once 'alias__form.php';
 ?>   
+	       </form>

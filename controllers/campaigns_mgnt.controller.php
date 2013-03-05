@@ -138,4 +138,21 @@ class campaigns_mgntController extends defaultController {
 		parent::_defaultAction();
 	}
 
+	
+	public function _add_alias_to_campaign(){
+		
+		$this->execute_action_class();
+			
+		parent::_defaultAction();
+	}
+
+	public function _save_alias_to_campaign(){
+		
+		$this->execute_action_class();
+	
+		$idCampaign = $this->Command->get_parameter("idCampaign");
+		$this->redirect_to_controller_action("campaigns_mgnt", "campaign_aliases", "idCampaign/{$idCampaign}");
+	}	
+	
+	
 }

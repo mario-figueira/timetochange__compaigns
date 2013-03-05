@@ -25,7 +25,7 @@ class campaign__REPO extends base__REPO {
 		return $ret_val;
 		
 	}
-	
+		
 	public function all__get(){
 				
 		$campaign_dao = $this->get_default_dao_by_table_name("campaign");
@@ -77,6 +77,17 @@ class campaign__REPO extends base__REPO {
 		
 		return $ret_val;
 	}	
+	
+	public function add_alias_to_campaign($a_alias, $a_campaign_id, $a_prompt_id, $a_prompt_type_id){
+		$campaignaliases_dao = $this->get_default_dao_by_table_name("campaignaliases");
+		
+		$data_to_persist = array('alias'=>$a_alias, 'idCampaign'=>$a_campaign_id, 'idPrompt'=>$a_prompt_id, 'idPromptType'=>$a_prompt_type_id);
+		
+		$campaignaliases_dao->persist($data_to_persist);
+		
+	}
+	
+	
 	
 
 }

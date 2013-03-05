@@ -55,6 +55,8 @@
         	<li class="w4">&nbsp;</li>
         	<li class="w24">Alias</li>
         	<li class="w24">Campaign</li>
+        	<li class="w24">Prompt in</li>
+        	<li class="w24">Prompt out</li>
         </ul>
 	    
 <?php
@@ -63,6 +65,8 @@ foreach ($campaign_aliases as $campaign_alias){
 	$alias = $campaign_alias->alias;
 	$campaign = $campaign_alias->campaign;
 	$campaign_name = $campaign->name;
+//	$prompt_in = $campaign_alias->prompt_in;
+//	$prompt_out = $campaign_alias->prompt_out;
 	
 ?>
 	<ul class="row">
@@ -71,6 +75,8 @@ foreach ($campaign_aliases as $campaign_alias){
              </label>   
 		    <li class="w24"><?php echo $alias; ?></li>
                 <li class="w24"><?php echo $campaign_name; ?></li>
+                <li class="w24"><?php echo $prompt_in; ?></li>
+                <li class="w24"><?php echo $prompt_out; ?></li>
                 <li class="w24"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="<?php echo $class_to_status;?>"></li>
         </ul> 
 <?php	    
