@@ -14,7 +14,8 @@ class add_user_to_accountAction extends baseAction {
 		$account = $account_repo->get_by_id($idAccount);
 		
 		$role_repo = $this->get_repository_by_business_entity_name('role');
-		$default_role = $role_repo->get_by_id(3);
+		$C_BASIC_ROLE = 3;
+		$default_role = $role_repo->get_by_id($C_BASIC_ROLE);
 				
 		require_once REALPATH .'/value_objects/account_user.VO.php';
 		
