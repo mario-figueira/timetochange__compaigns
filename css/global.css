@@ -370,6 +370,9 @@ a:hover {
 .listTable ul li.w4 { width: 4%; }
 .listTable ul li.w24 { width: 24%; }
 
+.listTable ul li.w5 { width: 5%; }
+.listTable ul li.w19 { width: 19%; }
+
 .listTable ul.header {
 	color: #808080;
 }
