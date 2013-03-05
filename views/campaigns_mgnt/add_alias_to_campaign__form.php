@@ -4,13 +4,7 @@
 	
     <div class="listForm">
 	    
-	    
-    	<ul>
-        	<li class="label">Alias*</li>
-            <li class="field">
-            	<input name="field__alias" type="text" class="formField fwLarge" value="<?php echo $vto->field__alias; ?>">
-            </li>
-        </ul>
+
 
 	    	  <ul>
 		<li class="label">Alias*</li>
@@ -19,8 +13,9 @@
 			
 			<?php 
 			foreach ($vto->available_aliases as $available_alias){
+				$alias = $available_alias->alias;
 			?>	
-				<option value="<?php echo $available_alias->id; ?>"><?php echo $available_alias->alias; ?></option>
+				<option value="<?php echo $alias->id; ?>"><?php echo $alias->alias; ?></option>
 			<?php
 			}
 			?>

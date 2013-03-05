@@ -18,7 +18,7 @@
         <ul>
        	  <li class="label">Logo</li>
             <li class="field" >
-			<div style="position:relative">
+			<div>
 				<input name="field__logo" type="file"  class="formField fwLarge" >					
 			</div>
             </li>

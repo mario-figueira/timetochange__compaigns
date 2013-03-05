@@ -24,6 +24,12 @@ class save_alias_to_campaignAction extends baseAction {
 		$idPromptIn = $add_alias_to_campaign__VTO->field__idPromptIn;
 		$idPromptOut = $add_alias_to_campaign__VTO->field__idPromptOut;
 		
+		$prompt_repo = $this->get_repository_by_business_entity_name("prompt");
+
+		$promptIn = $prompt_repo->get_by_id($idPromptIn);
+		$promptInPrompt = $promptIn->prompt;
+		$promptOut = $prompt_repo->get_by_id($idPromptOut);
+		$promptOutPrompt = $promptOut->prompt;
 		// grab the campaign from the database	
 		$campaign_repo = $this->get_repository_by_business_entity_name("campaign");
 		//$campaign = $campaign_repo->get_by_id($campaign_id);
@@ -39,8 +45,14 @@ class save_alias_to_campaignAction extends baseAction {
 		//$prompt_function_out = $prompt_function_repo->get_by_id(prompt_function_enum::$C_SAIDA);
 
 		
-		$campaign_repo->add_alias_to_campaign($alias, $idCampaign, $idPromptIn, prompt_function_enum::$C_ENTRADA);
-		$campaign_repo->add_alias_to_campaign($alias, $idCampaign, $idPromptOut, prompt_function_enum::$C_SAIDA);
+		$idCampaignAlias = $campaign_repo->add_alias_to_campaign($alias, $idCampaign);
+		
+		$idPromptAlias = $campaign_repo->add_prompt_function_to_campaign_alias($idCampaignAlias, $promptInPrompt, prompt_function_enum::$C_ENTRADA);
+
+		//$call_ret = $campaign_repo->add_alias_to_campaign($alias, $idCampaign);
+		//$idCampaignAlias = $call_ret['id'];
+		$idPromptAlias = $campaign_repo->add_prompt_function_to_campaign_alias($idCampaignAlias, $promptOutPrompt, prompt_function_enum::$C_SAIDA);
+
 
 		
 

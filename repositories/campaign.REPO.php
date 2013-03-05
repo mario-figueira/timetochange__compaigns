@@ -78,15 +78,34 @@ class campaign__REPO extends base__REPO {
 		return $ret_val;
 	}	
 	
-	public function add_alias_to_campaign($a_alias, $a_campaign_id, $a_prompt_id, $a_prompt_type_id){
+	public function add_alias_to_campaign($a_alias, $a_campaign_id){
 		$campaignaliases_dao = $this->get_default_dao_by_table_name("campaignaliases");
 		
-		$data_to_persist = array('alias'=>$a_alias, 'idCampaign'=>$a_campaign_id, 'idPrompt'=>$a_prompt_id, 'idPromptType'=>$a_prompt_type_id);
+		$data_to_persist = array('alias'=>$a_alias, 'idCampaign'=>$a_campaign_id);
 		
-		$campaignaliases_dao->persist($data_to_persist);
+		$persist_callret = $campaignaliases_dao->persist($data_to_persist);
+		
+		$id = $persist_callret['id'];
+		
+		$ret_val = $id;
+		
+		return $ret_val;
 		
 	}
 	
+	public function add_prompt_function_to_campaign_alias($a_idCampaignAlias, $a_prompt, $a_idPromptFunction){
+		$promptaliases_dao = $this->get_default_dao_by_table_name("promptaliases");
+		
+		$data_to_persist = array("name"=>"noname","idCampaingAlias"=>$a_idCampaignAlias, "prompt"=>$a_prompt, "idPromptFunction"=>$a_idPromptFunction);
+		
+		$persist_callret = $promptaliases_dao->persist($data_to_persist);
+		
+		$id = $persist_callret['id'];
+		
+		$ret_val = $id;
+		
+		return $ret_val;
+	}
 	
 	
 

@@ -22,11 +22,13 @@ class add_alias_to_campaignAction extends baseAction {
 		//$a_command->set_parameter("campaign_prompts",$campaign_prompts);
 		
 
+		$idAccount = $campaign->idAccount;
+		$account_repo = $this->get_repository_by_business_entity_name('account');
+		$account = $account_repo->get_by_id($idAccount);
 				
 		
-		$alias_repo = $this->get_repository_by_business_entity_name("alias");
 
-		$available_alias = $alias_repo->all__get();
+		$available_alias = $account_repo->alias_of_account__get_by_account($account);
 
 		
 		//$a_command->set_parameter("campaign_alias", $campaign_alias);
