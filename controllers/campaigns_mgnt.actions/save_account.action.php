@@ -21,10 +21,11 @@ class save_accountAction extends baseAction {
 		$target_folder = "{$upload_dir}/accounts__logos";
 		$target_filename = $logo_file_name;
 		
-
+		$extention_array = array("jpg", "jpeg", "gif", "png", "bmp"); 
+		
 		require_once REALPATH ."/util/UploadHelper.php";
 		$upload_helper = new UploadHelper();
-		$upload_helper->move_file($logo_file_descriptor, $target_folder, $target_filename);
+		$upload_helper->move_file($logo_file_descriptor, $target_folder, $target_filename,$extention_array);
 		
 		$account->logo = $target_filename;
 		

@@ -4,11 +4,26 @@
 ?>
 
     <!--List fields-->
-    <form id="campaign_form" method="post" action="<?php echo $submit_action_url;?>" class="form">
+    <form id="campaign_form" method="post" action="<?php echo $submit_action_url;?>" class="form" enctype="multipart/form-data">
 	<input name="field__id" type="hidden" value="<?php echo $campaign->id; ?>">
 	
 	
     <div class="listForm">
+	    <ul>
+		<li class="label">Account*</li>
+		<li class="field">
+			<select name="field__idAccount" class="formField fwLargeList">
+			
+			<?php 
+			foreach ($accounts as $account){
+			?>	
+				<option value="<?php echo $account->id; ?>"><?php echo $account->name; ?></option>
+			<?php
+			}
+			?>
+			</select>
+		</li>
+	    </ul>
 	    <ul>
 		<li class="label">Type*</li>
 		<li class="field">
@@ -28,6 +43,14 @@
         	<li class="label">Campaign Name*</li>
             <li class="field">
             	<input name="field__name" type="text" class="formField fwLarge" value="<?php echo $campaign->name; ?>">
+            </li>
+        </ul>
+	    <ul>
+       	  <li class="label">Logo</li>
+            <li class="field" >
+			<div style="position:relative">
+				<input name="field__logo" type="file"  class="formField fwLarge" >					
+			</div>
             </li>
         </ul>
 	   

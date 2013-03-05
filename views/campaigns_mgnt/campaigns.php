@@ -55,7 +55,7 @@
     	<ul class="header">
         	<li class="w4">&nbsp;</li>
         	<li class="w24">Campaign Name</li>
-            <li class="w24">Alias</li>
+            <li class="w24">Account</li>
             <li class="w24">Date Update</li>
             <li class="w24">Status</li>
         </ul>
@@ -73,7 +73,7 @@ foreach ($campaigns as $campaign){
                 <li class="w4"><input name="selected[]" type="checkbox" value="<?php echo $campaign->id ;?>" class="formCheckbox"></li>
              </label>   
 		    <li class="w24"><?php echo $campaign->name; ?></li>
-                <li class="w24"><?php echo "alias"; ?></li>
+                <li class="w24"><?php echo "account"; ?></li>
                 <li class="w24"><?php echo $campaign->updateTimestamp; ?></li>
                 <li class="w24"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="<?php echo $class_to_status;?>"></li>
         </ul> 
