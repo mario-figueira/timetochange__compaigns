@@ -9,10 +9,15 @@ class campaigns_mgntController extends defaultController {
 	}
 	
 	public function _home(){
+		
+		$this->enforce_user_is_loggedin();
+
 		$this->redirect_to_controller_action("campaigns_mgnt", "accounts");
 	}
 
 	public function _accounts(){
+		
+		$this->enforce_user_is_loggedin();
 		
 		$this->execute_action_class();
 		
