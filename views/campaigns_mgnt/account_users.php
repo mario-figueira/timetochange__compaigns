@@ -42,7 +42,9 @@
 
 	
 </script>
-
+<div>
+	<?php echo 'Account Name: '. $account_name;?>
+</div>
     <div class="actionButtons">
         <ul>
             <li><a href="javascript:void(0);" title="Add User to Account" onclick="javascript:account_add_user();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsNew"></a></li>

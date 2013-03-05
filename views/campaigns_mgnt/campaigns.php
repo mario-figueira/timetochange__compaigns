@@ -40,7 +40,7 @@
 
     <div class="actionButtons">
         <ul>
-            <li><a href="<?php echo $this->build_action_url('campaigns_mgnt', 'add_campaign'); ?>" title="Add Account"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsNew"></a></li>
+            <li><a href="<?php echo $this->build_action_url('campaigns_mgnt', 'add_campaign'); ?>" title="Add Campaign"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsNew"></a></li>
 		<li><a href="javascript:void(0);" title="Delete Campaign" onclick="javascript:campaign_delete();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsTrash"></a></li>
 		<li><a href="javascript:void(0);" title="Edit Campaign" onclick="javascript:campaign_edit();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsPencil"></a></li>
 		<li><a href="javascript:void(0);" title="Users Campaign" onclick="javascript:campaign_users();"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsUser"></a></li>

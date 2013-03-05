@@ -1,7 +1,9 @@
 <?php
 	$transparent_img_url = $this->build_img_url("transparent.png");
 ?>
-
+<div>
+	<?php echo 'Account Name: '. $account_user->account->name;?>
+</div>
     <div class="actionButtons">
         <ul>
             <li><a href="<?php echo $this->build_action_url('campaigns_mgnt', 'accounts'); ?>" title="Back"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoActionsBack"></a></li>

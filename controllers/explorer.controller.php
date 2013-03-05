@@ -12,11 +12,40 @@ class explorerController extends defaultController {
 		parent::_defaultAction();
 	}
 
-	public function _button1(){
+	public function _prompts(){
+		
+		$this->execute_action_class();
+	
+		
 		parent::_defaultAction();
 	}
 	
-	public function _button2(){
+	public function _add_prompt(){
+		
+		$this->execute_action_class();
+	
+		
 		parent::_defaultAction();
+	}
+	
+	public function _save_prompt(){
+		
+		$this->execute_action_class();
+			
+		$this->redirect_to_controller_action("explorer", "prompts");		
+	}
+	
+	public function _delete_prompt(){
+		
+		$this->execute_action_class();	
+		
+		$this->redirect_to_controller_action("explorer", "prompts");		
+	}
+	
+	public function _edit_prompt(){
+		
+		$this->execute_action_class();
+			
+		parent::_defaultAction();		
 	}
 }
