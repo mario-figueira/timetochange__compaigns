@@ -11,7 +11,7 @@
     </div>
     <div class="buttons">
         <ul>
-            <li><a class="" href="<?php echo $this->build_action_url('explorer', 'prompts'); ?>"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoSubSound"><span>Prompts</span></a></li>
+            <li><a class="selected" href="<?php echo $this->build_action_url('explorer', 'prompts'); ?>"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoSubSound"><span>Prompts</span></a></li>
         </ul>                       
     </div>    
 </div>      

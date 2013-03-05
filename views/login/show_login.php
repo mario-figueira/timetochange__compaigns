@@ -1,34 +1,18 @@
 <?php
 	$submit_action_url = $this->build_action_url('login','login');
 ?>
-
+<fieldset class="login">
     <!--List fields-->
     <form id="login_form" method="post" action="<?php echo $submit_action_url;?>" class="form" enctype="multipart/form-data">
 	
 	
-    <div class="listForm">
-    	<ul>
-        	<li class="label">Username</li>
-            <li class="field">
-            	<input name="username" type="email" class="formField fwLarge" >
-            </li>
-        </ul>
-    	  
-	  <ul>
-        	<li class="label">Password</li>
-            <li class="field">
-			<input name="password" type="text" class="formField fwLarge">
-            </li>
-        </ul>
-	    	 
-	    <ul>
-		<li class="label"></li>
-            <li class="field">
-			<input type="submit" value="Login" class="formButton">
-            </li>
-        </ul> 
-    </div>
+		<input name="username" type="email" value="Email" class="formField fwLogin formField_clear">
+            <input name="password" type="password" value="Password" class="formField fwLogin formField_clear">
+            <p>&nbsp;</p>
+            <input type="submit" value="Login" class="formButton fbLogin">
     </form>
+</fieldset>
+
     <!--End of List fields-->
     
     

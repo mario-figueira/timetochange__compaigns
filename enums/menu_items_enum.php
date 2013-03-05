@@ -15,7 +15,8 @@ require_once REALPATH .'util/DBCHelper.php';
 		public static $C_SETTINGS = 4;
 		public static $C_PROFILE = 5;
 		public static $C_LOGOUT = 6;
-		public static $C_SAMPLE_CODE = 7;
+		public static $C_LOGIN = 7;
+		public static $C_SAMPLE_CODE = 8;
 		
 		public static function menu_item_2_name($a_menu_index) {
 			DBCHelper2::require_that()->the_param($a_menu_index)->is_an_integer_string();
@@ -43,6 +44,9 @@ require_once REALPATH .'util/DBCHelper.php';
 					break;
 				case menus_items_enum::$C_LOGOUT:
 					$menu_name = "logout";
+					break;
+				case menus_items_enum::$C_LOGIN:
+					$menu_name = "login";
 					break;
 				case menus_items_enum::$C_SAMPLE_CODE:
 					$menu_name = "sample_code";

@@ -58,6 +58,7 @@
 	$profile_classes = "";
 	$logout_classes = "";
 	$sample_code_classes = "";
+	$login_classes = "";
 	
 	
 	//$selected_menu = menus_items_enum::$C_CAMPAIGNS; //hardcoded;
@@ -79,6 +80,9 @@
 			$profile_classes = "selected";
 			break;
 		case menus_items_enum::$C_LOGOUT;
+			$logout_classes = "selected";
+			break;
+		case menus_items_enum::$C_LOGIN;
 			$logout_classes = "selected";
 			break;
 		case menus_items_enum::$C_SAMPLE_CODE;
@@ -108,7 +112,7 @@
 					}
 					else{
 ?>
-						<li><a class="<?php echo $login_classes;?>" href="<?php echo $this->build_action_url("login","show_login"); ?>" title="Logout"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Login" class="icoNavCirclex"></a></li>
+						<li><a class="<?php echo $login_classes;?>" href="<?php echo $this->build_action_url("login","show_login"); ?>" title="Login"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Login" class="icoNavLock"></a></li>
 <?php
 					}
 ?>

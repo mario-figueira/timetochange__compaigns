@@ -96,26 +96,10 @@ class defaultController {
 
 	private static $C_DEFAULT_CALL_UNLOCK_KEY = "tranca_do_default";
 
-	protected function _default($a_unlock_key = null) {
-		$unlock_key = $a_unlock_key[0];
-		$was_passed_a_correct_unlock_key = ($unlock_key == self::$C_DEFAULT_CALL_UNLOCK_KEY);
-		if (!$was_passed_a_correct_unlock_key) {
-			throw new Exception("Default.Default não pode ser chamado directamente. Usa o defaultAction", 1, null);
-		}
-		try {
-			$this->default_FO();
-		} catch (Exception $e) {
-			Logger::exception($this, $e);
-			Logger::debug($this, 'Exception while executing the default action of the default controller. The exception message was:' . $e->getMessage());
-			throw $e;
-		}
+	protected function _default() {
+		$this->enforce_user_is_loggedin();
 
 		$this->_defaultAction();
-	}
-
-	private function default_FO() {
-
-
 	}
 
 
@@ -161,6 +145,8 @@ class defaultController {
 	}
 
 	protected function execute_action_class(){
+			$this->enforce_user_is_loggedin();
+		
 			$controller_name = $this->Command->get_controller_name();
 			$action = $this->Command->get_action();
 
@@ -218,19 +204,21 @@ class defaultController {
 				} else {
 
 					Logger::debug($this, 'executing ' . $action);
-
+					
+					$selected_menu = $this->Command->get_parameter("selected_menu", null, false);
+					$selected_menu_is_set = isset($selected_menu);
+					if(!$selected_menu_is_set){
+						$this->Command->set_parameter("selected_menu", 7); //
+					}
+/*
 					$var_controllername = $this->Command->get_controller_name();
 
 					$is_default_controller = ($var_controllername == DEFAULT_CONTROLLER_NAME);
 					$is_default_action = ($action == DEFAULT_ACTION_NAME);
 					$is_default_controller_and_default_action = ($is_default_controller && $is_default_action);
-
-					//set_error_handler(array(get_class(),'_error'));
-					if ($is_default_controller_and_default_action) {
-						call_user_func(array(& $this, '_' . $action), array(self::$C_DEFAULT_CALL_UNLOCK_KEY));
-					} else {
-						call_user_func(array(& $this, '_' . $action));
-					}
+*/
+					call_user_func(array(& $this, '_' . $action));
+					
 				}
 			
 		} catch (Exception $e) {
@@ -611,7 +599,8 @@ class defaultController {
 */
 	protected function enforce_user_is_loggedin() {
 		if (!$this->is_logged_in()) {
-			$this->_error("Deverá estar logado para ver este conteúdo.", 1);
+			//$this->_error("Deverá estar logado para ver este conteúdo.", 1);
+			$this->redirect_to_controller_action("login", "show_login");
 		}
 	}
 

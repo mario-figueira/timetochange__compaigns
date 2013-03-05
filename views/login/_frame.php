@@ -9,25 +9,6 @@
     	<p class="title">Login</p>
         <p class="desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
     </div>
-    <div class="buttons">
-        <ul>
-            <!--
-		<li><a class="" href="#"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoNavCirclex"><span>Button A</span></a></li>
-            <li><a class="selected" href="#"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoNavCirclex"><span>Button B</span></a></li>
-            <li><a class="" href="<?php echo $this->build_action_url('sample', 'show'); ?>"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoNavCirclex"><span>Sample/Show</span></a></li>
-		  -->
-            <li><a class="selected" href="<?php echo $this->build_action_url('login', 'show_login'); ?>"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="icoSubGroup"><span>Login</span></a></li>
-        </ul>                       
-    </div>    
-</div>      
-
-<!--End of Nav and Subnav-->
-
-<!--Start Content-->
-
-<div class="content">
-
-	<div class="breadcrumbs"><a href="#">Breadcrumbs</a> / Page</div>
 
      {{content}}
     
@@ -36,3 +17,11 @@
 </div>
 
 <!--End of Content-->
+<div class="clock">
+	<?php 
+		$hourNow = date("G:i");
+		$dateNow = date("j F Y");
+	?>
+    <p class="time"><?php echo $hourNow;?></p>
+    <p class="date"><?php echo $dateNow;?></p>
+</div>

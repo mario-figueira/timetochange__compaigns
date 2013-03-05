@@ -31,6 +31,7 @@ $(function() {
 	2. inputs
 	------------------------------------------------------------- */
 
+	$(document).ready(function(){
 $(".formField_clear").each(function() {
 	
 	var textField_clear = this.value;
@@ -47,6 +48,7 @@ $(".formField_clear").each(function() {
 		}
 	});
 	
+});
 });
 
 $(".formField")
