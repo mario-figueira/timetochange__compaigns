@@ -133,7 +133,12 @@ class defaultModel {
 
 			foreach ($data as $key => $value) {
 				$cols[] = "`$key`";
-				$values [] = '\'' . mysql_escape_string($value) . '\'';
+				if(is_a($value, "DateTime")){
+					$values [] = 'UNIX_TIMESTAMP(' . $value->getTimestamp() . ')';
+				}
+				else{
+					$values [] = '\'' . mysql_escape_string($value) . '\'';
+				}
 			}
 			$sql .= implode(',', $cols);
 			$sql .= ') VALUES (';
@@ -310,8 +315,14 @@ class defaultModel {
 		SET ';
 
 			$i = 1;
+			
+
 			foreach ($data as $key => $value) {
-				$sql .= ' ' . $key . '=' . $this->format($value) . (($i == sizeof($data)) ? ' ' : ' ,');
+				if(is_a($value, "DateTime")){
+					$sql .= ' ' . $key . '=' . 'UNIX_TIMESTAMP(' . $value->getTimestamp() . ')' . (($i == sizeof($data)) ? ' ' : ' ,');
+				}else{
+					$sql .= ' ' . $key . '=' . $this->format($value) . (($i == sizeof($data)) ? ' ' : ' ,');
+				}
 				$i++;
 			}
 			$sql .= 'WHERE id=' . $id . ';';

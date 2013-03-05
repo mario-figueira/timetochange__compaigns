@@ -64,11 +64,8 @@
 
 foreach ($accounts as $account){
 	$class_to_status = account_status_2_class_name($account->status);
-	$updateUser = $account->updateUser;
-	$updateUser_is_empty = !isset($updateUser) || empty($updateUser) || trim($updateUser)==="";
-	if($updateUser_is_empty){
-		$updateUser = "&nbsp";
-	}
+	
+	$updateUser= $this->empty2nbsp($account->updateUser);
 	
 	$select_checkbox_field_name = "selected__" .$account->id;
 	

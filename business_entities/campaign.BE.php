@@ -6,6 +6,9 @@ class campaign__BE extends base__BE {
 
 	protected $idCampaign;
 	protected $name;
+	protected $startDate;
+	protected $endDate;
+	protected $status;
 
 	protected function __construct($a_fields_array) {
 		parent::__construct($a_fields_array);
@@ -57,4 +60,60 @@ class campaign__BE extends base__BE {
 	  $this->name = $a_value;
 	  }
 	 */
+	
+	protected function startDate__get(){
+		return $this->startDate;
+	}
+	
+	protected function startDate__set($a_value){
+		if(is_string($a_value)){
+			$this->startDate = new DateTime($a_value);
+		}else if(is_a($a_value, "DateTime")){
+			$this->startDate= $a_value;
+		}else if(is_integer($a_value)){
+			$dt = new DateTime(); 
+			$dt->setTimestamp($a_value);
+			$this->startDate = $dt;
+		}
+		
+		$status= $this->compute_status($this->startDate, $this->endDate);
+		$this->status = $status; 
+	}
+	
+	protected function endDate__get(){
+		return $this->endDate;
+	}
+	protected function endDate__set($a_value){
+		if(is_string($a_value)){
+			$this->endDate = new DateTime($a_value);
+		}else if(is_a($a_value, "DateTime")){
+			$this->endDate= $a_value;
+		}else if(is_integer($a_value)){
+			$dt = new DateTime(); 
+			$dt->setTimestamp($a_value);
+			$this->endDate = $dt;
+		}
+
+		$status= $this->compute_status($this->startDate, $this->endDate);
+		$this->status = $status; 		
+	}
+	
+	private function compute_status($a_startDate, $a_endDate){
+		$ret_val = null;
+		
+		$dataToday_String = date("Y-m-d G:i:s");
+		$dataToday = new DateTime($dataToday_String);
+		
+
+		
+		if ($dataToday > $a_endDate){
+			$ret_val=0;
+		}elseif ($dataToday < $a_startDate){
+			$ret_val=2;
+		}  else {
+			$ret_val=1;
+		}
+		
+		return $ret_val; 
+	}
 }

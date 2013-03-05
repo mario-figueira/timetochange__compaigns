@@ -41,7 +41,20 @@ class save_campaignAction extends baseAction {
 		}
 		
 		
+		$ola = $campaign->startDate;
+		$ola = $campaign->endDate;
+		
 		$campaigns_repo = $this->get_repository_by_business_entity_name("campaign");
+		/*
+		$startDate_String = $campaign->startDate;
+		$endDate_String = $campaign->endDate;
+		
+		
+		$startDate = new DateTime($startDate_String);
+		$endDate = new DateTime($endDate_String);
+		
+		*/
+		
 		
 		$campaigns_repo->_store($campaign);
 	}

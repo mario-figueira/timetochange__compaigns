@@ -46,10 +46,26 @@
             </li>
         </ul>
 	    <ul>
+        	<li class="label">Start Date</li>
+            <li class="field">
+            	<input name="field__startDate" type="text" class="formField fwLarge" value="<?php echo $campaign->startDate; ?>">
+			<br>
+			<span>ex:yyyy-mm-dd hh:mm:ss</span>
+            </li>
+        </ul>
+	    <ul>
+        	<li class="label">End Date</li>
+            <li class="field">
+            	<input name="field__endDate" type="text" class="formField fwLarge" value="<?php echo $campaign->endDate; ?>">
+			<br>
+			<span>ex:yyyy-mm-dd hh:mm:ss</span>
+            </li>
+        </ul>
+	    <ul>
        	  <li class="label">Logo</li>
             <li class="field" >
 			<div style="position:relative">
-				<input name="field__logo" type="file"  class="formField fwLarge" >					
+				<input name="field__logo" type="file" class="formField fwLarge" >					
 			</div>
             </li>
         </ul>
