@@ -94,13 +94,25 @@
 ?>
 			<div class="nav">
 				<ul>
-					<li><a class="<?php echo $dashboard_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_DASHBOARD); ?>" title="Dashboard"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Dashboard" class="icoNavDashboard"></a></li>
-					<li><a class="<?php echo $campaigns_mgnt_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_CAMPAIGNS_MGNT); ?>" title="Campaign Management"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Campaign Management" class="icoNavGear"></a></li>   
-					<li><a class="<?php echo $explorer_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_EXPLORER); ?>" title="File Explorer"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="File Explorer" class="icoNavShoebox"></a></li>    
-					<li><a class="<?php echo $settings_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_SETTINGS); ?>" title="Settings"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Settings" class="icoNavWrench"></a></li>
-					<li><a class="<?php echo $profile_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_PROFILE); ?>" title="Profile"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Profile" class="icoNavUser"></a></li>
-					<li><a class="<?php echo $logout_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_LOGOUT); ?>" title="Logout"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Logout" class="icoNavCirclex"></a></li>
-					<li><a class="<?php echo $sample_code_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_SAMPLE_CODE); ?>" title="Sample code"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Sample code" class=""></a></li>
+<?php					
+					if($is_logged_in){
+?>						
+						<li><a class="<?php echo $dashboard_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_DASHBOARD); ?>" title="Dashboard"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Dashboard" class="icoNavDashboard"></a></li>
+						<li><a class="<?php echo $campaigns_mgnt_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_CAMPAIGNS_MGNT); ?>" title="Campaign Management"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Campaign Management" class="icoNavGear"></a></li>   
+						<li><a class="<?php echo $explorer_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_EXPLORER); ?>" title="File Explorer"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="File Explorer" class="icoNavShoebox"></a></li>    
+						<li><a class="<?php echo $settings_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_SETTINGS); ?>" title="Settings"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Settings" class="icoNavWrench"></a></li>
+						<li><a class="<?php echo $profile_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_PROFILE); ?>" title="Profile"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Profile" class="icoNavUser"></a></li>
+						<li><a class="<?php echo $logout_classes;?>" href="<?php echo $this->build_action_url("login","logout"); ?>" title="Logout"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Logout" class="icoNavCirclex"></a></li>
+						<li><a class="<?php echo $sample_code_classes;?>" href="<?php echo $this->build_select_menu_action_url(menus_items_enum::$C_SAMPLE_CODE); ?>" title="Sample code"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Sample code" class=""></a></li>
+	<?php					
+					}
+					else{
+?>
+						<li><a class="<?php echo $login_classes;?>" href="<?php echo $this->build_action_url("login","show_login"); ?>" title="Logout"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Login" class="icoNavCirclex"></a></li>
+<?php
+					}
+?>
+					
 				</ul>
 				<div class="logoT2C"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="Time 2 Change" class="icoT2C"></div>
 			</div>

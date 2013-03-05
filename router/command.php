@@ -168,11 +168,11 @@ class Command {
 	
 	
 
-	public function set_is_logged_in_and_update_site_mode(){
+	public function set_is_logged_in(){
 		$this->set_parameter("is_logged_in", true, false);
 	}
 	
-	public function reset_is_logged_in_and_update_site_mode(){
+	public function reset_is_logged(){
 		$this->set_parameter("is_logged_in", false, false);
 	}
 

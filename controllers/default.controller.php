@@ -34,6 +34,10 @@ class defaultController {
 		
 
 		$this->start_pear_auth();
+		
+		if($this->auth->checkAuth()){
+			$this->Command->set_is_logged_in();
+		}
 
 		$this->load_site();
 		
@@ -313,6 +317,12 @@ class defaultController {
 	}
 */
 	
+	function logout() {
+		$this->auth->logout();
+		$this->Command->reset_is_logged();
+		//$this->auth->start();
+	}
+	
 /*	
 	function _logout() {
 		$this->auth->logout();
@@ -334,7 +344,7 @@ class defaultController {
 	}
 */
 	
-	private function start_pear_auth() {
+	protected function start_pear_auth() {
 		/* HANDLE AUTH */
 		
 		require_once REALPATH .'enums/user_registration_status.php';
@@ -350,15 +360,27 @@ class defaultController {
 
 			$sessionName = $cookie_name;
 
-
+			$dbusername = DBUSERNAME;
+			$dbpassword = DBPASSWORD;
+			$dbhost = DBHOST;
+			$dbhostport = DBHOSTPORT;
+			$dbname = DBNAME;
+			$dbhostfullname = "";
+			if(empty($dbhostport)){
+				$dbhostfullname = "{$dbhost}";
+			}else{
+				$dbhostfullname = "{$dbhost}:{$dbhostport}";
+			}
+			
+			$dsn_str = "mysql://{$dbusername}:{$dbpassword}@{$dbhostfullname}/{$dbname}";
 			$options = array(
-			    'dsn' => 'mysql://' . DBUSERNAME . ':' . DBPASSWORD . '@' . DBHOST . '/' . DBNAME,
-			    'usernamecol' => 'email',
-			    'passwordcol' => 'password',
-			    'table' => 'user',
-			    'db_fields' => array('id', 'name', 'surname'),
-			    'db_where' => "( status==1 )",
-			    'sessionName' => $sessionName
+			    'dsn' => $dsn_str
+			    , 'usernamecol' => 'email'
+			    , 'passwordcol' => 'password'
+			    , 'table' => 'user'
+			    /*, 'db_fields' => array('id', 'name', 'surname')
+			    , 'db_where' => "( status==1 )"
+			    , 'sessionName' => $sessionName*/
 			);
 			
 
@@ -366,7 +388,7 @@ class defaultController {
 
 
 			$auth_start_res = $auth->start();
-			unset($auth_start_res);
+			
 			$this->auth = $auth;
 		} catch (Exception $e) {
 			throw $e;
@@ -587,7 +609,7 @@ class defaultController {
 		
 	}
 */
-	protected function force_user_is_loggedin() {
+	protected function enforce_user_is_loggedin() {
 		if (!$this->is_logged_in()) {
 			$this->_error("Deverá estar logado para ver este conteúdo.", 1);
 		}
