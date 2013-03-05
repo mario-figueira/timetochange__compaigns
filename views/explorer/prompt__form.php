@@ -1,11 +1,7 @@
 
-<?php
-	$submit_action_url = $this->build_action_url('explorer','save_prompt');
-?>
+<!--List fields-->
 
-    <!--List fields-->
-    <form id="prompt_form" method="post" action="<?php echo $submit_action_url;?>" class="form">
-	<input name="field__id" type="hidden" value="<?php echo $prompt->id; ?>">
+	<input name="field__id" type="hidden" value="<?php echo $vto->field__idPrompt; ?>">
 	
 	
     <div class="listForm">
@@ -14,11 +10,12 @@
        	  <li class="label">Accounts</li>
             <li class="field">
 			<?php 
-			foreach ($accounts as $account){
+			$available_accounts = $vto->available_accounts;
+			foreach ($available_accounts as $available_account){
 			?>
 			<label class="checkbox">
-				<input name="" type="checkbox" value="$account->id" class="formCheckbox">
-				<?php echo $account->name;?>
+				<input name="field__idAccounts[]" type="checkbox" value="<?php echo $available_account->id;?>" class="formCheckbox">
+				<?php echo $available_account->name;?>
 			</label>
 			<?php } ?>
             </li>
@@ -27,20 +24,19 @@
 	    <ul>
        	  <li class="label">Name</li>
             <li class="field">
-			<input name="field__name" type="text" class="formField fwLarge" value="<?php echo $prompt->name; ?>">
+			<input name="field__name" type="text" class="formField fwLarge" value="<?php echo $vto->field__name; ?>">
             </li>
         </ul> 
 	    <ul>
        	  <li class="label">Prompt</li>
             <li class="field">
-			<input type="hidden" value="" name="field__prompt">
-			<input type="button" value="Upload" class="formButton">
+			<input name="field__prompt_file_descriptor" type="file"  class="formField fwLarge" >							
             </li>
         </ul> 
     	<ul>
         	<li class="label">Description</li>
             <li class="field">
-            	<input name="field__description" type="text" class="formField fwLarge" value="<?php echo $prompt->description; ?>">
+            	<input name="field__description" type="text" class="formField fwLarge" value="<?php echo $vto->field__description; ?>">
             </li>
         </ul>
         
@@ -53,7 +49,7 @@
             </li>
         </ul> 
     </div>
-    </form>
+
     <!--End of List fields-->
     
     

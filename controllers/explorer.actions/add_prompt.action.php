@@ -1,7 +1,9 @@
 <?php
 
+require_once REALPATH .'/controllers/base.action.php';
 
-class add_promptAction {
+
+class add_promptAction extends baseAction{
 	
 	public function execute($a_command){
 		require_once REALPATH ."/repositories/repository.FACTORY.php";
@@ -12,7 +14,21 @@ class add_promptAction {
 		
 		$all_account = $accounts_repo->all__get();
 		
-		$a_command->set_parameter("accounts",$all_account);
+		
+		
+		require_once REALPATH ."/data_transfer_objects/prompt_to_accounts.VTO.php";
+
+		$prompt_to_accounts__VTO = new prompt_to_accounts__VTO();
+		$prompt_to_accounts__VTO->available_accounts = $all_account;
+		$prompt_to_accounts__VTO->field__idAccounts = array();
+		$prompt_to_accounts__VTO->field__idPrompt = null;
+		$prompt_to_accounts__VTO->field__name = null;
+		$prompt_to_accounts__VTO->field__description = null;
+		$prompt_to_accounts__VTO->field__prompt_file_name = null;
+		$prompt_to_accounts__VTO->field__prompt_file_descriptor = null;
+		$prompt_to_accounts__VTO->freeze();
+		
+		$a_command->set_parameter("vto", $prompt_to_accounts__VTO);
 		
 	}
 

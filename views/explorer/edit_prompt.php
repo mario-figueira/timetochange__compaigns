@@ -9,5 +9,14 @@
     </div>
 
 <?php
+	$submit_action_url = $this->build_action_url('explorer','save_prompt');
+?>
+
+    <form id="prompt_form" method="post" action="<?php echo $submit_action_url;?>" class="form" enctype="multipart/form-data">
+
+
+<?php
 include_once 'prompt__form.php';
 ?>   
+	    
+    </form>
