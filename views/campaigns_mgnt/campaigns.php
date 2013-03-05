@@ -53,11 +53,12 @@
 
     <div class="listTable">
     	<ul class="header">
-        	<li class="w4">&nbsp;</li>
-        	<li class="w24">Campaign Name</li>
-            <li class="w24">Account</li>
-            <li class="w24">Date Update</li>
-            <li class="w24">Status</li>
+        	<li class="w5">&nbsp;</li>
+        	<li class="w19">Campaign Name</li>
+            <li class="w19">Account</li>
+            <li class="w19">Start Date</li>
+		<li class="w19">End Date</li>
+            <li class="w19">Status</li>
         </ul>
 	    
 <?php
@@ -67,15 +68,21 @@ foreach ($campaigns as $campaign){
 	
 	$select_checkbox_field_name = "selected__" .$campaign->id;
 	
+	$campaignName= $this->empty2nbsp($campaign->name);
+	
+	$startDate= $this->empty2nbsp($campaign->startDate);
+	
+	$endDate= $this->empty2nbsp($campaign->endDate);
 ?>
 	<ul class="row">
         	<label>
-                <li class="w4"><input name="selected[]" type="checkbox" value="<?php echo $campaign->id ;?>" class="formCheckbox"></li>
+                <li class="w5"><input name="selected[]" type="checkbox" value="<?php echo $campaign->id ;?>" class="formCheckbox"></li>
              </label>   
-		    <li class="w24"><?php echo $campaign->name; ?></li>
-                <li class="w24"><?php echo "account"; ?></li>
-                <li class="w24"><?php echo $campaign->updateTimestamp; ?></li>
-                <li class="w24"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="<?php echo $class_to_status;?>"></li>
+		    <li class="w19"><?php echo $campaignName; ?></li>
+                <li class="w19"><?php echo "account"; ?></li>
+                <li class="w19"><?php echo $startDate; ?></li>
+		    <li class="w19"><?php echo $endDate; ?></li>
+                <li class="w19"><img src="<?php echo $transparent_img_url; ?>" width="1" height="1" alt="" class="<?php echo $class_to_status;?>"></li>
         </ul> 
 <?php	    
 }

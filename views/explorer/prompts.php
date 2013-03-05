@@ -54,11 +54,9 @@
 foreach ($prompts as $prompt){
 	
 	$select_checkbox_field_name = "selected__" .$prompt->id;
-	$description = $prompt->description;
-	$description_is_empty = !isset($description) || empty($description) || trim($description)==="";
-	if($description_is_empty){
-		$description = "&nbsp";
-	}
+	
+	$description= $this->empty2nbsp($prompt->description);
+	
 	$description = truncate_with_elipsis($description,30,true);
 ?>
 	<ul class="row">

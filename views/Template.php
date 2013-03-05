@@ -381,5 +381,15 @@ class Template {
 	}
 
 
+	static function empty2nbsp($a_value){
+		$ret_val = "";
+		$value= $a_value;
+		$value_is_empty = !isset($value) || empty($value) || trim($value)==="";
+		if($value_is_empty){
+			$value = "&nbsp";
+		}
+		$ret_val = $value;
+		return $ret_val;
+	}
 }
 ?>
