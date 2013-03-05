@@ -225,6 +225,16 @@ class Command {
 		return $ret_val;
 	}
 
+	
+	public function get_posted_values(){
+		$ret_val = array();
+		
+		$posted_values = array_merge($_POST, $_FILES);		
+		
+		$ret_val = $posted_values;
+		
+		return $posted_values;
+	}
 }
 
 ?>
